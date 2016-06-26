@@ -110,30 +110,30 @@ Send to multisig address is identical to your normal transaction, just provide y
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen04.jpg)
 
-![ms5.jpg](http://www.ftc-c.com/pack3/ms5.jpg)
 
 tx info : [http://block.ftc-c.com/tx/384638a4e577cb80183496f7bcc72bb3b9572681b292e507f22d963ff06fe55b][0]
+
 
 Then Mirrax's multisignature addresses recieves the  0.2 FTC.
 
 
-**STEP TWO : Spending from multisig address**
+**STEP TWO : Spending from Multi Signature Address**
+
 
 Here we'll describe how John and Jason spend Txcoin from their 2-of-2 multisig address. This transaction needs to be signed with two private keys, one is hold by Mirrax, the other by Calem or Lizhi.
 
-1.And now Mirrax and Calem can review their balance of their multisig addresses.
+
+1\.And now Mirrax and Calem can review their balance of their multisig addresses.
 
 Mirrax's wallet, He click "Sign" button.
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen05.jpg)
 
-![ms6.jpg](http://www.ftc-c.com/pack3/ms6.jpg)
 
 Mirrax want to spend his FTC to me in his multisig addresses.  Send 0.05 FTC to Lizhi's normal address.
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen06.jpg)
 
-![m7.jpg](http://www.ftc-c.com/pack3/m7.jpg)
 
 2\. Mirrax starts creating transaction from the 2-of-3 multisig address.They each has a private key of that address in their wallet. Mirrax signs the transaction with his private key, and export the raw transaction. Mirrax then needs to send this raw transaction to Calem(Email, BitMessage, SMS...).
 
@@ -141,50 +141,51 @@ Mirrax  export the raw transaction.
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen07.jpg)
 
-![m7-1-2.jpg](http://www.ftc-c.com/pack3/m7-1-2.jpg)
 
-3.Calem imports this raw transaction, he can see the transaction is already signed by a private key. Mirrax reviews the transactions and sign with his private key.
+3\.Calem imports this raw transaction, he can see the transaction is already signed by a private key. Mirrax reviews the transactions and sign with his private key.
 
 If Calem agree to send me 0.05 ftc, He click "Sign" buttom too.
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen08.jpg)
 
-![m7-2.jpg](http://www.ftc-c.com/pack3/m7-2.jpg)
 
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen09.jpg)
 
-![m7-2-1.jpg](http://www.ftc-c.com/pack3/m7-2-1.jpg)
 
 4\. Now the transaction is signed by two private keys. Calem can simply click "Send" to broadcast the transaction.
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen10.jpg)
 
 
-![m7-2-2.jpg](http://www.ftc-c.com/pack3/m7-2-2.jpg)
-
-**OK**   I have received their 0.05 FTC. very happy :))**
+**OK**   I (Mirrax) have received their 0.05 FTC. and am very happy :))**
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen11.jpg)
 
-![ms8.jpg](http://www.ftc-c.com/pack3/ms8.jpg)
+
 
 tx info : [http://block.ftc-c.com/tx/6e8dca7038dd97f4811163da91c047b70c4775dc6cc57f5de5b0200f1de1770b][1]
 
 
 **How to copy your public key ?**
 
-In Receiving addresses page, Choose your address and click "Copy Public Key".
+In the Receiving addresses page, Choose your address and click "Copy Public Key".
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen12.jpg)
 
-![ms0.jpg](http://www.ftc-c.com/pack3/ms0.jpg)
 
 **Old Post: **
 
-Multisignature wallet, implementation and issues.  [https://forum.feathercoin.com/index.php?/topic/8113-dev-multisignature-wallet-implementation-and-issues/][2]
+Multisignature wallet, implementation and issues.  [http://forum.feathercoin.com/topic/7662/dev-multisignature-wallet-implementation-and-issues]
 
 
 [0]: http://block.ftc-c.com/tx/384638a4e577cb80183496f7bcc72bb3b9572681b292e507f22d963ff06fe55b
 [1]: http://block.ftc-c.com/tx/6e8dca7038dd97f4811163da91c047b70c4775dc6cc57f5de5b0200f1de1770b
-[2]: https://forum.feathercoin.com/index.php?/topic/8113-dev-multisignature-wallet-implementation-and-issues/
+
+
+**Feathercoin Wallet report page**
+
+The wallet contains a report sheet with various options to view which addresses contain funds.
+
+
+![MultiSig Dialog](/images/ftc-0.9.3.2-report.page.01.png)

@@ -31,9 +31,9 @@ Plugins -
 
 **Feathercoin Paper Wallet Menu**
 
-![Paper Wallet Warning](ftc-0.9.3.2-paper.wallet.warning.01.png)
+![Paper Wallet Warning](/images/ftc-0.9.3.2-paper.wallet.warning.01.png)
 
 
 **Feathercoin Paper Wallet Menu**
 
-![Paper Wallet](ftc-0.9.3.2-paper.wallet.01.png)
+![Paper Wallet](/images/ftc-0.9.3.2-paper.wallet.01.png)

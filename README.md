@@ -17,3 +17,19 @@ Plugins -
 * Bitmessage
 * Shapeshift
 * Coinnector
+
+
+**Feathercoin Wallet Main Screen**
+
+[Wallet Main Screen](/images/ftc-0.9.3.2-main.screen.01.png)
+
+**Feathercoin Wallet Main Menu**
+
+[Wallet Main Menu](/images/ftc-0.9.3.2-paper.wallet.menu.01.png)
+
+**Feathercoin Paper Wallet Menu**
+
+[Paper Wallet Warning](ftc-0.9.3.2-paper.wallet.warning.01.png)
+
+
+[Paper Wallet(ftc-0.9.3.2-paper.wallet.01.png)

@@ -37,3 +37,44 @@ Plugins -
 **Feathercoin Paper Wallet Menu**
 
 ![Paper Wallet](/images/ftc-0.9.3.2-paper.wallet.01.png)
+
+
+**Feathercoin Wallet Include comments in the blockchain**
+
+![Comments Dialog](/images/ftc-0.9.3.2-comments.screen.01.png)
+
+
+**Feathercoin Wallet use the opennames DNS service in the blockchain**
+
+![opennames Dialog](/images/ftc-0.9.3.2-opennames.screen.01.png)
+
+
+**Feathercoin Wallet use the shapeshifts service**
+
+
+![shapeshifts Dialog](/images/ftc-0.9.3.2-shapeshift.StatusTab.01.png)
+
+
+![shapeshifts Dialog](/images/ftc-0.9.3.2-shapeshift.AddressTab.01.png)
+
+
+![shapeshifts Dialog](/images/ftc-0.9.3.2-shapeshift.TransactionTab.01.png)
+
+
+![shapeshifts Dialog](/images/ftc-0.9.3.2-shapeshift.FixedTransactionTab.01.png)
+
+
+![shapeshifts Dialog](/images/ftc-0.9.3.2-shapeshift.MoreTab.01.png)
+
+
+**Feathercoin Wallet use the coinnector service**
+
+![coinnector Dialog](/images/ftc-0.9.3.2-coinnector.01.png)
+
+
+**Feathercoin Wallet search for your Stealth Addresses**
+
+![coinnector Dialog](/images/ftc-0.9.3.2-stealth.SX.search.01.png)
+
+
+

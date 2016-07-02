@@ -39,7 +39,15 @@ Plugins -
 ![Paper Wallet](/images/ftc-0.9.3.2-paper.wallet.01.png)
 
 
-**Feathercoin Wallet Include comments in the blockchain**
+**Feathercoin Wallet Include comments in the Blockchain**
+
+Comments can be included in the Feathercoin Blockchain.  Click on Advanced in the Wallet menu and select comments.
+
+Comments of up to 40 characters can be included in the Feathercoin Blockchain. The cost of a comment has been set at 10 times the dust, or minimum block transmission value, currently that is .
+
+Once you have made a comment you can find it in the Feathercoin Blockchain. Fist find the transaction with the comment, the copy the contents of OP_RETURN.
+
+You then use Hex to Ascii on OP_RETURN to return your message.
 
 ![Comments Dialog](/images/ftc-0.9.3.2-comments.screen.01.png)
 

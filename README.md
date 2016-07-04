@@ -18,6 +18,26 @@ Plugins -
 * Shapeshift
 * Coinnector
 
+**Welcome to Feathercoin core?**
+
+![Wallet Main Screen](/images/ftc-0.9.3.2-welcome.core_a2.png)
+
+
+**What is the Feathercoin core wallet?**
+
+Feathercoin core wallet. 0.9.3.x has been moved to the Bitcoin framework and is not based on the Litecoin framework. Lizhi has spent the last year re writing the code, developing and testing the core series, icluding maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.  
+
+All the Feathercoin specific features have been inherited including, ACP, eHRC , QRCodes, QRsnap. 
+
+By moving upsteam Feathercoin can now offer new features the core system offers. In particular by using the plugins FTC has included Shapeshift, coinector and Bitmessage facilities. 
+
+
+Feathercoin development is already moving on to including FTC facilities in 0.11 core series, whilst maintaining and refining the 0.9.x as a bridge. The aim currently is to include more difficult changes in 0.1x that will require a hard fork and all users upgrade.
+
+Advantages of the 0.9.3.x series include, move to Qt5, speed increase, DNS seeds, improved database synchronising.
+
+Official windows builds and Linux PPAs are available from Feathercoin.com.
+
 
 **Feathercoin Wallet Main Screen**
 

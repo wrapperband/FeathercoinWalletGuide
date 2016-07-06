@@ -217,11 +217,35 @@ You then use Hex to Ascii on OP_RETURN to return your message.
 
 **Feathercoin Wallet use the Opennames DNS service in the blockchain**  
 
-![opennames Dialog](/images/ftc-0.9.3.2-opennames.screen.01.png)
+The Opennames service is based on the system developed by Namecoin to imbeded DNS in the Blockchain. Namecoin is a decentralized open source information registration and transfer system based on the Bitcoin cryptocurrency.
+
+The system was derived from a discussion in September 2010, a discussion was started in the Bitcointalk forum about a hypothetical system called BitDNS and generalizing bitcoin, based on a talk at IRC at 14 November 2010. Gavin Andresen and Satoshi Nakamoto joined the discussion in the Bitcointalk forum and supported the idea of BitDNS.
+
+Openname is included in the Feathercoin (FTC) blockchain. Internally it is called nameview and works by adding a nameview.dat file in your data directory.
+
+1. Register a Domain Name in Feathercoin’s blockchain with your a FTC address.
+
+
+2. After your transaction is confirmed , nameview will all registered names.
+
+![Openames Dialog](/images/ftc-0.9.3.2-opennames.screen.01.png)  
 
 
 
-**Feathercoin Wallet use the Shapeshift service**
+
+**Feathercoin Wallet use the Shapeshift service**  
+
+Use of the Shapeshift APIs has been integrated into the wallet as an Advanced feature, if your require it. You can find more information at https://shapeshift.io .
+
+The claim is trade any leading blockchain asset for any other. Protection by Design. No Account Needed. Choose Which Coins to Trade.
+
+To complete a transaction a request is posted : then a json data packket is received from the API.
+
+QString jsonData="{\"withdrawal\":\"17GZr6RaDfUt2HXRVkmJgVhXKdkej1VMb9\",\"pair\":\"ftc_btc\",\"returnAddress\":\"71whQbi6pq2aCSvMvcTKCcTZDfAbUvf2Se\"}";
+
+Send 3 FTC to Shapeshift, and receive Bitcoin in return.
+
+{"status":"complete","address":"6ukBJuHg9s7T1wzeJctvy1pAZ2i2Fv7WfN","withdraw":"17GZr6RaDfUt2HXRVkmJgVhXKdkej1VMb9","incomingCoin":3,"incomingType":"FTC","outgoingCoin":"0.00017887","outgoingType":"BTC","transaction":"bdc60131a810f950c15895a54582854f8ce5068a61763b85fbd7885f5af54dd1"}
 
 
 ![shapeshifts Dialog](/images/ftc-0.9.3.2-shapeshift.StatusTab.01.png)
@@ -241,7 +265,13 @@ You then use Hex to Ascii on OP_RETURN to return your message.
 
 **Feathercoin Wallet use the Coinnector service**
 
-![coinnector Dialog](/images/ftc-0.9.3.2-coinnector.01.png)
+
+Coinnector.com is a real-time Alternate coin exchange that lists Feathercoin (FTC). Coinnector is now available as an advanced option via a plugin.
+
+
+**Plugins Menu “Coinnector”**
+
+![Coinnector Dialog](/images/ftc-0.9.3.2-coinnector.01.png)
 
 
 **Feathercoin Wallet search for your Stealth Addresses**

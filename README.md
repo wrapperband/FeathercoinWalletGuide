@@ -23,7 +23,8 @@ Feathercoin 0.9.3.2
 ![Wallet Main Screen](/images/ftc-0.9.3.2-welcome.core_a2.png)
 
 
-**What is the Feathercoin core wallet?**
+**Introduction to Feathercoin Core**
+***What is the Feathercoin core wallet?***
 
 Feathercoin core wallet. 0.9.3.x has been moved to the Bitcoin framework and is not based on the Litecoin framework. Lizhi has spent the last year re-writing the code, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.  
 
@@ -39,7 +40,7 @@ Advantages of the 0.9.3.x series include, move to Qt5 development environment, s
 Official Windows builds and Linux PPAs are available from Feathercoin.com.
 
 
-**Feathercoin Wallet Main Screen and Buttons**
+**Feathercoin Wallet Main Screen and Buttons**  
 ***How do I use the wallet? What can it do? :*** 
 
 The main screen contains three parts, the menus, the buttons and the wallet overview.

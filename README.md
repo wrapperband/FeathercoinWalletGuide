@@ -51,7 +51,7 @@ The menus contain a large number of features whereas the buttons have been chose
 
 The overview page is self explanatory, the left side showing the current overall balance and on the right the most recent transactions that have occurred.  
 
-![Wallet Main Screen](/images/ftc-0.9.3.2-main.screen.01.png)  
+![Wallet overview page](/images/ftc-0.9.3.2-main.screen.01.png)  
 
 
 ### Feathercoin Wallet Buttons Bar  
@@ -65,7 +65,7 @@ The overview page is self explanatory, the left side showing the current overall
 
 The transaction button shows the transactions that have taken place. You will need to receive some coins to start with but after that reviewing transactions will be the most common place to go.  
 
-![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Transactions.01.png)  
+![Transaction Button](/images/ftc-0.9.3.2-button.menu.Transactions.01.png)  
 
 
 When you have a lot of transactions you can use the filters bellow the buttons to restrict which ones are shown, by time period,  search for recipients / senders or a specific address.  
@@ -76,17 +76,17 @@ Right click on the transactions to show the transaction drop down. In this case 
 * It is useful to know the filter conditions, e.g. If you've filtered out all your FTC and wondered where it all went ..  
 
 
-![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Transactions.drop.down.01.png)  
+![Transactions drop down menu](/images/ftc-0.9.3.2-button.menu.Transactions.drop.down.01.png)  
 
 
 **Receive Button**   
 
-![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Receive.01.png)  
+![Receive Button](/images/ftc-0.9.3.2-button.menu.Receive.01.png)  
 
 In order to receive funds you need to create a receive address, The label, message and request amount are optional, press request payment and the address is created. A pop up is shown with the newly created receive address address and QRCode image.  
 
 
-![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Receive.QRCode.02.png)  
+![QRCode image](/images/ftc-0.9.3.2-button.menu.Receive.QRCode.02.png)  
 
 **Send Button**   
 
@@ -96,27 +96,27 @@ Once you are happy you can press the send button and that transaction is sent to
 
 Press on the Add recipient button to send payments to more than one recipients.  
 
-![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Send.01.png)  
+![Add recipient](/images/ftc-0.9.3.2-button.menu.Send.01.png)  
 
 
 **Report Button**  
 
 This is the report button, in this case it has been filtered on all the transactions today and calculates the number and total. That can then be exported by the Exprt button at the bottom right of the window.   
 
-![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Report.01.png)  
+![Report Button](/images/ftc-0.9.3.2-button.menu.Report.01.png)  
 
 **MultiSig Button**  
 
 MultiSig stands for multiple signature addresses.  Signature addresses can be made with up to three signatures with the current wallet implementation. Amore detailed example of how to set up and use a MultiSig address is included under menu options.
 
-![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.MultiSig.01.png)  
+![MultiSig Button](/images/ftc-0.9.3.2-button.menu.MultiSig.01.png)  
 
 
 ### Feathercoin Wallet Main Menu        
 
 **Wallet drop down menu**   
  
-![Wallet Main Menu](/images/ftc-0.9.3.2-paper.wallet.menu.01.png)   
+![Walletdrop down](/images/ftc-0.9.3.2-paper.wallet.menu.01.png)   
 
 
 **Open URI menu**
@@ -125,7 +125,7 @@ In information technology, a Uniform Resource Identifier (URI) is a string of ch
 
 Buy using a common protocol information about the transaction can be transferred, in this case through a URI.
 
-![Wallet Main Menu](/images/ftc-0.9.3.2-Wallet.URI.01.png)   
+![URI Menu](/images/ftc-0.9.3.2-Wallet.URI.01.png)   
 
 Feathercoin uses the Bitcoin URIs which represents a common payment URI. Bitcoin URI strings became the most popular way to share payment request, sometimes as a link and others using a QR code.
 
@@ -174,20 +174,33 @@ Until you encrypt your wallet it is like a safe without a key anyone can open it
 The receive addresses menu option show a grid with label and address. There are various buttons such as add a new address, copy, show QRCodes, import QRCode,  Sign a message or varify a message.
 
 
-![Paper Wallet](/images/ftc-0.9.3.2-Wallet.ReceivePayments.01.png)
+![Receive Addresses](/images/ftc-0.9.3.2-Wallet.ReceivePayments.01.png)
 
 
 Right clicking on a address brings up an actions menu.
 
 
-![Paper Wallet](/images/ftc-0.9.3.2-Wallet.ReceivePayments.02.png)
+![Actions Menu](/images/ftc-0.9.3.2-Wallet.ReceivePayments.02.png)
 
 
 **Send Addresses Menu Option**
 
 Contains similar information about send adressess as for receive addresses.   
 
-![Paper Wallet](/images/ftc-0.9.3.2-Wallet.SendPayments.01.png)
+![Send Addresses](/images/ftc-0.9.3.2-Wallet.SendPayments.01.png)
+
+
+**Exit**
+
+Exit menu option or the Cnt-Q keys close down the wallet and offer the reminder to save your wallet. If you do not wish to back up, you can exit by the window close button and you will not need to back up.
+
+
+**Settings drop down Menu**
+
+![Settings](/images/ftc-0.9.3.2-Settings.menu.01.png)
+
+
+
 
 **Feathercoin Wallet Include comments in the Blockchain**
 
@@ -238,15 +251,15 @@ You then use Hex to Ascii on OP_RETURN to return your message.
 **Feathercoin Multi-Signature Address**
 
 
-**STEP ONE : Create a Multisignature Address**
+**STEP ONE : How to Create a Multi Signature (MultiSig) Address**
 
-1.To create a m-of-n multisig address, we need n public keys. 
+1.To create a m-of-n multiSig address, we need n public keys. 
 
 It is not difficult to get a public key for your address. For example, using users Lizhi, Calem and yourself (Mirrax).
 
-To create a 2-of-3 multisig address, you can get one public key from the first wallet (Mirrax) address (yourself), and another form Lizhi's wallet address and Calem's wallet address.
+To create a 2-of-3 multiSig address, you can get one public key from the first wallet (Mirrax) address (yourself), and another form Lizhi's wallet address and Calem's wallet address.
 
-2.Now we can create our multisig address in "Sending addresses page", Click "New MultiSig" and fill in each public keys from step 1\.
+2.Now we can create our multiSig address in "Sending addresses page", Click "New MultiSig" and fill in each public keys from step 1\.
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen01.jpg)
 
@@ -341,9 +354,3 @@ Multi-Signature wallet, implementation and issues.  [http://forum.feathercoin.co
 [1]: http://block.ftc-c.com/tx/6e8dca7038dd97f4811163da91c047b70c4775dc6cc57f5de5b0200f1de1770b
 
 
-**Feathercoin Wallet report page**
-
-The wallet contains a report sheet with various options to view which addresses contain funds.
-
-
-![MultiSig Dialog](/images/ftc-0.9.3.2-report.page.01.png)

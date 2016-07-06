@@ -32,7 +32,7 @@ All the Feathercoin specific features have been inherited including, ACP, eHRC ,
 By moving upsteam Feathercoin can now offer new features the core system offers. In particular by using the plugins FTC has included Shapeshift, coinector and Bitmessage facilities. 
 
 
-Feathercoin development is already moving on to including FTC facilities in 0.11 core series, whilst maintaining and refining the 0.9.x as a bridge. The aim currently is to include more difficult changes in 0.1x that will require a hard fork and all users upgrade.
+Feathercoin development is already moving on to including FTC facilities in 0.11 core series, whilst maintaining and refining the 0.9.x as a bridge. The aim currently is to include more difficult major changes in the 0.1x.x series that will require a hard fork and all users upgrade.
 
 Advantages of the 0.9.3.x series include, move to Qt5, speed increase, DNS seeds, improved database synchronising.
 
@@ -45,7 +45,7 @@ The main screen contains three parts, the menus, the buttons and the wallet over
 
 The menus contain a large number of features whereas the buttons have been chosen to represent the basic operation of the wallet that most people will need to perform.
 
-Tip : Right click with your mouse on the button menu and click on the buttons menu to show the Tabs Toolbar checkbox which closes the button toolbar if you only use the menu options.
+**Tip :** Right click with your mouse on the button menu and click on the buttons menu to show the Tabs Toolbar checkbox which closes the button toolbar if you only use the menu options.
 
 The overview page is self explainatory, the left side showing the current overall balance and on the right the most recent transactions that have occured.
 

@@ -73,10 +73,12 @@ Right click on the transactions to show the transaction drop down. In this case 
 
 **Receive Button**
 
+![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Receive.01.png)
+
 In order to receive funds you need to create a receive address, The label, message and request amount are optional, press request payment and the address is created. A pop up is created with the created address and QRcode image.
 
 
-![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Receive.01.png)
+![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Receive.QRCode.02.png)
 
 
 **Feathercoin Wallet Main Menu**

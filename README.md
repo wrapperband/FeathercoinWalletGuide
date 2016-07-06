@@ -101,7 +101,7 @@ Press on the Add recipient button to send payments to more than one recipients.
 
 **Report Button**  
 
-This is the report button, in this case it has been filtered on all the transactions today and calculates the number and total. That can then be exported by the Exprt button at the bottom right of the window.   
+This shows the grid from the report button. In this case the grid is filtered on all the transactions that happened today and calculates the number and total. That can then be exported by the "Export" button at the bottom right of the window.   
 
 ![Report Button](/images/ftc-0.9.3.2-button.menu.Report.01.png)  
 
@@ -192,7 +192,7 @@ Contains similar information about send adressess as for receive addresses.
 
 **Exit**
 
-Exit menu option or the Cnt-Q keys close down the wallet and offer the reminder to save your wallet. If you do not wish to back up, you can exit by the window close button and you will not need to back up.
+Exit menu option or the Ctrl-Q keys close down the wallet and offer the reminder to save your wallet. If you do not wish to back up, you can exit by the window close button and you will not need to back up.
 
 
 **Settings drop down Menu**

@@ -201,7 +201,6 @@ Exit menu option or the Cnt-Q keys close down the wallet and offer the reminder 
 
 
 
-
 **Feathercoin Wallet Include comments in the Blockchain**
 
 Comments can be included in the Feathercoin Blockchain.  Click on Advanced in the Wallet menu and select comments.  
@@ -215,9 +214,11 @@ You then use Hex to Ascii on OP_RETURN to return your message.
 ![Comments Dialog](/images/ftc-0.9.3.2-comments.screen.01.png)
 
 
+
 **Feathercoin Wallet use the Opennames DNS service in the blockchain**  
 
 ![opennames Dialog](/images/ftc-0.9.3.2-opennames.screen.01.png)
+
 
 
 **Feathercoin Wallet use the Shapeshift service**
@@ -248,36 +249,35 @@ You then use Hex to Ascii on OP_RETURN to return your message.
 ![coinnector Dialog](/images/ftc-0.9.3.2-stealth.SX.search.01.png)
 
 
-**Feathercoin Multi-Signature Address**
-
+**Feathercoin Multiple Signature Addresses**
 
 **STEP ONE : How to Create a Multi Signature (MultiSig) Address**
 
-1.To create a m-of-n multiSig address, we need n public keys. 
+1. To create a m-of-n MultiSig address, we need n public keys. 
 
-It is not difficult to get a public key for your address. For example, using users Lizhi, Calem and yourself (Mirrax).
+It is not difficult to get a public key for your address. For example, using users Lizhi, Calem and Mirrax as an example).
 
-To create a 2-of-3 multiSig address, you can get one public key from the first wallet (Mirrax) address (yourself), and another form Lizhi's wallet address and Calem's wallet address.
+To create a 2-of-3 multiSig address, you can get one public key from the first wallet (Mirrax) address, and another form Lizhi's wallet address and Calem's wallet address.
 
-2.Now we can create our multiSig address in "Sending addresses page", Click "New MultiSig" and fill in each public keys from step 1\.
+2. Now we can create our MultiSig address in "Sending addresses page", Click "New MultiSig" and fill in each public keys from step 1.
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen01.jpg)
 
 
-3.Click on the "Create" button ,You can find the newly created multisig address on "Addresses" and export this multisig address to your partner.You must send the .msa file to your partner.
+3. Click on the "Create" button ,You can find the newly created Multisig address on "Addresses" and export this Multisig address to your partner. You must send the .msa file to your partner.
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen02.jpg)
 
 
-4.Calem or Lizhi imports the .msa file and create the same multisig address.
+4. Calem or Lizhi imports the .msa file and create the same MultiSig address.
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen03.jpg)
 
 
 
-**STEP TWO : Send to FTC to the Multi Signature Address**
+**STEP TWO : Send Feathercoin (FTC) to the Multiple Signature Address**
 
-Send to multisig address is identical to your normal transaction, just provide your multisig address as recipient. Mirrax send 0.2 ftc to his multisig address.
+Send to MultiSig address is identical to your normal transaction, just provide your MultiSig address as recipient. Mirrax send 0.2 ftc to his MultiSig address.
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen04.jpg)
 
@@ -285,37 +285,37 @@ Send to multisig address is identical to your normal transaction, just provide y
 tx info : [http://block.ftc-c.com/tx/384638a4e577cb80183496f7bcc72bb3b9572681b292e507f22d963ff06fe55b][0]
 
 
-Then Mirrax's multisignature addresses recieves the  0.2 FTC.
+Then Mirrax's MultiSignature addresses receives the  0.2 FTC.
 
 
-**STEP TWO : Spending from Multi Signature Address**
+**STEP TWO : Spending from a Multi Signature Address**
 
 
-Here we'll describe how John and Jason spend Txcoin from their 2-of-2 multisig address. This transaction needs to be signed with two private keys, one is hold by Mirrax, the other by Calem or Lizhi.
+Here we'll describe how two partners can spend / transfer coins from their 2-of-3 MultiSig address. This transaction needs to be signed with two private keys, one is hold by Mirrax, the other by Calem or Lizhi.
 
 
-1\.And now Mirrax and Calem can review their balance of their multisig addresses.
+1. And now Mirrax and Calem can review their balance of their MultiSig addresses.
 
-Mirrax's wallet, He click "Sign" button.
+Mirrax's wallet, He clicks on the "Sign" button.
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen05.jpg)
 
 
-Mirrax want to spend his FTC to me in his multisig addresses.  Send 0.05 FTC to Lizhi's normal address.
+Mirrax want to spend his Feathercoin (FTC) to me in his MultiSig addresses.  Send 0.05 FTC to Lizhi's normal address.
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen06.jpg)
 
 
-2\. Mirrax starts creating transaction from the 2-of-3 multisig address.They each has a private key of that address in their wallet. Mirrax signs the transaction with his private key, and export the raw transaction. Mirrax then needs to send this raw transaction to Calem(Email, BitMessage, SMS...).
+2. Mirrax starts creating transaction from the 2-of-3 MultiSig address.They each has a private key of that address in their wallet. Mirrax signs the transaction with his private key, and export the raw transaction. Mirrax then needs to send this raw transaction to Calem  (by Email, BitMessage, SMS ..).
 
 Mirrax  export the raw transaction.
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen07.jpg)
 
 
-3\.Calem imports this raw transaction, he can see the transaction is already signed by a private key. Mirrax reviews the transactions and sign with his private key.
+3. Calem imports this raw transaction, he can see the transaction is already signed by a private key. Mirrax reviews the transactions and sign with his private key.
 
-If Calem agree to send me 0.05 ftc, He click "Sign" buttom too.
+If Calem agrees to send Mirrax  0.05 FTC, He clicks the "Sign" button as well.
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen08.jpg)
 
@@ -324,30 +324,26 @@ If Calem agree to send me 0.05 ftc, He click "Sign" buttom too.
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen09.jpg)
 
 
-4\. Now the transaction is signed by two private keys. Calem can simply click "Send" to broadcast the transaction.
+4. Now the transaction is signed by two private keys. Calem can simply click "Send" to broadcast the transaction.
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen10.jpg)
 
 
-**OK**   I (Mirrax) have received their 0.05 FTC. and am very happy :))**
+**OK**   Mirrax has received their 0.05 FTC. and he very happy :)**
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen11.jpg)
 
 
 
-tx info : [http://block.ftc-c.com/tx/6e8dca7038dd97f4811163da91c047b70c4775dc6cc57f5de5b0200f1de1770b][1]
+The transfer information is recorded in the blockchain : [http://block.ftc-c.com/tx/6e8dca7038dd97f4811163da91c047b70c4775dc6cc57f5de5b0200f1de1770b][1]
 
 
-**How to copy your public key ?**
+**How do you copy your public key ?**
 
 In the Receiving addresses page, Choose your address and click "Copy Public Key".
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen12.jpg)
 
-
-**Old Post: **
-
-Multi-Signature wallet, implementation and issues.  [http://forum.feathercoin.com/topic/7662/dev-multisignature-wallet-implementation-and-issues]
 
 
 [0]: http://block.ftc-c.com/tx/384638a4e577cb80183496f7bcc72bb3b9572681b292e507f22d963ff06fe55b

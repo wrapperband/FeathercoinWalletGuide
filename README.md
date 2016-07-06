@@ -1,6 +1,6 @@
 # FeathercoinWalletGuide
 
-Feathercoin Wallet guide aims to show what the features are of the Feathercoin Wallet can be used. Many features have been experimental since the 0.8.x series. The guide starts at version 0.9.3.2
+Feathercoin Wallet guide aims to show what the features are of the Feathercoin Wallet can be used. Many features have been experimental since the 0.8.x series. The guide starts at version 0.9.3.2 and greater.
 
 
 Feathercoin 0.9.3.2 
@@ -36,10 +36,18 @@ Feathercoin development is already moving on to including FTC facilities in 0.11
 
 Advantages of the 0.9.3.x series include, move to Qt5, speed increase, DNS seeds, improved database synchronising.
 
-Official windows builds and Linux PPAs are available from Feathercoin.com.
+Official Windows builds and Linux PPAs are available from Feathercoin.com.
 
 
-**Feathercoin Wallet Main Screen**
+**Feathercoin Wallet Main Screen and Buttons**
+
+The main screen contains three parts, the menus, the buttons and the wallet overview.
+
+The menus contain a large number of features whereas the buttons have been chosen to represent the basic operation of the wallet that most people will need to perform.
+
+Tip : Right click with your mouse on the button menu and click on the buttons menu to show the Tabs Toolbar checkbox which closes the button toolbar if you only use the menu options.
+
+The overview page is self explainatory, the left side showing the current overall balance and on the right the most recent transactions that have occured.
 
 ![Wallet Main Screen](/images/ftc-0.9.3.2-main.screen.01.png)
 

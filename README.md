@@ -53,7 +53,7 @@ The overview page is self explanatory, the left side showing the current overall
 ![Wallet Main Screen](/images/ftc-0.9.3.2-main.screen.01.png)  
 
 
-**Feathercoin Wallet Buttons Menu**  
+### Feathercoin Wallet Buttons Bar  
 
 ***How do I send and receive transactions? :***  
 
@@ -104,7 +104,14 @@ This is the report button, in this case it has been filtered on all the transact
 
 ![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Report.01.png)  
 
+**MultiSig Button**  
 
+MultiSig stands for multiple signature addresses.  Signature addresses can be made with up to three signatures with the current wallet implementation. Amore detailed example of how to set up and use a MultiSig address is included under menu options.
+
+![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.MultiSig.01.png)  
+
+
+### Feathercoin Wallet Buttons Bar    
 
 **Feathercoin Wallet Main Menu**   
  

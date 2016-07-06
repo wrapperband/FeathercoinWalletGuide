@@ -6,19 +6,19 @@ Feathercoin Wallet guide aims to show what the features are of the Feathercoin W
 Feathercoin 0.9.3.2 
 ===================
 
-### Additional Features List
+### Feathercoin (FTC) Core : Additional Features List
 
-Advanced Features -
+**Advanced Features -**
 * Multi - Signature Transactions :
 * Add a text comment to the transaction :
 * Add Openname addresses to the Blockchain
 
-Plugins -
+**Plugins -**
 * Bitmessage
 * Shapeshift
 * Coinnector
 
-**Welcome to Feathercoin core wallet**
+### Welcome to Feathercoin core wallet**
 
 ![Wallet Main Screen](/images/ftc-0.9.3.2-welcome.core_a2.png)
 
@@ -34,7 +34,7 @@ By moving upstream Feathercoin can now offer new features the core system offers
 
 Feathercoin development is already moving on to including FTC facilities in 0.11 core series, whilst maintaining and refining the 0.9.x as a bridge. The aim currently is to include more difficult major changes in the 0.1x.x series that will require a hard fork and all users upgrade.
 
-Advantages of the 0.9.3.x series include, move to Qt5, speed increase, DNS seeds, improved database synchronising.
+Advantages of the 0.9.3.x series include, move to Qt5 development environment, speed increase, DNS seeds and improved database synchronising.
 
 Official Windows builds and Linux PPAs are available from Feathercoin.com.
 
@@ -75,10 +75,12 @@ Right click on the transactions to show the transaction drop down. In this case 
 
 ![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Receive.01.png)
 
-In order to receive funds you need to create a receive address, The label, message and request amount are optional, press request payment and the address is created. A pop up is shown with the newly created receive address address and QRcode image.
+In order to receive funds you need to create a receive address, The label, message and request amount are optional, press request payment and the address is created. A pop up is shown with the newly created receive address address and QRCode image.
 
 
 ![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Receive.QRCode.02.png)
+
+
 
 
 **Feathercoin Wallet Main Menu**

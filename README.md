@@ -29,7 +29,7 @@ Feathercoin core wallet. 0.9.3.x has been moved to the Bitcoin framework and is 
 
 All the Feathercoin specific features have been inherited including, ACP, eHRC , QRCodes, QRsnap. 
 
-By moving upstream Feathercoin can now offer new features the core system offers. In particular by using the plugins FTC has included Shapeshift, Coinector and Bitmessage facilities. 
+By moving upstream Feathercoin can now offer new features the core system offers. In particular by using the plugins FTC has included Shapeshift, Coinnector and Bitmessage facilities. 
 
 
 Feathercoin development is already moving on to including FTC facilities in 0.11 core series, whilst maintaining and refining the 0.9.x as a bridge. The aim currently is to include more difficult major changes in the 0.1x.x series that will require a hard fork and all users upgrade.
@@ -54,6 +54,8 @@ The overview page is self explanatory, the left side showing the current overall
 
 **Tip :** Close the Button menu to make more room : Right click with your mouse on the button menu on the buttons menu to show the Tabs Toolbar check-box to close the button toolbar.
 
+**Transaction Button**
+
 The transaction button shows the transactions that have taken place. You will need to receive some coins to start with but after that reviewing transactions will be the most common place to go.
 
 ![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Transactions.01.png)
@@ -63,9 +65,18 @@ When you have a lot of transactions you can use the filters bellow the buttons t
 
 Right click on the transactions to show the transaction drop down. In this case copy address to clipboard is highlighted so you simply paste that into a document for someone to send funds to that address without having to remember a large address.
 
+**Tip :** The filter conditions in place are shown at the bottom left of the window, this can be usefull to know, if you've filtered out all your FTC and wondered where it went ..
 
 
 ![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Transactions.drop.down.01.png)
+
+
+**Receive Button**
+
+In order to receive funds you need to create a receive address, The label, message and request amount are optional, press request payment and the address is created. A pop up is created with the created address and QRcode image.
+
+
+![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Receive.01.png)
 
 
 **Feathercoin Wallet Main Menu**

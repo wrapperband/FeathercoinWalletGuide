@@ -65,7 +65,7 @@ When you have a lot of transactions you can use the filters bellow the buttons t
 
 Right click on the transactions to show the transaction drop down. In this case copy address to clipboard is highlighted so you simply paste that into a document for someone to send funds to that address without having to remember a large address.
 
-**Tip :** The filter conditions in place are shown at the bottom left of the window, this can be usefull to know, if you've filtered out all your FTC and wondered where it went ..
+**Tip :** The filter conditions in place are shown at the bottom left of the window, this can be use full to know, if you've filtered out all your FTC and wondered where it went ..
 
 
 ![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Transactions.drop.down.01.png)
@@ -75,7 +75,7 @@ Right click on the transactions to show the transaction drop down. In this case 
 
 ![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Receive.01.png)
 
-In order to receive funds you need to create a receive address, The label, message and request amount are optional, press request payment and the address is created. A pop up is created with the created address and QRcode image.
+In order to receive funds you need to create a receive address, The label, message and request amount are optional, press request payment and the address is created. A pop up is shown with the newly created receive address address and QRcode image.
 
 
 ![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Receive.QRCode.02.png)

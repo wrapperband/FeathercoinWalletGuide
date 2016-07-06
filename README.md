@@ -230,9 +230,21 @@ Openname is included in the Feathercoin (FTC) blockchain. Internally it is calle
 
 ![Openames Dialog](/images/ftc-0.9.3.2-opennames.screen.01.png)  
 
+**What does Opennames do?**
 
+    Securely record and transfer arbitrary names (keys).
+    Attach a value (data) to the names.
 
+**What Opennames be used for?**  
 
+    Protect free-speech rights online by making the web more resistant to censorship.
+    Access websites using the .bit domain (with TLS/SSL).
+    Store identity information such as email, GPG key, BTC address, TLS fingerprints, Bitmessage address, etc.
+    Human readable Tor .onion names/domains.  
+    File signatures, Voting, bonds/stocks,/shares, web of trust, escrow and notary services (to be implemented).  
+
+More information on Openname domains : https://wiki.namecoin.info/index.php?title=Register_and_Configure_.bit_Domains  
+    
 **Feathercoin Wallet use the Shapeshift service**  
 
 Use of the Shapeshift APIs has been integrated into the wallet as an Advanced feature, if your require it. You can find more information at https://shapeshift.io .

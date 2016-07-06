@@ -72,7 +72,8 @@ When you have a lot of transactions you can use the filters bellow the buttons t
 
 Right click on the transactions to show the transaction drop down. In this case copy address to clipboard is highlighted so you simply paste that into a document for someone to send funds to that address without having to remember a large address.
 
-**Tip :** The filter conditions in place are shown at the bottom left of the window, this can be use full to know, if you've filtered out all your FTC and wondered where it went ..
+**Tip :** The filter conditions in place are shown at the bottom left of the window.
+* It is useful to know the filter conditions, e.g. If you've filtered out all your FTC and wondered where it all went ..
 
 
 ![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Transactions.drop.down.01.png)

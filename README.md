@@ -1,125 +1,140 @@
-# FeathercoinWalletGuide
+# FeathercoinWalletGuide  
 
-Feathercoin Wallet guide aims to show what the features are of the Feathercoin Wallet can be used. Many features have been experimental since the 0.8.x series. The guide starts at version 0.9.3.2 and greater.
+Feathercoin Wallet guide aims to show what the features are of the Feathercoin Wallet can be used. Many features have been experimental since the 0.8.x series. The guide starts at version 0.9.3.2 and greater.  
 
 
-Feathercoin 0.9.3.2 
-===================
+Feathercoin 0.9.3.2  
+===================  
 
-### Feathercoin (FTC) Core : Additional Features List
+### Feathercoin (FTC) Core : Additional Features List  
 
-**Advanced Features -**
+**Advanced Features -**  
 * Multi - Signature Transactions :
 * Add a text comment to the transaction :
 * Add Openname addresses to the Blockchain
 
-**Plugins -**
+**Plugins -**  
 * Bitmessage
 * Shapeshift
-* Coinnector
+* Coinnector  
 
-### Welcome to Feathercoin core wallet**
+### Welcome to Feathercoin core wallet  
 
 ![Wallet Main Screen](/images/ftc-0.9.3.2-welcome.core_a2.png)
 
 
-**Introduction to Feathercoin Core**
-***What is the Feathercoin core wallet?***
+**Introduction to Feathercoin Core**   
+***What is the Feathercoin core wallet?***   
 
 Feathercoin core wallet. 0.9.3.x has been moved to the Bitcoin framework and is not based on the Litecoin framework. Lizhi has spent the last year re-writing the code, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.  
 
 All the Feathercoin specific features have been inherited including, ACP, eHRC , QRCodes, QRsnap. 
 
-By moving upstream Feathercoin can now offer new features the core system offers. In particular by using the plugins FTC has included Shapeshift, Coinnector and Bitmessage facilities. 
+By moving upstream Feathercoin can now offer new features the core system offers. In particular by using the plugins FTC has included Shapeshift, Coinnector and Bitmessage facilities.  
 
 
-Feathercoin development is already moving on to including FTC facilities in 0.11 core series, whilst maintaining and refining the 0.9.x as a bridge. The aim currently is to include more difficult major changes in the 0.1x.x series that will require a hard fork and all users upgrade.
+Feathercoin development is already moving on to including FTC facilities in 0.11 core series, whilst maintaining and refining the 0.9.x as a bridge. The aim currently is to include more difficult major changes in the 0.1x.x series that will require a hard fork and all users upgrade.  
 
-Advantages of the 0.9.3.x series include, move to Qt5 development environment, speed increase, DNS seeds and improved database synchronising.
+Advantages of the 0.9.3.x series include, move to Qt5 development environment, speed increase, DNS seeds and improved database synchronising.  
 
-Official Windows builds and Linux PPAs are available from Feathercoin.com.
-
-
-**Feathercoin Wallet Main Screen and Buttons**  
-***How do I use the wallet? What can it do? :*** 
-
-The main screen contains three parts, the menus, the buttons and the wallet overview.
-
-The menus contain a large number of features whereas the buttons have been chosen to represent the basic operation of the wallet that most people will need to perform.
+Official Windows builds and Linux PPAs are available from Feathercoin.com.  
 
 
-The overview page is self explanatory, the left side showing the current overall balance and on the right the most recent transactions that have occurred.
+**Feathercoin Wallet Main Screen and Buttons**   
+***How do I use the wallet? What can it do? :***   
 
-![Wallet Main Screen](/images/ftc-0.9.3.2-main.screen.01.png)
+The main screen contains three parts, the menus, the buttons and the wallet overview.  
+
+The menus contain a large number of features whereas the buttons have been chosen to represent the basic operation of the wallet that most people will need to perform.  
 
 
-**Feathercoin Wallet Buttons Menu**
+The overview page is self explanatory, the left side showing the current overall balance and on the right the most recent transactions that have occurred.  
 
-***How do I send and receive transactions? :***
+![Wallet Main Screen](/images/ftc-0.9.3.2-main.screen.01.png)  
 
-**Tip :** The button menu can be closed to make more room : If you need to activate the buttons or close the button menu :
- 
-* Right click with your mouse on the button menu on the buttons menu to show the Tabs Toolbar check-box to close the button toolbar.
+
+**Feathercoin Wallet Buttons Menu**  
+
+***How do I send and receive transactions? :***  
+
+**Tip :** The button menu can be closed to make more room : If you need to activate the buttons or close the button menu :  
+* Right click with your mouse on the button menu on the buttons menu to show the Tabs Toolbar check-box to close the button toolbar.  
 
 **Transaction Button**
 
-The transaction button shows the transactions that have taken place. You will need to receive some coins to start with but after that reviewing transactions will be the most common place to go.
+The transaction button shows the transactions that have taken place. You will need to receive some coins to start with but after that reviewing transactions will be the most common place to go.  
 
-![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Transactions.01.png)
-
-
-When you have a lot of transactions you can use the filters bellow the buttons to restrict which ones are shown, by time period,  search for recipients / senders or a specific address.
-
-Right click on the transactions to show the transaction drop down. In this case copy address to clipboard is highlighted so you simply paste that into a document for someone to send funds to that address without having to remember a large address.
-
-**Tip :** The filter conditions in place are shown at the bottom left of the window.
-* It is useful to know the filter conditions, e.g. If you've filtered out all your FTC and wondered where it all went ..
+![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Transactions.01.png)  
 
 
-![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Transactions.drop.down.01.png)
+When you have a lot of transactions you can use the filters bellow the buttons to restrict which ones are shown, by time period,  search for recipients / senders or a specific address.  
+
+Right click on the transactions to show the transaction drop down. In this case copy address to clipboard is highlighted so you simply paste that into a document for someone to send funds to that address without having to remember a large address.  
+
+**Tip :** The filter conditions in place are shown at the bottom left of the window.  
+* It is useful to know the filter conditions, e.g. If you've filtered out all your FTC and wondered where it all went ..  
 
 
-**Receive Button**
-
-![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Receive.01.png)
-
-In order to receive funds you need to create a receive address, The label, message and request amount are optional, press request payment and the address is created. A pop up is shown with the newly created receive address address and QRCode image.
+![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Transactions.drop.down.01.png)  
 
 
-![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Receive.QRCode.02.png)
+**Receive Button**   
+
+![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Receive.01.png)  
+
+In order to receive funds you need to create a receive address, The label, message and request amount are optional, press request payment and the address is created. A pop up is shown with the newly created receive address address and QRCode image.  
+
+
+![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Receive.QRCode.02.png)  
+
+**Send Button**   
+
+In order to send funds you need to input the receivers address. You can label the transaction with a description and input the amount.  
+
+Once you are happy you can press the send button and that transaction is sent to the blockchain. If you have the QR code of the Send address press send to QR code button will activate a camera snapshot and import of the QRCode.   
+
+Press on the Add recipient button to send payments to more than one recipients.  
+
+![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Send.01.png)  
+
+
+**Report Button**  
+
+This is the report button, in this case it has been filtered on all the transactions today and calculates the number and total. That can then be exported by the Exprt button at the bottom right of the window.   
+
+![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Report.01.png)  
 
 
 
+**Feathercoin Wallet Main Menu**   
+ 
+![Wallet Main Menu](/images/ftc-0.9.3.2-paper.wallet.menu.01.png)   
 
-**Feathercoin Wallet Main Menu**
 
-![Wallet Main Menu](/images/ftc-0.9.3.2-paper.wallet.menu.01.png)
-
-
-**Feathercoin Paper Wallet Menu**
+**Feathercoin Paper Wallet Menu**   
 
 ![Paper Wallet Warning](/images/ftc-0.9.3.2-paper.wallet.warning.01.png)
 
-
-**Feathercoin Paper Wallet Menu**
+ 
+**Feathercoin Paper Wallet Menu**   
 
 ![Paper Wallet](/images/ftc-0.9.3.2-paper.wallet.01.png)
 
 
 **Feathercoin Wallet Include comments in the Blockchain**
 
-Comments can be included in the Feathercoin Blockchain.  Click on Advanced in the Wallet menu and select comments.
+Comments can be included in the Feathercoin Blockchain.  Click on Advanced in the Wallet menu and select comments.  
 
-Comments of up to 40 characters can be included in the Feathercoin Blockchain. The cost of a comment has been set at 10 times the dust, or minimum block transmission value, currently that is .
+Comments of up to 40 characters can be included in the Feathercoin Blockchain. The cost of a comment has been set at 10 times the dust, or minimum block transmission value, currently that is .  
 
-Once you have made a comment you can find it in the Feathercoin Blockchain. Fist find the transaction with the comment, the copy the contents of OP_RETURN.
+Once you have made a comment you can find it in the Feathercoin Blockchain. Fist find the transaction with the comment, the copy the contents of OP_RETURN.  
 
-You then use Hex to Ascii on OP_RETURN to return your message.
+You then use Hex to Ascii on OP_RETURN to return your message.  
 
 ![Comments Dialog](/images/ftc-0.9.3.2-comments.screen.01.png)
 
 
-**Feathercoin Wallet use the Opennames DNS service in the blockchain**
+**Feathercoin Wallet use the Opennames DNS service in the blockchain**  
 
 ![opennames Dialog](/images/ftc-0.9.3.2-opennames.screen.01.png)
 

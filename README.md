@@ -40,6 +40,7 @@ Official Windows builds and Linux PPAs are available from Feathercoin.com.
 
 
 **Feathercoin Wallet Main Screen and Buttons**
+***How do I use the wallet? What can it do? :*** 
 
 The main screen contains three parts, the menus, the buttons and the wallet overview.
 
@@ -50,9 +51,14 @@ The overview page is self explanatory, the left side showing the current overall
 
 ![Wallet Main Screen](/images/ftc-0.9.3.2-main.screen.01.png)
 
+
 **Feathercoin Wallet Buttons Menu**
 
-**Tip :** Close the Button menu to make more room : Right click with your mouse on the button menu on the buttons menu to show the Tabs Toolbar check-box to close the button toolbar.
+***How do I send and receive transactions? :***
+
+**Tip :** The button menu can be closed to make more room : If you need to activate the buttons or close the button menu :
+ 
+* Right click with your mouse on the button menu on the buttons menu to show the Tabs Toolbar check-box to close the button toolbar.
 
 **Transaction Button**
 

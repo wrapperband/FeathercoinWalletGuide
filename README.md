@@ -9,13 +9,14 @@ Feathercoin 0.9.3.2
 ### Feathercoin (FTC) Core : Additional Features List  
 
 **Advanced Features -**  
-* Multi - Signature Transactions :
-* Add a text comment to the transaction :
-* Add Openname addresses to the Blockchain
+* Multi - Signature Transactions  
+* Add a text comment to the transaction  
+* Add Openname addresses to the Blockchain   
+* Stealth Addresses   
 
 **Plugins -**  
-* Bitmessage
-* Shapeshift
+* Bitmessage  
+* Shapeshift  
 * Coinnector  
 
 ### Welcome to Feathercoin core wallet  
@@ -111,14 +112,40 @@ MultiSig stands for multiple signature addresses.  Signature addresses can be ma
 ![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.MultiSig.01.png)  
 
 
-### Feathercoin Wallet Buttons Bar    
+### Feathercoin Wallet Main Menu        
 
-**Feathercoin Wallet Main Menu**   
+**Wallet drop down menu**   
  
 ![Wallet Main Menu](/images/ftc-0.9.3.2-paper.wallet.menu.01.png)   
 
 
-**Feathercoin Paper Wallet Menu**   
+**Open URI menu**
+
+In information technology, a Uniform Resource Identifier (URI) is a string of characters used to identify a resource. Such identification enables interaction with representations of the resource over a network, typically the World Wide Web, using specific protocols. 
+
+![Wallet Main Menu](/images/ftc-0.9.3.2-Wallet.URI.01.png)   
+
+Feathercoin uses the Bitcoin URIs which represents a common payment URI. Bitcoin URI strings became the most popular way to share payment request, sometimes as a link and others using a QR code.
+
+URI Examples:
+
+bitcoin:12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu
+bitcoin:12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu?amount=1.2
+bitcoin:12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu?amount=1.2&message=Payment&label=Satoshi&extra=other-param
+
+URI Validation
+
+The main use that we expect you'll have for the URI class in bitcore is validating and parsing bitcoin URIs. A URI instance exposes the address as a bitcore Address object and the amount in Satoshis, if present.
+
+The code for validating URIs looks like this:
+
+var uriString = 'bitcoin:12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu?amount=1.2';
+var valid = URI.isValid(uriString);
+var uri = new URI(uriString);
+console.log(uri.address.network, uri.amount); // 'livenet', 120000000
+
+
+**Paper Wallet Menu**   
 
 ![Paper Wallet Warning](/images/ftc-0.9.3.2-paper.wallet.warning.01.png)
 

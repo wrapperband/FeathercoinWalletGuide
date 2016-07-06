@@ -61,7 +61,11 @@ The transaction button shows the transactions that have taken place. You will ne
 
 When you have a lot of transactions you can use the filters bellow the buttons to restrict which ones are shown, by time period,  search for recipients / senders or a specific address.
 
+Right click on the transactions to show the transaction drop down. In this case copy address to clipboard is highlighted so you simply paste that into a document for someone to send funds to that address without having to remember a large address.
 
+
+
+![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Transactions.drop.down.01.png)
 
 
 **Feathercoin Wallet Main Menu**

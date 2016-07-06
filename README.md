@@ -123,6 +123,8 @@ MultiSig stands for multiple signature addresses.  Signature addresses can be ma
 
 In information technology, a Uniform Resource Identifier (URI) is a string of characters used to identify a resource. Such identification enables interaction with representations of the resource over a network, typically the World Wide Web, using specific protocols. 
 
+Buy using a common protocol information about the transaction can be transferred, in this case through a URI.
+
 ![Wallet Main Menu](/images/ftc-0.9.3.2-Wallet.URI.01.png)   
 
 Feathercoin uses the Bitcoin URIs which represents a common payment URI. Bitcoin URI strings became the most popular way to share payment request, sometimes as a link and others using a QR code.
@@ -145,7 +147,14 @@ var uri = new URI(uriString);
 console.log(uri.address.network, uri.amount); // 'livenet', 120000000
 
 
-**Paper Wallet Menu**   
+**Backup Wallet**
+
+It is important to back up your wallet regularly. If you have created new addresses or spent some cash, the old backups will be out of date. If you are just receiving that will just be calculated for the address as you synchronise the wallet, so backups aren't required.
+
+The menu option eases backup strategy.
+
+
+**Print Paper Wallet Menu Option**   
 
 ![Paper Wallet Warning](/images/ftc-0.9.3.2-paper.wallet.warning.01.png)
 
@@ -153,6 +162,11 @@ console.log(uri.address.network, uri.amount); // 'livenet', 120000000
 **Feathercoin Paper Wallet Menu**   
 
 ![Paper Wallet](/images/ftc-0.9.3.2-paper.wallet.01.png)
+
+
+**Encrypt your wallet**  
+
+Until you encrypt your wallet it is like a safe without a key anyone can open it. Use the encryption menu option to set a long super secret key to your wallet. You can also increase your security by keeping separate wallets, with savings stored on offline media like USBs or paper wallets.
 
 
 **Feathercoin Wallet Include comments in the Blockchain**

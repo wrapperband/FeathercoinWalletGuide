@@ -169,6 +169,26 @@ The menu option eases backup strategy.
 Until you encrypt your wallet it is like a safe without a key anyone can open it. Use the encryption menu option to set a long super secret key to your wallet. You can also increase your security by keeping separate wallets, with savings stored on offline media like USBs or paper wallets.
 
 
+**Receive Addresses Menu Option**
+
+The receive addresses menu option show a grid with label and address. There are various buttons such as add a new address, copy, show QRCodes, import QRCode,  Sign a message or varify a message.
+
+
+![Paper Wallet](/images/ftc-0.9.3.2-Wallet.ReceivePayments.01.png)
+
+
+Right clicking on a address brings up an actions menu.
+
+
+![Paper Wallet](/images/ftc-0.9.3.2-Wallet.ReceivePayments.02.png)
+
+
+**Send Addresses Menu Option**
+
+Contains similar information about send adressess as for receive addresses.   
+
+![Paper Wallet](/images/ftc-0.9.3.2-Wallet.SendPayments.01.png)
+
 **Feathercoin Wallet Include comments in the Blockchain**
 
 Comments can be included in the Feathercoin Blockchain.  Click on Advanced in the Wallet menu and select comments.  

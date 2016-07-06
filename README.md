@@ -18,14 +18,14 @@ Plugins -
 * Shapeshift
 * Coinnector
 
-**Welcome to Feathercoin core?**
+**Welcome to Feathercoin core wallet**
 
 ![Wallet Main Screen](/images/ftc-0.9.3.2-welcome.core_a2.png)
 
 
 **What is the Feathercoin core wallet?**
 
-Feathercoin core wallet. 0.9.3.x has been moved to the Bitcoin framework and is not based on the Litecoin framework. Lizhi has spent the last year re writing the code, developing and testing the core series, icluding maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.  
+Feathercoin core wallet. 0.9.3.x has been moved to the Bitcoin framework and is not based on the Litecoin framework. Lizhi has spent the last year re-writing the code, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.  
 
 All the Feathercoin specific features have been inherited including, ACP, eHRC , QRCodes, QRsnap. 
 
@@ -45,11 +45,23 @@ The main screen contains three parts, the menus, the buttons and the wallet over
 
 The menus contain a large number of features whereas the buttons have been chosen to represent the basic operation of the wallet that most people will need to perform.
 
-**Tip :** Right click with your mouse on the button menu and click on the buttons menu to show the Tabs Toolbar checkbox which closes the button toolbar if you only use the menu options.
 
-The overview page is self explainatory, the left side showing the current overall balance and on the right the most recent transactions that have occured.
+The overview page is self explanatory, the left side showing the current overall balance and on the right the most recent transactions that have occured.
 
 ![Wallet Main Screen](/images/ftc-0.9.3.2-main.screen.01.png)
+
+**Feathercoin Wallet Buttons Menu**
+
+**Tip :** Close the Button menu to make more room : Right click with your mouse on the button menu on the buttons menu to show the Tabs Toolbar check-box to close the button toolbar.
+
+The transaction button shows the transactions that have taken place. You will need to receive some coins to start with but after that reviewing transactions will be the most common place to go.
+
+![Wallet Main Screen](/images/ftc-0.9.3.2-button.menu.Transactions.01.png)
+
+
+When you have a lot of transactions you can use the filters bellow the buttons to restrict which ones are shown, by time period,  search for recipients / senders or a specific address.
+
+
 
 
 **Feathercoin Wallet Main Menu**
@@ -80,12 +92,12 @@ You then use Hex to Ascii on OP_RETURN to return your message.
 ![Comments Dialog](/images/ftc-0.9.3.2-comments.screen.01.png)
 
 
-**Feathercoin Wallet use the opennames DNS service in the blockchain**
+**Feathercoin Wallet use the Opennames DNS service in the blockchain**
 
 ![opennames Dialog](/images/ftc-0.9.3.2-opennames.screen.01.png)
 
 
-**Feathercoin Wallet use the shapeshifts service**
+**Feathercoin Wallet use the Shapeshift service**
 
 
 ![shapeshifts Dialog](/images/ftc-0.9.3.2-shapeshift.StatusTab.01.png)
@@ -103,7 +115,7 @@ You then use Hex to Ascii on OP_RETURN to return your message.
 ![shapeshifts Dialog](/images/ftc-0.9.3.2-shapeshift.MoreTab.01.png)
 
 
-**Feathercoin Wallet use the coinnector service**
+**Feathercoin Wallet use the Coinnector service**
 
 ![coinnector Dialog](/images/ftc-0.9.3.2-coinnector.01.png)
 
@@ -113,7 +125,7 @@ You then use Hex to Ascii on OP_RETURN to return your message.
 ![coinnector Dialog](/images/ftc-0.9.3.2-stealth.SX.search.01.png)
 
 
-**Feathercoin Multi Signature Address**
+**Feathercoin Multi-Signature Address**
 
 
 **STEP ONE : Create a Multisignature Address**
@@ -212,7 +224,7 @@ In the Receiving addresses page, Choose your address and click "Copy Public Key"
 
 **Old Post: **
 
-Multisignature wallet, implementation and issues.  [http://forum.feathercoin.com/topic/7662/dev-multisignature-wallet-implementation-and-issues]
+Multi-Signature wallet, implementation and issues.  [http://forum.feathercoin.com/topic/7662/dev-multisignature-wallet-implementation-and-issues]
 
 
 [0]: http://block.ftc-c.com/tx/384638a4e577cb80183496f7bcc72bb3b9572681b292e507f22d963ff06fe55b

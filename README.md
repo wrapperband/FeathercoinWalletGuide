@@ -185,7 +185,7 @@ Right clicking on a address brings up an actions menu.
 
 **Send Addresses Menu Option**
 
-Contains similar information about send adressess as for receive addresses.   
+Contains similar information about send addresses as for receive addresses.   
 
 ![Send Addresses](/images/ftc-0.9.3.2-Wallet.SendPayments.01.png)
 
@@ -200,8 +200,9 @@ Exit menu option or the Ctrl-Q keys close down the wallet and offer the reminder
 ![Settings](/images/ftc-0.9.3.2-Settings.menu.01.png)
 
 
+### Comments in the Feathercoin Blockchain
 
-**Feathercoin Wallet Include comments in the Blockchain**
+**Feathercoin Wallet Include encrypted comments into the Blockchain**
 
 Comments can be included in the Feathercoin Blockchain.  Click on Advanced in the Wallet menu and select comments.  
 
@@ -214,6 +215,7 @@ You then use Hex to Ascii on OP_RETURN to return your message.
 ![Comments Dialog](/images/ftc-0.9.3.2-comments.screen.01.png)
 
 
+### Opennames DNS Service
 
 **Feathercoin Wallet use the Opennames DNS service in the blockchain**  
 
@@ -244,6 +246,10 @@ Openname is included in the Feathercoin (FTC) blockchain. Internally it is calle
     File signatures, Voting, bonds/stocks,/shares, web of trust, escrow and notary services (to be implemented).  
 
 More information on Openname domains : https://wiki.namecoin.info/index.php?title=Register_and_Configure_.bit_Domains  
+
+
+
+### Shapeshift service
     
 **Feathercoin Wallet use the Shapeshift service**  
 
@@ -275,8 +281,10 @@ Send 3 FTC to Shapeshift, and receive Bitcoin in return.
 ![shapeshifts Dialog](/images/ftc-0.9.3.2-shapeshift.MoreTab.01.png)
 
 
-**Feathercoin Wallet use the Coinnector service**
 
+### Coinnector service
+
+**Feathercoin Wallet use the Coinnector service**
 
 Coinnector.com is a real-time Alternate coin exchange that lists Feathercoin (FTC). Coinnector is now available as an advanced option via a plugin.
 
@@ -286,10 +294,31 @@ Coinnector.com is a real-time Alternate coin exchange that lists Feathercoin (FT
 ![Coinnector Dialog](/images/ftc-0.9.3.2-coinnector.01.png)
 
 
+### Stealth Addresses
+
+Stealth addresses were developed for Feathercoin out of the discussion of producing Private Blockchain Addresses or Dark Blockchains. Feathercoin, like Bitcoin has an open Blockchain or public register, in order to prove that the technology works and the correct transfers took place. Now the technology is accepted, there is then no need to make the amounts being transferred visible to other than the sender and receiver which can be achieved using Stealth Addresses.
+
+What are Stealth Addresses?
+
+Stealth addresses are a way for a payer and a payee to have a private exchange of funds. Vertcoin was the first cryptocurrency to develop the Stealth Address, also referred to as the SX address. 
+
+How are Stealth Addresses implemented?
+
+A stealth address functions differently than a standard Feathercoin address.  
+
+The address is first generated using your Feathercoin wallet. Next you make it public to the payers. Once public, each payer can use the stealth address to generate a standard but unique Feathercoin address only known to him. Finally, the payers conduct the transactions using their individually generated addresses, and you import them in your wallet with the corresponding stealth address. This way each such Feathercoin address and transaction is only identifiable by you and the payer who generated that exact address. The outsiders are left outside.
+
+Feathercoins’s stealth address technology allows a business to use one consistent address for all their payments, without the risk of someone watching their transactions with malicious intent.
+
+
+
+
 **Feathercoin Wallet search for your Stealth Addresses**
 
 ![coinnector Dialog](/images/ftc-0.9.3.2-stealth.SX.search.01.png)
 
+
+###Multiple Signature Addresses
 
 **Feathercoin Multiple Signature Addresses**
 

@@ -334,7 +334,7 @@ Click ion the Wallet menus item Receive coins. Use the check-box to generate the
 ![Stealth Address](/images/ftc-0.9.3.2-stealth.SX.search.01.png)
 
 
-###Multiple Signature Addresses
+### Multiple Signature Addresses
 
 **Feathercoin Multiple Signature Addresses**
 

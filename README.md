@@ -29,7 +29,7 @@ Feathercoin 0.9.3.2
 ![Wallet Main Screen](/images/ftc-0.9.3.2-welcome.core_a2.png)
 
 
-**Introduction to Feathercoin Core**   
+### Introduction to Feathercoin Core   
 ***What is the Feathercoin core wallet?***   
 
 Feathercoin core wallet. 0.9.3.x has been moved to the Bitcoin framework and is not based on the Litecoin framework. Lizhi has spent the last year re-writing the code, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.  
@@ -46,7 +46,7 @@ Advantages of the 0.9.3.x series include, move to Qt5 development environment, s
 Official Windows builds and Linux PPAs are available from Feathercoin.com.  
 
 
-**Feathercoin Wallet Main Screen and Buttons**   
+### Feathercoin Wallet Main Screen and Buttons   
 ***How do I use the wallet? What can it do? :***   
 
 The main screen contains three parts, the menus, the buttons and the wallet overview.  
@@ -60,11 +60,11 @@ The overview page is self explanatory, the left side showing the current overall
 
 
 ### Feathercoin Wallet Buttons Bar  
-
 ***How do I send and receive transactions? :***  
 
 **Tip :** The button menu can be closed to make more room : If you need to activate the buttons or close the button menu :  
 * Right click with your mouse on the button menu on the buttons menu to show the Tabs Toolbar check-box to close the button toolbar.  
+
 
 **Transaction Button**
 
@@ -77,8 +77,7 @@ When you have a lot of transactions you can use the filters bellow the buttons t
 
 Right click on the transactions to show the transaction drop down. In this case copy address to clipboard is highlighted so you simply paste that into a document for someone to send funds to that address without having to remember a large address.  
 
-**Tip :** The filter conditions in place are shown at the bottom left of the window.  
-* It is useful to know the filter conditions, e.g. If you've filtered out all your FTC and wondered where it all went ..  
+**Tip :** The filter conditions in place are shown at the bottom left of the window.  It is useful to know the filter conditions, e.g. If you've filtered out all your FTC and wondered where it all went ..  
 
 
 ![Transactions drop down menu](/images/ftc-0.9.3.2-button.menu.Transactions.drop.down.01.png)  
@@ -86,12 +85,15 @@ Right click on the transactions to show the transaction drop down. In this case 
 
 **Receive Button**   
 
+In order to receive funds you need to create a receive address, The label, message and request amount are optional, press request payment and the address is created.
+
 ![Receive Button](/images/ftc-0.9.3.2-button.menu.Receive.01.png)  
 
-In order to receive funds you need to create a receive address, The label, message and request amount are optional, press request payment and the address is created. A pop up is shown with the newly created receive address address and QRCode image.  
 
+A pop up is shown with the newly created receive address address and QRCode image.  
 
 ![QRCode image](/images/ftc-0.9.3.2-button.menu.Receive.QRCode.02.png)  
+
 
 **Send Button**   
 
@@ -109,6 +111,7 @@ Press on the Add recipient button to send payments to more than one recipients.
 This shows the grid from the report button. In this case the grid is filtered on all the transactions that happened today and calculates the number and total. That can then be exported by the "Export" button at the bottom right of the window.   
 
 ![Report Button](/images/ftc-0.9.3.2-button.menu.Report.01.png)  
+
 
 **MultiSig Button**  
 
@@ -159,36 +162,36 @@ It is important to back up your wallet regularly. If you have created new addres
 The menu option eases backup strategy.
 
 
-**Print Paper Wallet Menu Option**   
-
-![Paper Wallet Warning](/images/ftc-0.9.3.2-paper.wallet.warning.01.png)
-
- 
 **Feathercoin Paper Wallet Menu**   
 
 ![Paper Wallet](/images/ftc-0.9.3.2-paper.wallet.01.png)
 
 
+**Print Paper Wallet Menu Option**   
+
+![Paper Wallet Warning](/images/ftc-0.9.3.2-paper.wallet.warning.01.png)
+ 
+ 
 **Encrypt your wallet**  
 
 Until you encrypt your wallet it is like a safe without a key anyone can open it. Use the encryption menu option to set a long super secret key to your wallet. You can also increase your security by keeping separate wallets, with savings stored on offline media like USBs or paper wallets.
 
 
-**Receive Addresses Menu Option**
+### Receive Addresses Menu Option  
 
-The receive addresses menu option show a grid with label and address. There are various buttons such as add a new address, copy, show QRCodes, import QRCode,  Sign a message or verify a message.
-
-
-![Receive Addresses](/images/ftc-0.9.3.2-Wallet.ReceivePayments.01.png)
+The receive addresses menu option show a grid with label and address. There are various buttons such as add a new address, copy, show QRCodes, import QRCode,  Sign a message or verify a message.  
 
 
-Right clicking on a address brings up an actions menu.
+![Receive Addresses](/images/ftc-0.9.3.2-Wallet.ReceivePayments.01.png)  
 
 
-![Actions Menu](/images/ftc-0.9.3.2-Wallet.ReceivePayments.02.png)
+Right clicking on a address brings up an actions menu.  
 
 
-**Send Addresses Menu Option**
+![Actions Menu](/images/ftc-0.9.3.2-Wallet.ReceivePayments.02.png)  
+
+
+### Send Addresses Menu Option  
 
 Contains similar information about send addresses as for receive addresses.   
 
@@ -227,29 +230,36 @@ The wallet tab allows setting the global transaction fee to apply to sent transa
 
 **What are Coin Control Features?**
 
-When you send coins to someone else, the wallt client chooses "randomly" which of your addresses will send the coins. By activating coin control you can exactly choose, which of your addresses will be the sending addresses. And even more specific which of your unspent outputs will be the sending inputs.
+When you send coins to someone else, the wallet client chooses "randomly" which of your addresses will send the coins. By activating coin control you can exactly choose, which of your addresses will be the sending addresses. And even more specific which of your unspent outputs will be the sending inputs.
 
 **Spend unconfirmed change**
 
 Selecting spend unconfirmed change, otherwise change must wait for confirmation before it can be spent.
 
-![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.wallet.01.png)  
+![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.wallet.01.png)   
 
 
 **Options menu :  Network Tab**
 
+Choose to use UPnP or define a socks proxy for network connections through a router.
 
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.network.01.png)  
 
 
 **Options menu :  Windows Tab**
 
+Choose how the wallet minimises on the desktop.
 
-![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.windows.01.png)  
+![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.window.01.png)  
 
 
 **Options menu :  Display Tab**
 
+Choose an alternative language to use in the wallet, how Feathercoins are shown (FTC, mFTC, uFTC), wither to display addresses in the transaction list and 3rd party transaction URLs.
+
+**Third Party Transaction URL**
+
+Feathercoin Core includes the option to add third party transaction URLs to the context menu. If you want to include your own block explorer just add a | after the previous URL and replace the transaction ID with %s.
 
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.display.01.png)  
 
@@ -353,7 +363,7 @@ Coinnector.com is a real-time Alternate coin exchange that lists Feathercoin (FT
   
 ### Stealth Addresses  
 
-Stealth addresses were developed for Feathercoin out of the discussion of producing Private Blockchain Addresses or Dark Blockchains. Feathercoin, like Bitcoin has an open Blockchain or public register, in order to prove that the technology works and the correct transfers took place. Now the technology is accepted, there is then no need to make the amounts being transferred visible to other than the sender and receiver which can be achieved using Stealth Addresses.  
+Stealth addresses were developed for Feathercoin out of the discussion of producing Private Blockchain Addresses or Dark Blockchains. Feathercoin, like Bitcoin has an open Blockchain or public register, in order to prove that the technology works and the correct transfers took place. Now the technology is accepted, there is then no need to make the amounts being transferred visible to other than the sender and receiver, which can be achieved using Stealth Addresses.  
 
 **What are Stealth Addresses?**  
 

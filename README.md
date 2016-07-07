@@ -243,7 +243,7 @@ Selecting spend unconfirmed change, otherwise change must wait for confirmation 
 
 Choose to use UPnP or define a socks proxy for network connections through a router.
 
-![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.network.01.png)  
+![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.network.01.png)  https://explorer.feathercoin/chain/feathercoin/%s
 
 
 **Options menu :  Windows Tab**
@@ -264,7 +264,22 @@ Feathercoin Core includes the option to add third party transaction URLs to the 
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.display.01.png)  
 
 
+### Sign and Verify Messages  
 
+An important function of the Bitcoin and Feathercoin Blockchain is the ability to sign and verify messages.
+
+One example of how signed messages can be used is the example of a dispute with a vendor that they have been paid. Even if you show the record of the transaction, how do you prove that is your coins?  
+
+In the case of a dispute, go to Receive coins and click on the "Sign Message" option. Write you message and hit sign. The signature generated is unique to the address and to the message. Send your address, the message and the signature to the vendor. They'll take your info and enter it into the "Verify Message" function of Bitcoin, usually located somewhere near the "Sign Message" button.
+
+**Sign a message**
+
+![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.message.sign.01.png)  
+
+
+**Verify a message**
+
+![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.message.verify.01.png)  
 
 
 ### Include comments in the Feathercoin Blockchain

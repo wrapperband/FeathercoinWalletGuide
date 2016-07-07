@@ -308,14 +308,13 @@ A Stealth Address functions differently than a standard Feathercoin address.
 
 The address is first generated using your Feathercoin wallet. Next you make it public to the payers. Once public, each payer can use the stealth address to generate a standard but unique Feathercoin address only known to him. Finally, the payers conduct the transactions using their individually generated addresses, and you import them in your wallet with the corresponding stealth address. This way each such Feathercoin address and transaction is only identifiable by you and the payer who generated that exact address. The outsiders are left outside.  
 
-Feathercoin’s stealth address technology allows a business to use one consistent address for all their payments, without the risk of someone tracking their transactions with malicious intent.  
-
 **Where are Stealth Addresses useful?**  
 
-Stealth addresses can be useful for businesses. If one normal address is used on a website it allows tacking of transactions and spending by anyone viewing the blockchain. Whereas, one stealth address on the website acts like an envelope, so the contents of the transaction are not made public.   
+Stealth addresses can be useful for businesses. If one normal address is used on a website link it means it allows tracking of transactions and spending by anyone viewing the blockchain.
 
-One common usage might be donations, where some organisations anonymity for their patrons.  
+Whereas one common stealth address can be used on the website, it acts like an envelope, so the contents of the transaction are not made public.  
 
+One common usage might be donations, where some organisations anonymity for their patrons.
 
 **How secure are Stealth Addresses?**  
 

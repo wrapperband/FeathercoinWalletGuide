@@ -13,11 +13,16 @@ Feathercoin 0.9.3.2
 * Add a text comment to the transaction  
 * Add Openname addresses to the Blockchain   
 * Stealth Addresses   
+* Transaction reports  
 
 **Plugins -**  
 * Bitmessage  
 * Shapeshift  
 * Coinnector  
+
+**Features -**
+* Coin Control  
+
 
 ### Welcome to Feathercoin core wallet  
 
@@ -171,7 +176,7 @@ Until you encrypt your wallet it is like a safe without a key anyone can open it
 
 **Receive Addresses Menu Option**
 
-The receive addresses menu option show a grid with label and address. There are various buttons such as add a new address, copy, show QRCodes, import QRCode,  Sign a message or varify a message.
+The receive addresses menu option show a grid with label and address. There are various buttons such as add a new address, copy, show QRCodes, import QRCode,  Sign a message or verify a message.
 
 
 ![Receive Addresses](/images/ftc-0.9.3.2-Wallet.ReceivePayments.01.png)
@@ -195,12 +200,64 @@ Contains similar information about send addresses as for receive addresses.
 Exit menu option or the Ctrl-Q keys close down the wallet and offer the reminder to save your wallet. If you do not wish to back up, you can exit by the window close button and you will not need to back up.
 
 
+### Settings
+
 **Settings drop down Menu**
 
-![Settings](/images/ftc-0.9.3.2-Settings.menu.01.png)
+The setting menu allows setting global options, signing and verifying messages and access to the debug window.
+
+![Settings Menu](/images/ftc-0.9.3.2-Settings.menu.01.png)  
 
 
-### Comments in the Feathercoin Blockchain
+**Options menu :  Main Tab**
+
+The main tab in options allows you to set Feathercoin to start on login, the size of the database cache and the number of script verification threads. 
+
+It also gives an indication if command line parameters over ride  those settings. For instance the number of threads : 
+
+-par=<n> 	Set the number of script verification threads (-2 to 16, 0 = auto, <0 = leave that many cores free, default: 0) 
+
+
+![Settings Main Options](/images/ftc-0.9.3.2-Settings.menu.options.main.01.png)  
+
+
+**Options menu :  Wallet Tab**
+
+The wallet tab allows setting the global transaction fee to apply to sent transactions, enable Coin Control Features and set wither to spend unconfirmed change.
+
+**What are Coin Control Features?**
+
+When you send coins to someone else, the wallt client chooses "randomly" which of your addresses will send the coins. By activating coin control you can exactly choose, which of your addresses will be the sending addresses. And even more specific which of your unspent outputs will be the sending inputs.
+
+**Spend unconfirmed change**
+
+Selecting spend unconfirmed change, otherwise change must wait for confirmation before it can be spent.
+
+![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.wallet.01.png)  
+
+
+**Options menu :  Network Tab**
+
+
+![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.network.01.png)  
+
+
+**Options menu :  Windows Tab**
+
+
+![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.windows.01.png)  
+
+
+**Options menu :  Display Tab**
+
+
+![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.display.01.png)  
+
+
+
+
+
+### Include comments in the Feathercoin Blockchain
 
 **Feathercoin Wallet Include encrypted comments into the Blockchain**
 
@@ -337,89 +394,88 @@ To access the stealth address search, click on the Help menu option, then select
 
 ### Multiple Signature Addresses
 
-**Feathercoin Multiple Signature Addresses**
+**Feathercoin Multiple Signature Addresses**  
 
-**STEP ONE : How to Create a Multi Signature (MultiSig) Address**
+**STEP ONE : How to Create a Multi Signature (MultiSig) Address**  
 
-1. To create a m-of-n MultiSig address, we need n public keys. 
+1. To create a m-of-n MultiSig address, we need n public keys.  
 
-It is not difficult to get a public key for your address. For example, using users Lizhi, Calem and Mirrax as an example).
+It is not difficult to get a public key for your address. For example, using users Lizhi, Calem and Mirrax as an example).  
 
-To create a 2-of-3 multiSig address, you can get one public key from the first wallet (Mirrax) address, and another form Lizhi's wallet address and Calem's wallet address.
+To create a 2-of-3 MultiSig address, you can get one public key from the first wallet (Mirrax) address, and another form Lizhi's wallet address and Calem's wallet address.  
 
-2. Now we can create our MultiSig address in "Sending addresses page", Click "New MultiSig" and fill in each public keys from step 1.
+2. Now we can create our MultiSig address in "Sending addresses page", Click "New MultiSig" and fill in each public keys from step 1.  
 
-![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen01.jpg)
-
-
-3. Click on the "Create" button ,You can find the newly created Multisig address on "Addresses" and export this Multisig address to your partner. You must send the .msa file to your partner.
-
-![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen02.jpg)
+![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen01.jpg)  
 
 
-4. Calem or Lizhi imports the .msa file and create the same MultiSig address.
+3. Click on the "Create" button ,You can find the newly created Multisig address on "Addresses" and export this Multisig address to your partner. You must send the .msa file to your partner.  
 
-![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen03.jpg)
-
-
-
-**STEP TWO : Send Feathercoin (FTC) to the Multiple Signature Address**
-
-Send to MultiSig address is identical to your normal transaction, just provide your MultiSig address as recipient. Mirrax send 0.2 ftc to his MultiSig address.
-
-![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen04.jpg)
+![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen02.jpg)  
 
 
-tx info : [http://block.ftc-c.com/tx/384638a4e577cb80183496f7bcc72bb3b9572681b292e507f22d963ff06fe55b][0]
+4. Calem or Lizhi imports the .msa file and create the same MultiSig address.  
+
+![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen03.jpg)  
 
 
-Then Mirrax's MultiSignature addresses receives the  0.2 FTC.
+**STEP TWO : Send Feathercoin (FTC) to the Multiple Signature Address**  
+
+Send to MultiSig address is identical to your normal transaction, just provide your MultiSig address as recipient. Mirrax send 0.2 ftc to his MultiSig address.  
+
+![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen04.jpg)  
 
 
-**STEP TWO : Spending from a Multi Signature Address**
+tx info : [http://block.ftc-c.com/tx/384638a4e577cb80183496f7bcc72bb3b9572681b292e507f22d963ff06fe55b][0]  
 
 
-Here we'll describe how two partners can spend / transfer coins from their 2-of-3 MultiSig address. This transaction needs to be signed with two private keys, one is hold by Mirrax, the other by Calem or Lizhi.
+Then Mirrax's MultiSignature addresses receives the  0.2 FTC.  
 
 
-1. And now Mirrax and Calem can review their balance of their MultiSig addresses.
-
-Mirrax's wallet, He clicks on the "Sign" button.
-
-![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen05.jpg)
+**STEP TWO : Spending from a Multi Signature Address**  
 
 
-Mirrax want to spend his Feathercoin (FTC) to me in his MultiSig addresses.  Send 0.05 FTC to Lizhi's normal address.
-
-![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen06.jpg)
+Here we'll describe how two partners can spend / transfer coins from their 2-of-3 MultiSig address. This transaction needs to be signed with two private keys, one is hold by Mirrax, the other by Calem or Lizhi.  
 
 
-2. Mirrax starts creating transaction from the 2-of-3 MultiSig address.They each has a private key of that address in their wallet. Mirrax signs the transaction with his private key, and export the raw transaction. Mirrax then needs to send this raw transaction to Calem  (by Email, BitMessage, SMS ..).
+1. And now Mirrax and Calem can review their balance of their MultiSig addresses.  
 
-Mirrax  export the raw transaction.
+Mirrax's wallet, He clicks on the "Sign" button.  
 
-![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen07.jpg)
+![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen05.jpg)  
 
 
-3. Calem imports this raw transaction, he can see the transaction is already signed by a private key. Mirrax reviews the transactions and sign with his private key.
+Mirrax want to spend his Feathercoin (FTC) to me in his MultiSig addresses.  Send 0.05 FTC to Lizhi's normal address.  
 
-If Calem agrees to send Mirrax  0.05 FTC, He clicks the "Sign" button as well.
+![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen06.jpg)  
+
+
+2. Mirrax starts creating transaction from the 2-of-3 MultiSig address.They each has a private key of that address in their wallet. Mirrax signs the transaction with his private key, and export the raw transaction. Mirrax then needs to send this raw transaction to Calem  (by Email, BitMessage, SMS ..).  
+
+Mirrax  export the raw transaction.  
+
+![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen07.jpg)  
+
+
+3. Calem imports this raw transaction, he can see the transaction is already signed by a private key. Mirrax reviews the transactions and sign with his private key.  
+
+If Calem agrees to send Mirrax  0.05 FTC, He clicks the "Sign" button as well.  
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen08.jpg)
 
 
 
-![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen09.jpg)
+![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen09.jpg)  
+ 
+
+4. Now the transaction is signed by two private keys. Calem can simply click "Send" to broadcast the transaction.  
+
+![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen10.jpg)  
 
 
-4. Now the transaction is signed by two private keys. Calem can simply click "Send" to broadcast the transaction.
+**OK**   Mirrax has received their 0.05 FTC. and he very happy :)  
 
-![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen10.jpg)
-
-
-**OK**   Mirrax has received their 0.05 FTC. and he very happy :)**
-
-![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen11.jpg)
+![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen11.jpg)  
 
 
 

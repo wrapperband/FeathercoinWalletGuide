@@ -329,7 +329,9 @@ Click ion the Wallet menus item Receive coins. Use the check-box to generate the
 ![Stealth Address](/images/ftc-0.9.3.2-stealth.SX.create.01.png)
 
 
-**Feathercoin Wallet search for your Stealth Addresses**
+**Feathercoin Wallet Search for your Stealth Addresses**
+
+To access the stealth address search, click on the Help menu option, then select SX Tool to access the search box. Input the height of Transaction Block numbers through which to search for your transactions.
 
 ![Stealth Address](/images/ftc-0.9.3.2-stealth.SX.search.01.png)
 

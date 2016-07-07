@@ -298,11 +298,11 @@ Coinnector.com is a real-time Alternate coin exchange that lists Feathercoin (FT
 
 Stealth addresses were developed for Feathercoin out of the discussion of producing Private Blockchain Addresses or Dark Blockchains. Feathercoin, like Bitcoin has an open Blockchain or public register, in order to prove that the technology works and the correct transfers took place. Now the technology is accepted, there is then no need to make the amounts being transferred visible to other than the sender and receiver which can be achieved using Stealth Addresses.
 
-What are Stealth Addresses?
+**What are Stealth Addresses?**
 
 Stealth addresses are a way for a payer and a payee to have a private exchange of funds. Vertcoin was the first cryptocurrency to develop the Stealth Address, also referred to as the SX address. 
 
-How are Stealth Addresses implemented?
+**How are Stealth Addresses implemented?**
 
 A stealth address functions differently than a standard Feathercoin address.  
 
@@ -310,12 +310,28 @@ The address is first generated using your Feathercoin wallet. Next you make it p
 
 Feathercoins’s stealth address technology allows a business to use one consistent address for all their payments, without the risk of someone watching their transactions with malicious intent.
 
+**Where are Stealth Addresses useful?**
 
+Stealth addresses can be useful for businesses. If one normal address is used on a website it allows tacking of transactions and spending by anyone viewing the blockchin. Whereas, one stealth address on the website acts like an envelope, so the contents of the transaction are not made public. 
+
+One common usage might be donations, where some organisations anonymity for their patrons.
+
+
+**How secure are Stealth Addresses?**
+
+The main drawback with stealth addresses is, like mixers and Tor, if too few people use the service they me be easier to connect stealth transactions with a normal address. 
+
+**Create a Stealth Address**
+
+Click ion the Wallet menus item Receive coins. Use the check-box to generate the Stealth Address
+
+
+![Stealth Address](/images/ftc-0.9.3.2-stealth.SX.create.01.png)
 
 
 **Feathercoin Wallet search for your Stealth Addresses**
 
-![coinnector Dialog](/images/ftc-0.9.3.2-stealth.SX.search.01.png)
+![Stealth Address](/images/ftc-0.9.3.2-stealth.SX.search.01.png)
 
 
 ###Multiple Signature Addresses

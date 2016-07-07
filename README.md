@@ -289,51 +289,51 @@ Send 3 FTC to Shapeshift, and receive Bitcoin in return.
 Coinnector.com is a real-time Alternate coin exchange that lists Feathercoin (FTC). Coinnector is now available as an advanced option via a plugin.
 
 
-**Plugins Menu “Coinnector”**
+**Plugins Menu “Coinnector”**  
 
-![Coinnector Dialog](/images/ftc-0.9.3.2-coinnector.01.png)
+![Coinnector Dialog](/images/ftc-0.9.3.2-coinnector.01.png)  
 
+  
+### Stealth Addresses  
 
-### Stealth Addresses
+Stealth addresses were developed for Feathercoin out of the discussion of producing Private Blockchain Addresses or Dark Blockchains. Feathercoin, like Bitcoin has an open Blockchain or public register, in order to prove that the technology works and the correct transfers took place. Now the technology is accepted, there is then no need to make the amounts being transferred visible to other than the sender and receiver which can be achieved using Stealth Addresses.  
 
-Stealth addresses were developed for Feathercoin out of the discussion of producing Private Blockchain Addresses or Dark Blockchains. Feathercoin, like Bitcoin has an open Blockchain or public register, in order to prove that the technology works and the correct transfers took place. Now the technology is accepted, there is then no need to make the amounts being transferred visible to other than the sender and receiver which can be achieved using Stealth Addresses.
+**What are Stealth Addresses?**  
 
-**What are Stealth Addresses?**
+Stealth addresses are a way for a payer and a payee to have a private exchange of funds. Vertcoin was the first cryptocurrency to develop the Stealth Address, also referred to as the SX address.  
 
-Stealth addresses are a way for a payer and a payee to have a private exchange of funds. Vertcoin was the first cryptocurrency to develop the Stealth Address, also referred to as the SX address. 
+**How are Stealth Addresses implemented?**  
 
-**How are Stealth Addresses implemented?**
+A Stealth Address functions differently than a standard Feathercoin address.  
 
-A stealth address functions differently than a standard Feathercoin address.  
+The address is first generated using your Feathercoin wallet. Next you make it public to the payers. Once public, each payer can use the stealth address to generate a standard but unique Feathercoin address only known to him. Finally, the payers conduct the transactions using their individually generated addresses, and you import them in your wallet with the corresponding stealth address. This way each such Feathercoin address and transaction is only identifiable by you and the payer who generated that exact address. The outsiders are left outside.  
 
-The address is first generated using your Feathercoin wallet. Next you make it public to the payers. Once public, each payer can use the stealth address to generate a standard but unique Feathercoin address only known to him. Finally, the payers conduct the transactions using their individually generated addresses, and you import them in your wallet with the corresponding stealth address. This way each such Feathercoin address and transaction is only identifiable by you and the payer who generated that exact address. The outsiders are left outside.
+Feathercoin’s stealth address technology allows a business to use one consistent address for all their payments, without the risk of someone tracking their transactions with malicious intent.  
 
-Feathercoins’s stealth address technology allows a business to use one consistent address for all their payments, without the risk of someone watching their transactions with malicious intent.
+**Where are Stealth Addresses useful?**  
 
-**Where are Stealth Addresses useful?**
+Stealth addresses can be useful for businesses. If one normal address is used on a website it allows tacking of transactions and spending by anyone viewing the blockchain. Whereas, one stealth address on the website acts like an envelope, so the contents of the transaction are not made public.   
 
-Stealth addresses can be useful for businesses. If one normal address is used on a website it allows tacking of transactions and spending by anyone viewing the blockchin. Whereas, one stealth address on the website acts like an envelope, so the contents of the transaction are not made public. 
-
-One common usage might be donations, where some organisations anonymity for their patrons.
-
-
-**How secure are Stealth Addresses?**
-
-The main drawback with stealth addresses is, like mixers and Tor, if too few people use the service they me be easier to connect stealth transactions with a normal address. 
-
-**Create a Stealth Address**
-
-Click ion the Wallet menus item Receive coins. Use the check-box to generate the Stealth Address
+One common usage might be donations, where some organisations anonymity for their patrons.  
 
 
-![Stealth Address](/images/ftc-0.9.3.2-stealth.SX.create.01.png)
+**How secure are Stealth Addresses?**  
+
+The main drawback with stealth addresses is, like mixers and Tor, if too few people use the service they me be easier to connect stealth transactions with a normal address.  
+
+**How to Create a Feathercoin Stealth Address**  
+
+Click ion the Wallet menus item Receive coins. Use the check-box to generate the Stealth Address.  
 
 
-**Feathercoin Wallet Search for your Stealth Addresses**
+![Stealth Address](/images/ftc-0.9.3.2-stealth.SX.create.01.png)  
 
-To access the stealth address search, click on the Help menu option, then select SX Tool to access the search box. Input the height of Transaction Block numbers through which to search for your transactions.
 
-![Stealth Address](/images/ftc-0.9.3.2-stealth.SX.search.01.png)
+**Feathercoin Wallet Search for your Stealth Addresses**  
+
+To access the stealth address search, click on the Help menu option, then select SX Tool to access the search box. Input the height of Transaction Block numbers through which to search for your transactions.  
+
+![Stealth Address](/images/ftc-0.9.3.2-stealth.SX.search.01.png)  
 
 
 ### Multiple Signature Addresses

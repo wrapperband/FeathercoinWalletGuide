@@ -282,6 +282,24 @@ In the case of a dispute, go to Receive coins and click on the "Sign Message" op
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.message.verify.01.png)  
 
 
+### Debug console  
+
+**Information Tab**
+
+![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.debug.information.01.png) 
+
+
+**Console Tab**
+
+![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.debug.console.01.png) 
+
+
+**Network Tab**
+
+![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.debug.network.01.png) 
+
+
+
 ### Include comments in the Feathercoin Blockchain
 
 **Feathercoin Wallet Include encrypted comments into the Blockchain**

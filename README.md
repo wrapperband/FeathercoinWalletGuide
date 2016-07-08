@@ -159,19 +159,19 @@ console.log(uri.address.network, uri.amount); // 'livenet', 120000000
 
 It is important to back up your wallet regularly. If you have created new addresses or spent some cash, the old backups will be out of date. If you are just receiving that will just be calculated for the address as you synchronise the wallet, so backups aren't required.
 
-The menu option eases backup strategy.
+The menu option eases backup strategy.  
 
 
-### Feathercoin Paper Wallet Menu  
+### Feathercoin Paper Wallet Menu    
 ***What is a wallet and why do I need one?***
 
-By printing out your own Feathercoin wallets and generating your own addresses, you can minimize your exposure to hackers as well as untrustworthy people in your home or office. Just transfer your Feathercoins to your new wallets, and use common sense to keep your wallets safe the way you would ordinary cash. 
+By printing out your own Feathercoin wallets and generating your own addresses, you can minimize your exposure to hackers as well as untrustworthy people in your home or office. Just transfer your Feathercoins to your new wallets, and use common sense to keep your wallets safe the way you would ordinary cash.  
 
-A Feathercoin wallet consists of two ‘keys’. The public key, which is your wallet address and is how other people send Feathercoins to you. The other part of the  wallet is the private key. It is this that enables you to send Feathercoins to others.
+A Feathercoin wallet consists of two ‘keys’. The public key, which is your wallet address and is how other people send Feathercoins to you. The other part of the  wallet is the private key. It is this that enables you to send Feathercoins to others.   
 
-The combination of the recipient’s public key and your private key is what makes a cryptocurrency transaction possible. Those private keys are normally stored in the wallet.dat however, they can be extracted and printed out.
+The combination of the recipient’s public key and your private key is what makes a cryptocurrency transaction possible. Those private keys are normally stored in the wallet.dat however, they can be extracted and printed out.  
 
-It is important to understand that, if anyone else obtains the private key of your wallet, they can withdraw your funds – this is why it’s absolutely essential that nobody else discovers it.
+It is important to understand that, if anyone else obtains the private key of your wallet, they can withdraw your funds – this is why it’s absolutely essential that nobody else discovers it.  
 
 ![Paper Wallet](/images/ftc-0.9.3.2-paper.wallet.01.png)
 
@@ -181,26 +181,22 @@ It is important to understand that, if anyone else obtains the private key of yo
 ![Paper Wallet Warning](/images/ftc-0.9.3.2-paper.wallet.warning.01.png)
  
  
-###  Import you Paper Wallet address back
+###  Import you Paper Wallet address back  
 
-To import your public / private keys back into a wallet:
+**How to import your public / private keys back into a wallet :**
 
-1. Open Menu -> Settings -> Debug
-2. Unlock the wallet, 600 is the time
+1. Open Menu -> Settings -> Debug  
+2. Unlock the wallet, 600 is the time  
+ > walletpassphrase "YourLongPassphrase" 600  
 
- walletpassphrase "YourLongPassphrase" 600
-
-3. Type in the console : 
-
- importprivkey yourPrivateKeyInWalletImportFormat "TheLabelThatIWant"
+3. Type in the console :  
+ > importprivkey yourPrivateKeyInWalletImportFormat "TheLabelThatIWant"   
  
-4. To import multiple keys place false at the end :
+4. To import multiple keys place false at the end :   
+ > importprivkey L1SLw5C14f8KBZCfUow3h5acEfC8ZLMiLo3fgoDWxHjCTuzyGPcd 'Label' false  
 
- importprivkey L1SLw5C14f8KBZCfUow3h5acEfC8ZLMiLo3fgoDWxHjCTuzyGPcd 'Label' false
-
-5. Check that you have the address by closing the Debug window and going back to your address book
-
-6. Back-up your updated wallet.data
+5. Check that you have the address by closing the Debug window and going back to your address book  
+6. Back-up your updated wallet.data  
 
 
 ### Encrypt your wallet  

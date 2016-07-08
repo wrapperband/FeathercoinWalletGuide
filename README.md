@@ -270,7 +270,7 @@ Selecting spend unconfirmed change, otherwise change must wait for confirmation 
 
 Choose to use UPnP or define a socks proxy for network connections through a router.
 
-![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.network.01.png)  https://explorer.feathercoin/chain/feathercoin/%s
+![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.network.01.png)  
 
 
 **Options menu :  Windows Tab**
@@ -330,7 +330,6 @@ The console tab allows access to a complete API call list. Type help to get the 
 The network tab shows further information on the network traffic including a graphical chart and total in and out.
 
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.debug.network.01.png) 
-
 
 
 ### Include comments in the Feathercoin Blockchain

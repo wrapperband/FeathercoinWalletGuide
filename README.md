@@ -181,7 +181,29 @@ It is important to understand that, if anyone else obtains the private key of yo
 ![Paper Wallet Warning](/images/ftc-0.9.3.2-paper.wallet.warning.01.png)
  
  
-**Encrypt your wallet**  
+###  Import you Paper Wallet address back
+
+To import your public / private keys back into a wallet:
+
+1. Open Menu -> Settings -> Debug
+2. Unlock the wallet, 600 is the time
+
+ walletpassphrase "YourLongPassphrase" 600
+
+3. Type in the console : 
+
+ importprivkey yourPrivateKeyInWalletImportFormat "TheLabelThatIWant"
+ 
+4. To import multiple keys place false at the end :
+
+ importprivkey L1SLw5C14f8KBZCfUow3h5acEfC8ZLMiLo3fgoDWxHjCTuzyGPcd 'Label' false
+
+5. Check that you have the address by closing the Debug window and going back to your address book
+
+6. Back-up your updated wallet.data
+
+
+### Encrypt your wallet  
 
 Until you encrypt your wallet it is like a safe without a key anyone can open it. Use the encryption menu option to set a long super secret key to your wallet. You can also increase your security by keeping separate wallets, with savings stored on offline media like USBs or paper wallets.
 

@@ -347,6 +347,16 @@ You then use Hex to Ascii on OP_RETURN to return your message.
 ![Comments Dialog](/images/ftc-0.9.3.2-comments.screen.01.png)
 
 
+### Plugins Menu
+
+### Bitmessage
+
+Bitmessage is an open source fully encrypted peer to peer messaging system. In order to pass order information privatly a version can be set up to integrate with Feathercoin.
+
+Currently, to operate on linux you must download and compile pybitmessage and then copy that to your Feathercoin's run directory to activate Bitmassage.
+
+https://github.com/cqtenq/PyBitmessage
+
 ### Opennames DNS Service
 
 **Feathercoin Wallet use the Opennames DNS service in the blockchain**  

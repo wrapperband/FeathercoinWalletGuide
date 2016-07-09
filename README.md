@@ -1,10 +1,7 @@
-# FeathercoinWalletGuide  
+# Feathercoin Wallet Guide  
 
-Feathercoin Wallet guide aims to show what the features are of the Feathercoin Wallet can be used. Many features have been experimental since the 0.8.x series. The guide starts at version 0.9.3.2 and greater.  
+Feathercoin Wallet guide aims to show what the features are of the Feathercoin Wallet and how they can be used. Many features have been experimental since the 0.8.x series. The guide starts at version 0.9.3.2 and greater.  
 
-
-Feathercoin 0.9.3.2  
-===================  
 
 ### Feathercoin (FTC) Core : Additional Features List  
 
@@ -587,18 +584,18 @@ In the Receiving addresses page, Choose your address and click "Copy Public Key"
 
 ### Help Menu
 
-The help menu contains information on the version or Feathercoin and the Qt framework it was developed on in the about section and a list of the available command line options.
+The help menu contains information on the version or Feathercoin and the Qt framework it was developed on in the about section and a list of the available command line options.  
 
-The help menu also includes the Stealth address search facility.
+The help menu also includes the Stealth address search facility.  
 
 
-**Command line options**
+**Command line options**  
 
-Usage:   feathercoin-qt [command-line options]
+Usage:   feathercoin-qt [command-line options]  
 
-Command line options can be used to trigger events, like a blockchain re-index or blockchain re synchronisation and apply various non default settings. The options passed in can usually be made permanent by including them in the feathercoin.conf file.
+Command line options can be used to trigger events, like a blockchain re-index or blockchain re synchronisation and apply various non default settings. The options passed in can usually be made permanent by including them in the feathercoin.conf file.  
 
-For instance -maxconnections=(n)     Maintain at most (n) connections to peers (default: 125)  : can be used to change the default number of peers your node will seek.
+For instance -maxconnections=(n)     Maintain at most (n) connections to peers (default: 125)  : can be used to change the default number of peers your node will seek.  
     
-The command  -addnode=(ip)  Add a node to connect to and attempt to keep the connection open  : can be used to add more peers (like from your local network) to speed up synchronisation of the blockchain.
+The command  -addnode=(ip)  Add a node to connect to and attempt to keep the connection open  : can be used to add more peers (like from your local network) to speed up synchronisation of the blockchain.  
 

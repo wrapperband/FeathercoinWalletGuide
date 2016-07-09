@@ -358,7 +358,7 @@ You then use Hex to Ascii on OP_RETURN to return your message.
 
 Bitmessage is an open source fully encrypted peer to peer messaging system. In order to pass order information privatly a version can be set up to integrate with Feathercoin.
 
-Currently, to operate on linux you must download and compile pybitmessage and then copy that to your Feathercoin's run directory to activate Bitmassage.
+Currently, to operate on linux you must download and compile pybitmessage and then copy that to your Feathercoin's run directory to activate Bitmessage.
 
 https://github.com/cqtenq/PyBitmessage
 
@@ -434,6 +434,8 @@ Send 3 FTC to Shapeshift, and receive Bitcoin in return.
 **Feathercoin Wallet use the Coinnector service**
 
 Coinnector.com is a real-time Alternate coin exchange that lists Feathercoin (FTC). Coinnector is now available as an advanced option via a plugin.
+
+Click on the text to open a Coinnector window in your browser. Set up your private channel using the latest coinnector help. 
 
 
 **Plugins Menu “Coinnector”**  

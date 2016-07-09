@@ -62,7 +62,7 @@ The overview page is self explanatory, the left side showing the current overall
 ### Feathercoin Wallet Buttons Bar  
 ***How do I send and receive transactions? :***  
 
-**Tip :** The button menu can be closed to make more room : If you need to activate the buttons or close the button menu :  
+**Tip :** *The button menu can be closed to make more room : If you need to activate the buttons or close the button menu :*  
 * Right click with your mouse on the button menu on the buttons menu to show the Tabs Toolbar check-box to close the button toolbar.  
 
 
@@ -86,6 +86,9 @@ Right click on the transactions to show the transaction drop down. In this case 
 **Receive Button**   
 
 In order to receive funds you need to create a receive address, The label, message and request amount are optional, press request payment and the address is created.
+
+**Tip :**  *Stealth Addresses :  To create a stealth address you need to use the Wallet -> Receive Menu option, which includes additional features such as setting Stealth Address.* 
+
 
 ![Receive Button](/images/ftc-0.9.3.2-button.menu.Receive.01.png)  
 
@@ -255,6 +258,8 @@ It also gives an indication if command line parameters over ride  those settings
 
 The wallet tab allows setting the global transaction fee to apply to sent transactions, enable Coin Control Features and set wither to spend unconfirmed change.
 
+### Coin Control
+
 **What are Coin Control Features?**
 
 When you send coins to someone else, the wallet client chooses "randomly" which of your addresses will send the coins. By activating coin control you can exactly choose, which of your addresses will be the sending addresses. And even more specific which of your unspent outputs will be the sending inputs.
@@ -357,6 +362,7 @@ Currently, to operate on linux you must download and compile pybitmessage and th
 
 https://github.com/cqtenq/PyBitmessage
 
+
 ### Opennames DNS Service
 
 **Feathercoin Wallet use the Opennames DNS service in the blockchain**  
@@ -388,7 +394,6 @@ Openname is included in the Feathercoin (FTC) blockchain. Internally it is calle
     File signatures, Voting, bonds/stocks,/shares, web of trust, escrow and notary services (to be implemented).  
 
 More information on Openname domains : https://wiki.namecoin.info/index.php?title=Register_and_Configure_.bit_Domains  
-
 
 
 ### Shapeshift service
@@ -574,12 +579,11 @@ In the Receiving addresses page, Choose your address and click "Copy Public Key"
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen12.jpg)
 
 
-
 [0]: http://block.ftc-c.com/tx/384638a4e577cb80183496f7bcc72bb3b9572681b292e507f22d963ff06fe55b
 [1]: http://block.ftc-c.com/tx/6e8dca7038dd97f4811163da91c047b70c4775dc6cc57f5de5b0200f1de1770b
 
 
-## Help Menu
+### Help Menu
 
 The help menu contains information on the version or Feathercoin and the Qt framework it was developed on in the about section and a list of the available command line options.
 

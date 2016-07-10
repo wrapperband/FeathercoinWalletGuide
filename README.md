@@ -694,6 +694,14 @@ Second Step :  Broadcast it :
 
 Wait confirmation, until a mining pool makes a block.
 
+### Advanced Checkpointing ACP
+
+***What is Advanced Checkpointing?***
+
+Advanced Checkpointing allows Feathercoin to send out checkpoints without having to release a new version Feathercoin software. This works by having ‘master nodes’ which checkpoints each block it sees on the network protecting it from specifically from being double spent.
+
+The ACP checkpointing for Feathercoin has been set at every 5 blocks. ACP does not dictate the blockchain, it provides checkpoints and helps prevent double spends, if the checkpoint is on a short branch it will be rejected. 
+
 
 ### References / Further reading :
 

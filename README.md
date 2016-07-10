@@ -30,24 +30,24 @@ Feathercoin Wallet guide aims to show what the features are of the Feathercoin W
 ### Introduction to Feathercoin Core   
 ***What is the Feathercoin core wallet?***   
 
-Cryptographic currency wallets, like the Feathercoin wallet, have been designed to be intuitive to use and allow new users to get started without having to understands the technical details of how it operates. When you download a wallet it consists of two parts, a ledger or blockchain containing information on transactions too and from an address and the software to initiate and check transactions on the system are within the rules.  
+Cryptographic currency wallets, like the Feathercoin wallet, have been designed to be intuitive to use and allow new users to get started without having to understands the technical details of how it operates. When you download a wallet it consists of two parts, a ledger or blockchain containing information on transactions to and from an address and the software to initiate and check transactions on the system are within the rules.  
 
 
-**Where is the currency stored?**
+***Where is the currency stored?***
 
 Transactions are stored on the blockchain, the wallet contains your "keys" or addresses to those transactions. This means the transactions are public, it is the fact that who owns the address is unknown untill disclosed which provide privacy. 
 
 Once the wallet is installed you can generate a Bitcoin address. The addresses are then passed between the users, usually the "receiver" ends an address to send the funds to. The sender returns the funds to the "receive" address. That transfer of receive address can be done by email or encrypted by Bitmessage or Tor, to prevent the "man in the middle" identification of the address. 
 
 
-**What is mining and how is it controlled?**
+***What is mining and how is it controlled?***
 
 Mining is done by 3rd parties using feathercoin daemon, additional software and hard ware. The feathercoind includes the wallet transaction verification algorithms and functions without the wallet GUI. For Feathercoin the current hardware used is widely available commercial graphics processors to do the mathematical cryptographic calculations and compatible mining software such as NSGminer to process the mining. 
 
 It is the feathercoind or daemon software that then confirms a block is valid and spreads that block of transactions round the pear to pear network. A block becomes valid when it is accepted by more than 50% of the network as correct and valid.
 
 
-**Whats the difference between Feathercoin wallet versions, which one can I use**
+***Whats the difference between Feathercoin wallet versions, which one can I use***
 
 Feathercoin core wallet. 0.9.3.x has been moved to the Bitcoin framework and is not based on the Litecoin framework. Lizhi has spent the last year re-writing the code, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.  
 

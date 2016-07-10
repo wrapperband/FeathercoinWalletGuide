@@ -315,9 +315,9 @@ In the case of a dispute, go to Receive coins and click on the "Sign Message" op
 
 ### Debug console  
 
-**Information Tab**
-
 View some basic system information about your wallet. Feathercoin records a system information log called debug.log in the .feathercoin or home directory. Clicking on the debug Open button allows viewing of the log for additional diagnostic information if required.
+
+**Information Tab**
 
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.debug.information.01.png) 
 

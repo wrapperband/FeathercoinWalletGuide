@@ -622,6 +622,11 @@ The command  -addnode=(ip)  Add a node to connect to and attempt to keep the con
 
 # Links, External features and further information
 
+### Feathercoin forum : find support
+
+http://forum.feathercoin.com/category/18/support
+
+
 ### Feathercoin Block Explorer
 
 http://explorer.feathercoin.com/chain/Feathercoin
@@ -630,11 +635,6 @@ http://explorer.feathercoin.com/chain/Feathercoin
 ### Feathercoin API
 
 https://www.feathercoin.com/feathercoin-api/
-
-
-### Feathercoin forum : find support
-
-http://forum.feathercoin.com/category/18/support
 
 
 ### Using Feathercoin with other Cryptographic currencies, pchMessageStart
@@ -649,7 +649,12 @@ Feathercoin was originally forked from the Litecoin project and shared the same 
 0xfe 0x46 0x54 0x43
 
 
-### References :
+### Feathercoin Graphics and Logos
+
+https://www.feathercoin.com/feathercoin-graphic-resources/
+
+
+### References / Further reading :
 
 Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto
 https://bitcoin.org/bitcoin.pdf

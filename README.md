@@ -615,26 +615,36 @@ Usage:   feathercoin-qt [command-line options]
 
 Command line options can be used to trigger events, like a blockchain re-index or blockchain re synchronisation and apply various non default settings. The options passed in can usually be made permanent by including them in the feathercoin.conf file.  
 
-For instance -maxconnections=(n)     Maintain at most (n) connections to peers (default: 125)  : can be used to change the default number of peers your node will seek.  
+For instance the command :  
+
+    -maxconnections=(n)      
+
+Maintain at most (n) connections to peers (default: 125)  : can be used to change the default number of peers your node will seek.  
     
-The command  -addnode=(ip)  Add a node to connect to and attempt to keep the connection open  : can be used to add more peers (like from your local network) to speed up synchronisation of the blockchain.  
+or the command :   
+
+    -addnode=(ip)  
+    
+Add a node to connect to and attempt to keep the connection open  : can be used to add more peers (like from your local network) to speed up synchronisation of the blockchain.  
 
 
-# Links, External features and further information
+# Links, External features and further information   
 
-### Feathercoin forum : find support
+### Feathercoin forum : find support  
 
-http://forum.feathercoin.com/category/18/support
-
-
-### Feathercoin Block Explorer
-
-http://explorer.feathercoin.com/chain/Feathercoin
+http://forum.feathercoin.com/category/18/support 
 
 
-### Feathercoin API
+### Feathercoin Block Explorer  
 
-https://www.feathercoin.com/feathercoin-api/
+http://explorer.feathercoin.com/chain/Feathercoin  
+
+
+### Feathercoin API  
+
+The Feathercoin API is a set of function calls you can make to the Feathercoin server to return the status of various parameters, such as difficult, block height 
+
+https://www.feathercoin.com/feathercoin-api/  
 
 
 ### Using Feathercoin with other Cryptographic currencies, pchMessageStart
@@ -659,6 +669,30 @@ https://www.feathercoin.com/feathercoin-graphic-resources/
 Website Button generator.
 
 https://www.feathercoin.com/feathercoin-button-generator/
+
+### Broadcast Transaction Service
+
+Feathercoin Broadcast Transaction Service : 
+
+    block.ftc-c.com/tx/send
+
+If you wish to accelerate a transaction getting onto the blockchain or it is a stealth transaction, you may wish to us the Broadcast service.
+
+How to use the service : 
+
+First Step  :  Find your transaction binary code :
+
+    feathercoind.exe getrawtransaction 53519a8f97038728a72a80bcc4d07919165617deb2142e588a9dca6e95d43043 
+
+    0100000002c2936c0ccf2b2ab10740ee769ac10739da513d508f500e7ec9294617d62a94c2000000006a473044022002ed821998221aebc12bb994c00a8f9e6a6d8132ef0ae0d237dc31b01c54be6a022027d574128ac65ea1ec25a37c715bddba15f4827980b11ad6246bc933a50785f6012102c5a97cc1094c30da8351d5b288b7c89e375361eef6c947e7f671c26f9a6e3a3bffffffff2de0b2e003f5147ef8152bacacee9a481786a04c5e202fa7f0577fc9cc3b2702000000006b4830450220693e02092dc4eeb53abeaa834c05624f223aa09bb75858607f72b1d41a5ce47902210097075c48ccaa5088c0c563e4334400954bd127580d3753420b79b83d57e3caa6012103652bc983297937e0ceaf72eabad43ea3123333e85430332bcb4da37bcc3e59c7ffffffff0280969800000000001976a914affb568d0a05e0be72b682c7ced6bf2ca064870288ac0000000000000000236a21028726aae1c0ffe6138b70284519f09266f1ab6d7d7e4511f1a1d359045f26d42a00000000
+
+Second Step :  Broadcast it :
+
+    Go to http://block.ftc-c.com/tx/send 
+
+    copy binary code , click “Send transaction” .
+
+Wait confirmation, until a mining pool makes a block.
 
 
 ### References / Further reading :

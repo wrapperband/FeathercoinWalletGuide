@@ -654,6 +654,13 @@ Feathercoin was originally forked from the Litecoin project and shared the same 
 https://www.feathercoin.com/feathercoin-graphic-resources/
 
 
+### Feathercoin Merchent tools**
+
+Website Button generator.
+
+https://www.feathercoin.com/feathercoin-button-generator/
+
+
 ### References / Further reading :
 
 Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto

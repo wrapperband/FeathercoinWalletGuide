@@ -664,7 +664,7 @@ Feathercoin was originally forked from the Litecoin project and shared the same 
 https://www.feathercoin.com/feathercoin-graphic-resources/
 
 
-### Feathercoin Merchent tools**
+### Feathercoin Merchent tools
 
 Website Button generator.
 
@@ -678,7 +678,7 @@ Feathercoin Broadcast Transaction Service :
 
 If you wish to accelerate a transaction getting onto the blockchain or it is a stealth transaction, you may wish to us the Broadcast service.
 
-How to use the service : 
+How to use the broadcast service : 
 
 First Step  :  Find your transaction binary code :
 

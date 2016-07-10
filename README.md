@@ -176,7 +176,9 @@ It is important to understand that, if anyone else obtains the private key of yo
 ![Paper Wallet](/images/ftc-0.9.3.2-paper.wallet.01.png)
 
 
-**Print Paper Wallet Menu Option**   
+**Print Paper Wallet Menu Warning**   
+
+When you are printing out your private keys they have no password and are open for anyone to read or copy. It is important have care and a warning message is given to remind of the recommended security procedure.
 
 ![Paper Wallet Warning](/images/ftc-0.9.3.2-paper.wallet.warning.01.png)
  
@@ -243,9 +245,9 @@ The setting menu allows setting global options, signing and verifying messages a
 
 The main tab in options allows you to set Feathercoin to start on login, the size of the database cache and the number of script verification threads. 
 
-It also gives an indication if command line parameters over ride  those settings. For instance the number of threads : 
+It also gives an indication if command line parameters over ride  those settings. For instance the number of threads, command line option : 
 
--par=<n> 	Set the number of script verification threads (-2 to 16, 0 = auto, <0 = leave that many cores free, default: 0) 
+-par=<n> 	Set the number of script verification threads (-2 to 16, 0 = auto, < 0 = leave that many cores free, default: 0) 
 
 
 ![Settings Main Options](/images/ftc-0.9.3.2-Settings.menu.options.main.01.png)  

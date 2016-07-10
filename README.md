@@ -35,16 +35,16 @@ Cryptographic currency wallets, like the Feathercoin wallet, have been designed 
 
 ***Where is the currency stored?***
 
-Transactions are stored on the blockchain, the wallet contains your "keys" or addresses to those transactions. This means the transactions are public, it is the fact that who owns the address is unknown untill disclosed which provide privacy. 
+Transactions are stored on the blockchain, the wallet contains your "keys" or addresses to those transactions. This means the transactions are public, it is the fact that who owns the address is unknown which provide privacy. 
 
-Once the wallet is installed you can generate a Bitcoin address. The addresses are then passed between the users, usually the "receiver" ends an address to send the funds to. The sender returns the funds to the "receive" address. That transfer of receive address can be done by email or encrypted by Bitmessage or Tor, to prevent the "man in the middle" identification of the address. 
+Once the wallet is installed you can generate a Bitcoin address. The addresses are then passed between the users, usually the "receiver" communicates an address to send the funds to. The sender returns the funds to the "receive" address. That transfer of receive address can be done by email or encrypted by Bitmessage or Tor, to prevent the "man in the middle" identification of the address. 
 
 
 ***What is mining and how is it controlled?***
 
-Mining is done by 3rd parties using feathercoin daemon, additional software and hard ware. The feathercoind includes the wallet transaction verification algorithms and functions without the wallet GUI. For Feathercoin the current hardware used is widely available commercial graphics processors to do the mathematical cryptographic calculations and compatible mining software such as NSGminer to process the mining. 
+Mining is done by 3rd parties using feathercoin daemon, additional software and hard ware. The feathercoind includes the wallet transaction verification algorithms and functions, but without the Graphical user interface (GUI). For Feathercoin the current hardware used is widely available commercial graphics processors to do the mathematical cryptographic calculations and compatible mining software such as NSGminer to process the mining. 
 
-It is the feathercoind or daemon software that then confirms a block is valid and spreads that block of transactions round the pear to pear network. A block becomes valid when it is accepted by more than 50% of the network as correct and valid.
+It is the feathercoind or daemon software that confirms that a block is valid and spreads that block of transactions round the Peer to Pear network to all the other clients. A block becomes valid when it is accepted by more than 50% of the network as correct and valid.
 
 
 ***Whats the difference between Feathercoin wallet versions, which one can I use***

@@ -2,7 +2,6 @@
 
 Feathercoin Wallet guide aims to show what the features are of the Feathercoin Wallet and how they can be used. Many features have been experimental since the 0.8.x series. The guide starts at version 0.9.3.2 and greater.  
 
-
 ### Feathercoin (FTC) Core : Additional Features List  
 
 **Advanced Features -**  
@@ -54,7 +53,6 @@ Feathercoin core wallet. 0.9.3.x has been moved to the Bitcoin framework and is 
 All the Feathercoin specific features have been inherited including, ACP, eHRC , QRCodes, QRsnap. 
 
 By moving upstream Feathercoin can now offer new features the core system offers. In particular by using the plugins FTC has included Shapeshift, Coinnector and Bitmessage facilities.  
-
 
 Feathercoin development is already moving on to including FTC facilities in 0.11 core series, whilst maintaining and refining the 0.9.x as a bridge. The aim currently is to include more difficult major changes in the 0.1x.x series that will require a hard fork and all users upgrade.  
 
@@ -620,6 +618,35 @@ Command line options can be used to trigger events, like a blockchain re-index o
 For instance -maxconnections=(n)     Maintain at most (n) connections to peers (default: 125)  : can be used to change the default number of peers your node will seek.  
     
 The command  -addnode=(ip)  Add a node to connect to and attempt to keep the connection open  : can be used to add more peers (like from your local network) to speed up synchronisation of the blockchain.  
+
+
+# Links, External features and further information
+
+### Feathercoin Block Explorer
+
+http://explorer.feathercoin.com/chain/Feathercoin
+
+
+### Feathercoin API
+
+https://www.feathercoin.com/feathercoin-api/
+
+
+### Feathercoin forum : find support
+
+http://forum.feathercoin.com/category/18/support
+
+
+### Using Feathercoin with other Cryptographic currencies, pchMessageStart
+
+In most circumstance, alternative currencies coexist on a system by their name and the port they communicate on. When exchanges or pools deal with multiple currencies they can use pchMessageStart to destinguish between them. 
+
+Feathercoin was originally forked from the Litecoin project and shared the same  pchMessageStart. in order to identify Feathercoin a second pchMassageStart was added which Feathercoin will use preferentially,if given.
+
+
+**Feathercoin specific pchMessageStart**
+
+0xfe 0x46 0x54 0x43
 
 
 ### References :

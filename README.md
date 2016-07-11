@@ -183,11 +183,11 @@ The menu option eases backup strategy.
 ### Feathercoin Paper Wallet Menu    
 ***What is a wallet and why do I need one?***
 
-By printing out your own Feathercoin wallets and generating your own addresses, you can minimize your exposure to hackers as well as untrustworthy people in your home or office. Just transfer your Feathercoins to your new wallets, and use common sense to keep your wallets safe the way you would ordinary cash.  
+By printing out your own Feathercoin wallets and generating your own addresses, you can minimise your exposure to hackers as well as untrustworthy people in your home or office. Just transfer your Feathercoins to your new wallets, and use common sense to keep your wallets safe the way you would ordinary cash.  
 
 A Feathercoin wallet consists of two ‘keys’. The public key, which is your wallet address and is how other people send Feathercoins to you. The other part of the  wallet is the private key. It is this that enables you to send Feathercoins to others.   
 
-The combination of the recipient’s public key and your private key is what makes a cryptocurrency transaction possible. Those private keys are normally stored in the wallet.dat however, they can be extracted and printed out.  
+The combination of the recipient’s public key and your private key is what makes a crypto-currency transaction possible. Those private keys are normally stored in the wallet.dat however, they can be extracted and printed out.  
 
 It is important to understand that, if anyone else obtains the private key of your wallet, they can withdraw your funds – this is why it’s absolutely essential that nobody else discovers it.  
 
@@ -664,7 +664,7 @@ Feathercoin was originally forked from the Litecoin project and shared the same 
 https://www.feathercoin.com/feathercoin-graphic-resources/
 
 
-### Feathercoin Merchent tools
+### Feathercoin Merchant tools
 
 Website Button generator.
 

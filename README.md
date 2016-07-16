@@ -360,13 +360,25 @@ The network tab shows further information on the network traffic including a gra
 
 Comments can be included in the Feathercoin Blockchain.  Click on Advanced in the Wallet menu and select comments.  
 
+![Comments Dialog](/images/ftc-0.9.3.2-comments.screen.02.png)
+
 Comments of up to 40 characters can be included in the Feathercoin Blockchain. The cost of a comment has been set at 10 times the dust, or minimum block transmission value, currently that is .  
 
-Once you have made a comment you can find it in the Feathercoin Blockchain. Fist find the transaction with the comment, the copy the contents of OP_RETURN.  
+![Comments Dialog](/images/ftc-0.9.3.2-comments.screen.03.png)
+
+![Comments Dialog](/images/ftc-0.9.3.2-comments.screen.04.png)
+
+**Feathercoin comments Find encrypted comments on the blockchain**
+
+Once you have made a comment you can find it in the Feathercoin Blockchain. 
+
+
+Fist find the transaction with the comment, the copy the contents of OP_RETURN.  
+
 
 You then use Hex to Ascii on OP_RETURN to return your message.  
 
-![Comments Dialog](/images/ftc-0.9.3.2-comments.screen.01.png)
+
 
 
 ### Plugins Menu

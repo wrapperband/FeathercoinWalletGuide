@@ -240,7 +240,7 @@ Right clicking on a address brings up an actions menu.
 
 ### Send Addresses Menu Option  
 
-Contains similar information about send addresses as for receive addresses.   
+Contains similar information about send addresses as for receive addresses.   You can automate the filling in of information in various ways, by taking a screen shot of a QR code, or importing a URI from the "seller" and sending them that amount. 
 
 ![Send Addresses](/images/ftc-0.9.3.2-Wallet.SendPayments.01.png)
 
@@ -261,7 +261,7 @@ The setting menu allows setting global options, signing and verifying messages a
 
 **Options menu :  Main Tab**
 
-The main tab in options allows you to set Feathercoin to start on login, the size of the database cache and the number of script verification threads. 
+The main tab in options allows you to set Feathercoin to start on log in, the size of the database cache and the number of script verification threads. 
 
 It also gives an indication if command line parameters over ride  those settings. For instance the number of threads, command line option : 
 
@@ -372,8 +372,10 @@ Comments of up to 40 characters can be included in the Feathercoin Blockchain. T
 
 Once you have made a comment you can find it in the Feathercoin Blockchain. 
 
+http://explorer.feathercoin.com/chain/Feathercoin
 
 Fist find the transaction with the comment, the copy the contents of OP_RETURN.  
+
 
 
 You then use Hex to Ascii on OP_RETURN to return your message.  

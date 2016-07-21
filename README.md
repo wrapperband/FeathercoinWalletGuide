@@ -289,7 +289,7 @@ If you do not wish to back up your data, you can exit by the "window close butto
 
 The setting menu allows setting global options, signing and verifying messages and access to the debug window.
 
-![Settings Menu](/images/ftc-0.9.3.2-Settings.menu.01.png)  
+![Settings Menu](/images/ftc-0.9.3.2-Settings.dropdown.01.png)  
 
 
 **Options menu :  Main Tab**
@@ -362,6 +362,11 @@ In the case of a dispute, go to Receive coins and click on the "Sign Message" op
 **Verify a message**
 
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.message.verify.01.png)  
+
+
+Here we can see the message given if the signature is not varified :   
+
+![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.message.verify.02.png) 
 
 
 ### Debug console  

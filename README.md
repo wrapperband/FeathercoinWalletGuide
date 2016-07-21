@@ -6,7 +6,7 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 
 * Send and Receive Feathercoins to an Address, Stealth Address, URI text document or QRCode.  
 * View and filter the Transactions.    
-* Connect to a the network and update the Blockchain information.  
+* Connect to a the FTC Peer to  Peer network and update the Blockchain information.  
 * Sign and Verify a message  given to prove ownership.  
 
 
@@ -51,9 +51,13 @@ Once the wallet is installed you can generate a Bitcoin address. The addresses a
 
 ***What is mining and how is it controlled?***
 
-Mining is done by 3rd parties using feathercoin daemon, additional software and hard ware. The feathercoind includes the wallet transaction verification algorithms and functions, but without the Graphical user interface (GUI). For Feathercoin the current hardware used is widely available commercial graphics processors to do the mathematical cryptographic calculations and compatible mining software such as NSGminer to process the mining. 
+Mining is done by 3rd parties using feathercoind (server daemon), additional software and hard ware. 
 
-It is the feathercoind or daemon software that confirms that a block is valid and spreads that block of transactions round the Peer to Pear network to all the other clients. A block becomes valid when it is accepted by more than 50% of the network as correct and valid.
+The feathercoind program includes the wallet transaction verification algorithms and functions, but without the Graphical user interface (GUI). 
+
+Feathercoin has had it's Proof of work (POW) algorythm enhanced to make it more compatible with distributed mining on widely available commercial graphics cards. The GPUs do the mathematical cryptographic calculations and compatible mining software such as NSGminer use that to test if the have found a block and process the transactions. 
+
+It is the feathercoind (or daemon software) that confirms that a block is valid and spreads that block of transactions round the Peer to Pear network to all the other wallets and miners. A block becomes the next on the blockchain when it is accepted by more than 50% of the network as part of a correct and valid chain.
 
 
 ***What is the difference between version 0.8 series and 0.9 series wallets?***

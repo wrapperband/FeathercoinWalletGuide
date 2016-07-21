@@ -278,7 +278,9 @@ Contains similar information about send addresses as for receive addresses.   Yo
 
 ### Exit
 
-Exit menu option or the Ctrl-Q keys close down the wallet and offer the reminder to save your wallet. If you do not wish to back up, you can exit by the window close button and you will not need to back up.
+Exit menu option or the Ctrl-Q keys close down the wallet and offer the reminder to save your wallet.  
+
+If you do not wish to back up your data, you can exit by the "window close button" and you will not  be asked to back up.
 
 
 ### Settings

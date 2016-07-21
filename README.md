@@ -127,6 +127,7 @@ A pop up is shown with the newly created receive address address and QRCode imag
 ![QRCode image](/images/ftc-0.9.3.2-button.menu.Receive.QRCode.02.png)  
 
 
+
 **Send Button**   
 
 In order to send funds you need to input the receivers address. You can label the transaction with a description and input the amount.  
@@ -136,6 +137,10 @@ Once you are happy you can press the send button and that transaction is sent to
 Press on the Add recipient button to send payments to more than one recipients.  
 
 ![Add recipient](/images/ftc-0.9.3.2-button.menu.Send.01.png)  
+
+To use the QR scan feature, click "Send to QR" Then position the scan box over the image. Press snap button to decode the QRCode or cancel to exit.
+
+![QRCode image](/images/ftc-0.9.3.2-button.menu.sendto.QRCode.03.png)
 
 
 **Report Button**  

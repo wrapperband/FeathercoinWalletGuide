@@ -246,7 +246,7 @@ The printed wallet will contain all the keys from the local wallet. If the local
      importprivkey L1SLw5C14f8KBZCfUow3h5acEfC8ZLMiLo3fgoDWxHjCTuzyGPcd 'Label' false  
 
 
-     5. Check that you have the address by closing the Debug window and going back to your address book  
+5. Check that you have the address by closing the Debug window and going back to your address book  
 6. Back-up your updated wallet.data  
 
 

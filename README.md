@@ -1,8 +1,17 @@
 # Feathercoin Wallet Guide  
 
-Feathercoin Wallet guide aims to show what the features are of the Feathercoin Wallet and how they can be used. Many features have been experimental since the 0.8.x series. The guide starts at version 0.9.3.2 and greater.  
+Feathercoin Wallet guide aims to show how to use the features of the Feathercoin Wallet. In particular, how to use them in wallet versions 0.9.6 or above.
 
-### Feathercoin (FTC) Core : Additional Features List  
+### Feathercoin (FTC) Core Wallet : Main Features
+
+Send and Receive Feathercoins to an Address, Stealth Address, URI text document or QRCode.
+View and filter the Transactions
+Connect to a the network and update the Blockchain information.
+Sign and Verify a message  given to prove ownership.
+your message has appeared at an address.
+
+
+### Feathercoin (FTC) Core Wallet : Additional Features List  
 
 **Advanced Features -**  
 * Multi - Signature Transactions  
@@ -17,8 +26,10 @@ Feathercoin Wallet guide aims to show what the features are of the Feathercoin W
 * Coinnector  
 
 **Features -**
-* Coin Control  
-* ACP
+* Coin Control 
+* Print a Paper Wallet
+* Neoscript mining algorythm
+* Automatic check pointing ACP
 
 
 ### Welcome to Feathercoin core wallet  
@@ -707,6 +718,24 @@ Second Step :  Broadcast it :
     copy binary code , click “Send transaction” .
 
 Wait confirmation, until a mining pool makes a block.
+
+
+
+### Neoscript 
+
+Neoscrypt is an ASIC resistant Proof of work (POW) algorythm used by Feathercoin miners. Designed and developed by Ghostlander specifically for the Feathercoin and Pheonixcoin project.
+
+Mining is not in the scope of the guide, but FTC has done a lot of work to make it easier and aide in the development of GPU miner software and open pools.  
+
+Currently miners such as NSGminer for AMD mining. You can run your own or connect to a peer to peer node of the  P2Pool distributed mining system. Of course other pools and miners are available. 
+
+
+**NSGminer**
+https://github.com/ghostlander/nsgminer
+
+**Feathercoin P2Pool**
+https://github.com/wellenreiter01/p2pool-neoscrypt
+
 
 ### Advanced Checkpointing ACP
 

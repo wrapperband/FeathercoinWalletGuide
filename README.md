@@ -138,14 +138,14 @@ Press on the Add recipient button to send payments to more than one recipients.
 
 ![Add recipient](/images/ftc-0.9.3.2-button.menu.Send.01.png)  
 
-To use the QR scan feature, click "Send to QR". Then, position the scan box over the image. Press snap button to decode the QRCode or cancel to exit.
+To use the QR scan feature, click "Send to QR". Then, position the scan box over the image. Press snap button to decode the QRCode or cancel to exit.  
 
-![QRCode image](/images/ftc-0.9.3.2-button.menu.sendto.QRCode.03.png)
+![QRCode image](/images/ftc-0.9.3.2-button.menu.sendto.QRCode.03.png)  
 
 
 **Report Button**  
 
-This shows the grid from the report button. In this case the grid is filtered on all the transactions that happened today and calculates the number and total. That can then be exported by the "Export" button at the bottom right of the window.   
+This image shows the grid shown when the report button is pressed. In the example the grid is filtered on "all the transactions that happened today" and calculates the number and total. That can then be exported to a csv file the "Export" button at the bottom right of the window.   
 
 ![Report Button](/images/ftc-0.9.3.2-button.menu.Report.01.png)  
 
@@ -196,7 +196,9 @@ Use the send menu to Request a payment". The URI can be copied via and pasted in
   
 **Backup Wallet**
 
-It is important to back up your wallet regularly. If you have created new addresses or spent some cash, the old backups will be out of date. If you are just receiving that will just be calculated for the address as you synchronise the wallet, so backups aren't required.
+It is important to back up your wallet regularly. Especially if you have created new addresses or spent some cash, the old backups will be out of date. 
+
+If you are just receiving FTC, that is handled on the blockchain and you wallet scans and calculates  for transactions for address, as you synchronise the wallet. In that case the old back-ups are still valid, so new backups are not required.
 
 The menu option eases backup strategy.  
 
@@ -217,10 +219,12 @@ It is important to understand that, if anyone else obtains the private key of yo
 
 **Print Paper Wallet Menu Warning**   
 
-When you are printing out your private keys they have no password and are open for anyone to read or copy. It is important have care and a warning message is given to remind of the recommended security procedure.
+When you are printing out your private keys they have no password and are open for anyone to read or copy. It is important have care and a warning message is given to remind of the recommended security procedure. 
 
-![Paper Wallet Warning](/images/ftc-0.9.3.2-paper.wallet.warning.01.png)
- 
+The printed wallet will contain all the keys from the local wallet. If the local virtual wallet is deleted, the wallet will be in "cold storage" or "offline".
+
+![Paper Wallet Warning](/images/ftc-0.9.3.2-paper.wallet.warning.01.png)  
+
  
 ###  Import you Paper Wallet address back  
 
@@ -228,13 +232,13 @@ When you are printing out your private keys they have no password and are open f
 
 1. Open Menu -> Settings -> Debug  
 2. Unlock the wallet, 600 is the time  
- > walletpassphrase "YourLongPassphrase" 600  
+       walletpassphrase "YourLongPassphrase" 600  
 
 3. Type in the console :  
- > importprivkey yourPrivateKeyInWalletImportFormat "TheLabelThatIWant"   
+       importprivkey yourPrivateKeyInWalletImportFormat "TheLabelThatIWant"   
  
 4. To import multiple keys place false at the end :   
- > importprivkey L1SLw5C14f8KBZCfUow3h5acEfC8ZLMiLo3fgoDWxHjCTuzyGPcd 'Label' false  
+       importprivkey L1SLw5C14f8KBZCfUow3h5acEfC8ZLMiLo3fgoDWxHjCTuzyGPcd 'Label' false  
 
 5. Check that you have the address by closing the Debug window and going back to your address book  
 6. Back-up your updated wallet.data  

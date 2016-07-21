@@ -1,6 +1,6 @@
 # Feathercoin Wallet Guide  
 
-Feathercoin Wallet guide aims to show how to use the features of the Feathercoin Wallet, it's applicable wallet versions 0.9.6 or above.
+Feathercoin Wallet guide aims to show how to use the features of the Feathercoin Wallet. It's applicable to wallet versions 0.9.6 or above.
 
 ### Feathercoin (FTC) Core Wallet : Main Features
 

@@ -176,25 +176,26 @@ Feathercoin uses the Bitcoin URIs standard which represents a common payment met
 
 **URI Examples:**  
 
-**A simple Bitcoin URI :**
-URI: bitcoin:12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu  
+A simple Bitcoin URI :
+URI: bitcoin:12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu   
   
   
 **Example Feathercoin URI :**  
-URI: feathercoin:6xqSWpX7a5dLWxEQaJB7DgBDf2DwUDfLT8?amount=1.001&label=Receive%20funds%20for%20the%20sale%20of%20old%20Painting
+URI: feathercoin:6xqSWpX7a5dLWxEQaJB7DgBDf2DwUDfLT8?amount=1.001&label=Receive%20funds%20for%20the%20sale%20of%20old%20Painting   
+  
 
-
-**URI Validation:**  
-
-The main use that we expect you'll have for the URI class in Feathercoin core is validating and parsing URIs.  
+**URI Validation:**   
+  
+The main use that we expect you'll have for the URI class in Feathercoin core is validating and parsing URIs.   
 
 **Sending a payment by URI**
 
-Use the send menu to Request a payment". The URI can be copied via and pasted into a text file or email. 
+Use the send menu to "Request a payment". The URI can be copied via and pasted into a text file or email. 
 
-![Send URI Menu](/images/ftc-0.9.3.2-Wallet.URI.02.png) 
+![Send URI Menu](/images/ftc-0.9.3.2-Wallet.URI.02.png)  
   
-**Backup Wallet**
+  
+**Backup Wallet**  
 
 It is important to back up your wallet regularly. Especially if you have created new addresses or spent some cash, the old backups will be out of date. 
 
@@ -232,15 +233,20 @@ The printed wallet will contain all the keys from the local wallet. If the local
 
 1. Open Menu -> Settings -> Debug  
 2. Unlock the wallet, 600 is the time  
-       walletpassphrase "YourLongPassphrase" 600  
+
+     walletpassphrase "YourLongPassphrase" 600  
 
 3. Type in the console :  
-       importprivkey yourPrivateKeyInWalletImportFormat "TheLabelThatIWant"   
- 
-4. To import multiple keys place false at the end :   
-       importprivkey L1SLw5C14f8KBZCfUow3h5acEfC8ZLMiLo3fgoDWxHjCTuzyGPcd 'Label' false  
 
-5. Check that you have the address by closing the Debug window and going back to your address book  
+     importprivkey yourPrivateKeyInWalletImportFormat "TheLabelThatIWant"   
+ 
+
+4. To import multiple keys place false at the end :   
+
+     importprivkey L1SLw5C14f8KBZCfUow3h5acEfC8ZLMiLo3fgoDWxHjCTuzyGPcd 'Label' false  
+
+
+     5. Check that you have the address by closing the Debug window and going back to your address book  
 6. Back-up your updated wallet.data  
 
 

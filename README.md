@@ -27,7 +27,7 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 **Features -**
 * Coin Control 
 * Print a Paper Wallet
-* Neoscript mining algorythm
+* Neoscript mining algorithm
 * Automatic check pointing ACP
 
 
@@ -172,9 +172,9 @@ Buy using a common protocol information about the transaction can be transferred
 
 ![URI Menu](/images/ftc-0.9.3.2-Wallet.URI.01.png)   
 
-Feathercoin uses the Bitcoin URIs standard which represents a common payment method by text file. Bitcoin URI strings became the most popular way to share payment request, sometimes as a link but also using a QR code.
+Feathercoin uses the Bitcoin URIs standard which represents a common payment method by text file. Bitcoin URI strings became the most popular way to share payment request, either as a link, or the URI text it's self or using a QR code.
 
-URI Examples:
+**URI Examples:**  
 
 **A simple Bitcoin URI :**
 URI: bitcoin:12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu  
@@ -183,10 +183,16 @@ URI: bitcoin:12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu
 **Example Feathercoin URI :**  
 URI: feathercoin:6xqSWpX7a5dLWxEQaJB7DgBDf2DwUDfLT8?amount=1.001&label=Receive%20funds%20for%20the%20sale%20of%20old%20Painting
 
-URI Validation
+
+**URI Validation:**  
 
 The main use that we expect you'll have for the URI class in Feathercoin core is validating and parsing URIs.  
-  
+
+**Sending a payment by URI**
+
+Use the send menu to Request a payment". The URI can be copied via and pasted into a text file or email. 
+
+![Send URI Menu](/images/ftc-0.9.3.2-Wallet.URI.02.png) 
   
 **Backup Wallet**
 

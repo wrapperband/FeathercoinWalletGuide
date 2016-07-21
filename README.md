@@ -138,7 +138,7 @@ Press on the Add recipient button to send payments to more than one recipients.
 
 ![Add recipient](/images/ftc-0.9.3.2-button.menu.Send.01.png)  
 
-To use the QR scan feature, click "Send to QR" Then position the scan box over the image. Press snap button to decode the QRCode or cancel to exit.
+To use the QR scan feature, click "Send to QR". Then, position the scan box over the image. Press snap button to decode the QRCode or cancel to exit.
 
 ![QRCode image](/images/ftc-0.9.3.2-button.menu.sendto.QRCode.03.png)
 
@@ -152,7 +152,7 @@ This shows the grid from the report button. In this case the grid is filtered on
 
 **MultiSig Button**  
 
-MultiSig stands for multiple signature addresses.  Signature addresses can be made with up to three signatures with the current wallet implementation. Amore detailed example of how to set up and use a MultiSig address is included under menu options.
+MultiSig stands for multiple signature addresses.  Signature addresses can be made with up to three signatures with the current wallet implementation. Further details and an example of how to set up and use a MultiSig address is included later in the guide,  under menu options.
 
 ![MultiSig Button](/images/ftc-0.9.3.2-button.menu.MultiSig.01.png)  
 
@@ -172,26 +172,22 @@ Buy using a common protocol information about the transaction can be transferred
 
 ![URI Menu](/images/ftc-0.9.3.2-Wallet.URI.01.png)   
 
-Feathercoin uses the Bitcoin URIs which represents a common payment URI. Bitcoin URI strings became the most popular way to share payment request, sometimes as a link and others using a QR code.
+Feathercoin uses the Bitcoin URIs standard which represents a common payment method by text file. Bitcoin URI strings became the most popular way to share payment request, sometimes as a link but also using a QR code.
 
 URI Examples:
 
-bitcoin:12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu
-bitcoin:12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu?amount=1.2
-bitcoin:12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu?amount=1.2&message=Payment&label=Satoshi&extra=other-param
+**A simple Bitcoin URI :**
+URI: bitcoin:12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu  
+  
+  
+**Example Feathercoin URI :**  
+URI: feathercoin:6xqSWpX7a5dLWxEQaJB7DgBDf2DwUDfLT8?amount=1.001&label=Receive%20funds%20for%20the%20sale%20of%20old%20Painting
 
 URI Validation
 
-The main use that we expect you'll have for the URI class in bitcore is validating and parsing bitcoin URIs. A URI instance exposes the address as a bitcore Address object and the amount in Satoshis, if present.
-
-The code for validating URIs looks like this:
-
-var uriString = 'bitcoin:12A1MyfXbW6RhdRAZEqofac5jCQQjwEPBu?amount=1.2';
-var valid = URI.isValid(uriString);
-var uri = new URI(uriString);
-console.log(uri.address.network, uri.amount); // 'livenet', 120000000
-
-
+The main use that we expect you'll have for the URI class in Feathercoin core is validating and parsing URIs.  
+  
+  
 **Backup Wallet**
 
 It is important to back up your wallet regularly. If you have created new addresses or spent some cash, the old backups will be out of date. If you are just receiving that will just be calculated for the address as you synchronise the wallet, so backups aren't required.

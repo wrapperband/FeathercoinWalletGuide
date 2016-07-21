@@ -1,6 +1,6 @@
 # Feathercoin Wallet Guide  
 
-Feathercoin Wallet guide aims to show how to use the features of the Feathercoin Wallet. In particular, how to use them in wallet versions 0.9.6 or above.
+Feathercoin Wallet guide aims to show how to use the features of the Feathercoin Wallet, it's applicable wallet versions 0.9.6 or above.
 
 ### Feathercoin (FTC) Core Wallet : Main Features
 
@@ -57,9 +57,9 @@ Mining is done by 3rd parties using feathercoin daemon, additional software and 
 It is the feathercoind or daemon software that confirms that a block is valid and spreads that block of transactions round the Peer to Pear network to all the other clients. A block becomes valid when it is accepted by more than 50% of the network as correct and valid.
 
 
-***Whats the difference between Feathercoin wallet versions, which one can I use***
+***What is the difference between version 0.8 series and 0.9 series wallets?***
 
-Feathercoin core wallet. 0.9.3.x has been moved to the Bitcoin framework and is not based on the Litecoin framework. Lizhi has spent the last year re-writing the code, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.  
+Feathercoin core wallets 0.9.3.x has re based moved to the Bitcoin framework. Previously FTC use / was based on the Litecoin framework. Lizhi has spent the last year re-writing the Feathercoin coode, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.  
 
 All the Feathercoin specific features have been inherited including, ACP, eHRC , QRCodes, QRsnap. 
 

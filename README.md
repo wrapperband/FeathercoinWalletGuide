@@ -33,7 +33,7 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 
 ### Welcome to Feathercoin core wallet  
 
-![Wallet Main Screen](/images/ftc-0.9.3.2-welcome.core_a2.png)
+![Wallet Main Screen](/images/ftc-0.9.3.2-splashscreen01.png)
 
 
 ### Introduction to Feathercoin Core   

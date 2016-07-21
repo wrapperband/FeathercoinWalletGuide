@@ -161,7 +161,7 @@ MultiSig stands for multiple signature addresses.  Signature addresses can be ma
 
 **Wallet drop down menu**   
  
-![Walletdrop down](/images/ftc-0.9.3.2-paper.wallet.menu.01.png)   
+![Walletdrop down](/images/ftc-0.9.3.2-Wallet.dropdown.01.png)   
 
 
 **Open URI menu**

@@ -4,11 +4,10 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 
 ### Feathercoin (FTC) Core Wallet : Main Features
 
-Send and Receive Feathercoins to an Address, Stealth Address, URI text document or QRCode.
-View and filter the Transactions
-Connect to a the network and update the Blockchain information.
-Sign and Verify a message  given to prove ownership.
-your message has appeared at an address.
+* Send and Receive Feathercoins to an Address, Stealth Address, URI text document or QRCode.  
+* View and filter the Transactions.    
+* Connect to a the network and update the Blockchain information.  
+* Sign and Verify a message  given to prove ownership.  
 
 
 ### Feathercoin (FTC) Core Wallet : Additional Features List  

@@ -396,28 +396,39 @@ The network tab shows further information on the network traffic including a gra
 
 **Feathercoin Wallet Include encrypted comments into the Blockchain**
 
-Comments can be included in the Feathercoin Blockchain.  Click on Advanced in the Wallet menu and select comments.  
+Comments can be included in the Feathercoin Blockchain.  You can choose an address, use right click in transactions to copy the address.
 
-![Comments Dialog](/images/ftc-0.9.3.2-comments.screen.02.png)
+Click on Advanced in the Wallet menu and select comments.  
 
-Comments of up to 40 characters can be included in the Feathercoin Blockchain. The cost of a comment has been set at 10 times the dust, or minimum block transmission value, currently that is .  
+Click on address and paste the address. Stealth addresses are converted to their "actual address" in the wallet.
 
-![Comments Dialog](/images/ftc-0.9.3.2-comments.screen.03.png)
+Insert your comment.
 
-![Comments Dialog](/images/ftc-0.9.3.2-comments.screen.04.png)
+![Comments Dialog Input Comment](/images/ftc-0.9.3.2-comments.screen.02.png)
+
+Comments of up to 40 characters can be included in the Feathercoin Blockchain. The cost of a comment has been set at 10 times the dust, or minimum block transmission value, currently that is 0.1 FTC.  
+
+![Comments Dialog Confirm Comment](/images/ftc-0.9.3.2-comments.screen.03.png)
+
+A message is shown to confirm the comment has been inserted.  
+
+![Comments Dialog ](/images/ftc-0.9.3.2-comments.screen.04.png)
+
+If the comment is too long, or that address already has a comment then you will get a warning message :
+
+![Comment too large Warning](/images/ftc-0.9.3.2-comments.screen.04.png)
 
 **Feathercoin comments Find encrypted comments on the blockchain**
 
 Once you have made a comment you can find it in the Feathercoin Blockchain. 
 
-http://explorer.feathercoin.com/chain/Feathercoin
+http://block.ftc-c.com/   
+
 
 Fist find the transaction with the comment, the copy the contents of OP_RETURN.  
 
-
-
-You then use Hex to Ascii on OP_RETURN to return your message.  
-
+I can also be extracted from scriptPubKey by using Hex to Ascii on OP_RETURN to return your message.  
+ 
 
 
 

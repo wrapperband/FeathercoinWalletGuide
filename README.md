@@ -416,7 +416,7 @@ A message is shown to confirm the comment has been inserted.
 
 If the comment is too long, or that address already has a comment then you will get a warning message :
 
-![Comment too large Warning](/images/ftc-0.9.3.2-comments.screen.04.png)
+![Comment too large Warning](/images/ftc-0.9.3.2-comments.screen.05.png)
 
 **Feathercoin comments Find encrypted comments on the blockchain**
 
@@ -425,9 +425,9 @@ Once you have made a comment you can find it in the Feathercoin Blockchain.
 http://block.ftc-c.com/   
 
 
-Fist find the transaction with the comment, the copy the contents of OP_RETURN.  
+First : find the transaction with the comment, the copy the contents of OP_RETURN.  ftc-c.com shows the message on the screen.
 
-I can also be extracted from scriptPubKey by using Hex to Ascii on OP_RETURN to return your message.  
+It can also be extracted from scriptPubKey by using Hex to Ascii on OP_RETURN to return your message.  
  
 
 

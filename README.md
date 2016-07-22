@@ -566,17 +566,37 @@ To access the stealth address search, click on the Help menu option, then select
 
 ### Multiple Signature Addresses
 
-**Feathercoin Multiple Signature Addresses**  
+Multisignature in cryptocurrencies. Multisignature (often called multisig) is a form of technology used to add additional security and for cryptocurrencies transactions. Multisignature addresses require another user or users to sign a transaction before it can be broadcast onto the block chain.
 
-**STEP ONE : How to Create a Multi Signature (MultiSig) Address**  
+To create a "MultiSig" address in Feathercoin, click on wallet and select Send addresses : then select "New MultiSig".
+
+In this simple example the address needs to be paid by either of 2 people, if they are available. So, set 1 of 2 required to sign the address. The two people, or wallets need to supply the addresses or public keys.
+
+
+![MultiSig Dialog](/images/ftc-0.9.3.2-Wallet.Send.MultiSig.01.png) 
+
+
+Press create to make the MultiSig address. 
+
+A .msa file is created which is sent to the other parties in the transaction. 
+
+If there is a problem you will get a warning message  
+
+![MultiSig Warning](/images/ftc-0.9.3.2-Wallet.Send.MultiSig.warning.02.png)
+
+
 
 1. To create a m-of-n MultiSig address, we need n public keys.  
 
-It is not difficult to get a public key for your address. For example, using users Lizhi, Calem and Mirrax as an example).  
+To create a 2-of-3 MultiSig address, you can get one public key from each or 3 wallets. The public key is just the address. 
 
-To create a 2-of-3 MultiSig address, you can get one public key from the first wallet (Mirrax) address, and another form Lizhi's wallet address and Calem's wallet address.  
 
-2. Now we can create our MultiSig address in "Sending addresses page", Click "New MultiSig" and fill in each public keys from step 1.  
+For example, using users Lizhi, Calem and Mirrax requiring a 2 of 3 MultiSig Address.  
+
+The first wallet Mirrax's address, and another form Lizhi's wallet address and Calem's wallet address.  
+
+
+ 2. Now we can create our MultiSig address in "Sending addresses page", Click "New MultiSig" and fill in each public keys from step 1.  
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen01.jpg)  
 
@@ -589,6 +609,7 @@ To create a 2-of-3 MultiSig address, you can get one public key from the first w
 4. Calem or Lizhi imports the .msa file and create the same MultiSig address.  
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen03.jpg)  
+
 
 
 **STEP TWO : Send Feathercoin (FTC) to the Multiple Signature Address**  

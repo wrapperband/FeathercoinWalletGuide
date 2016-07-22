@@ -702,6 +702,8 @@ http://forum.feathercoin.com/category/18/support
 
 http://explorer.feathercoin.com/chain/Feathercoin  
 
+http://block.ftc-c.com
+
 
 ### Feathercoin API  
 
@@ -712,14 +714,14 @@ https://www.feathercoin.com/feathercoin-api/
 
 ### Using Feathercoin with other Cryptographic currencies, pchMessageStart
 
-In most circumstance, alternative currencies coexist on a system by their name and the port they communicate on. When exchanges or pools deal with multiple currencies they can use pchMessageStart to destinguish between them. 
+In most circumstance, alternative currencies coexist on a system by their name and the port they communicate on. When exchanges or pools deal with multiple currencies they can use **pchMessageStart** to distinguish between them. 
 
 Feathercoin was originally forked from the Litecoin project and shared the same  pchMessageStart. in order to identify Feathercoin a second pchMassageStart was added which Feathercoin will use preferentially,if given.
 
 
-**Feathercoin specific pchMessageStart**
+**Feathercoin specific pchMessageStart**  
 
-0xfe 0x46 0x54 0x43
+0xfe 0x46 0x54 0x43  
 
 
 ### Feathercoin Graphics and Logos

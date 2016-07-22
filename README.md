@@ -60,7 +60,7 @@ Feathercoin has had it's Proof of work (POW) algorythm enhanced to make it more 
 It is the feathercoind (or daemon software) that confirms that a block is valid and spreads that block of transactions round the Peer to Pear network to all the other wallets and miners. A block becomes the next on the blockchain when it is accepted by more than 50% of the network as part of a correct and valid chain.
 
 
-***What is the difference between version 0.8 series and 0.9 series wallets?***
+***What is the difference between version 0.8 series and version 0.9 series Feathercoin (FTC) wallets?***
 
 Feathercoin core wallets 0.9.3.x has re based moved to the Bitcoin framework. Previously FTC use / was based on the Litecoin framework. Lizhi has spent the last year re-writing the Feathercoin coode, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.  
 
@@ -703,6 +703,10 @@ http://forum.feathercoin.com/category/18/support
 http://explorer.feathercoin.com/chain/Feathercoin  
 
 http://block.ftc-c.com
+
+### ftc-abe - Run your own Feathercoin Block Explorer
+
+https://github.com/wellenreiter01/ftc-abe
 
 
 ### Feathercoin API  

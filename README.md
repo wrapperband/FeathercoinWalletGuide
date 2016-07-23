@@ -857,3 +857,5 @@ The ACP checkpointing for Feathercoin has been set at every 5 blocks. ACP does n
 Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto
 https://bitcoin.org/bitcoin.pdf
 
+The future of Digital Business Innovation : Trends & Practices Pub: Springer
+by Vincenzo Morabito

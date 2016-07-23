@@ -1,6 +1,6 @@
 # Feathercoin Wallet Guide  
 
-Feathercoin Wallet guide aims to show how to use the features of the Feathercoin Wallet. It's applicable to wallet versions 0.9.6 or above.
+Feathercoin Wallet guide aims to show how to use the features of the Feathercoin Wallet. The information contained is based on Feathercoin wallet version 0.9.6. 
 
 ### Feathercoin (FTC) Core Wallet : Main Features
 
@@ -63,14 +63,14 @@ Mining is done by 3rd parties using feathercoind (server daemon), additional sof
 
 The feathercoind program includes the wallet transaction verification algorithms and functions, but without the Graphical user interface (GUI).  
 
-Feathercoin has had it's Proof of work (POW) algorythm enhanced to make it more compatible with distributed mining on widely available commercial graphics cards. The GPUs do the mathematical cryptographic calculations and compatible mining software such as NSGminer use that to test if the have found a block and process the transactions. 
+Feathercoin has had it's Proof of work (POW) algorithm enhanced to make it more compatible with distributed mining on widely available commercial graphics cards. The GPUs do the mathematical cryptographic calculations and compatible mining software such as NSGminer use that to test if the have found a block and process the transactions. 
 
 It is the feathercoind (or daemon software) that confirms that a block is valid and spreads that block of transactions round the Peer to Pear network to all the other wallets and miners. A block becomes the next on the blockchain when it is accepted by more than 50% of the network as part of a correct and valid chain.  
 
 
 ***What is the difference between version 0.8 series and version 0.9 series Feathercoin (FTC) wallets?***  
 
-Feathercoin core wallets 0.9.3.x has re based moved to the Bitcoin framework. Previously FTC use / was based on the Litecoin framework. Lizhi has spent the last year re-writing the Feathercoin coode, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.  
+Feathercoin core wallets 0.9.3.x has re based moved to the Bitcoin framework. Previously FTC use / was based on the Litecoin framework. Lizhi has spent the last year re-writing the Feathercoin code, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.  
 
 All the Feathercoin specific features have been inherited including, ACP, eHRC , QRCodes, QRsnap. 
 
@@ -242,16 +242,16 @@ The printed wallet will contain all the keys from the local wallet. If the local
 1. Open Menu -> Settings -> Debug  
 2. Unlock the wallet, 600 is the time  
 
-     walletpassphrase "YourLongPassphrase" 600  
+    walletpassphrase "YourLongPassphrase" 600  
 
 3. Type in the console :  
 
-     importprivkey yourPrivateKeyInWalletImportFormat "TheLabelThatIWant"   
+    importprivkey yourPrivateKeyInWalletImportFormat "TheLabelThatIWant"   
  
 
 4. To import multiple keys place false at the end :   
 
-     importprivkey L1SLw5C14f8KBZCfUow3h5acEfC8ZLMiLo3fgoDWxHjCTuzyGPcd 'Label' false  
+    importprivkey L1SLw5C14f8KBZCfUow3h5acEfC8ZLMiLo3fgoDWxHjCTuzyGPcd 'Label' false  
 
 
 5. Check that you have the address by closing the Debug window and going back to your address book  
@@ -352,7 +352,7 @@ The main tab in options allows you to set Feathercoin to start on log in, the si
 
 It also gives an indication if command line parameters over ride  those settings. For instance the number of threads, command line option : 
 
--par=<n> 	Set the number of script verification threads (-2 to 16, 0 = auto, < 0 = leave that many cores free, default: 0) 
+     -par=<n> 	Set the number of script verification threads (-2 to 16, 0 = auto, < 0 = leave that many cores free, default: 0) 
 
 
 ![Settings Main Options](/images/ftc-0.9.3.2-Settings.menu.options.main.01.png)  
@@ -418,7 +418,7 @@ In the case of a dispute, go to Receive coins and click on the "Sign Message" op
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.message.verify.01.png)  
 
 
-Here we can see the message given if the signature is not varified :   
+Here we can see the message given if the signature is not verified :   
 
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.message.verify.02.png) 
 
@@ -434,7 +434,7 @@ View some basic system information about your wallet. Feathercoin records a syst
 
 **Console Tab**
 
-The console tab allows access to a complete API call list. Type help to get the list of possible calls. You can type commands such as "getinfo" to get an overall view, or use addnode command to include live peers if you've got synchronisation issues.
+The console tab allows access to a complete API call list. Type help to get the list of possible calls. You can type commands such as "getinfo" to get an overall view, or use addnode command to include live peers if you experience synchronisation issues.
 
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.debug.console.01.png) 
 
@@ -490,7 +490,7 @@ It can also be extracted from scriptPubKey by using Hex to Ascii on OP_RETURN to
 
 ### Bitmessage
 
-Bitmessage is an open source fully encrypted peer to peer messaging system. In order to pass order information privatly a version can be set up to integrate with Feathercoin.
+Bitmessage is an open source fully encrypted peer to peer messaging system. In order to pass order information privately a version can be set up to integrate with Feathercoin.
 
 Currently, to operate on linux you must download and compile pybitmessage and then copy that to your Feathercoin's run directory to activate Bitmessage.
 
@@ -538,7 +538,7 @@ Use of the Shapeshift APIs has been integrated into the wallet as an Advanced fe
 
 The claim is trade any leading blockchain asset for any other. Protection by Design. No Account Needed. Choose Which Coins to Trade.
 
-To complete a transaction a request is posted : then a json data packket is received from the API.
+To complete a transaction a request is posted : then a json data packet is received from the API.
 
 QString jsonData="{\"withdrawal\":\"17GZr6RaDfUt2HXRVkmJgVhXKdkej1VMb9\",\"pair\":\"ftc_btc\",\"returnAddress\":\"71whQbi6pq2aCSvMvcTKCcTZDfAbUvf2Se\"}";
 
@@ -569,7 +569,7 @@ Send 3 FTC to Shapeshift, and receive Bitcoin in return.
 
 Coinnector.com is a real-time Alternate coin exchange that lists Feathercoin (FTC). Coinnector is now available as an advanced option via a plugin.
 
-Click on the text to open a Coinnector window in your browser. Set up your private channel using the latest coinnector help. 
+Click on the text to open a Coinnector window in your browser. Set up your private channel using the latest Coinnector help. 
 
 
 **Plugins Menu “Coinnector”**  
@@ -586,7 +586,7 @@ To access the stealth address search, click on the Help menu option, then select
 
 ### Multiple Signature Addresses
 
-Multisignature (often called MultiSig) is a form of technology used to add additional security for cryptocurrencies transactions. Multisignature addresses require another user or multiple users to sign a transaction before it can be broadcast onto the block chain.
+Multisignature (often called MultiSig) is a form of technology used to add additional security for crypto-currencies transactions. Multisignature addresses require another user or multiple users to sign a transaction before it can be broadcast onto the block chain.
 
 To create a "MultiSig" address in Feathercoin, click on wallet and select Send addresses : then select "New MultiSig".
 

@@ -28,7 +28,8 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 
 **Operational Features -**
 * Neoscript mining algorithm
-* Automatic check pointing ACP
+* Automatic check pointing (ACP)
+* enhanced Hash Rate Compensation (eHRC)
 
 
 ## Welcome to Feathercoin core wallet  
@@ -39,30 +40,35 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 ### Introduction to Feathercoin Core   
 ***What is the Feathercoin core wallet?***   
 
-Cryptographic currency wallets are like a normal wallet but for "internet cash". Although they do a complex job effectively validating your currency isn't counterfeit, wallets like the Feathercoin wallet, have been designed to be intuitive to use and allow new users to get started without having to understands the technical details of how it operates. 
-
-When you download a wallet it consists of two parts, a ledger or blockchain containing information on transactions to and from an address and the software to initiate and check transactions on the system are within the rules.  
+Cryptocurrency is digital form of currency that is being used increasingly all over the world because it has been designed to be used on the internet. Currencies like Feathercoin are based on open source code and a distributed security model, which means anyone can mine or produce the coins or contribute to the code and development.   
 
 
-***Where is the currency stored?***
+Cryptographic currency wallets are like a normal wallet but for "internet cash". Although they do a complex job effectively validating your currency isn't counterfeit have been designed to be intuitive to use and allow new users to get started without having to understands the technical details of how it operates. 
+
+When you download a wallet it consists of two parts, a ledger or blockchain containing information on transactions to and from an address and the software to initiate and check transactions on the system are within the rules of how the software validates transactions.  
+
+
+***Where is the currency stored?***  
 
 Transactions are stored on the blockchain, the wallet contains your "keys" or addresses to those transactions. This means the transactions are public, it is the fact that who owns the address is unknown which provide privacy. 
 
-Once the wallet is installed you can generate a Bitcoin address. The addresses are then passed between the users, usually the "receiver" communicates an address to send the funds to. The sender returns the funds to the "receive" address. That transfer of receive address can be done by email or encrypted by Bitmessage or Tor, to prevent the "man in the middle" identification of the address. 
+Once the wallet is installed you can generate a Feathercoin address. The addresses are then passed between the users, usually the "receiver" communicates an address to send the funds to. The address is sometime called the public key.
+
+The sender returns the funds to the "receive" address. That transfer of receive address can be done by email or encrypted by Bitmessage or Tor, to prevent the "man in the middle" identification of the address.  
 
 
-***What is mining and how is it controlled?***
+***What is mining and how is it controlled?***  
 
-Mining is done by 3rd parties using feathercoind (server daemon), additional software and hard ware. 
+Mining is done by 3rd parties using feathercoind (server daemon), additional software and hard ware.  
 
-The feathercoind program includes the wallet transaction verification algorithms and functions, but without the Graphical user interface (GUI). 
+The feathercoind program includes the wallet transaction verification algorithms and functions, but without the Graphical user interface (GUI).  
 
 Feathercoin has had it's Proof of work (POW) algorythm enhanced to make it more compatible with distributed mining on widely available commercial graphics cards. The GPUs do the mathematical cryptographic calculations and compatible mining software such as NSGminer use that to test if the have found a block and process the transactions. 
 
-It is the feathercoind (or daemon software) that confirms that a block is valid and spreads that block of transactions round the Peer to Pear network to all the other wallets and miners. A block becomes the next on the blockchain when it is accepted by more than 50% of the network as part of a correct and valid chain.
+It is the feathercoind (or daemon software) that confirms that a block is valid and spreads that block of transactions round the Peer to Pear network to all the other wallets and miners. A block becomes the next on the blockchain when it is accepted by more than 50% of the network as part of a correct and valid chain.  
 
 
-***What is the difference between version 0.8 series and version 0.9 series Feathercoin (FTC) wallets?***
+***What is the difference between version 0.8 series and version 0.9 series Feathercoin (FTC) wallets?***  
 
 Feathercoin core wallets 0.9.3.x has re based moved to the Bitcoin framework. Previously FTC use / was based on the Litecoin framework. Lizhi has spent the last year re-writing the Feathercoin coode, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.  
 
@@ -785,6 +791,39 @@ Second Step :  Broadcast it :
     copy binary code , click “Send transaction” .
 
 Wait confirmation, until a mining pool makes a block.
+
+
+### eHRC 
+
+**enhanced Hash Rate Compensation  - eHRC**  
+
+eHRC was designed and implemented by Feathercoin and is open source.  
+
+eHRC uses the standard Bitcoin protocol to calculate the the next block difficulty, but adds 2 extra historical block look ups, or block average times to calculate the new difficulty more accurately. 
+
+In addition the introduction of eHRC included recalculation of the difficulty, called ReTarget, after every block. 
+
+It was specifically designed to be as effective as "Kimoto Gravity well" at compensating for variations on the proof of work (POW) hash rate but use the minimum of extra table look ups and calculations. This was important when block times had to work for transactions every minute, the change over  to which was included in the same hard fork.. 
+
+
+The reason both "Kimoto Gravity well" and eHRC were designed to protect block chains against wild variations in the hash rate available. 
+
+Even the major coins could learn from the experience, whilst they have "over kill" mining they still suffer from some mining rate variations which can disadvantage long term miners and to the advantage of switchers.
+
+The problem is the calculations are incorrect for the next block and it can arrive much too early or late, depending on the current hash rate.
+
+There are a number of causes of hash rate variation :  
+
+* Introduction of Multipools with coin switching  
+* Introduction of ASICs, i.e. money can quickly buy power.
+* Hashing Algorithm used by a "Bigger coin" Where a large pool can be 50% > Global coin hash.
+
+FTC recently completed a review of effectivness of eHRC against return of GPU Multipools and large GPU pools.
+
+**Feathercoin Block Time Analysis 2016**
+https://github.com/wrapperband/FTCBlockTimeAnalysis  
+
+[eHRC in Action](https://github.com/wrapperband/FTCBlockTimeAnalysis/raw/master/2016-05-31%20FTCTransactionAnalysis/2016-05-31-FTCBlockDifficulty2Day.MediumTerm.jpg)
 
 
 

@@ -596,21 +596,22 @@ Click on Wallet menu item to create your address and extract if from the receive
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-Wallet.Send.MultiSig.dropdown.01.png) 
 
-Click on Wallet Send and click on the MultiSig button.
-
-
-
-
-![MultiSig Dialog](/images/ftc-0.9.3.2-Wallet.Send.MultiSig.01.png) 
+Click on Wallet Send and click on the MultiSig button. Input the public key from your wallet addrss and the public from the other wallet involved in the Multi-Signature.
 
 
 Press create to make the MultiSig address. 
 
-A .msa file is created which is sent to the other parties in the transaction. 
+![MultiSig Dialog](/images/ftc-0.9.3.2-Wallet.Send.MultiSig.01.png) 
+
 
 If there is a problem you will get a warning message  
 
 ![MultiSig Warning](/images/ftc-0.9.3.2-Wallet.Send.MultiSig.warning.02.png)
+
+
+If there no problems found then the newly created Multisig address can be found on "Addresses". A .msa file is created which is sent to the other parties in the transaction. 
+
+Exporting this MultiSig address to your partner involves sending the .msa file, to your partner.
 
 
 

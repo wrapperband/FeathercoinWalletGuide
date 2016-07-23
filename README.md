@@ -630,58 +630,19 @@ Add some currency to MultiSig expenses account,  via the send to button :
 
 ![Send Address MultiSig export](/images/ftc-0.9.3.2-button.menu.Send.MultiSig.send.01.png) 
 
+
 **How to look up a transaction on an online Feathercoin Blockchain Exploer**
 
 In the Transaction Button menu, right click on the transaction and select show transaction details. Copy the transaction ID.
 
 ![Copy the Transaction ID](/images/ftc-0.9.3.2-button.menu.Transactions.02.png) 
 
-Access an online explore such as explorer.ftc-c.com or explorer.feathercoin.com.  
+
+Access an online explore such as explorer.ftc-c.com or explorer.feathercoin.com.  Paste in the transaction ID to find it and view the transaction :
+
+![Copy the Transaction ID](/images/ftc-0.9.3.2-blockchain.explorer.01.png) 
 
 
-ftc-0.9.3.2-blockchain.explorer.01.png
-
-
-Mirrax send 0.2 ftc to his MultiSig address.  
-
-
-1. To create a m-of-n MultiSig address, we need n public keys.  
-
-To create a 2-of-3 MultiSig address, you can get one public key from each or 3 wallets. The public key is just the address. 
-
-
-For example, using users Lizhi, Calem and Mirrax requiring a 2 of 3 MultiSig Address.  
-
-The first wallet Mirrax's address, and another form Lizhi's wallet address and Calem's wallet address.  
-
-
- 2. Now we can create our MultiSig address in "Sending addresses page", Click "New MultiSig" and fill in each public keys from step 1.  
-
-![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen01.jpg)  
-
-
-3. Click on the "Create" button ,You can find the newly created Multisig address on "Addresses" and export this Multisig address to your partner. You must send the .msa file to your partner.  
-
-![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen02.jpg)  
-
-
-4. Calem or Lizhi imports the .msa file and create the same MultiSig address.  
-
-![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen03.jpg)  
-
-
-
-**STEP TWO : Send Feathercoin (FTC) to the Multiple Signature Address**  
-
-Send to MultiSig address is identical to your normal transaction, just provide your MultiSig address as recipient. Mirrax send 0.2 ftc to his MultiSig address.  
-
-![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen04.jpg)  
-
-
-tx info : [http://block.ftc-c.com/tx/384638a4e577cb80183496f7bcc72bb3b9572681b292e507f22d963ff06fe55b][0]  
-
-
-Then Mirrax's MultiSignature addresses receives the  0.2 FTC.  
 
 
 **STEP TWO : Spending from a Multi Signature Address**  

@@ -15,23 +15,23 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 **Advanced Features -**  
 * Multi - Signature Transactions  
 * Add a text comment to the transaction  
-* Add Openname addresses to the Blockchain   
+* Add Openname DNS addresses to the Blockchain   
 * Stealth Addresses   
 * Transaction reports  
+* Coin Control 
+* Print a Paper Wallet
 
 **Plugins -**  
 * Bitmessage  
 * Shapeshift  
 * Coinnector  
 
-**Features -**
-* Coin Control 
-* Print a Paper Wallet
+**Operational Features -**
 * Neoscript mining algorithm
 * Automatic check pointing ACP
 
 
-### Welcome to Feathercoin core wallet  
+## Welcome to Feathercoin core wallet  
 
 ![Wallet Main Screen](/images/ftc-0.9.3.2-splashscreen01.png)
 
@@ -39,7 +39,9 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 ### Introduction to Feathercoin Core   
 ***What is the Feathercoin core wallet?***   
 
-Cryptographic currency wallets, like the Feathercoin wallet, have been designed to be intuitive to use and allow new users to get started without having to understands the technical details of how it operates. When you download a wallet it consists of two parts, a ledger or blockchain containing information on transactions to and from an address and the software to initiate and check transactions on the system are within the rules.  
+Cryptographic currency wallets are like a normal wallet but for "internet cash". Although they do a complex job effectively validating your currency isn't counterfeit, wallets like the Feathercoin wallet, have been designed to be intuitive to use and allow new users to get started without having to understands the technical details of how it operates. 
+
+When you download a wallet it consists of two parts, a ledger or blockchain containing information on transactions to and from an address and the software to initiate and check transactions on the system are within the rules.  
 
 
 ***Where is the currency stored?***

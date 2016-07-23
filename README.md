@@ -481,6 +481,8 @@ Open receive addresses on the Wallet menu and right click on the address with th
 
 **How are comments recorded in the Blockchain?**
 
+The comment message can be extracted from scriptPubKey by using Hex to Ascii on OP_RETURN to return your message.  
+
 OP_RETURN opcode works at the byte level in a bitcoin transaction. To prevent over flooding the transaction database with text messages the core-developers made the opcode OP_RETURN a valid opcode to be used in a bitcoin / feathercoin transaction, which allows 80 arbitrary bytes to be used in an unspendable transaction. In 2014 that was educed to 40.
 
 First find the transaction ID from the transaction menu right click option of the Address with a message. 
@@ -508,32 +510,16 @@ Using an Hex to ASCI converter such as uni2ascii, copy the Hex text and save it 
        uni2ascii comments.txt
        
 
+**Feathercoin comments. Find encrypted comments on the blockchain**
 
+Once you have made a comment you can find it in the Feathercoin Blockchain explorer online. 
 
-
-
-
-e165c5ae26bca46aab33ac5fb984a7556a3f031f
-
-b65831f7a9dba0d04ee844b01aa25f02863cc40b
-
-c1104dd4b17084ffc2117a05747706e67104988a
-
-
-
-
-
-**Feathercoin comments Find encrypted comments on the blockchain**
-
-Once you have made a comment you can find it in the Feathercoin Blockchain. 
-
-http://block.ftc-c.com/   
+Using : http://block.ftc-c.com/   
 
 
 First : find the transaction with the comment, the copy the contents of OP_RETURN.  ftc-c.com shows the message on the screen.
 
-It can also be extracted from scriptPubKey by using Hex to Ascii on OP_RETURN to return your message.  
- 
+
 
 
 

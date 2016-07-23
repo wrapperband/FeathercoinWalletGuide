@@ -168,6 +168,8 @@ MultiSig stands for multiple signature addresses.  Signature addresses can be ma
 ### Feathercoin Wallet Main Menu        
 
 **Wallet drop down menu**   
+
+The drop down menu allows access to URI dialog, wallet backup, Printing Paper Wallets, Putting a password on the wallet and editing it, locking the wallet, Addresses transactions are to be sent from and addresses transactions are in to. The final option is exit (with backup reminder).
  
 ![Walletdrop down](/images/ftc-0.9.3.2-Wallet.dropdown.01.png)   
 

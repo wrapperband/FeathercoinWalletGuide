@@ -241,23 +241,23 @@ The printed wallet will contain all the keys from the local wallet. If the local
 
 **How to import your public / private keys back into a wallet :**
 
-* Open Menu -> Settings -> Debug  
-* Unlock the wallet, 600 is the time  
+Open Menu -> Settings -> Debug  
+Unlock the wallet, 600 is the time  
 
     walletpassphrase "YourLongPassphrase" 600  
 
-* Type in the console :  
+Type in the console :  
 
     importprivkey yourPrivateKeyInWalletImportFormat "TheLabelThatIWant"   
  
 
-* To import multiple keys place false at the end :   
+To import multiple keys place false at the end :   
 
     importprivkey L1SLw5C14f8KBZCfUow3h5acEfC8ZLMiLo3fgoDWxHjCTuzyGPcd 'Label' false  
 
 
-* Check that you have the address by closing the Debug window and going back to your address book  
-* Back-up your updated wallet.dat file  
+Check that you have the address by closing the Debug window and going back to your address book  
+Back-up your updated wallet.dat file  
 
 
 ### Encrypt your wallet  
@@ -473,6 +473,55 @@ A message is shown to confirm the comment has been inserted.
 If the comment is too long, or that address already has a comment then you will get a warning message :
 
 ![Comment too large Warning](/images/ftc-0.9.3.2-comments.screen.05.png)
+
+**Read comments from the wallet**
+
+
+Open receive addresses on the Wallet menu and right click on the address with the comment. Copy the Public Hash160 to the clipboard.
+
+**How are comments recorded in the Blockchain?**
+
+OP_RETURN opcode works at the byte level in a bitcoin transaction. To prevent over flooding the transaction database with text messages the core-developers made the opcode OP_RETURN a valid opcode to be used in a bitcoin / feathercoin transaction, which allows 80 arbitrary bytes to be used in an unspendable transaction. In 2014 that was educed to 40.
+
+First find the transaction ID from the transaction menu right click option of the Address with a message. 
+
+    Transaction ID. 3ddc1aa067548a398557386037f83b2e09fb5878d0c1ed886c0c20e3227f6311-000  
+
+
+Open a console Tab window from Settings / Debug : 
+
+Delete the -000 from the end and replace it with 1
+
+    getrawtransaction 3ddc1aa067548a398557386037f83b2e09fb5878d0c1ed886c0c20e3227f6311 1
+    
+
+
+From the output text copy the Hex part of OP_RETURN 
+
+      "scriptPubKey" : {
+      "asm" : "OP_RETURN 5468697320636f6d6d656e74206973206d61646520746f6461792053617475726461792032337264",
+      "hex" : "6a285468697320636f6d6d656e74206973206d61646520746f6461792053617475726461792032337264",
+
+     
+Using an Hex to ASCI converter such as uni2ascii, copy the Hex text and save it to a file comments.txt 
+
+       uni2ascii comments.txt
+       
+
+
+
+
+
+
+e165c5ae26bca46aab33ac5fb984a7556a3f031f
+
+b65831f7a9dba0d04ee844b01aa25f02863cc40b
+
+c1104dd4b17084ffc2117a05747706e67104988a
+
+
+
+
 
 **Feathercoin comments Find encrypted comments on the blockchain**
 
@@ -876,3 +925,5 @@ https://bitcoin.org/bitcoin.pdf
 
 The future of Digital Business Innovation : Trends & Practices Pub: Springer
 by Vincenzo Morabito
+
+Op_Return: http://bitcoin.stackexchange.com/questions/29554/explanation-of-what-an-op-return-transaction-looks-like

@@ -239,23 +239,23 @@ The printed wallet will contain all the keys from the local wallet. If the local
 
 **How to import your public / private keys back into a wallet :**
 
-1. Open Menu -> Settings -> Debug  
-2. Unlock the wallet, 600 is the time  
+* Open Menu -> Settings -> Debug  
+* Unlock the wallet, 600 is the time  
 
     walletpassphrase "YourLongPassphrase" 600  
 
-3. Type in the console :  
+* Type in the console :  
 
     importprivkey yourPrivateKeyInWalletImportFormat "TheLabelThatIWant"   
  
 
-4. To import multiple keys place false at the end :   
+* To import multiple keys place false at the end :   
 
     importprivkey L1SLw5C14f8KBZCfUow3h5acEfC8ZLMiLo3fgoDWxHjCTuzyGPcd 'Label' false  
 
 
-5. Check that you have the address by closing the Debug window and going back to your address book  
-6. Back-up your updated wallet.data  
+* Check that you have the address by closing the Debug window and going back to your address book  
+* Back-up your updated wallet.dat file  
 
 
 ### Encrypt your wallet  

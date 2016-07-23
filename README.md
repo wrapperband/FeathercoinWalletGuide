@@ -273,6 +273,18 @@ The receive addresses menu option show a grid with label and address. There are 
 
 Right clicking on a address brings up an actions menu.  
 
+The Right mouse click options are :  
+
+* Copy the address to the clipboard.  
+* Copy the label or description.  
+* Edit the label.  
+* Show the QRCode and process QRCodes.  
+* Enter the sign message dialog.  
+* Copy the Public Key of the address.  
+* Copy the Private key (Warning!).  
+* Copy Public Hash160.  
+* Export a MultiSig address.  
+  
 
 ![Actions Menu](/images/ftc-0.9.3.2-Wallet.ReceivePayments.02.png)  
 

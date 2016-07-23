@@ -588,9 +588,12 @@ To access the stealth address search, click on the Help menu option, then select
 
 ### Multiple Signature Addresses
 
-Multisignature (often called MultiSig) is a form of technology used to add additional security for crypto-currencies transactions. Multisignature addresses require another user or multiple users to sign a transaction before it can be broadcast onto the block chain.
+Multisignature (often called MultiSig) is a form of technology used to add additional security for crypto-currencies transactions. Multisignature addresses require another user or multiple users to sign a transaction before it can be broadcast onto the block chain.  
 
-To create a "MultiSig" address in Feathercoin, click on wallet and select Send addresses : then select "New MultiSig".
+This can be used to facilitate escrow holdings, using 2 out of 3 an arbiter can be employed to hold the deciding vote. Or in the case of one of two, where 2 people can allocate expences and either one is empowered to validate a transaction happens.
+
+
+To create a "MultiSig" address in Feathercoin, click on wallet and select Send addresses : then select "New MultiSig".  
 
 In this simple example the address needs to be paid by either of 2 people, if they are available. So, set 1 of 2 required to sign the address. The two people, or wallets need to supply the addresses or public keys.
 

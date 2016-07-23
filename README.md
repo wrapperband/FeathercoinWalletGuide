@@ -574,11 +574,19 @@ To access the stealth address search, click on the Help menu option, then select
 
 ### Multiple Signature Addresses
 
-Multisignature in cryptocurrencies. Multisignature (often called multisig) is a form of technology used to add additional security and for cryptocurrencies transactions. Multisignature addresses require another user or users to sign a transaction before it can be broadcast onto the block chain.
+Multisignature (often called MultiSig) is a form of technology used to add additional security for cryptocurrencies transactions. Multisignature addresses require another user or multiple users to sign a transaction before it can be broadcast onto the block chain.
 
 To create a "MultiSig" address in Feathercoin, click on wallet and select Send addresses : then select "New MultiSig".
 
 In this simple example the address needs to be paid by either of 2 people, if they are available. So, set 1 of 2 required to sign the address. The two people, or wallets need to supply the addresses or public keys.
+
+Click on Wallet menu item to create your address and extract if from the receive menu. Right click the address and copy the public key.
+
+![MultiSig Dialog](/images/ftc-0.9.3.2-Wallet.Send.MultiSig.dropdown.01.png) 
+
+Click on Wallet Send and click on the MultiSig button.
+
+
 
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-Wallet.Send.MultiSig.01.png) 
@@ -740,7 +748,7 @@ https://github.com/wellenreiter01/ftc-abe
 
 ### Feathercoin API  
 
-The Feathercoin API is a set of function calls you can make to the Feathercoin server to return the status of various parameters, such as difficult, block height 
+The Feathercoin API is a set of function calls you can make to the Feathercoin server to return the status of various parameters, such as difficult, block height. 
 
 https://www.feathercoin.com/feathercoin-api/  
 

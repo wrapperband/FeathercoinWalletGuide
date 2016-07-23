@@ -611,8 +611,38 @@ If there is a problem you will get a warning message
 
 If there no problems found then the newly created Multisig address can be found on "Addresses". A .msa file is created which is sent to the other parties in the transaction. 
 
-Exporting this MultiSig address to your partner involves sending the .msa file, to your partner.
+Exporting this MultiSig address to your partner involves sending the .msa file, to your partner. Right click on the MultiSig address to export the file.
 
+![Send Address MultiSig export](/images/ftc-0.9.3.2-Wallet.Send.MultiSig.dropdown.01.png) 
+
+
+To import the MultiSig file into your wallet, open Send addresses on the Wallet menu and click New the MultiSig button.
+
+At the dialog click Import and find the .msa file to import the MultiSignature address.
+
+
+Send to MultiSig address is identical to your normal transaction, just provide your MultiSig address as recipient. 
+
+For example send 0.2 FTC to the  Multisig address : 39Mx1z6E8WwSSBWQC7HEJHy4ykBthgsGd2
+
+
+Add some currency to MultiSig expenses account,  via the send to button :  
+
+![Send Address MultiSig export](/images/ftc-0.9.3.2-button.menu.Send.MultiSig.send.01.png) 
+
+**How to look up a transaction on an online Feathercoin Blockchain Exploer**
+
+In the Transaction Button menu, right click on the transaction and select show transaction details. Copy the transaction ID.
+
+![Copy the Transaction ID](/images/ftc-0.9.3.2-button.menu.Transactions.02.png) 
+
+Access an online explore such as explorer.ftc-c.com or explorer.feathercoin.com.  
+
+
+ftc-0.9.3.2-blockchain.explorer.01.png
+
+
+Mirrax send 0.2 ftc to his MultiSig address.  
 
 
 1. To create a m-of-n MultiSig address, we need n public keys.  

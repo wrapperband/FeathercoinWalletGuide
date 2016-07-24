@@ -539,27 +539,48 @@ First find the transaction ID from the transaction menu right click option of th
     Transaction ID. 3ddc1aa067548a398557386037f83b2e09fb5878d0c1ed886c0c20e3227f6311-000  
 
 
-Open a console Tab window from Settings / Debug : 
+**How are comments recorded in the Blockchain?**
 
-Delete the -000 from the end and replace it with 1
+OP_RETURN opcode works at the byte level in a bitcoin transaction. To prevent over flooding the transaction database with text messages the core-developers made the opcode OP_RETURN a valid opcode to be used in a bitcoin / feathercoin transaction, which allows 80 arbitrary bytes to be used in an un-spendable transaction. In 2014 that was educed to 40.
 
-    getrawtransaction 3ddc1aa067548a398557386037f83b2e09fb5878d0c1ed886c0c20e3227f6311 1
+**Find the comment**
+First find the "Transaction ID" from the transaction menu right click option of the Address with a message, in the Feathercoin-qt wallet. 
+
+    Transaction ID     3ddc1aa067548a398557386037f83b2e09fb5878d0c1ed886c0c20e3227f6311-000  
+
+**Obtaining the raw transaction details**
+Open a Console Tab window from the Settings > Debug menu options in the wallet: 
+
+Delete the -000 from the end and of thhe transaction ID and replace it with 1
+
+    getrawtransaction   3ddc1aa067548a398557386037f83b2e09fb5878d0c1ed886c0c20e3227f6311 1
     
+**Extract the Hex code of the message**
+From the output text, copy the Hex part of OP_RETURN 
+
+    "scriptPubKey" : {
+    "asm" : "OP_RETURN 5468697320636f6d6d656e74206973206d61646520746f6461792053617475726461792032337264",
+    "hex" : "6a285468697320636f6d6d656e74206973206d61646520746f6461792053617475726461792032337264",
+
+**Converting the Hex to ASCII**
+
+**xxd**
+Vim is another tool set that can be installed or is already on some Unix systems. It includes the command **xxd**.
+Using the Terminal in Debian based systems : 
+
+    sudo apt-get install vim
+    echo 6a285468697320636f6d6d656e74206973206d61646520746f6461792053617475726461792032337264 | xxd -r -p
+    j(This comment is made today Saturday 23rd
 
 
-From the output text copy the Hex part of OP_RETURN 
+**uni2ascii**
+Using an Hex to ASCI converter such as uni2ascii, copy the Hex text and save it to a file comments.txt   
 
-      "scriptPubKey" : {
-      "asm" : "OP_RETURN 5468697320636f6d6d656e74206973206d61646520746f6461792053617475726461792032337264",
-      "hex" : "6a285468697320636f6d6d656e74206973206d61646520746f6461792053617475726461792032337264",
-
-     
-Using an Hex to ASCI converter such as uni2ascii, copy the Hex text and save it to a file comments.txt 
-
-       uni2ascii comments.txt
+    sudo apt-get install uni2ascii
+    uni2ascii comments.txt
        
 
-**Feathercoin comments. Find encrypted comments on the blockchain**
+**Find Comments online**
 
 Once you have made a comment you can find it in the Feathercoin Blockchain explorer online. 
 

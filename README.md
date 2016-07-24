@@ -16,7 +16,7 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
     - [What is the Feathercoin core wallet?](#what-is-the-feathercoin-core-wallet)
     - [Where is the currency stored?](#where-is-the-currency-stored)
     - [What is mining and how is it controlled?](#what-is-mining-and-how-is-it-controlled)
-    - [What is the difference between wallet versions.](#what-is-the-difference-between-wallet-versions)
+    - [What is the difference between wallet versions?](#what-is-the-difference-between-wallet-versions)
   - [Feathercoin Wallet Main Screen and Buttons](#feathercoin-wallet-main-screen-and-buttons)
 - [Feathercoin Wallet Buttons Bar](#feathercoin-wallet-buttons-bar)
   - [Transaction Button](#transaction-button)
@@ -134,7 +134,7 @@ Feathercoin has had it's Proof of work (POW) algorithm enhanced to make it more 
 It is the feathercoind (or daemon software) that confirms that a block is valid and spreads that block of transactions round the Peer to Pear network to all the other wallets and miners. A block becomes the next on the blockchain when it is accepted by more than 50% of the network as part of a correct and valid chain.  
 
 
-#### What is the difference between wallet versions.    
+#### What is the difference between wallet versions?      
 
 What is the difference between version 0.8 series and version 0.9 series Feathercoin (FTC) wallets? 
 

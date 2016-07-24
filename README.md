@@ -28,7 +28,7 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
   - [Sign and Verify Messages](#sign-and-verify-messages)
   - [Debug console](#debug-console)
   - [Include comments in the Feathercoin Blockchain](#include-comments-in-the-feathercoin-blockchain)
-  - [Plugins Menu](#plugins-menu)
+- [Plugins Menu](#plugins-menu)
   - [Bitmessage](#bitmessage)
   - [Opennames DNS Service](#opennames-dns-service)
   - [Shapeshift service](#shapeshift-service)
@@ -566,13 +566,10 @@ Once you have made a comment you can find it in the Feathercoin Blockchain explo
 Using : http://block.ftc-c.com/   
 
 
-First : find the transaction with the comment, the copy the contents of OP_RETURN.  ftc-c.com shows the message on the screen.
+First : find the transaction with the comment, the copy address or transaction ID. Search for it on ftc-c.com, The message is decoded on the page.
 
 
-
-
-
-### Plugins Menu
+## Plugins Menu
 
 ### Bitmessage
 

@@ -89,13 +89,14 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 ### Introduction to Feathercoin Core   
 ***What is the Feathercoin core wallet?***   
 
-Cryptocurrency is digital form of currency that is being used increasingly all over the world because it has been designed to be used on the internet. Currencies like Feathercoin are based on open source code and a distributed security model, which means anyone can mine or produce the coins or contribute to the code and development.   
+Cryptocurrency is digital form of currency that is being used increasingly all over the world because it has been designed to be used on the internet. Currencies like Feathercoin are based on open source code and a distributed security model, which means anyone can mine or produce the coins or contribute to the code and development.  [Ref 1] 
 
 
 Cryptographic currency wallets are like a normal wallet but for "internet cash". Although they do a complex job effectively validating your currency isn't counterfeit have been designed to be intuitive to use and allow new users to get started without having to understands the technical details of how it operates. 
 
 When you download a wallet it consists of two parts, a ledger or blockchain containing information on transactions to and from an address and the software to initiate and check transactions on the system are within the rules of how the software validates transactions.  
 
+Feathercoin is a long established blockchain [Ref 4] with a reputable open development and Bitcoin / Satoshi community ideal.
 
 ***Where is the currency stored?***  
 
@@ -350,7 +351,7 @@ Contains similar information about send addresses as for receive addresses.   Yo
 
 ### Stealth Addresses  
 
-Stealth addresses were developed for Feathercoin out of the discussion of producing Private Blockchain Addresses or Dark Blockchains. Feathercoin, like Bitcoin has an open Blockchain or public register, in order to prove that the technology works and the correct transfers took place. Now the technology is accepted, there is then no need to make the amounts being transferred visible to other than the sender and receiver, which can be achieved using Stealth Addresses.  
+Stealth addresses were developed for Feathercoin out of the discussion of producing Private Blockchain Addresses or Dark Blockchains [Ref 2]. Feathercoin, like Bitcoin has an open Blockchain or public register, in order to prove that the technology works and the correct transfers took place. Now the technology is accepted, there is then no need to make the amounts being transferred visible to other than the sender and receiver, which can be achieved using Stealth Addresses.  
 
 **What are Stealth Addresses?**  
 
@@ -542,7 +543,7 @@ First find the transaction ID from the transaction menu right click option of th
 
 **How are comments recorded in the Blockchain?**
 
-OP_RETURN opcode works at the byte level in a bitcoin transaction. To prevent over flooding the transaction database with text messages the core-developers made the opcode OP_RETURN a valid opcode to be used in a bitcoin / feathercoin transaction, which allows 80 arbitrary bytes to be used in an un-spendable transaction. In 2014 that was educed to 40.
+OP_RETURN opcode works at the byte level in a bitcoin transaction [Ref 3]. To prevent over flooding the transaction database with text messages the core-developers made the opcode OP_RETURN a valid opcode to be used in a bitcoin / feathercoin transaction, which allows 80 arbitrary bytes to be used in an un-spendable transaction. In 2014 that was educed to 40.
 
 **Find the comment**
 First find the "Transaction ID" of the Address with a message, from the transaction menu right click option  in the Feathercoin-qt wallet. 

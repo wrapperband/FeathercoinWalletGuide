@@ -6,8 +6,11 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  
 
-  - [Feathercoin (FTC) Core Wallet : Main Features](#feathercoin-ftc-core-wallet--main-features)
-    - [Feathercoin (FTC) Core Wallet : Additional Features List](#feathercoin-ftc-core-wallet--additional-features-list)
+  - [Feathercoin (FTC) Core Wallet :](#feathercoin-ftc-core-wallet-)
+    - [Main Features -](#main-features--)
+    - [Advanced Features -](#advanced-features--)
+    - [Plugins -](#plugins--)
+    - [Operational Features -](#operational-features--)
   - [Welcome to Feathercoin core wallet](#welcome-to-feathercoin-core-wallet)
     - [Introduction to Feathercoin Core](#introduction-to-feathercoin-core)
     - [Feathercoin Wallet Main Screen and Buttons](#feathercoin-wallet-main-screen-and-buttons)

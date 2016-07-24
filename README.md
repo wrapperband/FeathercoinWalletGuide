@@ -46,7 +46,7 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
   - [Feathercoin Graphics and Logos](#feathercoin-graphics-and-logos)
   - [Feathercoin Merchant tools](#feathercoin-merchant-tools)
   - [Broadcast Transaction Service](#broadcast-transaction-service)
-  - [eHRC](#ehrc)
+  - [enhanced Hash Rate Compensation (eHRC)](#enhanced-hash-rate-compensation-ehrc)
   - [Neoscript](#neoscript)
   - [Advanced Checkpointing ACP](#advanced-checkpointing-acp)
   - [References / Further reading :](#references--further-reading-)
@@ -917,32 +917,31 @@ Second Step :  Broadcast it :
 Wait confirmation, until a mining pool makes a block.
 
 
-### eHRC 
+### enhanced Hash Rate Compensation (eHRC) 
 
-**enhanced Hash Rate Compensation  - eHRC**  
-
-eHRC was designed and implemented by Feathercoin and is open source.  
+eHRC stands for enhanced Hash Rate Compensation, it was designed and implemented by Feathercoin developers and is open source.  
 
 eHRC uses the standard Bitcoin protocol to calculate the the next block difficulty, but adds 2 extra historical block look ups, or block average times to calculate the new difficulty more accurately. 
 
-In addition the introduction of eHRC included recalculation of the difficulty, called ReTarget, after every block. 
+In addition the introduction of eHRC included re-calculation of the difficulty, called ReTarget, after every block. 
 
 It was specifically designed to be as effective as "Kimoto Gravity well" at compensating for variations on the proof of work (POW) hash rate but use the minimum of extra table look ups and calculations. This was important when block times had to work for transactions every minute, the change over  to which was included in the same hard fork.. 
 
 
-The reason both "Kimoto Gravity well" and eHRC were designed to protect block chains against wild variations in the hash rate available. 
+The reason both "Kimoto Gravity well" and eHRC were designed was to help protect block chains against wild variations in the POW hash rate available. 
 
-Even the major coins could learn from the experience, whilst they have "over kill" mining they still suffer from some mining rate variations which can disadvantage long term miners and to the advantage of switchers.
+Whilst major coins such as bitcoin have "over kill" mining, they still suffer from some mining rate variations which can disadvantage long term miners and to the advantage of coin switchers.
 
-The problem is the calculations are incorrect for the next block and it can arrive much too early or late, depending on the current hash rate.
+The problem is the calculations become incorrect for the next block when the hash rate varies and it can arrive much too early or late.
+ 
 
-There are a number of causes of hash rate variation :  
+There have been a number of causes of hash rate variation :  
 
 * Introduction of Multipools with coin switching  
 * Introduction of ASICs, i.e. money can quickly buy power.
 * Hashing Algorithm used by a "Bigger coin" Where a large pool can be 50% > Global coin hash.
 
-FTC recently completed a review of effectivness of eHRC against return of GPU Multipools and large GPU pools.
+FTC recently completed a review of effectiveness of eHRC against the increase in GPU Multipools and large GPU pools. It showed that eHRC was performing as designed to adjust the hash difficulty and compensate for variations.
 
 **Feathercoin Block Time Analysis 2016**
 https://github.com/wrapperband/FTCBlockTimeAnalysis  

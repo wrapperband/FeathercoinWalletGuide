@@ -48,9 +48,9 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
   - [Shapeshift service](#shapeshift-service)
   - [Coinnector service](#coinnector-service)
   - [Multiple Signature Addresses](#multiple-signature-addresses)
-  - [Help Menu](#help-menu)
-    - [Command line options](#command-line-options)
-    - [Stealth transaction Search - SX Tool](#stealth-transaction-search---sx-tool)
+- [Help Menu](#help-menu)
+  - [Command line options](#command-line-options)
+  - [Stealth transaction Search - SX Tool](#stealth-transaction-search---sx-tool)
 - [Feathercoin Back-end Features & Specification](#feathercoin-back-end-features-&-specification)
   - [enhanced Hash Rate Compensation (eHRC)](#enhanced-hash-rate-compensation-ehrc)
   - [Neoscrypt](#neoscrypt)
@@ -845,14 +845,14 @@ In the Receiving addresses page, Choose your address and click "Copy Public Key"
 [1]: http://block.ftc-c.com/tx/6e8dca7038dd97f4811163da91c047b70c4775dc6cc57f5de5b0200f1de1770b
 
 
-### Help Menu
+## Help Menu
 
 The help menu contains information on the version or Feathercoin and the Qt framework it was developed on in the about section and a list of the available command line options.  
 
 The help menu also includes the Stealth address search facility.  
 
 
-#### Command line options  
+### Command line options  
 
 Usage:   feathercoin-qt [command-line options] 
 Server:  feathercoind [command-line options]
@@ -871,7 +871,7 @@ or the command :
     
 Add a node to connect to and attempt to keep the connection open  : can be used to add more peers (like from your local network) to speed up synchronisation of the blockchain.  
 
-#### Stealth transaction Search - SX Tool 
+### Stealth transaction Search - SX Tool 
 
 Usually the wallet will automatically detect a stealth transaction for your address, if not you can let it scan from one block height to another. 
 

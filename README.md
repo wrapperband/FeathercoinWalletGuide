@@ -13,9 +13,17 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
   - [Operational Features -](#operational-features--)
 - [Welcome to Feathercoin core wallet](#welcome-to-feathercoin-core-wallet)
   - [Introduction to Feathercoin Core](#introduction-to-feathercoin-core)
-- [Feathercoin Wallet Main Screen and Buttons](#feathercoin-wallet-main-screen-and-buttons)
-  - [Feathercoin Wallet Buttons Bar](#feathercoin-wallet-buttons-bar)
-- [Feathercoin Wallet Main Menu Option](#feathercoin-wallet-main-menu-option)
+    - [What is the Feathercoin core wallet?](#what-is-the-feathercoin-core-wallet)
+    - [Where is the currency stored?](#where-is-the-currency-stored)
+    - [What is mining and how is it controlled?](#what-is-mining-and-how-is-it-controlled)
+    - [What is the difference between wallet versions.](#what-is-the-difference-between-wallet-versions)
+  - [Feathercoin Wallet Main Screen and Buttons](#feathercoin-wallet-main-screen-and-buttons)
+- [Feathercoin Wallet Buttons Bar](#feathercoin-wallet-buttons-bar)
+  - [Transaction Button](#transaction-button)
+  - [Receive Button](#receive-button)
+  - [Send Button](#send-button)
+  - [Report Button](#report-button)
+- [Feathercoin Wallet Main Menu Options](#feathercoin-wallet-main-menu-options)
   - [Import URI payments](#import-uri-payments)
   - [Backup wallet data](#backup-wallet-data)
   - [Paper Wallet Menu](#paper-wallet-menu)
@@ -92,7 +100,8 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 
 
 ### Introduction to Feathercoin Core   
-***What is the Feathercoin core wallet?***   
+
+#### What is the Feathercoin core wallet?  
 
 Cryptocurrency is digital form of currency that is being used increasingly all over the world because it has been designed to be used on the internet. Currencies like Feathercoin are based on open source code and a distributed security model, which means anyone can mine or produce the coins or contribute to the code and development.  [Ref 1] 
 
@@ -103,7 +112,7 @@ When you download a wallet it consists of two parts, a ledger or blockchain cont
 
 Feathercoin is a long established blockchain [Ref 4] with a reputable open development and Bitcoin / Satoshi community ideal.
 
-***Where is the currency stored?***  
+#### Where is the currency stored?  
 
 Transactions are stored on the blockchain, the wallet contains your "keys" or addresses to those transactions. This means the transactions are public, it is the fact that who owns the address is unknown which provide privacy. 
 
@@ -112,7 +121,7 @@ Once the wallet is installed you can generate a Feathercoin address. The address
 The sender returns the funds to the "receive" address. That transfer of receive address can be done by email or encrypted by Bitmessage or Tor, to prevent the "man in the middle" identification of the address.  
 
 
-***What is mining and how is it controlled?***  
+#### What is mining and how is it controlled?  
 
 Mining is done by 3rd parties using feathercoind (server daemon), additional software and hard ware.  
 
@@ -123,7 +132,9 @@ Feathercoin has had it's Proof of work (POW) algorithm enhanced to make it more 
 It is the feathercoind (or daemon software) that confirms that a block is valid and spreads that block of transactions round the Peer to Pear network to all the other wallets and miners. A block becomes the next on the blockchain when it is accepted by more than 50% of the network as part of a correct and valid chain.  
 
 
-***What is the difference between version 0.8 series and version 0.9 series Feathercoin (FTC) wallets?***  
+#### What is the difference between wallet versions.    
+
+What is the difference between version 0.8 series and version 0.9 series Feathercoin (FTC) wallets? 
 
 Feathercoin core wallets 0.9.3.x has re based moved to the Bitcoin framework. Previously FTC use / was based on the Litecoin framework. Lizhi has spent the last year re-writing the Feathercoin code, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.  
 
@@ -138,7 +149,7 @@ Advantages of the 0.9.3.x series include, move to Qt5 development environment, s
 Official Windows builds and Linux PPAs are available from Feathercoin.com.  
 
 
-## Feathercoin Wallet Main Screen and Buttons   
+### Feathercoin Wallet Main Screen and Buttons   
 
 ***How do I use the wallet? What can it do? :***   
 
@@ -152,14 +163,15 @@ The overview page is self explanatory, the left side showing the current overall
 ![Wallet overview page](/images/ftc-0.9.3.2-main.screen.01.png)  
 
 
-### Feathercoin Wallet Buttons Bar  
+## Feathercoin Wallet Buttons Bar  
+
 ***How do I send and receive transactions? :***  
 
 **Tip :** *The button menu can be closed to make more room : If you need to activate the buttons or close the button menu :*  
 * Right click with your mouse on the button menu on the buttons menu to show the Tabs Toolbar check-box to close the button toolbar.  
 
 
-**Transaction Button**
+### Transaction Button
 
 The transaction button shows the transactions that have taken place. You will need to receive some coins to start with but after that reviewing transactions will be the most common place to go.  
 
@@ -176,7 +188,7 @@ Right click on the transactions to show the transaction drop down. In this case 
 ![Transactions drop down menu](/images/ftc-0.9.3.2-button.menu.Transactions.drop.down.01.png)  
 
 
-**Receive Button**   
+### Receive Button   
 
 In order to receive funds you need to create a receive address, The label, message and request amount are optional, press request payment and the address is created.
 
@@ -191,8 +203,7 @@ A pop up is shown with the newly created receive address address and QRCode imag
 ![QRCode image](/images/ftc-0.9.3.2-button.menu.Receive.QRCode.02.png)  
 
 
-
-**Send Button**   
+### Send Button   
 
 In order to send funds you need to input the receivers address. You can label the transaction with a description and input the amount.  
 
@@ -207,7 +218,7 @@ To use the QR scan feature, click "Send to QR". Then, position the scan box over
 ![QRCode image](/images/ftc-0.9.3.2-button.menu.sendto.QRCode.03.png)  
 
 
-**Report Button**  
+### Report Button  
 
 This image shows the grid shown when the report button is pressed. In the example the grid is filtered on "all the transactions that happened today" and calculates the number and total. That can then be exported to a csv file the "Export" button at the bottom right of the window.   
 
@@ -221,7 +232,7 @@ MultiSig stands for multiple signature addresses.  Signature addresses can be ma
 ![MultiSig Button](/images/ftc-0.9.3.2-button.menu.MultiSig.01.png)  
 
 
-## Feathercoin Wallet Main Menu Option        
+## Feathercoin Wallet Main Menu Options      
 
 **Wallet drop down menu**   
 

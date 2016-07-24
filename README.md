@@ -15,15 +15,17 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
   - [Introduction to Feathercoin Core](#introduction-to-feathercoin-core)
 - [Feathercoin Wallet Main Screen and Buttons](#feathercoin-wallet-main-screen-and-buttons)
   - [Feathercoin Wallet Buttons Bar](#feathercoin-wallet-buttons-bar)
-  - [Feathercoin Wallet Main Menu](#feathercoin-wallet-main-menu)
-  - [Feathercoin Paper Wallet Menu](#feathercoin-paper-wallet-menu)
-  - [Import your Paper Wallet address back](#import-your-paper-wallet-address-back)
+- [Feathercoin Wallet Main Menu Option](#feathercoin-wallet-main-menu-option)
+  - [Import URI payments](#import-uri-payments)
+  - [Backup wallet data](#backup-wallet-data)
+  - [Paper Wallet Menu](#paper-wallet-menu)
+  - [Import a Paper Wallet address](#import-a-paper-wallet-address)
   - [Encrypt your wallet](#encrypt-your-wallet)
   - [Receive Addresses Menu Option](#receive-addresses-menu-option)
   - [Send Addresses Menu Option](#send-addresses-menu-option)
   - [Stealth Addresses](#stealth-addresses)
   - [Exit](#exit)
-  - [Settings](#settings)
+- [Settings Menu Options](#settings-menu-options)
   - [Coin Control](#coin-control)
   - [Sign and Verify Messages](#sign-and-verify-messages)
   - [Debug console](#debug-console)
@@ -216,7 +218,7 @@ MultiSig stands for multiple signature addresses.  Signature addresses can be ma
 ![MultiSig Button](/images/ftc-0.9.3.2-button.menu.MultiSig.01.png)  
 
 
-### Feathercoin Wallet Main Menu        
+## Feathercoin Wallet Main Menu Option        
 
 **Wallet drop down menu**   
 
@@ -224,7 +226,7 @@ The drop down menu allows access to URI dialog, wallet backup, Printing Paper Wa
  
 ![Walletdrop down](/images/ftc-0.9.3.2-Wallet.dropdown.01.png)   
 
-
+### Import URI payments
 **Open URI menu**
 
 In information technology, a Uniform Resource Identifier (URI) is a string of characters used to identify a resource. Such identification enables interaction with representations of the resource over a network, typically the World Wide Web, using specific protocols. 
@@ -255,6 +257,7 @@ Use the send menu to "Request a payment". The URI can be copied via and pasted i
 
 ![Send URI Menu](/images/ftc-0.9.3.2-Wallet.URI.02.png)  
   
+### Backup wallet data
   
 **Backup Wallet**  
 
@@ -265,7 +268,7 @@ If you are just receiving FTC, that is handled on the blockchain and you wallet 
 The menu option eases backup strategy.  
 
 
-### Feathercoin Paper Wallet Menu    
+### Paper Wallet Menu    
 ***What is a wallet and why do I need one?***
 
 By printing out your own Feathercoin wallets and generating your own addresses, you can minimise your exposure to hackers as well as untrustworthy people in your home or office. Just transfer your Feathercoins to your new wallets, and use common sense to keep your wallets safe the way you would ordinary cash.  
@@ -288,7 +291,7 @@ The printed wallet will contain all the keys from the local wallet. If the local
 ![Paper Wallet Warning](/images/ftc-0.9.3.2-paper.wallet.warning.01.png)  
 
  
-###  Import your Paper Wallet address back  
+###  Import a Paper Wallet address  
 
 **How to import your public / private keys back into a an online wallet :**
 
@@ -390,7 +393,7 @@ Exit menu option or the Ctrl-Q keys close down the wallet and offer the reminder
 If you do not wish to back up your data, you can exit by the "window close button" and you will not  be asked to back up.
 
 
-### Settings
+## Settings Menu Options
 
 **Settings drop down Menu**
 

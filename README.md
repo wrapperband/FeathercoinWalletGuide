@@ -30,6 +30,7 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
   - [Sign and Verify Messages](#sign-and-verify-messages)
   - [Debug console](#debug-console)
   - [Include comments in the Feathercoin Blockchain](#include-comments-in-the-feathercoin-blockchain)
+  - [Read comments from the Feathercoin Blockhain](#read-comments-from-the-feathercoin-blockhain)
 - [Plugins Menu](#plugins-menu)
   - [Bitmessage](#bitmessage)
   - [Opennames DNS Service](#opennames-dns-service)
@@ -504,7 +505,7 @@ The network tab shows further information on the network traffic including a gra
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.debug.network.01.png) 
 
 
-### Include comments in the Feathercoin Blockchain
+### Include comments in the Feathercoin Blockchain  
 
 **Feathercoin Wallet Include encrypted comments into the Blockchain**
 
@@ -530,8 +531,10 @@ If the comment is too long, or that address already has a comment then you will 
 
 ![Comment too large Warning](/images/ftc-0.9.3.2-comments.screen.05.png)
 
-**Read comments from the wallet**
 
+### Read comments from the Feathercoin Blockhain  
+
+**Read comments from the wallet**
 
 Open receive addresses on the Wallet menu and right click on the address with the comment. Copy the Public Hash160 to the clipboard.
 

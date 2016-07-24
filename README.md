@@ -556,7 +556,7 @@ Delete the -000 from the end and of thhe transaction ID and replace it with 1
     getrawtransaction   3ddc1aa067548a398557386037f83b2e09fb5878d0c1ed886c0c20e3227f6311 1
     
 **Extract the Hex code of the message**
-From the output text, copy the Hex part of OP_RETURN 
+From the output text of the getrawtransaction command, copy the Hex part of OP_RETURN in scriptPubKey.
 
     "scriptPubKey" : {
     "asm" : "OP_RETURN 5468697320636f6d6d656e74206973206d61646520746f6461792053617475726461792032337264",

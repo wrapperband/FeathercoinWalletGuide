@@ -4,9 +4,9 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+**Table of Contents**  
 
-    - [Feathercoin (FTC) Core Wallet : Main Features](#feathercoin-ftc-core-wallet--main-features)
+  - [Feathercoin (FTC) Core Wallet : Main Features](#feathercoin-ftc-core-wallet--main-features)
     - [Feathercoin (FTC) Core Wallet : Additional Features List](#feathercoin-ftc-core-wallet--additional-features-list)
   - [Welcome to Feathercoin core wallet](#welcome-to-feathercoin-core-wallet)
     - [Introduction to Feathercoin Core](#introduction-to-feathercoin-core)
@@ -49,17 +49,16 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
-### Feathercoin (FTC) Core Wallet : Main Features
+## Feathercoin (FTC) Core Wallet : 
 
+### Main Features -  
 * Send and Receive Feathercoins to an Address, Stealth Address, URI text document or QRCode.  
 * View and filter the historical Transactions.    
 * Connect to a the FTC Peer to  Peer network and update the Blockchain information.  
 * Sign and Verify a message  given to prove ownership.  
+  
 
-
-### Feathercoin (FTC) Core Wallet : Additional Features List  
-
-**Advanced Features -**  
+### Advanced Features -  
 * Multi - Signature Transactions  
 * Add a text comment to the transaction  
 * Add Openname DNS addresses to the Blockchain   
@@ -68,12 +67,12 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 * Coin Control 
 * Print a Paper Wallet
 
-**Plugins -**  
+### Plugins -  
 * Bitmessage  
 * Shapeshift  
 * Coinnector  
 
-**Operational Features -**
+### Operational Features -
 * Neoscript mining algorithm
 * Automatic check pointing (ACP)
 * enhanced Hash Rate Compensation (eHRC)

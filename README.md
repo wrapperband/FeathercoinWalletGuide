@@ -46,9 +46,10 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
   - [Feathercoin Block Explorer](#feathercoin-block-explorer)
   - [ftc-abe - Run your own Feathercoin Block Explorer](#ftc-abe---run-your-own-feathercoin-block-explorer)
   - [Feathercoin API](#feathercoin-api)
-  - [Using Feathercoin with other Cryptographic currencies, pchMessageStart](#using-feathercoin-with-other-cryptographic-currencies-pchmessagestart)
+  - [pchMessageStart  How to use Feathercoin with other Cryptographic currencies](#pchmessagestart--how-to-use-feathercoin-with-other-cryptographic-currencies)
   - [Feathercoin Graphics and Logos](#feathercoin-graphics-and-logos)
   - [Feathercoin Merchant tools](#feathercoin-merchant-tools)
+  - [featherPay - Feathercoin Point of Sales (POS)](#featherpay---feathercoin-point-of-sales-pos)
   - [Broadcast Transaction Service](#broadcast-transaction-service)
 - [References / Further reading :](#references--further-reading-)
 
@@ -958,10 +959,9 @@ https://www.feathercoin.com/feathercoin-button-generator/
 **Set up a Feathercoin Point of Sale Device (POS)with featherPay **
 
 
-featherPay is a simple and easy to use handheld payment terminal that merchants can use to take payments via feathercoin for any goods or services that they sell or deliver. The idea is to make it simple to accept feathercoin if by wrapping all the technology in a simple handle held device.
+**featherPay** is a simple and easy to use hand held payment terminal that merchants can use to take payments via feathercoin for any goods or services that they sell or deliver. The idea is to make it simple to accept feathercoin if by wrapping all the technology in a simple handle held device.
 
 https://forum.feathercoin.com/topic/6980/dev-introducing-featherpay-point-of-sales-device  
-
 
 
 

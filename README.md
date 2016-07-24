@@ -1,3 +1,50 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Feathercoin Wallet Guide](#feathercoin-wallet-guide)
+    - [Feathercoin (FTC) Core Wallet : Main Features](#feathercoin-ftc-core-wallet--main-features)
+    - [Feathercoin (FTC) Core Wallet : Additional Features List](#feathercoin-ftc-core-wallet--additional-features-list)
+  - [Welcome to Feathercoin core wallet](#welcome-to-feathercoin-core-wallet)
+    - [Introduction to Feathercoin Core](#introduction-to-feathercoin-core)
+    - [Feathercoin Wallet Main Screen and Buttons](#feathercoin-wallet-main-screen-and-buttons)
+    - [Feathercoin Wallet Buttons Bar](#feathercoin-wallet-buttons-bar)
+    - [Feathercoin Wallet Main Menu](#feathercoin-wallet-main-menu)
+    - [Feathercoin Paper Wallet Menu](#feathercoin-paper-wallet-menu)
+    - [Import you Paper Wallet address back](#import-you-paper-wallet-address-back)
+    - [Encrypt your wallet](#encrypt-your-wallet)
+    - [Receive Addresses Menu Option](#receive-addresses-menu-option)
+    - [Send Addresses Menu Option](#send-addresses-menu-option)
+    - [Stealth Addresses](#stealth-addresses)
+    - [Exit](#exit)
+    - [Settings](#settings)
+    - [Coin Control](#coin-control)
+    - [Sign and Verify Messages](#sign-and-verify-messages)
+    - [Debug console](#debug-console)
+    - [Include comments in the Feathercoin Blockchain](#include-comments-in-the-feathercoin-blockchain)
+    - [Plugins Menu](#plugins-menu)
+    - [Bitmessage](#bitmessage)
+    - [Opennames DNS Service](#opennames-dns-service)
+    - [Shapeshift service](#shapeshift-service)
+    - [Coinnector service](#coinnector-service)
+    - [Multiple Signature Addresses](#multiple-signature-addresses)
+    - [Help Menu](#help-menu)
+- [Links, External features and further information](#links-external-features-and-further-information)
+    - [Feathercoin forum : find support](#feathercoin-forum--find-support)
+    - [Feathercoin Block Explorer](#feathercoin-block-explorer)
+    - [ftc-abe - Run your own Feathercoin Block Explorer](#ftc-abe---run-your-own-feathercoin-block-explorer)
+    - [Feathercoin API](#feathercoin-api)
+    - [Using Feathercoin with other Cryptographic currencies, pchMessageStart](#using-feathercoin-with-other-cryptographic-currencies-pchmessagestart)
+    - [Feathercoin Graphics and Logos](#feathercoin-graphics-and-logos)
+    - [Feathercoin Merchant tools](#feathercoin-merchant-tools)
+    - [Broadcast Transaction Service](#broadcast-transaction-service)
+    - [eHRC](#ehrc)
+    - [Neoscript](#neoscript)
+    - [Advanced Checkpointing ACP](#advanced-checkpointing-acp)
+    - [References / Further reading :](#references--further-reading-)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Feathercoin Wallet Guide  
 
 Feathercoin Wallet guide aims to show how to use the features of the Feathercoin Wallet. The information contained is based on Feathercoin wallet version 0.9.6. 
@@ -913,3 +960,6 @@ The future of Digital Business Innovation : Trends & Practices Pub: Springer
 by Vincenzo Morabito
 
 Op_Return: http://bitcoin.stackexchange.com/questions/29554/explanation-of-what-an-op-return-transaction-looks-like
+
+https://github.com/thlorenz/doctoc
+

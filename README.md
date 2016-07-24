@@ -37,6 +37,10 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
   - [Coinnector service](#coinnector-service)
   - [Multiple Signature Addresses](#multiple-signature-addresses)
   - [Help Menu](#help-menu)
+- [Feathercoin Back-end Features & Specification](#feathercoin-back-end-features-&-specification)
+  - [enhanced Hash Rate Compensation (eHRC)](#enhanced-hash-rate-compensation-ehrc)
+  - [Neoscript](#neoscript)
+  - [Advanced Checkpointing ACP](#advanced-checkpointing-acp)
 - [Links, External features and further information](#links-external-features-and-further-information)
   - [Feathercoin forum : find support](#feathercoin-forum--find-support)
   - [Feathercoin Block Explorer](#feathercoin-block-explorer)
@@ -46,10 +50,7 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
   - [Feathercoin Graphics and Logos](#feathercoin-graphics-and-logos)
   - [Feathercoin Merchant tools](#feathercoin-merchant-tools)
   - [Broadcast Transaction Service](#broadcast-transaction-service)
-  - [enhanced Hash Rate Compensation (eHRC)](#enhanced-hash-rate-compensation-ehrc)
-  - [Neoscript](#neoscript)
-  - [Advanced Checkpointing ACP](#advanced-checkpointing-acp)
-  - [References / Further reading :](#references--further-reading-)
+- [References / Further reading :](#references--further-reading-)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -843,6 +844,65 @@ or the command :
     
 Add a node to connect to and attempt to keep the connection open  : can be used to add more peers (like from your local network) to speed up synchronisation of the blockchain.  
 
+## Feathercoin Back-end Features & Specification
+
+### enhanced Hash Rate Compensation (eHRC) 
+
+eHRC stands for enhanced Hash Rate Compensation, it was designed and implemented by Feathercoin developers and is open source.  
+
+eHRC uses the standard Bitcoin protocol to calculate the the next block difficulty, but adds 2 extra historical block look ups, or block average times to calculate the new difficulty more accurately. 
+
+In addition the introduction of eHRC included re-calculation of the difficulty, called ReTarget, after every block. 
+
+It was specifically designed to be as effective as "Kimoto Gravity well" at compensating for variations on the proof of work (POW) hash rate but use the minimum of extra table look ups and calculations. This was important when block times had to work for transactions every minute, the change over  to which was included in the same hard fork.. 
+
+
+The reason both "Kimoto Gravity well" and eHRC were designed was to help protect block chains against wild variations in the POW hash rate available. 
+
+Whilst major coins such as bitcoin have "over kill" mining, they still suffer from some mining rate variations which can disadvantage long term miners and to the advantage of coin switchers.
+
+The problem is the calculations become incorrect for the next block when the hash rate varies and it can arrive much too early or late.
+ 
+
+There have been a number of causes of hash rate variation :  
+
+* Introduction of Multipools with coin switching  
+* Introduction of ASICs, i.e. money can quickly buy power.
+* Hashing Algorithm used by a "Bigger coin" Where a large pool can be 50% > Global coin hash.
+
+FTC recently completed a review of effectiveness of eHRC against the increase in GPU Multipools and large GPU pools. It showed that eHRC was performing as designed to adjust the hash difficulty and compensate for variations.
+
+**Feathercoin Block Time Analysis 2016**
+https://github.com/wrapperband/FTCBlockTimeAnalysis  
+
+[eHRC in Action](https://github.com/wrapperband/FTCBlockTimeAnalysis/raw/master/2016-05-31%20FTCTransactionAnalysis/2016-05-31-FTCBlockDifficulty2Day.MediumTerm.jpg)
+
+
+
+### Neoscript 
+
+Neoscrypt is an ASIC resistant Proof of work (POW) algorythm used by Feathercoin miners. Designed and developed by Ghostlander specifically for the Feathercoin and Pheonixcoin project.
+
+Mining is not in the scope of the guide, but FTC has done a lot of work to make it easier and aide in the development of GPU miner software and open pools.  
+
+Currently miners such as NSGminer for AMD mining. You can run your own or connect to a peer to peer node of the  P2Pool distributed mining system. Of course other pools and miners are available. 
+
+
+**NSGminer**
+https://github.com/ghostlander/nsgminer
+
+**Feathercoin P2Pool**
+https://github.com/wellenreiter01/p2pool-neoscrypt
+
+
+### Advanced Checkpointing ACP
+
+***What is Advanced Checkpointing?***
+
+Advanced Checkpointing allows Feathercoin to send out checkpoints without having to release a new version Feathercoin software. This works by having ‘master nodes’ which checkpoints each block it sees on the network protecting it from specifically from being double spent.
+
+The ACP checkpointing for Feathercoin has been set at every 5 blocks. ACP does not dictate the blockchain, it provides checkpoints and helps prevent double spends, if the checkpoint is on a short branch it will be rejected. 
+
 
 ## Links, External features and further information   
 
@@ -917,65 +977,9 @@ Second Step :  Broadcast it :
 Wait confirmation, until a mining pool makes a block.
 
 
-### enhanced Hash Rate Compensation (eHRC) 
-
-eHRC stands for enhanced Hash Rate Compensation, it was designed and implemented by Feathercoin developers and is open source.  
-
-eHRC uses the standard Bitcoin protocol to calculate the the next block difficulty, but adds 2 extra historical block look ups, or block average times to calculate the new difficulty more accurately. 
-
-In addition the introduction of eHRC included re-calculation of the difficulty, called ReTarget, after every block. 
-
-It was specifically designed to be as effective as "Kimoto Gravity well" at compensating for variations on the proof of work (POW) hash rate but use the minimum of extra table look ups and calculations. This was important when block times had to work for transactions every minute, the change over  to which was included in the same hard fork.. 
 
 
-The reason both "Kimoto Gravity well" and eHRC were designed was to help protect block chains against wild variations in the POW hash rate available. 
-
-Whilst major coins such as bitcoin have "over kill" mining, they still suffer from some mining rate variations which can disadvantage long term miners and to the advantage of coin switchers.
-
-The problem is the calculations become incorrect for the next block when the hash rate varies and it can arrive much too early or late.
- 
-
-There have been a number of causes of hash rate variation :  
-
-* Introduction of Multipools with coin switching  
-* Introduction of ASICs, i.e. money can quickly buy power.
-* Hashing Algorithm used by a "Bigger coin" Where a large pool can be 50% > Global coin hash.
-
-FTC recently completed a review of effectiveness of eHRC against the increase in GPU Multipools and large GPU pools. It showed that eHRC was performing as designed to adjust the hash difficulty and compensate for variations.
-
-**Feathercoin Block Time Analysis 2016**
-https://github.com/wrapperband/FTCBlockTimeAnalysis  
-
-[eHRC in Action](https://github.com/wrapperband/FTCBlockTimeAnalysis/raw/master/2016-05-31%20FTCTransactionAnalysis/2016-05-31-FTCBlockDifficulty2Day.MediumTerm.jpg)
-
-
-
-### Neoscript 
-
-Neoscrypt is an ASIC resistant Proof of work (POW) algorythm used by Feathercoin miners. Designed and developed by Ghostlander specifically for the Feathercoin and Pheonixcoin project.
-
-Mining is not in the scope of the guide, but FTC has done a lot of work to make it easier and aide in the development of GPU miner software and open pools.  
-
-Currently miners such as NSGminer for AMD mining. You can run your own or connect to a peer to peer node of the  P2Pool distributed mining system. Of course other pools and miners are available. 
-
-
-**NSGminer**
-https://github.com/ghostlander/nsgminer
-
-**Feathercoin P2Pool**
-https://github.com/wellenreiter01/p2pool-neoscrypt
-
-
-### Advanced Checkpointing ACP
-
-***What is Advanced Checkpointing?***
-
-Advanced Checkpointing allows Feathercoin to send out checkpoints without having to release a new version Feathercoin software. This works by having ‘master nodes’ which checkpoints each block it sees on the network protecting it from specifically from being double spent.
-
-The ACP checkpointing for Feathercoin has been set at every 5 blocks. ACP does not dictate the blockchain, it provides checkpoints and helps prevent double spends, if the checkpoint is on a short branch it will be rejected. 
-
-
-### References / Further reading :
+## References / Further reading :
 
 [Ref 1]: [Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto] "https://bitcoin.org/bitcoin.pdf"
 

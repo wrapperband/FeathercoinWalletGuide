@@ -974,13 +974,15 @@ The ACP checkpointing for Feathercoin has been set at every 5 blocks. ACP does n
 
 ### References / Further reading :
 
-Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto
-https://bitcoin.org/bitcoin.pdf
+[Ref 1]: [Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto] "https://bitcoin.org/bitcoin.pdf"
 
-The future of Digital Business Innovation : Trends & Practices Pub: Springer
-by Vincenzo Morabito
+[Ref 2]: [Developing Private Blockchain Addresses] "https://github.com/wrapperband/PrivateBlockchainAddress"
 
-Op_Return: http://bitcoin.stackexchange.com/questions/29554/explanation-of-what-an-op-return-transaction-looks-like
+[Ref 3]: [Op_Return]  "http://bitcoin.stackexchange.com/questions/29554/explanation-of-what-an-op-return-transaction-looks-like"
 
-https://github.com/thlorenz/doctoc
+[Ref 4]: [The future of Digital Business Innovation : Trends & Practices by Vincenzo Morabito  Pub: Springer]
+
+[Ref 5]: [doctoc] "https://github.com/thlorenz/doctoc"
+
+Copyright © 2002–2016 Feathercoin Developers & Wrapper
 

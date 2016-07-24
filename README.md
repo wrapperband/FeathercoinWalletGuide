@@ -1,8 +1,11 @@
+# Feathercoin Wallet Guide  
+
+Feathercoin Wallet guide aims to show how to use the features of the Feathercoin Wallet. The information contained is based on Feathercoin wallet version 0.9.6. 
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Feathercoin Wallet Guide](#feathercoin-wallet-guide)
     - [Feathercoin (FTC) Core Wallet : Main Features](#feathercoin-ftc-core-wallet--main-features)
     - [Feathercoin (FTC) Core Wallet : Additional Features List](#feathercoin-ftc-core-wallet--additional-features-list)
   - [Welcome to Feathercoin core wallet](#welcome-to-feathercoin-core-wallet)
@@ -11,7 +14,7 @@
     - [Feathercoin Wallet Buttons Bar](#feathercoin-wallet-buttons-bar)
     - [Feathercoin Wallet Main Menu](#feathercoin-wallet-main-menu)
     - [Feathercoin Paper Wallet Menu](#feathercoin-paper-wallet-menu)
-    - [Import you Paper Wallet address back](#import-you-paper-wallet-address-back)
+    - [Import your Paper Wallet address back](#import-your-paper-wallet-address-back)
     - [Encrypt your wallet](#encrypt-your-wallet)
     - [Receive Addresses Menu Option](#receive-addresses-menu-option)
     - [Send Addresses Menu Option](#send-addresses-menu-option)
@@ -45,9 +48,6 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Feathercoin Wallet Guide  
-
-Feathercoin Wallet guide aims to show how to use the features of the Feathercoin Wallet. The information contained is based on Feathercoin wallet version 0.9.6. 
 
 ### Feathercoin (FTC) Core Wallet : Main Features
 
@@ -284,9 +284,9 @@ The printed wallet will contain all the keys from the local wallet. If the local
 ![Paper Wallet Warning](/images/ftc-0.9.3.2-paper.wallet.warning.01.png)  
 
  
-###  Import you Paper Wallet address back  
+###  Import your Paper Wallet address back  
 
-**How to import your public / private keys back into a wallet :**
+**How to import your public / private keys back into a an online wallet :**
 
 Open Menu -> Settings -> Debug  
 Unlock the wallet, 600 is the time  

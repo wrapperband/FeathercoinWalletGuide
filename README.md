@@ -13,7 +13,7 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
   - [Operational Features -](#operational-features--)
 - [Welcome to Feathercoin core wallet](#welcome-to-feathercoin-core-wallet)
   - [Introduction to Feathercoin Core](#introduction-to-feathercoin-core)
-  - [Feathercoin Wallet Main Screen and Buttons](#feathercoin-wallet-main-screen-and-buttons)
+- [Feathercoin Wallet Main Screen and Buttons](#feathercoin-wallet-main-screen-and-buttons)
   - [Feathercoin Wallet Buttons Bar](#feathercoin-wallet-buttons-bar)
   - [Feathercoin Wallet Main Menu](#feathercoin-wallet-main-menu)
   - [Feathercoin Paper Wallet Menu](#feathercoin-paper-wallet-menu)
@@ -132,7 +132,8 @@ Advantages of the 0.9.3.x series include, move to Qt5 development environment, s
 Official Windows builds and Linux PPAs are available from Feathercoin.com.  
 
 
-### Feathercoin Wallet Main Screen and Buttons   
+## Feathercoin Wallet Main Screen and Buttons   
+
 ***How do I use the wallet? What can it do? :***   
 
 The main screen contains three parts, the menus, the buttons and the wallet overview.  
@@ -544,7 +545,7 @@ First find the transaction ID from the transaction menu right click option of th
 OP_RETURN opcode works at the byte level in a bitcoin transaction. To prevent over flooding the transaction database with text messages the core-developers made the opcode OP_RETURN a valid opcode to be used in a bitcoin / feathercoin transaction, which allows 80 arbitrary bytes to be used in an un-spendable transaction. In 2014 that was educed to 40.
 
 **Find the comment**
-First find the "Transaction ID" from the transaction menu right click option of the Address with a message, in the Feathercoin-qt wallet. 
+First find the "Transaction ID" of the Address with a message, from the transaction menu right click option  in the Feathercoin-qt wallet. 
 
     Transaction ID     3ddc1aa067548a398557386037f83b2e09fb5878d0c1ed886c0c20e3227f6311-000  
 

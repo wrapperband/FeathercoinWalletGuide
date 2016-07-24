@@ -929,9 +929,9 @@ The Feathercoin API is a set of function calls you can make to the Feathercoin s
 https://www.feathercoin.com/feathercoin-api/  
 
 
-### Using Feathercoin with other Cryptographic currencies, pchMessageStart
+###  pchMessageStart  How to use Feathercoin with other Cryptographic currencies
 
-In most circumstance, alternative currencies coexist on a system by their name and the port they communicate on. When exchanges or pools deal with multiple currencies they can use **pchMessageStart** to distinguish between them. 
+In most circumstance, alternative currencies coexist on a system by their name and the port they communicate on. When exchanges or pools deal with multiple currencies on a server they can use **pchMessageStart** to distinguish between them. 
 
 Feathercoin was originally forked from the Litecoin project and shared the same  pchMessageStart. in order to identify Feathercoin a second pchMassageStart was added which Feathercoin will use preferentially,if given.
 
@@ -951,6 +951,19 @@ https://www.feathercoin.com/feathercoin-graphic-resources/
 Website Button generator.
 
 https://www.feathercoin.com/feathercoin-button-generator/
+
+
+### featherPay - Feathercoin Point of Sales (POS) 
+
+**Set up a Feathercoin Point of Sale Device (POS)with featherPay **
+
+
+featherPay is a simple and easy to use handheld payment terminal that merchants can use to take payments via feathercoin for any goods or services that they sell or deliver. The idea is to make it simple to accept feathercoin if by wrapping all the technology in a simple handle held device.
+
+https://forum.feathercoin.com/topic/6980/dev-introducing-featherpay-point-of-sales-device  
+
+
+
 
 ### Broadcast Transaction Service
 

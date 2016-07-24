@@ -48,11 +48,13 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
   - [Help Menu](#help-menu)
 - [Feathercoin Back-end Features & Specification](#feathercoin-back-end-features-&-specification)
   - [enhanced Hash Rate Compensation (eHRC)](#enhanced-hash-rate-compensation-ehrc)
-  - [Neoscript](#neoscript)
-  - [Advanced Checkpointing ACP](#advanced-checkpointing-acp)
+  - [Neoscrypt](#neoscrypt)
+    - [NSGminer](#nsgminer)
+    - [Feathercoin P2Pool](#feathercoin-p2pool)
+  - [Advanced Checkpointing (ACP)](#advanced-checkpointing-acp)
 - [Links, External features and further information](#links-external-features-and-further-information)
   - [Feathercoin forum : find support](#feathercoin-forum--find-support)
-  - [Feathercoin Block Explorer](#feathercoin-block-explorer)
+  - [Feathercoin  Online Block Explorers](#feathercoin--online-block-explorers)
   - [ftc-abe - Run your own Feathercoin Block Explorer](#ftc-abe---run-your-own-feathercoin-block-explorer)
   - [Feathercoin API](#feathercoin-api)
   - [pchMessageStart  How to use Feathercoin with other Cryptographic currencies](#pchmessagestart--how-to-use-feathercoin-with-other-cryptographic-currencies)
@@ -894,7 +896,7 @@ https://github.com/wrapperband/FTCBlockTimeAnalysis
 
 
 
-### Neoscript 
+### Neoscrypt 
 
 Neoscrypt is an ASIC resistant Proof of work (POW) algorythm used by Feathercoin miners. Designed and developed by Ghostlander specifically for the Feathercoin and Pheonixcoin project.
 
@@ -903,20 +905,22 @@ Mining is not in the scope of the guide, but FTC has done a lot of work to make 
 Currently miners such as NSGminer for AMD mining. You can run your own or connect to a peer to peer node of the  P2Pool distributed mining system. Of course other pools and miners are available. 
 
 
-**NSGminer**
+#### NSGminer
+
 https://github.com/ghostlander/nsgminer
 
-**Feathercoin P2Pool**
+#### Feathercoin P2Pool
+
 https://github.com/wellenreiter01/p2pool-neoscrypt
 
 
-### Advanced Checkpointing ACP
+### Advanced Checkpointing (ACP)
 
 ***What is Advanced Checkpointing?***
 
-Advanced Checkpointing allows Feathercoin to send out checkpoints without having to release a new version Feathercoin software. This works by having ‘master nodes’ which checkpoints each block it sees on the network protecting it from specifically from being double spent.
+Advanced Checkpointing allows Feathercoin to send out checkpoints without having to release a new version Feathercoin software. This works by having ‘master nodes’ which checkpoints each block it sees on the network protecting it from specifically from being double spent. Commited on the 6th November 2013 in it has been successful in both aims to automate "Developer" approved checkpoints and prevent "double spends".
 
-The ACP checkpointing for Feathercoin has been set at every 5 blocks. ACP does not dictate the blockchain, it provides checkpoints and helps prevent double spends, if the checkpoint is on a short branch it will be rejected. 
+The ACP system checkpoints the Feathercoin blockchain every 5 blocks. ACP does not dictate the blockchain, it provides checkpoints and helps prevent double spends, if the checkpoint is on a short branch it will be rejected. 
 
 
 ## Links, External features and further information   
@@ -926,7 +930,7 @@ The ACP checkpointing for Feathercoin has been set at every 5 blocks. ACP does n
 http://forum.feathercoin.com/category/18/support 
 
 
-### Feathercoin Block Explorer  
+### Feathercoin  Online Block Explorers  
 
 http://explorer.feathercoin.com/chain/Feathercoin  
 

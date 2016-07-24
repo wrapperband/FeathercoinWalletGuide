@@ -28,17 +28,19 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
   - [Import URI payments](#import-uri-payments)
   - [Backup wallet data](#backup-wallet-data)
   - [Paper Wallet Menu](#paper-wallet-menu)
-  - [Import a Paper Wallet address](#import-a-paper-wallet-address)
+    - [Print a paper wallet](#print-a-paper-wallet)
+    - [Import a Paper Wallet address](#import-a-paper-wallet-address)
   - [Encrypt your wallet](#encrypt-your-wallet)
   - [Receive Addresses Menu Option](#receive-addresses-menu-option)
   - [Send Addresses Menu Option](#send-addresses-menu-option)
-  - [Stealth Addresses](#stealth-addresses)
+    - [Stealth Addresses](#stealth-addresses)
   - [Exit](#exit)
 - [Settings Menu Options](#settings-menu-options)
   - [Coin Control](#coin-control)
-  - [Sign and Verify Messages](#sign-and-verify-messages)
+  - [Options Menus](#options-menus)
+  - [Sign and Verifying and Address](#sign-and-verifying-and-address)
   - [Debug console](#debug-console)
-  - [Include comments in the Feathercoin Blockchain](#include-comments-in-the-feathercoin-blockchain)
+  - [Comments in the Feathercoin Blockchain](#comments-in-the-feathercoin-blockchain)
   - [Read comments from the Feathercoin Blockhain](#read-comments-from-the-feathercoin-blockhain)
 - [Plugins Menu](#plugins-menu)
   - [Bitmessage](#bitmessage)
@@ -290,7 +292,7 @@ The menu option eases backup strategy.
 
 
 ### Paper Wallet Menu    
-***What is a wallet and why do I need one?***
+#### Print a paper wallet 
 
 By printing out your own Feathercoin wallets and generating your own addresses, you can minimise your exposure to hackers as well as untrustworthy people in your home or office. Just transfer your Feathercoins to your new wallets, and use common sense to keep your wallets safe the way you would ordinary cash.  
 
@@ -312,7 +314,7 @@ The printed wallet will contain all the keys from the local wallet. If the local
 ![Paper Wallet Warning](/images/ftc-0.9.3.2-paper.wallet.warning.01.png)  
 
  
-###  Import a Paper Wallet address  
+####  Import a Paper Wallet address  
 
 **How to import your public / private keys back into a an online wallet :**
 
@@ -373,7 +375,7 @@ Contains similar information about send addresses as for receive addresses.   Yo
 ![Send Addresses](/images/ftc-0.9.3.2-Wallet.SendPayments.01.png)
 
 
-### Stealth Addresses  
+#### Stealth Addresses  
 
 Stealth addresses were developed for Feathercoin out of the discussion of producing Private Blockchain Addresses or Dark Blockchains [Ref 2]. Feathercoin, like Bitcoin has an open Blockchain or public register, in order to prove that the technology works and the correct transfers took place. Now the technology is accepted, there is then no need to make the amounts being transferred visible to other than the sender and receiver, which can be achieved using Stealth Addresses.  
 
@@ -452,6 +454,8 @@ Selecting spend unconfirmed change, otherwise change must wait for confirmation 
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.wallet.01.png)   
 
 
+### Options Menus
+
 **Options menu :  Network Tab**
 
 Choose to use UPnP or define a socks proxy for network connections through a router.
@@ -477,9 +481,9 @@ Feathercoin Core includes the option to add third party transaction URLs to the 
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.display.01.png)  
 
 
-### Sign and Verify Messages  
+### Sign and Verifying and Address  
 
-An important function of the Bitcoin and Feathercoin Blockchain is the ability to sign and verify messages.
+An important function of the Bitcoin and Feathercoin Blockchain is the ability to sign and verify messages come from an address.
 
 One example of how signed messages can be used is the example of a dispute with a vendor that they have been paid. Even if you show the record of the transaction, how do you prove that is your coins?  
 
@@ -523,9 +527,9 @@ The network tab shows further information on the network traffic including a gra
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.debug.network.01.png) 
 
 
-### Include comments in the Feathercoin Blockchain  
+### Comments in the Feathercoin Blockchain  
 
-**Feathercoin Wallet Include encrypted comments into the Blockchain**
+**Feathercoin Wallet allows the inclusion of encrypted comments into the Blockchain**
 
 Comments can be included in the Feathercoin Blockchain.  You can choose an address, use right click in transactions to copy the address.
 
@@ -982,7 +986,7 @@ In most circumstance, alternative currencies coexist on a system by their name a
 Feathercoin was originally forked from the Litecoin project and shared the same  pchMessageStart. in order to identify Feathercoin a second pchMassageStart was added which Feathercoin will use preferentially,if given.
 
 
-**Feathercoin specific pchMessageStart**  
+**Feathercoin specific : pchMessageStart**  
 
 0xfe 0x46 0x54 0x43  
 
@@ -1032,21 +1036,17 @@ Second Step :  Broadcast it :
 
     copy binary code , click “Send transaction” .
 
-Wait confirmation, until a mining pool makes a block.
-
+Wait for confirmation, until  a mining pool makes a block.  The stealth transaction broadcast is complete.
 
 
 ## References / Further reading :
 
-[Ref 1]: [Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto] "https://bitcoin.org/bitcoin.pdf"
+[Ref 1]: [Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto] "https://bitcoin.org/bitcoin.pdf"  
+[Ref 2]: [Developing Private Blockchain Addresses] "https://github.com/wrapperband/PrivateBlockchainAddress"  
+[Ref 3]: [Op_Return] "http://bitcoin.stackexchange.com/questions/29554/explanation-of-what-an-op-return-transaction-looks-like"  
+[Ref 4]: [The future of Digital Business Innovation : Trends & Practices by Vincenzo Morabito  Pub: Springer]  
+[Ref 5]: [doctoc] "https://github.com/thlorenz/doctoc"  
 
-[Ref 2]: [Developing Private Blockchain Addresses] "https://github.com/wrapperband/PrivateBlockchainAddress"
-
-[Ref 3]: [Op_Return]  "http://bitcoin.stackexchange.com/questions/29554/explanation-of-what-an-op-return-transaction-looks-like"
-
-[Ref 4]: [The future of Digital Business Innovation : Trends & Practices by Vincenzo Morabito  Pub: Springer]
-
-[Ref 5]: [doctoc] "https://github.com/thlorenz/doctoc"
 
 Copyright © 2002–2016 Feathercoin Developers & Wrapper
 

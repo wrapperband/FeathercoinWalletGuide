@@ -17,12 +17,13 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
     - [Where is the currency stored?](#where-is-the-currency-stored)
     - [What is mining and how is it controlled?](#what-is-mining-and-how-is-it-controlled)
     - [What is the difference between wallet versions?](#what-is-the-difference-between-wallet-versions)
-  - [Feathercoin Wallet Main Screen and Buttons](#feathercoin-wallet-main-screen-and-buttons)
-- [Feathercoin Wallet Buttons Bar](#feathercoin-wallet-buttons-bar)
-  - [Transaction Button](#transaction-button)
-  - [Receive Button](#receive-button)
-  - [Send Button](#send-button)
-  - [Report Button](#report-button)
+- [Feathercoin Wallet Main Screen and Buttons](#feathercoin-wallet-main-screen-and-buttons)
+  - [Feathercoin Wallet Buttons Bar](#feathercoin-wallet-buttons-bar)
+    - [Transaction Button](#transaction-button)
+    - [Receive Button](#receive-button)
+    - [Send Button](#send-button)
+    - [Report Button](#report-button)
+    - [MultiSig Button](#multisig-button)
 - [Feathercoin Wallet Main Menu Options](#feathercoin-wallet-main-menu-options)
   - [Import URI payments](#import-uri-payments)
   - [Backup wallet data](#backup-wallet-data)
@@ -151,7 +152,7 @@ Advantages of the 0.9.3.x series include, move to Qt5 development environment, s
 Official Windows builds and Linux PPAs are available from Feathercoin.com.  
 
 
-### Feathercoin Wallet Main Screen and Buttons   
+## Feathercoin Wallet Main Screen and Buttons   
 
 ***How do I use the wallet? What can it do? :***   
 
@@ -165,7 +166,7 @@ The overview page is self explanatory, the left side showing the current overall
 ![Wallet overview page](/images/ftc-0.9.3.2-main.screen.01.png)  
 
 
-## Feathercoin Wallet Buttons Bar  
+### Feathercoin Wallet Buttons Bar  
 
 ***How do I send and receive transactions? :***  
 
@@ -173,7 +174,7 @@ The overview page is self explanatory, the left side showing the current overall
 * Right click with your mouse on the button menu on the buttons menu to show the Tabs Toolbar check-box to close the button toolbar.  
 
 
-### Transaction Button
+#### Transaction Button
 
 The transaction button shows the transactions that have taken place. You will need to receive some coins to start with but after that reviewing transactions will be the most common place to go.  
 
@@ -190,7 +191,7 @@ Right click on the transactions to show the transaction drop down. In this case 
 ![Transactions drop down menu](/images/ftc-0.9.3.2-button.menu.Transactions.drop.down.01.png)  
 
 
-### Receive Button   
+#### Receive Button   
 
 In order to receive funds you need to create a receive address, The label, message and request amount are optional, press request payment and the address is created.
 
@@ -205,7 +206,7 @@ A pop up is shown with the newly created receive address address and QRCode imag
 ![QRCode image](/images/ftc-0.9.3.2-button.menu.Receive.QRCode.02.png)  
 
 
-### Send Button   
+#### Send Button   
 
 In order to send funds you need to input the receivers address. You can label the transaction with a description and input the amount.  
 
@@ -220,14 +221,14 @@ To use the QR scan feature, click "Send to QR". Then, position the scan box over
 ![QRCode image](/images/ftc-0.9.3.2-button.menu.sendto.QRCode.03.png)  
 
 
-### Report Button  
+#### Report Button  
 
 This image shows the grid shown when the report button is pressed. In the example the grid is filtered on "all the transactions that happened today" and calculates the number and total. That can then be exported to a csv file the "Export" button at the bottom right of the window.   
 
 ![Report Button](/images/ftc-0.9.3.2-button.menu.Report.01.png)  
 
 
-**MultiSig Button**  
+#### MultiSig Button  
 
 MultiSig stands for multiple signature addresses.  Signature addresses can be made with up to three signatures with the current wallet implementation. Further details and an example of how to set up and use a MultiSig address is included later in the guide,  under menu options.
 

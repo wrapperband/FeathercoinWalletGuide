@@ -121,6 +121,9 @@ When you download a wallet it consists of two parts, a ledger or blockchain cont
 
 Feathercoin is a long established blockchain [Ref 4] with a reputable open development and Bitcoin / Satoshi community ideal.
 
+Official Wallet Downloads : https://www.feathercoin.com/#dls
+
+
 #### Where is the currency stored?  
 
 Transactions are stored on the blockchain, the wallet contains your "keys" or addresses to those transactions. This means the transactions are public, it is the fact that who owns the address is unknown which provide privacy. 

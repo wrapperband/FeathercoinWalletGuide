@@ -47,18 +47,22 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
   - [Coinnector service](#coinnector-service)
   - [Multiple Signature Addresses](#multiple-signature-addresses)
   - [Help Menu](#help-menu)
+    - [Command line options](#command-line-options)
+    - [Stealth transaction Search - SX Tool](#stealth-transaction-search---sx-tool)
 - [Feathercoin Back-end Features & Specification](#feathercoin-back-end-features-&-specification)
   - [enhanced Hash Rate Compensation (eHRC)](#enhanced-hash-rate-compensation-ehrc)
   - [Neoscrypt](#neoscrypt)
     - [NSGminer](#nsgminer)
+    - [SGminer](#sgminer)
+  - [Mining Pools](#mining-pools)
     - [Feathercoin P2Pool](#feathercoin-p2pool)
   - [Advanced Checkpointing (ACP)](#advanced-checkpointing-acp)
 - [Links, External features and further information](#links-external-features-and-further-information)
   - [Feathercoin forum : find support](#feathercoin-forum--find-support)
-  - [Feathercoin  Online Block Explorers](#feathercoin--online-block-explorers)
+  - [Feathercoin : Online Block Explorers](#feathercoin--online-block-explorers)
   - [ftc-abe - Run your own Feathercoin Block Explorer](#ftc-abe---run-your-own-feathercoin-block-explorer)
   - [Feathercoin API](#feathercoin-api)
-  - [pchMessageStart  How to use Feathercoin with other Cryptographic currencies](#pchmessagestart--how-to-use-feathercoin-with-other-cryptographic-currencies)
+  - [pchMessageStart :  Using Feathercoin on a server with other Cryptographic currencies](#pchmessagestart---using-feathercoin-on-a-server-with-other-cryptographic-currencies)
   - [Feathercoin Graphics and Logos](#feathercoin-graphics-and-logos)
   - [Feathercoin Merchant tools](#feathercoin-merchant-tools)
   - [featherPay - Feathercoin Point of Sales (POS)](#featherpay---feathercoin-point-of-sales-pos)
@@ -844,10 +848,11 @@ The help menu contains information on the version or Feathercoin and the Qt fram
 The help menu also includes the Stealth address search facility.  
 
 
-**Command line options**  
+#### Command line options  
 
-Usage:   feathercoin-qt [command-line options]  
-
+Usage:   feathercoin-qt [command-line options] 
+Server:  feathercoind [command-line options]
+ 
 Command line options can be used to trigger events, like a blockchain re-index or blockchain re synchronisation and apply various non default settings. The options passed in can usually be made permanent by including them in the feathercoin.conf file.  
 
 For instance the command :  
@@ -861,6 +866,21 @@ or the command :
     -addnode=(ip)  
     
 Add a node to connect to and attempt to keep the connection open  : can be used to add more peers (like from your local network) to speed up synchronisation of the blockchain.  
+
+#### Stealth transaction Search - SX Tool 
+
+Usually the wallet will automatically detect a stealth transaction for your address, if not you can let it scan from one block height to another. 
+
+Open Settings >  Debug window > Console
+
+    getblockcount 
+
+Copy out the latest block height value. 
+
+Return to the menu  Help > SX Tool, paste the latest block into "End Height:" field. fill in the Height from with the maximum time since the stealth transaction was sent.   
+ 
+Feathercoin processes One block per minute on average. If you wish to scan back one hour = 60 FTC blocks. One day will be (60 * 60 * 24) = 3600 blocks.  
+
 
 ## Feathercoin Back-end Features & Specification
 
@@ -910,6 +930,12 @@ Currently miners such as NSGminer for AMD mining. You can run your own or connec
 
 https://github.com/ghostlander/nsgminer
 
+#### SGminer 
+
+https://github.com/wrapperband/sgminer
+
+### Mining Pools
+
 #### Feathercoin P2Pool
 
 https://github.com/wellenreiter01/p2pool-neoscrypt
@@ -919,7 +945,7 @@ https://github.com/wellenreiter01/p2pool-neoscrypt
 
 ***What is Advanced Checkpointing?***
 
-Advanced Checkpointing allows Feathercoin to send out checkpoints without having to release a new version Feathercoin software. This works by having ‘master nodes’ which checkpoints each block it sees on the network protecting it from specifically from being double spent. Commited on the 6th November 2013 in it has been successful in both aims to automate "Developer" approved checkpoints and prevent "double spends".
+Advanced Checkpointing allows Feathercoin to send out checkpoints without having to release a new version Feathercoin software. This works by having ‘master nodes’ which checkpoints each block it sees on the network protecting it from specifically from being double spent. Committed on the 6th November 2013 in it has been successful in both aims to automate "Developer" approved checkpoints and prevent "double spends".
 
 The ACP system checkpoints the Feathercoin blockchain every 5 blocks. ACP does not dictate the blockchain, it provides checkpoints and helps prevent double spends, if the checkpoint is on a short branch it will be rejected. 
 
@@ -931,7 +957,7 @@ The ACP system checkpoints the Feathercoin blockchain every 5 blocks. ACP does n
 http://forum.feathercoin.com/category/18/support 
 
 
-### Feathercoin  Online Block Explorers  
+### Feathercoin : Online Block Explorers  
 
 http://explorer.feathercoin.com/chain/Feathercoin  
 
@@ -944,12 +970,12 @@ https://github.com/wellenreiter01/ftc-abe
 
 ### Feathercoin API  
 
-The Feathercoin API is a set of function calls you can make to the Feathercoin server to return the status of various parameters, such as difficult, block height. 
+The Feathercoin API (Application Program interface) is a set of function calls you can make to the Feathercoin server to return the status of various parameters, such as difficult, block height. 
 
 https://www.feathercoin.com/feathercoin-api/  
 
 
-###  pchMessageStart  How to use Feathercoin with other Cryptographic currencies
+###  pchMessageStart :  Using Feathercoin on a server with other Cryptographic currencies
 
 In most circumstance, alternative currencies coexist on a system by their name and the port they communicate on. When exchanges or pools deal with multiple currencies on a server they can use **pchMessageStart** to distinguish between them. 
 
@@ -1007,7 +1033,6 @@ Second Step :  Broadcast it :
     copy binary code , click “Send transaction” .
 
 Wait confirmation, until a mining pool makes a block.
-
 
 
 

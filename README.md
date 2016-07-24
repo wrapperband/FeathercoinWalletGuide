@@ -94,8 +94,8 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 * enhanced Hash Rate Compensation (eHRC)
 
 
-## Welcome to Feathercoin core wallet  
-
+Welcome to Feathercoin core wallet  
+----------------------------------
 ![Wallet Main Screen](/images/ftc-0.9.3.2-splashscreen01.png)
 
 

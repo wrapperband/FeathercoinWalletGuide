@@ -1102,7 +1102,7 @@ Wait for confirmation, until  a mining pool makes a block.  The stealth transact
 [Ref 4]: [The future of Digital Business Innovation : Trends & Practices by Vincenzo Morabito  Pub: Springer]  
 [Ref 5]: [doctoc] "https://github.com/thlorenz/doctoc"  
 [Ref 6]: [Neoscrypt Press release] "http://www.feathercoin.com/neo-scrypt-press-release.pdf"
-[Ref 7]: [Neoscrypt White Paper]
+[Ref 7]: [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf"
 
 Copyright © 2002–2016 Feathercoin Developers & Wrapper
 

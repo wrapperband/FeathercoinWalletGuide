@@ -623,7 +623,7 @@ Open receive addresses on the Wallet menu and right click on the address with th
 
 **How are comments recorded in the Blockchain?** 
  
-The comment message can be extracted from scriptPubKey by using Hex to Ascii on OP_RETURN  [Ref 3]  to return your message. 
+The comment message can be extracted from scriptPubKey by using Hex to Ascii on OP_RETURN [Ref 3] to return the comment contents. 
 
 OP_RETURN opcode works at the byte level in a bitcoin transaction. To prevent over flooding the transaction database with text messages the core-developers made the opcode OP_RETURN a valid opcode to be used in a bitcoin / feathercoin transaction, which allows 80 arbitrary bytes to be used in an unspendable transaction. In 2014 that was educed to 40.
 

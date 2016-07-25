@@ -105,7 +105,7 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 * Coinnector  
 
 ### Operational Features -
-* Neoscript mining algorithm
+* Neoscrypt mining algorithm
 * Automatic check pointing (ACP)
 * enhanced Hash Rate Compensation (eHRC)
 
@@ -978,11 +978,13 @@ https://github.com/wrapperband/FTCBlockTimeAnalysis
 
 ### Neoscrypt 
 
-Neoscrypt is an ASIC resistant Proof of work (POW) algorythm used by Feathercoin miners. Designed and developed by Ghostlander specifically for the Feathercoin and Pheonixcoin project.
+Neoscrypt is an ASIC resistant Proof of work (POW) algorithm used by Feathercoin miners. Designed and developed by Ghostlander specifically for the Feathercoin and Pheonixcoin project. [Ref 7]
 
 Mining is not in the scope of the guide, but FTC has done a lot of work to make it easier and aide in the development of GPU miner software and open pools.  
 
 Currently miners such as NSGminer for AMD mining. You can run your own or connect to a peer to peer node of the  P2Pool distributed mining system. Of course other pools and miners are available. 
+
+You can see what others have done or start a thread to get support in the Feathercoin forum : http://forum.feathercoin.com/category/17/mining
 
 
 #### NSGminer

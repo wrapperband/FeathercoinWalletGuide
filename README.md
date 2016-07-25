@@ -2,7 +2,9 @@
 
 Feathercoin Wallet guide aims to show how to use the features of the Feathercoin Wallet. The information contained is based on Feathercoin wallet version 0.9.6. 
 
-The Feathercoin wallet operates by using the security of the Bitcoin base code with the addition of custom Feathercoin settings and wallet features.  Feathercoin's (forum members & staffs) main aim was to be more open and friendly, because it was so difficult to get information of post newbie questions on other forums. The Feathercoin forum is already well established with answers to common questions and if not community support is available for new quesions or issues.
+The Feathercoin wallet operates by using the security of the Bitcoin base code with the addition of custom Feathercoin settings and wallet features.  
+
+The Feathercoin forum is already well established with answers to common questions and if you can't find in the answer in the guide community support is available for new questions or issues.  
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -1076,7 +1078,7 @@ https://www.feathercoin.com/feathercoin-button-generator/
 
 https://forum.feathercoin.com/topic/6980/dev-introducing-featherpay-point-of-sales-device  
 
-<center> ![Feathercoin POS (Point of Sale) Device](images/ftc-POS.01.png){:height="75%" width="75%"}</center>  
+<center>![Feathercoin POS (Point of Sale) Device](images/ftc-POS.01.png)</center>  
 
 
 ### Broadcast Transaction Service

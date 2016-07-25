@@ -16,7 +16,7 @@ The Feathercoin forum is already well established with answers to common questio
   - [Advanced Features -](#advanced-features--)
   - [Plugins -](#plugins--)
   - [Operational Features -](#operational-features--)
-- [<center> Welcome to Feathercoin core wallet </center>](#center-welcome-to-feathercoin-core-wallet-center)
+- [Welcome to Feathercoin core wallet](#welcome-to-feathercoin-core-wallet)
   - [Introduction to Feathercoin Core](#introduction-to-feathercoin-core)
     - [What is the Feathercoin core wallet?](#what-is-the-feathercoin-core-wallet)
     - [Where is the Feathercoins currency stored?](#where-is-the-feathercoins-currency-stored)
@@ -82,6 +82,7 @@ The Feathercoin forum is already well established with answers to common questio
   - [Feathercoin Merchant tools](#feathercoin-merchant-tools)
   - [FeatherPay - Feathercoin Point of Sales (POS)](#featherpay---feathercoin-point-of-sales-pos)
   - [Broadcast Transaction Service](#broadcast-transaction-service)
+  - [Set up an online payment system with Feathercoin (FTC)](#set-up-an-online-payment-system-with-feathercoin-ftc)
 - [References / Further reading :](#references--further-reading-)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -116,9 +117,9 @@ The Feathercoin forum is already well established with answers to common questio
 * enhanced Hash Rate Compensation (eHRC)
 
 
-<center> Welcome to Feathercoin core wallet </center>  
+Welcome to Feathercoin core wallet   
 ----------------------------------
-<center> ![Wallet Main Screen](/images/ftc-0.9.3.2-splashscreen01.png) </cemter>
+![Wallet Main Screen](/images/ftc-0.9.3.2-splashscreen01.png) 
 
 
 ### Introduction to Feathercoin Core   
@@ -1010,7 +1011,18 @@ https://github.com/wellenreiter01/p2pool-neoscrypt
 
 ### Advanced Checkpointing (ACP)
 
-***What is Advanced Checkpointing?***
+**What is Checkpointing?**
+
+Checkpointing was originally built in to Bitcoin in order to prevent dishonest people reversing transactions and taking back the money they had sent. Commonly called "double spending".
+
+The basic checkpointing feature in Bitcoin makes sure that the software only connects to the blockchain defined by the developers. This is a safety feature to stop malicious users from trying to force clients on to a different blockchain. 
+
+The blockchain has all the transactions of the coin written into it. Every block in the blockchain has a unique string of characters called a hash. In the client the checkpoints are defined by providing the block number and its hash, this is then compiled and distributed. 
+
+Clients will only accept the blockchain that has the corresponding block number and hash defined in the code. Checkpointing offers some protection against attackers but only up to the last checkpoint. So malicious users could try to orphan blocks after the last checkpoint and reverse transactions with 51% attacks.
+
+
+**What is Advanced Checkpointing?**
 
 Advanced Checkpointing allows Feathercoin to send out checkpoints without having to release a new version Feathercoin software. This works by having ‘master nodes’ which checkpoints each block it sees on the network protecting it from specifically from being double spent. Committed on the 6th November 2013 in it has been successful in both aims to automate "Developer" approved checkpoints and prevent "double spends".
 
@@ -1079,7 +1091,7 @@ https://www.feathercoin.com/feathercoin-button-generator/
 
 https://forum.feathercoin.com/topic/6980/dev-introducing-featherpay-point-of-sales-device  
 
-<center>![Feathercoin POS (Point of Sale) Device](images/ftc-POS.01.png)</center>  
+![Feathercoin POS (Point of Sale) Device](images/ftc-POS.01.png) 
 
 
 ### Broadcast Transaction Service
@@ -1108,7 +1120,11 @@ Second Step :  Broadcast it :
 
 Wait for confirmation, until  a mining pool makes a block.  The stealth transaction broadcast is complete.
 
+### Set up an online payment system with Feathercoin (FTC)
 
+**How to set up a Wordpress Cart and Full FTC Payment Solution**
+
+https://forum.feathercoin.com/topic/4327/guide-wordpress-cart-and-full-ftc-payment-solution
 
 ## References / Further reading :
 
@@ -1120,5 +1136,5 @@ Wait for confirmation, until  a mining pool makes a block.  The stealth transact
 [Ref 6]: [Neoscrypt Press release] "http://www.feathercoin.com/neo-scrypt-press-release.pdf"  
 [Ref 7]: [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf"  
 
-<center> Copyright © 2002–2016 Feathercoin Developers & Wrapper </center>
+Copyright © 2002–2016 Feathercoin Developers & Wrapper
 

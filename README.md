@@ -37,8 +37,11 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
   - [Exit](#exit)
 - [Settings Menu Options](#settings-menu-options)
   - [Coin Control](#coin-control)
-  - [Options Menus](#options-menus)
-  - [Sign and Verifying and Address](#sign-and-verifying-and-address)
+  - [Options Tabs](#options-tabs)
+    - [Network Tab](#network-tab)
+    - [Windows Tab](#windows-tab)
+    - [Display Tab](#display-tab)
+  - [Sign or Verify a Feathercoin Address](#sign-or-verify-a-feathercoin-address)
   - [Debug console](#debug-console)
 - [Advanced Options Menu](#advanced-options-menu)
   - [Report and MultiSig Switch Main Veiw](#report-and-multisig-switch-main-veiw)
@@ -460,7 +463,9 @@ Selecting spend unconfirmed change, otherwise change must wait for confirmation 
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.wallet.01.png)   
 
 
-### Options Menus
+### Options Tabs
+
+####  Network Tab
 
 **Options menu :  Network Tab**
 
@@ -469,12 +474,16 @@ Choose to use UPnP or define a socks proxy for network connections through a rou
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.network.01.png)  
 
 
+#### Windows Tab
+
 **Options menu :  Windows Tab**
 
 Choose how the wallet minimises on the desktop.
 
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.window.01.png)  
 
+
+#### Display Tab
 
 **Options menu :  Display Tab**
 
@@ -487,9 +496,9 @@ Feathercoin Core includes the option to add third party transaction URLs to the 
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.display.01.png)  
 
 
-### Sign and Verifying and Address  
+### Sign or Verify a Feathercoin Address  
 
-An important function of the Bitcoin and Feathercoin Blockchain is the ability to sign and verify messages come from an address.
+An important function of the Bitcoin and Feathercoin Blockchain is the ability to sign and verify messages have come from an address.
 
 One example of how signed messages can be used is the example of a dispute with a vendor that they have been paid. Even if you show the record of the transaction, how do you prove that is your coins?  
 

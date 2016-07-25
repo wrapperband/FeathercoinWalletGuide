@@ -4,8 +4,9 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 
 The Feathercoin wallet operates by using the security of the Bitcoin base code with the addition of custom Feathercoin settings and wallet features.  
 
-The Feathercoin forum is already well established with answers to common questions and if you can't find in the answer in the guide community support is available for new questions or issues.  
+The Feathercoin forum is already well established with answers to common questions and if you can't find in the answer in the guide then community support is available there.  
 
+<!-- [Ref 5] -->
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  
@@ -603,26 +604,26 @@ Insert your comment.
 
 Comments of up to 40 characters can be included in the Feathercoin Blockchain. The cost of a comment has been set at 10 times the dust, or minimum block transmission value, currently that is 0.1 FTC.  
 
-![Comments Dialog Confirm Comment](/images/ftc-0.9.3.2-comments.screen.03.png)
+![Comments Dialog Confirm Comment](/images/ftc-0.9.3.2-comments.screen.03.png)  
 
-A message is shown to confirm the comment has been inserted.  
+A message is shown to confirm the comment has been inserted.   
 
-![Comments Dialog ](/images/ftc-0.9.3.2-comments.screen.04.png)
+![Comments Dialog ](/images/ftc-0.9.3.2-comments.screen.04.png)  
 
-If the comment is too long, or that address already has a comment then you will get a warning message :
+If the comment is too long, or that address already has a comment then you will get a warning message :  
 
-![Comment too large Warning](/images/ftc-0.9.3.2-comments.screen.05.png)
+![Comment too large Warning](/images/ftc-0.9.3.2-comments.screen.05.png)  
 
 
 #### Read comments from the Feathercoin Blockhain  
 
-**Read comments from the wallet**
+**Read comments from the wallet**  
 
 Open receive addresses on the Wallet menu and right click on the address with the comment. Copy the Public Hash160 to the clipboard.
 
-**How are comments recorded in the Blockchain?**
-
-The comment message can be extracted from scriptPubKey by using Hex to Ascii on OP_RETURN to return your message. [Ref 3]
+**How are comments recorded in the Blockchain?** 
+ 
+The comment message can be extracted from scriptPubKey by using Hex to Ascii on OP_RETURN  [Ref 3]  to return your message. 
 
 OP_RETURN opcode works at the byte level in a bitcoin transaction. To prevent over flooding the transaction database with text messages the core-developers made the opcode OP_RETURN a valid opcode to be used in a bitcoin / feathercoin transaction, which allows 80 arbitrary bytes to be used in an unspendable transaction. In 2014 that was educed to 40.
 
@@ -633,7 +634,7 @@ First find the transaction ID from the transaction menu right click option of th
 
 **How are comments recorded in the Blockchain?**
 
-OP_RETURN opcode works at the byte level in a bitcoin transaction [Ref 3]. To prevent over flooding the transaction database with text messages the core-developers made the opcode OP_RETURN a valid opcode to be used in a bitcoin / feathercoin transaction, which allows 80 arbitrary bytes to be used in an un-spendable transaction. In 2014 that was educed to 40.
+OP_RETURN opcode works at the byte level in a bitcoin transaction. To prevent over flooding the transaction database with text messages the core-developers made the opcode OP_RETURN a valid opcode to be used in a bitcoin / feathercoin transaction, which allows 80 arbitrary bytes to be used in an un-spendable transaction. In 2014 that was educed to 40.
 
 **Find the comment**
 First find the "Transaction ID" of the Address with a message, from the transaction menu right click option  in the Feathercoin-qt wallet. 
@@ -1106,6 +1107,7 @@ Second Step :  Broadcast it :
     copy binary code , click “Send transaction” .
 
 Wait for confirmation, until  a mining pool makes a block.  The stealth transaction broadcast is complete.
+
 
 
 ## References / Further reading :

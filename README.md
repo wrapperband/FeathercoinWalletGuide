@@ -84,6 +84,7 @@ The Feathercoin forum is already well established with answers to common questio
   - [Broadcast Transaction Service](#broadcast-transaction-service)
   - [Set up an online payment system with Feathercoin (FTC)](#set-up-an-online-payment-system-with-feathercoin-ftc)
   - [Feathercoin (FTC) Opensource ATM](#feathercoin-ftc-opensource-atm)
+  - [Feathercoin Technical settings](#feathercoin-technical-settings)
 - [References / Further reading :](#references--further-reading-)
   - [Post Scrypt](#post-scrypt)
 
@@ -1137,6 +1138,21 @@ Based on John Mayo Smith’s OpenBitcoinATM which can be seen in action here. A 
 
 For full details about hardware assembly and software here: http://forum.feathercoin.com/topic/6679/dev-openfeathercoinatm
 
+### Feathercoin Technical settings
+
+    NeoScrypt Algorithm 
+    Resistant to Scrypt and SH-256 ASICS
+    80 Coin reward per block
+    336 million coins total
+    Block target is 1.0 minutes
+    Block reward halves every 2,100,000 blocks
+    Retarget every block with 15, 120 and 480 block averages and 25% damping.
+    Default Feathercoin network port is 9336
+    Default RPC mining port is 9337
+    eHRC (enhanced Hash Rate Compensation)
+    ACP (Advanced Checkpointing)
+
+
 ## References / Further reading :
 
 [Ref 1]: [Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto] "https://bitcoin.org/bitcoin.pdf"  
@@ -1151,7 +1167,9 @@ For full details about hardware assembly and software here: http://forum.feather
 
 **HullCoin** 
 
-Hull Coin was created by  Hull City Council's Financial Inclusion Support as a project to the alleviate the suffering in the Hull area.
+Hull City Council announced in March 2014 the UK's first local government operated cryptocurrency, dubbed HullCoin.
+
+HullCoin was created by  Hull City Council's Financial Inclusion Support as a project to the alleviate the suffering in the Hull area.
 
 HullCoin was initially designed as a token that the needy could spend locally on essential items. It was also envisaged for use in reward schemes, such as to encourage  voluntary activities. In this case it might be used against council tax bills.
 

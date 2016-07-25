@@ -11,7 +11,7 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
   - [Advanced Features -](#advanced-features--)
   - [Plugins -](#plugins--)
   - [Operational Features -](#operational-features--)
-- [Welcome to Feathercoin core wallet](#welcome-to-feathercoin-core-wallet)
+- [<- Welcome to Feathercoin core wallet ->](#--welcome-to-feathercoin-core-wallet--)
   - [Introduction to Feathercoin Core](#introduction-to-feathercoin-core)
     - [What is the Feathercoin core wallet?](#what-is-the-feathercoin-core-wallet)
     - [Where is the Feathercoins currency stored?](#where-is-the-feathercoins-currency-stored)
@@ -111,9 +111,9 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 * enhanced Hash Rate Compensation (eHRC)
 
 
-Welcome to Feathercoin core wallet  
+<- Welcome to Feathercoin core wallet ->  
 ----------------------------------
-![Wallet Main Screen](/images/ftc-0.9.3.2-splashscreen01.png)
+<- ![Wallet Main Screen](/images/ftc-0.9.3.2-splashscreen01.png) ->
 
 
 ### Introduction to Feathercoin Core   
@@ -1107,10 +1107,10 @@ Wait for confirmation, until  a mining pool makes a block.  The stealth transact
 [Ref 1]: [Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto] "https://bitcoin.org/bitcoin.pdf"  
 [Ref 2]: [Developing Private Blockchain Addresses] "https://github.com/wrapperband/PrivateBlockchainAddress"  
 [Ref 3]: [Op_Return] "http://bitcoin.stackexchange.com/questions/29554/explanation-of-what-an-op-return-transaction-looks-like"  
-[Ref 4]: [The future of Digital Business Innovation : Trends & Practices by Vincenzo Morabito  Pub: Springer]  
+[Ref 4]: [Book] [The future of Digital Business Innovation : Trends & Practices by Vincenzo Morabito  Pub: Springer]  
 [Ref 5]: [doctoc] "https://github.com/thlorenz/doctoc"  
-[Ref 6]: [Neoscrypt Press release] "http://www.feathercoin.com/neo-scrypt-press-release.pdf"
-[Ref 7]: [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf"
+[Ref 6]: [Neoscrypt Press release] "http://www.feathercoin.com/neo-scrypt-press-release.pdf"  
+[Ref 7]: [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf"  
 
-Copyright © 2002–2016 Feathercoin Developers & Wrapper
+-> Copyright © 2002–2016 Feathercoin Developers & Wrapper <-
 

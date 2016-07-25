@@ -67,7 +67,8 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
     - [Feathercoin P2Pool](#feathercoin-p2pool)
   - [Advanced Checkpointing (ACP)](#advanced-checkpointing-acp)
 - [Links, External features and further information](#links-external-features-and-further-information)
-  - [Feathercoin forum : find support](#feathercoin-forum--find-support)
+  - [Feathercoin forum : find support wallet issues](#feathercoin-forum--find-support-wallet-issues)
+  - [Feathercoin forum : find support mining issues](#feathercoin-forum--find-support-mining-issues)
   - [Feathercoin : Online Block Explorers](#feathercoin--online-block-explorers)
   - [ftc-abe - Run your own Feathercoin Block Explorer](#ftc-abe---run-your-own-feathercoin-block-explorer)
   - [Feathercoin API](#feathercoin-api)
@@ -617,7 +618,7 @@ Open receive addresses on the Wallet menu and right click on the address with th
 
 **How are comments recorded in the Blockchain?**
 
-The comment message can be extracted from scriptPubKey by using Hex to Ascii on OP_RETURN to return your message.  
+The comment message can be extracted from scriptPubKey by using Hex to Ascii on OP_RETURN to return your message. [Ref 3]
 
 OP_RETURN opcode works at the byte level in a bitcoin transaction. To prevent over flooding the transaction database with text messages the core-developers made the opcode OP_RETURN a valid opcode to be used in a bitcoin / feathercoin transaction, which allows 80 arbitrary bytes to be used in an unspendable transaction. In 2014 that was educed to 40.
 
@@ -1013,10 +1014,13 @@ The ACP system checkpoints the Feathercoin blockchain every 5 blocks. ACP does n
 
 ## Links, External features and further information   
 
-### Feathercoin forum : find support  
+### Feathercoin forum : find support wallet issues 
 
 http://forum.feathercoin.com/category/18/support 
 
+### Feathercoin forum : find support mining issues 
+
+http://forum.feathercoin.com/category/17/mining 
 
 ### Feathercoin : Online Block Explorers  
 
@@ -1073,11 +1077,13 @@ https://forum.feathercoin.com/topic/6980/dev-introducing-featherpay-point-of-sal
 
 ### Broadcast Transaction Service
 
-Feathercoin Broadcast Transaction Service : 
+**Feathercoin Broadcast Transaction Service :** 
+
+If you wish to accelerate a transaction getting onto the blockchain or it is a stealth transaction, you may wish to us the Broadcast service. It means it is possible to transmit a paper wallet transaction without installing Feathercoin-qt. 
+
+It is a free service provided by a host : Feathercoin China.
 
     block.ftc-c.com/tx/send
-
-If you wish to accelerate a transaction getting onto the blockchain or it is a stealth transaction, you may wish to us the Broadcast service.
 
 How to use the broadcast service : 
 

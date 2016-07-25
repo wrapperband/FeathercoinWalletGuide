@@ -2,6 +2,8 @@
 
 Feathercoin Wallet guide aims to show how to use the features of the Feathercoin Wallet. The information contained is based on Feathercoin wallet version 0.9.6. 
 
+The Feathercoin wallet operates by using the security of the Bitcoin base code with the addition of custom Feathercoin settings and wallet features.  Feathercoins main aim was always to be more open and friendly, so the forum is already well established with answers to common questions and if not community support is available for new ones.
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  
@@ -11,7 +13,7 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
   - [Advanced Features -](#advanced-features--)
   - [Plugins -](#plugins--)
   - [Operational Features -](#operational-features--)
-- [<- Welcome to Feathercoin core wallet ->](#--welcome-to-feathercoin-core-wallet--)
+- [<center> Welcome to Feathercoin core wallet </center>](#center-welcome-to-feathercoin-core-wallet-center)
   - [Introduction to Feathercoin Core](#introduction-to-feathercoin-core)
     - [What is the Feathercoin core wallet?](#what-is-the-feathercoin-core-wallet)
     - [Where is the Feathercoins currency stored?](#where-is-the-feathercoins-currency-stored)
@@ -111,9 +113,9 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 * enhanced Hash Rate Compensation (eHRC)
 
 
-<- Welcome to Feathercoin core wallet ->  
+<center> Welcome to Feathercoin core wallet </center>  
 ----------------------------------
-<- ![Wallet Main Screen](/images/ftc-0.9.3.2-splashscreen01.png) ->
+<center> ![Wallet Main Screen](/images/ftc-0.9.3.2-splashscreen01.png) </cemter>
 
 
 ### Introduction to Feathercoin Core   
@@ -1112,5 +1114,5 @@ Wait for confirmation, until  a mining pool makes a block.  The stealth transact
 [Ref 6]: [Neoscrypt Press release] "http://www.feathercoin.com/neo-scrypt-press-release.pdf"  
 [Ref 7]: [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf"  
 
--> Copyright © 2002–2016 Feathercoin Developers & Wrapper <-
+<center> Copyright © 2002–2016 Feathercoin Developers & Wrapper </center>
 

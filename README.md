@@ -83,7 +83,9 @@ The Feathercoin forum is already well established with answers to common questio
   - [FeatherPay - Feathercoin Point of Sales (POS)](#featherpay---feathercoin-point-of-sales-pos)
   - [Broadcast Transaction Service](#broadcast-transaction-service)
   - [Set up an online payment system with Feathercoin (FTC)](#set-up-an-online-payment-system-with-feathercoin-ftc)
+  - [Feathercoin (FTC) Opensource ATM](#feathercoin-ftc-opensource-atm)
 - [References / Further reading :](#references--further-reading-)
+  - [Post Scrypt](#post-scrypt)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -1126,6 +1128,15 @@ Wait for confirmation, until  a mining pool makes a block.  The stealth transact
 
 https://forum.feathercoin.com/topic/4327/guide-wordpress-cart-and-full-ftc-payment-solution
 
+
+### Feathercoin (FTC) Opensource ATM
+
+Open Feathercoin ATM is an open-source automated seller machine for education and experimentation. 
+
+Based on John Mayo Smith’s OpenBitcoinATM which can be seen in action here. A “voucher” is printed containing a private key QR Code that has been pre-loaded with the correct value of Feathercoin for the denomination deposited during the setup stage. Designed to work with any currency taken note or coin that outputs a number of pulses per denomination deposited. 
+
+For full details about hardware assembly and software here: http://forum.feathercoin.com/topic/6679/dev-openfeathercoinatm
+
 ## References / Further reading :
 
 [Ref 1]: [Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto] "https://bitcoin.org/bitcoin.pdf"  
@@ -1134,7 +1145,20 @@ https://forum.feathercoin.com/topic/4327/guide-wordpress-cart-and-full-ftc-payme
 [Ref 4]: [Book] [The future of Digital Business Innovation : Trends & Practices by Vincenzo Morabito  Pub: Springer]  
 [Ref 5]: [doctoc] "https://github.com/thlorenz/doctoc"  
 [Ref 6]: [Neoscrypt Press release] "http://www.feathercoin.com/neo-scrypt-press-release.pdf"  
-[Ref 7]: [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf"  
+[Ref 7]: [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf" 
+
+### Post Scrypt
+
+**HullCoin** 
+
+Hull Coin was created by  Hull City Council's Financial Inclusion Support as a project to the alleviate the suffering in the Hull area.
+
+HullCoin was initially designed as a token that the needy could spend locally on essential items. It was also envisaged for use in reward schemes, such as to encourage  voluntary activities. In this case it might be used against council tax bills.
+
+Hull coin was created with the advise of Feathercoin members and staff as well as initially, software forked from Feathercoin source code.
+
+http://www.coindesk.com/hullcoin-worlds-first-local-government-cryptocurrency/
+
 
 Copyright © 2002–2016 Feathercoin Developers & Wrapper
 

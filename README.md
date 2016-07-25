@@ -122,7 +122,7 @@ Welcome to Feathercoin core wallet
 Cryptocurrency is digital form of currency that is being used increasingly all over the world because it has been designed to be used on the internet. Currencies like Feathercoin are based on open source code and a distributed security model, which means anyone can mine or produce the coins or contribute to the code and development.  [Ref 1] 
 
 
-Cryptographic currency wallets are like a normal wallet but for "internet cash". Although they do a complex job effectively validating your currency isn't counterfeit have been designed to be intuitive to use and allow new users to get started without having to understands the technical details of how it operates. 
+Cryptographic currency wallets are like a normal wallet but for "internet cash". Although they do a complex job effectively validating your currency isn't counterfeit, they have been designed to be intuitive to use and allow new users to get started without having to understands the technical details of how it operates. 
 
 When you download a wallet it consists of two parts, a ledger or blockchain containing information on transactions to and from an address and the software to initiate and check transactions on the system are within the rules of how the software validates transactions.  
 

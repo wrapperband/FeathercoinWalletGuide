@@ -40,8 +40,11 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
   - [Options Menus](#options-menus)
   - [Sign and Verifying and Address](#sign-and-verifying-and-address)
   - [Debug console](#debug-console)
+- [Advanced Options Menu](#advanced-options-menu)
+  - [Report and MultiSig Switch Main Veiw](#report-and-multisig-switch-main-veiw)
   - [Comments in the Feathercoin Blockchain](#comments-in-the-feathercoin-blockchain)
-  - [Read comments from the Feathercoin Blockhain](#read-comments-from-the-feathercoin-blockhain)
+    - [Write comments into the Feathercoin Blockchain](#write-comments-into-the-feathercoin-blockchain)
+    - [Read comments from the Feathercoin Blockhain](#read-comments-from-the-feathercoin-blockhain)
 - [Plugins Menu](#plugins-menu)
   - [Bitmessage](#bitmessage)
   - [Opennames DNS Service](#opennames-dns-service)
@@ -530,7 +533,16 @@ The network tab shows further information on the network traffic including a gra
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.debug.network.01.png) 
 
 
+## Advanced Options Menu
+
+### Report and MultiSig Switch Main Veiw 
+
+Menu option to choose the screen to display on the main panel.
+
+
 ### Comments in the Feathercoin Blockchain  
+
+#### Write comments into the Feathercoin Blockchain 
 
 **Feathercoin Wallet allows the inclusion of encrypted comments into the Blockchain**
 
@@ -557,7 +569,7 @@ If the comment is too long, or that address already has a comment then you will 
 ![Comment too large Warning](/images/ftc-0.9.3.2-comments.screen.05.png)
 
 
-### Read comments from the Feathercoin Blockhain  
+#### Read comments from the Feathercoin Blockhain  
 
 **Read comments from the wallet**
 

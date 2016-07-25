@@ -77,7 +77,7 @@ The Feathercoin wallet operates by using the security of the Bitcoin base code w
   - [pchMessageStart :  Using Feathercoin on a server with other Cryptographic currencies](#pchmessagestart---using-feathercoin-on-a-server-with-other-cryptographic-currencies)
   - [Feathercoin Graphics and Logos](#feathercoin-graphics-and-logos)
   - [Feathercoin Merchant tools](#feathercoin-merchant-tools)
-  - [featherPay - Feathercoin Point of Sales (POS)](#featherpay---feathercoin-point-of-sales-pos)
+  - [FeatherPay - Feathercoin Point of Sales (POS)](#featherpay---feathercoin-point-of-sales-pos)
   - [Broadcast Transaction Service](#broadcast-transaction-service)
 - [References / Further reading :](#references--further-reading-)
 
@@ -1061,21 +1061,23 @@ https://www.feathercoin.com/feathercoin-graphic-resources/
 
 ### Feathercoin Merchant tools
 
-Website Button generator.
+**Website Button generator.**
+
+ Pay by Feathercoin Button generator.
 
 https://www.feathercoin.com/feathercoin-button-generator/
 
 
-### featherPay - Feathercoin Point of Sales (POS) 
+### FeatherPay - Feathercoin Point of Sales (POS) 
 
 **Set up a Feathercoin Point of Sale Device (POS)with featherPay **
 
-
-**featherPay** is a simple and easy to use hand held payment terminal that merchants can use to take payments via Feathercoin (FTC) for any goods or services that they sell or deliver. The idea is to make it simple to accept Feathercoin if by wrapping all the technology in a simple handle held device.
+**FeatherPay** is a simple and easy to use hand held payment terminal that merchants can use to take payments via Feathercoin (FTC) for any goods or services that they sell or deliver. The idea is to make it simple to accept Feathercoin if by wrapping all the technology in a simple handle held device.
 
 https://forum.feathercoin.com/topic/6980/dev-introducing-featherpay-point-of-sales-device  
 
-![Feathercoin POS (Point of Sale) Device](images/ftc-POS.01.png)
+<center> ![Feathercoin POS (Point of Sale) Device](images/ftc-POS.01.png){:height="75%" width="75%"}</center>  
+
 
 ### Broadcast Transaction Service
 

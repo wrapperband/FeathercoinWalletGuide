@@ -32,6 +32,7 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
     - [Import a Paper Wallet address](#import-a-paper-wallet-address)
   - [Encrypt your wallet](#encrypt-your-wallet)
   - [Receive Addresses Menu Option](#receive-addresses-menu-option)
+    - [Receive currency and Manage Addresses](#receive-currency-and-manage-addresses)
   - [Send Addresses Menu Option](#send-addresses-menu-option)
     - [Stealth Addresses](#stealth-addresses)
   - [Exit](#exit)
@@ -353,8 +354,18 @@ Until you encrypt your wallet it is like a safe without a key anyone can open it
 
 ### Receive Addresses Menu Option  
 
+#### Receive currency and Manage Addresses
+
 The receive addresses menu option show a grid with label and address. There are various buttons such as add a new address, copy, show QRCodes, import QRCode,  Sign a message or verify a message.  
 
+It is an important menu to help manage currency transfers and other functions to verify "accounts". 
+
+Receipt of payments entails the passing of a key and a invoice of the amount payable. The wallet then encrypts these further to various levels, the highest being the wallet password.
+
+
+**Create a Feathercoin Address to receive transactions**  
+
+Click ion the Wallet menus item "New Address". Add the Label description, the address is then auto generated.
 
 ![Receive Addresses](/images/ftc-0.9.3.2-Wallet.ReceivePayments.01.png)  
 
@@ -396,7 +407,9 @@ Stealth addresses are a way for a payer and a payee to have a private exchange o
 
 A Stealth Address functions differently than a standard Feathercoin address.  
 
-The address is first generated using your Feathercoin wallet. Next you make it public to the payers. Once public, each payer can use the stealth address to generate a standard but unique Feathercoin address only known to him. Finally, the payers conduct the transactions using their individually generated addresses, and you import them in your wallet with the corresponding stealth address. This way each such Feathercoin address and transaction is only identifiable by you and the payer who generated that exact address. The outsiders are left outside.  
+The address is first generated using your Feathercoin wallet. Next you make it public to the payers. Once public, each payer can use the stealth address to generate a standard but unique Feathercoin address only known to him. 
+
+Finally, the payers conduct the transactions using their individually generated addresses, and you import them in your wallet with the corresponding stealth address. This way each such Feathercoin address and transaction is only identifiable by you and the payer who generated that exact address. The outsiders are left outside.  
 
 **Where are Stealth Addresses useful?**  
 
@@ -406,16 +419,20 @@ Whereas one common stealth address can be used on the website, it acts like an e
 
 One common usage might be donations, where some organisations anonymity for their patrons.
 
+
+**How to Create a Feathercoin Stealth Address**  
+
+Click ion the Wallet menus item "New Address". Add the Label description, the address is then auto generated. 
+
+Use the check-box to generate the Stealth Address.  
+
+![Stealth Address](/images/ftc-0.9.3.2-stealth.SX.create.01.png)  
+
+
 **How secure are Stealth Addresses?**  
 
 The main drawback with stealth addresses is, like mixers and Tor, if too few people use the service they me be easier to connect stealth transactions with a normal address.  
 
-**How to Create a Feathercoin Stealth Address**  
-
-Click ion the Wallet menus item Receive coins. Use the check-box to generate the Stealth Address.  
-
-
-![Stealth Address](/images/ftc-0.9.3.2-stealth.SX.create.01.png)  
 
 
 ### Exit

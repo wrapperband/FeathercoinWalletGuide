@@ -14,7 +14,7 @@ Feathercoin Wallet guide aims to show how to use the features of the Feathercoin
 - [Welcome to Feathercoin core wallet](#welcome-to-feathercoin-core-wallet)
   - [Introduction to Feathercoin Core](#introduction-to-feathercoin-core)
     - [What is the Feathercoin core wallet?](#what-is-the-feathercoin-core-wallet)
-    - [Where is the currency stored?](#where-is-the-currency-stored)
+    - [Where is the Feathercoins currency stored?](#where-is-the-feathercoins-currency-stored)
     - [What is mining and how is it controlled?](#what-is-mining-and-how-is-it-controlled)
     - [What is the difference between wallet versions?](#what-is-the-difference-between-wallet-versions)
 - [Feathercoin Wallet Main Screen and Buttons](#feathercoin-wallet-main-screen-and-buttons)
@@ -122,16 +122,18 @@ Welcome to Feathercoin core wallet
 Cryptocurrency is digital form of currency that is being used increasingly all over the world because it has been designed to be used on the internet. Currencies like Feathercoin are based on open source code and a distributed security model, which means anyone can mine or produce the coins or contribute to the code and development.  [Ref 1] 
 
 
-Cryptographic currency wallets are like a normal wallet but for "internet cash". Although they do a complex job effectively validating your currency isn't counterfeit, they have been designed to be intuitive to use and allow new users to get started without having to understands the technical details of how it operates. 
+Cryptographic currency wallets are like a normal wallet but for "internet cash". Although they do a complex job effectively validating your currency isn't counterfeit, they have been also designed to be intuitive to use and allow new users to get started without having to understands the technical details of how it operates. 
 
-When you download a wallet it consists of two parts, a ledger or blockchain containing information on transactions to and from an address and the software to initiate and check transactions on the system are within the rules of how the software validates transactions.  
+The wallet acts as a book keeper, storing all incoming and out going expenses in a ledger. 
 
-Feathercoin is a long established blockchain [Ref 4] with a reputable open development and Bitcoin / Satoshi community ideal.
+When you download a wallet it includes the two parts, a ledger or blockchain containing information on transactions going to and from an address and the software to initiate and check transactions on the system are within the rules of how the software validates transactions.  On a server or use in an appliance,  it is possible to run without the GUI.
 
-Official Wallet Downloads : https://www.feathercoin.com/#dls
+Feathercoin is a long established blockchain [Ref 4] with a reputable open development and Bitcoin / Satoshi community ideal. The most extreme of which is successfully hard forking the Feathercoin blockchain to an ASIC resistant hashing algorithm (Neoscrypt). 
+
+**Official Wallet Downloads :** https://www.feathercoin.com/#dls
 
 
-#### Where is the currency stored?  
+#### Where is the Feathercoins currency stored?  
 
 Transactions are stored on the blockchain, the wallet contains your "keys" or addresses to those transactions. This means the transactions are public, it is the fact that who owns the address is unknown which provide privacy. 
 
@@ -144,9 +146,21 @@ The sender returns the funds to the "receive" address. That transfer of receive 
 
 Mining is done by 3rd parties using feathercoind (server daemon), additional software and hard ware.  
 
-The feathercoind program includes the wallet transaction verification algorithms and functions, but without the Graphical user interface (GUI).  
+The miners are distributed, so in order to prove they are doing work they continuously try to find the next block. They do this by producing block chain answers then testing them, and others being broadcast, against the "Feathercoin successful block criteria". Some of those criteria include adding a certain amount of transactions information if available, information from the previous blocks and an encoding difficulty above a predefined level.
 
-Feathercoin has had it's Proof of work (POW) algorithm enhanced to make it more compatible with distributed mining on widely available commercial graphics cards. The GPUs do the mathematical cryptographic calculations and compatible mining software such as NSGminer use that to test if the have found a block and process the transactions. 
+If two blocks are broadcast on the network with equal value otherwise, it is the block on the longest chain that will eventually convince all clients that it is the valid block. If a payment has been made on the shorter blockchain and there is a conflict, eventually it will be orphaned and become available to add to main or correct chain. This process happens all the time with POW blockchains and is intrinsic in its operation.
+
+The feathercoind program (daemon) includes the wallet transaction verification algorithms and functions, but without the Graphical user interface (GUI).  
+
+Feathercoin has had it's Proof of work (POW) algorithm enhanced to make it more compatible with distributed mining on widely available commercial graphics cards. To achieve this a new hardened version of scrypt was introduced called Neoscrypt [Ref 6].
+
+Neoscrypt is a strong memory intensive key derivation function developed by John Doering, aka "Ghostlander", a developer for Feathercoin and Phoenixcoin. 
+
+Comparing algorithms, this means that it is now "harder" to mine each block with Neoscrypt, so difficulty of 100 KHash/s of Fethercoin mining is equivalent to 1 MHash/s of scrypt mining.
+
+
+
+The GPUs (Graphics Processors) do the mathematical cryptographic calculations and compatible mining software such as NSGminer use those results to test if the have found a block and process the transactions. 
 
 It is the feathercoind (or daemon software) that confirms that a block is valid and spreads that block of transactions round the Peer to Pear network to all the other wallets and miners. A block becomes the next on the blockchain when it is accepted by more than 50% of the network as part of a correct and valid chain.  
 
@@ -1087,7 +1101,8 @@ Wait for confirmation, until  a mining pool makes a block.  The stealth transact
 [Ref 3]: [Op_Return] "http://bitcoin.stackexchange.com/questions/29554/explanation-of-what-an-op-return-transaction-looks-like"  
 [Ref 4]: [The future of Digital Business Innovation : Trends & Practices by Vincenzo Morabito  Pub: Springer]  
 [Ref 5]: [doctoc] "https://github.com/thlorenz/doctoc"  
-
+[Ref 6]: [Neoscrypt Press release] "http://www.feathercoin.com/neo-scrypt-press-release.pdf"
+[Ref 7]: [Neoscrypt White Paper]
 
 Copyright © 2002–2016 Feathercoin Developers & Wrapper
 

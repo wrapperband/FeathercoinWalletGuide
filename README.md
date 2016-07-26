@@ -1178,5 +1178,14 @@ Hull coin was created with the advise of Feathercoin members and staff as well a
 http://www.coindesk.com/hullcoin-worlds-first-local-government-cryptocurrency/
 
 
+**Etherium**
+
+Why can I only mine Etherium or Feathercoin with a GPU? It’s a question being asked a lot. In a similar move to Feathercoin, Etherium have followed Feathercoins lead and have also chosen a memory intensive mining algorithm in order to be ASIC resistant and redistributed.
+
+Etherium uses the ethash algorithm which, like Neoscrypt, requires a large amount of memory (currently over 1 GB and growing). That is not cheap to parallelise because each additional processor also needs its own memory.
+
+
+
+
 Copyright © 2002–2016 Feathercoin Developers & Wrapper
 

@@ -129,16 +129,21 @@ Welcome to Feathercoin core wallet
 
 #### What is the Feathercoin core wallet?  
 
+
+One use of money is to facilitate trade. Trade is recorded in bookkeeping, this information is traditionally closed to the public and requires third parties or middlemen to approve the transactions.
+
 Cryptocurrency is digital form of currency that is being used increasingly all over the world because it has been designed to be used on the internet. Currencies like Feathercoin are based on open source code and a distributed security model, which means anyone can mine or produce the coins or contribute to the code and development.  [Ref 1] 
 
+Cryptocurrency tries to take the validation out of the hands of centralised middlemen and allows anyone to participate. Agreeing on the software that controls the system being the consensus, which is agreed prior to transactions taking place. Cryptocurrencies and the blockchain they are basedon is a groundbreaking internet technology for which money is merely one of the possible applications.
 
-Cryptographic currency wallets are like a normal wallet but for "internet cash". Although they do a complex job effectively validating your currency isn't counterfeit, they have been also designed to be intuitive to use and allow new users to get started without having to understands the technical details of how it operates. 
+
+Cryptographic currency wallets are like a normal wallet but for "internet money" or "internet cash". The wallets have a complex job to do validating your currency isn't counterfeit, they have been also designed to be intuitive to use and allow new users to get started without having to understands the technical details of how it operates. 
 
 The wallet acts as a book keeper, storing all incoming and out going expenses in a ledger. 
 
 When you download a wallet it includes the two parts, a ledger or blockchain containing information on transactions going to and from an address and the software to initiate and check transactions on the system are within the rules of how the software validates transactions.  On a server or use in an appliance,  it is possible to run without the GUI.
 
-Feathercoin is a long established blockchain [Ref 4] with a reputable open development and Bitcoin / Satoshi community ideal. The most extreme of which is successfully hard forking the Feathercoin blockchain to an ASIC resistant hashing algorithm (Neoscrypt). 
+Feathercoin is a long established blockchain [Ref 2] with a reputable open development and Bitcoin / Satoshi community ideal. The most extreme of which is successfully hard forking the Feathercoin blockchain to an ASIC resistant hashing algorithm (Neoscrypt). 
 
 **Official Wallet Downloads :** https://www.feathercoin.com/#dls
 
@@ -421,7 +426,7 @@ Contains similar information about send addresses as for receive addresses.   Yo
 
 #### Stealth Addresses  
 
-Stealth addresses were developed for Feathercoin out of the discussion of producing Private Blockchain Addresses or Dark Blockchains [Ref 2]. Feathercoin, like Bitcoin has an open Blockchain or public register, in order to prove that the technology works and the correct transfers took place. Now the technology is accepted, there is then no need to make the amounts being transferred visible to other than the sender and receiver, which can be achieved using Stealth Addresses.  
+Stealth addresses were developed for Feathercoin out of the discussion of producing Private Blockchain Addresses or Dark Blockchains [Ref 3]. Feathercoin, like Bitcoin has an open Blockchain or public register, in order to prove that the technology works and the correct transfers took place. Now the technology is accepted, there is then no need to make the amounts being transferred visible to other than the sender and receiver, which can be achieved using Stealth Addresses.  
 
 **What are Stealth Addresses?**  
 
@@ -627,7 +632,7 @@ Open receive addresses on the Wallet menu and right click on the address with th
 
 **How are comments recorded in the Blockchain?** 
  
-The comment message can be extracted from scriptPubKey by using Hex to Ascii on OP_RETURN [Ref 3] to return the comment contents. 
+The comment message can be extracted from scriptPubKey by using Hex to Ascii on OP_RETURN [Ref 4] to return the comment contents. 
 
 OP_RETURN opcode works at the byte level in a bitcoin transaction. To prevent over flooding the transaction database with text messages the core-developers made the opcode OP_RETURN a valid opcode to be used in a bitcoin / feathercoin transaction, which allows 80 arbitrary bytes to be used in an unspendable transaction. In 2014 that was educed to 40.
 
@@ -1059,6 +1064,8 @@ The Feathercoin API (Application Program interface) is a set of function calls y
 
 https://www.feathercoin.com/feathercoin-api/  
 
+http://api.ftc-c.com/
+
 
 ###  pchMessageStart :  Using Feathercoin on a server with other Cryptographic currencies
 
@@ -1084,6 +1091,16 @@ https://www.feathercoin.com/feathercoin-graphic-resources/
  Pay by Feathercoin Button generator.
 
 https://www.feathercoin.com/feathercoin-button-generator/
+
+### Feathercoin Open Merchant Map
+
+The Feathercoin Open Map project is a fork of the popular CoinMap.org designed to show merchants accepting FTC as a payment. Pools or other servers can run their own instance of the map.
+
+Adding your venue is trivial. Just create an account on OpenStreetMap and start to edit! Just be sure to add the tag **payment:feathercoin=yes** to the venue you create and it will be automatically added to the map upon the next update. The server is set to update every so often with a chron job.
+
+https://github.com/voingiappone/feathercoinmap
+
+![Feathercoin Open Merchant Map](images/ftc-open.merchant.map.01.png) 
 
 
 ### FeatherPay - Feathercoin Point of Sales (POS) 
@@ -1123,7 +1140,9 @@ Second Step :  Broadcast it :
 
 Wait for confirmation, until  a mining pool makes a block.  The stealth transaction broadcast is complete.
 
-### Set up an online payment system with Feathercoin (FTC)
+### Feathercoin Shopping Cart
+
+Set up an online payment system with Feathercoin (FTC) shopping Cart payment system.
 
 **How to set up a Wordpress Cart and Full FTC Payment Solution**
 
@@ -1134,9 +1153,30 @@ https://forum.feathercoin.com/topic/4327/guide-wordpress-cart-and-full-ftc-payme
 
 Open Feathercoin ATM is an open-source automated seller machine for education and experimentation. 
 
-Based on John Mayo Smith’s OpenBitcoinATM which can be seen in action here. A “voucher” is printed containing a private key QR Code that has been pre-loaded with the correct value of Feathercoin for the denomination deposited during the setup stage. Designed to work with any currency taken note or coin that outputs a number of pulses per denomination deposited. 
+Based on John Mayo Smith’s OpenBitcoinATM. A “voucher” is printed containing a private key QR Code that has been pre-loaded with the correct value of Feathercoin for the denomination deposited during the setup stage. Designed to work with any currency taken note or coin that outputs a number of pulses per denomination deposited. 
 
-For full details about hardware assembly and software here: http://forum.feathercoin.com/topic/6679/dev-openfeathercoinatm
+For full details about hardware assembly and software here: http://forum.feathercoin.com/topic/6679/dev-openfeathercoinatm  
+
+### Feather Address - Client-Side Feathercoin Wallet Generator  
+
+Featheraddress:  JavaScript Client-Side Feathercoin Wallet Generator
+
+Featheraddress is a fork of the original bitaddress.org project https://github.com/pointbiz/bitaddress.org. It is a project that can be set up on a web server. An example being http://www.ftc-c.com/featheraddress.html
+
+Download or inspect the source code :  https://github.com/Mark-Leck/Featheraddress
+
+### Web based Paper wallet 7 Vanity address generators  
+
+A paper wallet generator allows you create addresses and store them without installing the coin software or wallet to a computer or downloading. Now Feathercoin addresses and their corresponding private key can be conveniently generated in a web browser.
+
+The online address generators use the Crypto currency rules inside the daemon to generate valid address. The online wallet generators sometime add extra entropy to the random number generator by including mouse movements or key presses.
+
+Some of the Address generators can also look for Vanity addresses that are valid but include certain strings, like a name.
+
+https://walletgenerator.net/?currency=Feathercoin
+
+*[Caution] : Unless you trust the site, care should be taken as private and public key pairs are generated. It is safer to download and run a generator off line.*
+
 
 ### Feathercoin Technical settings
 
@@ -1155,10 +1195,10 @@ For full details about hardware assembly and software here: http://forum.feather
 
 ## References / Further reading :
 
-[Ref 1]: [Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto] "https://bitcoin.org/bitcoin.pdf"  
-[Ref 2]: [Developing Private Blockchain Addresses] "https://github.com/wrapperband/PrivateBlockchainAddress"  
-[Ref 3]: [Op_Return] "http://bitcoin.stackexchange.com/questions/29554/explanation-of-what-an-op-return-transaction-looks-like"  
-[Ref 4]: [Book] [The future of Digital Business Innovation : Trends & Practices by Vincenzo Morabito  Pub: Springer]  
+[Ref 1]: [Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto] "https://bitcoin.org/bitcoin.pdf" 
+[Ref 2]: [Book] [The future of Digital Business Innovation : Trends & Practices by Vincenzo Morabito  Pub: Springer]  
+[Ref 3]: [Developing Private Blockchain Addresses] "https://github.com/wrapperband/PrivateBlockchainAddress"  
+[Ref 4]: [Op_Return] "http://bitcoin.stackexchange.com/questions/29554/explanation-of-what-an-op-return-transaction-looks-like"  
 [Ref 5]: [doctoc] "https://github.com/thlorenz/doctoc"  
 [Ref 6]: [Neoscrypt Press release] "http://www.feathercoin.com/neo-scrypt-press-release.pdf"  
 [Ref 7]: [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf" 
@@ -1167,23 +1207,22 @@ For full details about hardware assembly and software here: http://forum.feather
 
 **HullCoin** 
 
-Hull City Council announced in March 2014 the UK's first local government operated cryptocurrency, dubbed HullCoin.
+Hull City Council announced in March 2014 the UK's first local government operated cryptocurrency, dubbed HullCoin. It was created by  Hull City Council's Financial Inclusion Support as a project to the alleviate the suffering in the Hull area.
 
-HullCoin was created by  Hull City Council's Financial Inclusion Support as a project to the alleviate the suffering in the Hull area.
+HullCoin was initially perceived as a token that "the needy" could spend locally on essential items. It was also envisaged for use in reward schemes, such as  encouraging  voluntary activities. In this case it might be used against council tax bills.
 
-HullCoin was initially designed as a token that the needy could spend locally on essential items. It was also envisaged for use in reward schemes, such as to encourage  voluntary activities. In this case it might be used against council tax bills.
-
-Hull coin was created with the advise of Feathercoin members and staff as well as initially, software forked from Feathercoin source code.
+Hull coin was created with the advise of Feathercoin members and staff as well as software forked from Feathercoin source code.
 
 http://www.coindesk.com/hullcoin-worlds-first-local-government-cryptocurrency/
 
 
 **Etherium**
 
+Etherium is a coin, similar to Feathercoin, where the miners also close smart contracts.
+
 Why can I only mine Etherium or Feathercoin with a GPU? It’s a question being asked a lot. In a similar move to Feathercoin, Etherium have followed Feathercoins lead and have also chosen a memory intensive mining algorithm in order to be ASIC resistant and redistributed.
 
-Etherium uses the ethash algorithm which, like Neoscrypt, requires a large amount of memory (currently over 1 GB and growing). That is not cheap to parallelise because each additional processor also needs its own memory.
-
+Etherium uses the "ethash" algorithm which, like Neoscrypt, requires a large amount of memory (currently over 1 GB and growing). That is not cheap to parallelise because each additional processor also needs its own memory.
 
 
 

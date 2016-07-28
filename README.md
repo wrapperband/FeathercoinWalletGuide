@@ -94,17 +94,17 @@ The Feathercoin forum is already well established with answers to common questio
 ## Feathercoin (FTC) Core Wallet : 
 
 ### Main Features -  
-* Send and Receive Feathercoins to an Address, Stealth Address, URI text document or QRCode.  
+* Send and Receive Feathercoins to an Address, a Stealth Address, URI text document or graphical QRCode.  
 * View and filter the historical Transactions.    
 * Connect to a the FTC Peer to  Peer network and update the Blockchain information.  
-* Sign and Verify a message  given to prove ownership.  
+* Sign and Verify a message given to prove ownership.  
   
 
 ### Advanced Features -  
-* Multi - Signature Transactions  
+* Multiple Signature Transactions  
 * Add a text comment to the transaction  
 * Add Openname DNS addresses to the Blockchain   
-* Stealth Addresses   
+* Create and manage Stealth Addresses   
 * Transaction reports  
 * Coin Control 
 * Print a Paper Wallet
@@ -723,18 +723,13 @@ First : find the transaction with the comment, the copy address or transaction I
 
 ### Bitmessage
 
-Bitmessage is an open source fully encrypted peer to peer messaging system. In order to pass order information privately a version can be set up to integrate with Feathercoin.
+Bitmessage is an open source fully encrypted peer to peer messaging system. Because it does not pass through a central server it is also harder to collect meta data.
 
-Install and run python bitmessagemain.py
+In order to pass invoices or addresses privately, a version can be set up to integrate with Feathercoin. Currently Bitmessage acts as a plugin with MS Windows, invoice information can be passed straight through to an encrypted message.
 
-Currently, to operate on Linux systems you must download and compile pybitmessage and then copy that to your Feathercoin's run directory to activate Bitmessage.
+It is still worth considering using Bitmessage to send your public address keys, although that is mostly about privacy not extra security.
 
 https://github.com/cqtenq/PyBitmessage  
-
-PyBitmessage can be run in deamon mode by adding this line to your keys.dat file under [bitmessagesettings]:
-
-   daemon = true
-
 
 
 ### Opennames DNS Service

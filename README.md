@@ -222,28 +222,15 @@ The overview page is self explanatory, the left side showing the current overall
 * Right click with your mouse on the button menu on the buttons menu to show the Tabs Toolbar check-box to close the button toolbar.  
 
 
-#### Transaction Button
-
-The transaction button shows the transactions that have taken place. You will need to receive some coins to start with but after that reviewing transactions will be the most common place to go.  
-
-![Transaction Button](/images/ftc-0.9.3.2-button.menu.Transactions.01.png)  
-
-
-When you have a lot of transactions you can use the filters bellow the buttons to restrict which ones are shown, by time period,  search for recipients / senders or a specific address.  
-
-Right click on the transactions to show the transaction drop down. In this case copy address to clipboard is highlighted so you simply paste that into a document for someone to send funds to that address without having to remember a large address.  
-
-**Tip :** The filter conditions in place are shown at the bottom left of the window.  It is useful to know the filter conditions, e.g. If you've filtered out all your FTC and wondered where it all went ..  
-
-
-![Transactions drop down menu](/images/ftc-0.9.3.2-button.menu.Transactions.drop.down.01.png)  
-
-
 #### Receive Button   
 
 In order to receive funds you need to create a receive address, The label, message and request amount are optional, press request payment and the address is created.
 
-**Tip :**  *Stealth Addresses :  To create a stealth address you need to use the Wallet -> Receive Menu option, which includes additional features such as setting Stealth Address.* 
+In this case :
+
+Amount: 0.35 FTC
+Label: Expenses for buying the replacement jug
+Message: I'll bill you seperatly for the other things I got for you
 
 
 ![Receive Button](/images/ftc-0.9.3.2-button.menu.Receive.01.png)  
@@ -252,6 +239,9 @@ In order to receive funds you need to create a receive address, The label, messa
 A pop up is shown with the newly created receive address address and QRCode image.  
 
 ![QRCode image](/images/ftc-0.9.3.2-button.menu.Receive.QRCode.02.png)  
+
+
+**Stealth Addresses :**  *To create a stealth address you need to use the **Wallet -> Receive Menu option**, which includes additional features such as setting Stealth Address.* 
 
 
 #### Send Button   
@@ -268,6 +258,22 @@ To use the QR scan feature, click "Send to QR". Then, position the scan box over
 
 ![QRCode image](/images/ftc-0.9.3.2-button.menu.sendto.QRCode.03.png)  
 
+
+#### Transaction Button
+
+The transaction button shows the transactions that have taken place. You will need to receive some coins to start with but after that reviewing transactions will be the most common place to go.  
+
+![Transaction Button](/images/ftc-0.9.3.2-button.menu.Transactions.01.png)  
+
+
+When you have a lot of transactions you can use the filters bellow the buttons to restrict which ones are shown, by time period,  search for recipients / senders or a specific address.  
+
+Right click on the transactions to show the transaction drop down. In this case copy address to clipboard is highlighted so you simply paste that into a document for someone to send funds to that address without having to remember a large address.  
+
+**Tip :** The filter conditions in place are shown at the bottom left of the window.  It is useful to know the filter conditions, e.g. If you've filtered out all your FTC and wondered where it all went ..  
+
+
+![Transactions drop down menu](/images/ftc-0.9.3.2-button.menu.Transactions.drop.down.01.png) 
 
 #### Report Button  
 
@@ -397,12 +403,21 @@ Receipt of payments entails the passing of a key and a invoice of the amount pay
 
 **Create a Feathercoin Address to receive transactions**  
 
-Click ion the Wallet menus item "New Address". Add the Label description, the address is then auto generated.
+Click on the Wallet menu and select receiving Address.
+
+![Receive Addresses](/images/ftc-0.9.3.2-Wallet.ReceivePayments.03.png) 
+
+Click on the button  "New Address". 
 
 ![Receive Addresses](/images/ftc-0.9.3.2-Wallet.ReceivePayments.01.png)  
 
+Add the Label description, the address is then auto generated. 
 
-Right clicking on a address brings up an actions menu.  
+Click on Stealth checkbox, if you wish to create a stealth address. 
+
+![Receive Addresses](/images/ftc-0.9.3.2-Wallet.ReceivePayments.04.png)  
+
+Right clicking a address in the receiving grid brings up an actions menu for the address.  
 
 The Right mouse click options are :  
 
@@ -701,9 +716,16 @@ First : find the transaction with the comment, the copy address or transaction I
 
 Bitmessage is an open source fully encrypted peer to peer messaging system. In order to pass order information privately a version can be set up to integrate with Feathercoin.
 
-Currently, to operate on linux you must download and compile pybitmessage and then copy that to your Feathercoin's run directory to activate Bitmessage.
+Install and run python bitmessagemain.py
 
-https://github.com/cqtenq/PyBitmessage
+Currently, to operate on Linux systems you must download and compile pybitmessage and then copy that to your Feathercoin's run directory to activate Bitmessage.
+
+https://github.com/cqtenq/PyBitmessage  
+
+PyBitmessage can be run in deamon mode by adding this line to your keys.dat file under [bitmessagesettings]:
+
+   daemon = true
+
 
 
 ### Opennames DNS Service

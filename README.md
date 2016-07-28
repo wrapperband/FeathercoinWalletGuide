@@ -195,23 +195,32 @@ Feathercoin development is already moving on to including FTC facilities in 0.11
 
 Advantages of the 0.9.3.x series include, move to Qt5 development environment, speed increase, DNS seeds and improved database synchronising.  
 
-Official Windows builds and Linux PPAs are available from Feathercoin.com.  
-
-![FTC Wallet with KDE Dark Theme](/images/ftc-0.9.3.2-Wallet.overview.darktheme.01.png )
+Official Windows builds and Linux PPAs are available from [Feathercoin.com](https://feathercoin.com). The Feathercoin forum is the place to go for further information and support. [forum.feathercoin.com](https://forum.feathercoin.com)  
 
 
 ## Feathercoin Wallet Main Screen and Buttons   
 
-***How do I use the wallet? What can it do? :***   
+***How do I use the Feathercoin wallet? 
 
 The main screen contains three parts, the menus, the buttons and the wallet overview.  
 
 The menus contain a large number of features whereas the buttons have been chosen to represent the basic operation of the wallet that most people will need to perform.  
 
+![Wallet overview page](/images/ftc-0.9.3.2-main.screen.01.png) 
 
 The overview page is self explanatory, the left side showing the current overall balance and on the right the most recent transactions that have occurred.  
 
-![Wallet overview page](/images/ftc-0.9.3.2-main.screen.01.png)  
+The first time the wallet is run it will need to synchronise or get up to date with the latest blockchain. As the wallet finds other wallets or peers on the feathercoin network, it will ask them for previous blocks and gradually build up a copy of the block chain.
+
+The blockchain is stored in the hidden .feathercoin directory or %Applications% in Windows. Because space can be limited, especially with SSDs, it is now possible to designate another disk to store the blockchain. 
+
+Remember your wallet is also stored with the Blockchain, so don't use USBs or other removable drives for large transaction, live, because the chance of it failing before a backup is made after sending a transaction is greater. If the USB / wallet is lost with no "immediate" backup after a send, the currency is on the USB is lost. 
+
+At the bottom right corner the circular animation shows the speed blocks are ariving. When completed you will see  tick. 
+
+The triangle to the left of the tick, shows the "strength" of the peer to peer signal. It gradually fills till you get over 10 connections.
+
+![Wallet overview page](/images/ftc-0.9.3.2-Wallet.overview.sync.01.png) 
 
 
 ### Feathercoin Wallet Buttons Bar  

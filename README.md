@@ -132,25 +132,27 @@ Welcome to Feathercoin core wallet
 
 One use of money is to facilitate trade. Trade is recorded in bookkeeping, this information is traditionally closed to the public and requires third parties or middlemen to approve the transactions.
 
-Cryptocurrency is digital form of currency that is being used increasingly all over the world because it has been designed to be used on the internet. Currencies like Feathercoin are based on open source code and a distributed security model, which means anyone can mine or produce the coins or contribute to the code and development.  [Ref 1] 
+Cryptocurrency is digital form of currency that is being used increasingly all over the world because it has been designed to be used on the internet. Currencies like Feathercoin are based on open source code and a distributed security model; which means anyone can mine or produce the coins or contribute to the code and development. [Ref 1] 
 
-Cryptocurrency tries to take the validation out of the hands of centralised middlemen and allows anyone to participate. Agreeing on the software that controls the system being the consensus, which is agreed prior to transactions taking place. Cryptocurrencies and the blockchain they are basedon is a groundbreaking internet technology for which money is merely one of the possible applications.
+Cryptocurrency tries to take the validation out of the hands of centralised middlemen and allows anyone to participate. Agreeing on the software that controls the system being the consensus that is agreed prior to transactions taking place. Cryptocurrencies and the blockchain they are based on, is a groundbreaking internet technology of which "currency" is merely one of the possible applications.
 
 
-Cryptographic currency wallets are like a normal wallet but for "internet money" or "internet cash". The wallets have a complex job to do validating your currency isn't counterfeit, they have been also designed to be intuitive to use and allow new users to get started without having to understands the technical details of how it operates. 
+Cryptographic currency wallets are like a normal wallet but for "internet money" or "internet cash". The wallets have a complex job to do validating that your currency isn't counterfeit. They have been also designed to be intuitive to use and allow new users to get started without having to understands the technical details of how it operates "under the hood". 
 
-The wallet acts as a book keeper, storing all incoming and out going expenses in a ledger. 
+The wallet acts as like a book keeper does, storing all incoming and out going expenses in a ledger. 
 
-When you download a wallet it includes the two parts, a ledger or blockchain containing information on transactions going to and from an address and the software to initiate and check transactions on the system are within the rules of how the software validates transactions.  On a server or use in an appliance,  it is possible to run without the GUI.
+When you download a wallet it includes the two parts, a ledger or blockchain containing information on transactions going to and from an address. It also contains software to initiate and check transactions on the system are within the validation rules, i.e. do the bookkeeping. 
 
 Feathercoin is a long established blockchain [Ref 2] with a reputable open development and Bitcoin / Satoshi community ideal. The most extreme of which is successfully hard forking the Feathercoin blockchain to an ASIC resistant hashing algorithm (Neoscrypt). 
 
-**Official Wallet Downloads :** https://www.feathercoin.com/#dls
+**Official Wallet Downloads :** [Feathercoin Wallet Download](https://www.feathercoin.com/#dls)
 
 
 #### Where is the Feathercoins currency stored?  
 
-Transactions are stored on the blockchain, the wallet contains your "keys" or addresses to those transactions. This means the transactions are public, it is the fact that who owns the address is unknown which provide privacy. 
+Transactions are stored on the blockchain, think of each address a safety deposit box which anyone can see in but you have the key.
+
+The wallet contains your "keys" or addresses to those transactions in the deposit boxes. This means the transactions are public, it is the fact that who owns the address is unknown, which provides the privacy. 
 
 Once the wallet is installed you can generate a Feathercoin address. The addresses are then passed between the users, usually the "receiver" communicates an address to send the funds to. The address is sometime called the public key.
 
@@ -171,13 +173,12 @@ Feathercoin has had it's Proof of work (POW) algorithm enhanced to make it more 
 
 Neoscrypt is a strong memory intensive key derivation function developed by John Doering, aka "Ghostlander", a developer for Feathercoin and Phoenixcoin. 
 
-Comparing algorithms, this means that it is now "harder" to mine each block with Neoscrypt, so difficulty of 100 KHash/s of Fethercoin mining is equivalent to 1 MHash/s of scrypt mining.
+Comparing algorithms, this means that it is now "harder" to mine each block with Neoscrypt, so difficulty of 100 KHash/s of Feathercoin mining is equivalent to 1 MHash/s of scrypt mining.
 
 
+The GPUs (Graphics Processors) do the mathematical cryptographic calculations. A compatible mining software, such as NSGminer for AMD,   use those calculation results returned from the GPU to test if a block has been found and process the transactions. 
 
-The GPUs (Graphics Processors) do the mathematical cryptographic calculations and compatible mining software such as NSGminer use those results to test if the have found a block and process the transactions. 
-
-It is the feathercoind (or daemon software) that confirms that a block is valid and spreads that block of transactions round the Peer to Pear network to all the other wallets and miners. A block becomes the next on the blockchain when it is accepted by more than 50% of the network as part of a correct and valid chain.  
+It is the feathercoind (or daemon software) that confirms that a block is valid and spreads that block of transactions round the Peer to Pear network to all the other wallets and miners. A block becomes the next on the blockchain when it is accepted by more than 50% of the network as part of a correct and valid chain of blocks.  
 
 
 #### What is the difference between wallet versions?      
@@ -195,6 +196,8 @@ Feathercoin development is already moving on to including FTC facilities in 0.11
 Advantages of the 0.9.3.x series include, move to Qt5 development environment, speed increase, DNS seeds and improved database synchronising.  
 
 Official Windows builds and Linux PPAs are available from Feathercoin.com.  
+
+![FTC Wallet with KDE Dark Theme](/images/ftc-0.9.3.2-Wallet.overview.darktheme.01.png )
 
 
 ## Feathercoin Wallet Main Screen and Buttons   
@@ -557,12 +560,12 @@ In the case of a dispute, go to Receive coins and click on the "Sign Message" op
 
 **Verify a message**
 
-![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.message.verify.01.png)  
+![Settings Wallet verifying](/images/ftc-0.9.3.2-Settings.menu.message.verify.01.png)  
 
 
 Here we can see the message given if the signature is not verified :   
 
-![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.message.verify.02.png) 
+![Settings Wallet can't verify](/images/ftc-0.9.3.2-Settings.menu.message.verify.02.png) 
 
 
 ### Debug console  
@@ -1176,6 +1179,24 @@ Some of the Address generators can also look for Vanity addresses that are valid
 https://walletgenerator.net/?currency=Feathercoin
 
 *[Caution] : Unless you trust the site, care should be taken as private and public key pairs are generated. It is safer to download and run a generator off line.*
+
+### Self Notary process using the Feathercoin blockchain
+
+**selfnotary**
+
+SelfNotary is a notary process guide created by Feathercoin forum member @Slavco. 
+
+The process can be used with Feathercoin or any bitcoin based blockchain to perform "Notary"  without any third party involvement. 
+
+The tool will generate address from any document and creating transaction with minimum amount using your own wallet will be enough to prove that you are the document owner from transaction time until now.
+
+All you need to have is document ( to find transaction via address ) and wallet backup ( to be able to sign message ).
+
+https://github.com/Slavco/selfnotary
+
+### Feathercoin Local
+
+https://local.feathercoin.com/
 
 
 ### Feathercoin Technical settings

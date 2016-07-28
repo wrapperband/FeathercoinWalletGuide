@@ -216,7 +216,7 @@ The blockchain is stored in the hidden .feathercoin directory or %Applications% 
 
 Remember your wallet is also stored with the Blockchain, so don't use USBs or other removable drives for large transaction, live, because the chance of it failing before a backup is made after sending a transaction is greater. If the USB / wallet is lost with no "immediate" backup after a send, the currency is on the USB is lost. 
 
-At the bottom right corner the circular animation shows the speed blocks are ariving. When completed you will see  tick. 
+At the bottom right corner the circular animation shows the speed blocks are arriving. If you mouse over it will tell you how many blocks it has got to go and how long ago the last transaction was it has got to. When the sync is completed, you will see  tick. 
 
 The triangle to the left of the tick, shows the "strength" of the peer to peer signal. It gradually fills till you get over 10 connections.
 

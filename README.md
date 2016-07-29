@@ -1,16 +1,26 @@
 # Feathercoin
 
-Feathercoin is a cryptographic based currency using the bitcoin core protocols and it's own settings. It runs as a blockchain on a peer to peer network. The software to control and access the blockchain is developed by a group of open source contributors communicating through the Feathercoin forum. 
+What is Feathercoin?
+--------------------
+Feathercoin is a cryptographic based currency using the bitcoin core protocols and it's own settings. It runs as a blockchain on a peer to peer network. The software to control and access the Feathercoin blockchain is developed by a group of open source contributors communicating through the Feathercoin forum. 
 
-Community involvement has been part of the Feathercoin philosophy from day one, in particular to produce guides and support new users and miners. The Feathercoin forum is already well established with answers to common questions and if you can't find in the answer in the guide then community support is available there.  
+Community development
+---------------------
+Community involvement has been part of the Feathercoin philosophy from day one, in particular to produce guides and support for new users and miners. The Feathercoin forum is already well established with answers to common questions and if you can't find in the answer in the guide then community support is available there.  
 
-If you wish to help or support, that can be as easy as becoming a member and up voting a good post, up to becoming a moderator or helping develop or test new enhancements. The forum also contains members experience, guides and details on developing external projects like starting a pool or developing a new app or web site.
+Help or Support
+---------------
+If you wish to help or give support which can be as easy as becoming a forum  member and up voting a good post to becoming a moderator or helping develop or test new enhancements. The forum also contains threads of members experience, guides and details on developing external projects like starting a pool or developing a new app, exchange, web site or other novel use case.
 
 
 ## Feathercoin Wallet Guide Aims and Restrictions
 
+The aims of the Guide
+---------------------
 Feathercoin Wallet guide aims to show how to use the features of the Feathercoin Wallet and other relevant technology. 
 
+Origin of the Screen shots
+--------------------------
 The information contained is based on Feathercoin wallet version 0.9.6. The guide is applicable to other Feathercoin-qt versions and other alternative currency wallets, such as Bitcoin or Litecoin, which have similar features and operations.
 
 
@@ -763,6 +773,8 @@ Installing BitMessage plugin under Linux
 ----------------------------------------
 
 In Debian based systems you can create a script to copy to /usr/bin, make the script executable to activate BitMessage plugin.
+
+/usr/bin/pybitmessage
 
 #!/bin/sh
 cd /usr/share/pybitmessage

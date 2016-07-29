@@ -1,7 +1,9 @@
-# Feathercoin
+# Feathercoin Wallet - Prolog  & Meta data
 
-What is Feathercoin?
---------------------
+## What is Feathercoin?
+
+Who owns or develops Feathercoin?
+---------------------------------
 Feathercoin is a cryptographic based currency using the bitcoin core protocols and it's own settings. It runs as a blockchain on a peer to peer network. The software to control and access the Feathercoin blockchain is developed by a group of open source contributors communicating through the Feathercoin forum. 
 
 Community development
@@ -29,56 +31,69 @@ The information contained is based on Feathercoin wallet version 0.9.6. The guid
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  
 
-- [Feathercoin (FTC) Core Wallet :](#feathercoin-ftc-core-wallet-)
-  - [Main Features -](#main-features--)
-  - [Advanced Features -](#advanced-features--)
-  - [Plugins -](#plugins--)
-  - [Operational Features -](#operational-features--)
+  - [Feathercoin (FTC) Core Wallet Features Overview](#feathercoin-ftc-core-wallet-features-overview)
+  - [Main Features](#main-features)
+  - [Advanced Features](#advanced-features)
+  - [Plugins](#plugins)
+  - [Operational Features](#operational-features)
 - [Welcome to Feathercoin core wallet](#welcome-to-feathercoin-core-wallet)
   - [Introduction to Feathercoin Core](#introduction-to-feathercoin-core)
-    - [What is the Feathercoin core wallet?](#what-is-the-feathercoin-core-wallet)
-    - [Where is the Feathercoins currency stored?](#where-is-the-feathercoins-currency-stored)
-    - [What is mining and how is it controlled?](#what-is-mining-and-how-is-it-controlled)
-    - [What is the difference between wallet versions?](#what-is-the-difference-between-wallet-versions)
+  - [What is the Feathercoin core wallet?](#what-is-the-feathercoin-core-wallet)
+  - [Where is the Feathercoins currency stored?](#where-is-the-feathercoins-currency-stored)
+  - [What is mining and how is it controlled?](#what-is-mining-and-how-is-it-controlled)
+  - [What is the difference between Feathercoin wallet versions?](#what-is-the-difference-between-feathercoin-wallet-versions)
 - [Feathercoin Wallet Main Screen and Buttons](#feathercoin-wallet-main-screen-and-buttons)
+  - [How do I use the Feathercoin wallet?](#how-do-i-use-the-feathercoin-wallet)
   - [Feathercoin Wallet Buttons Bar](#feathercoin-wallet-buttons-bar)
-    - [Transaction Button](#transaction-button)
     - [Receive Button](#receive-button)
     - [Send Button](#send-button)
+    - [Transaction Button](#transaction-button)
     - [Report Button](#report-button)
     - [MultiSig Button](#multisig-button)
 - [Feathercoin Wallet Main Menu Options](#feathercoin-wallet-main-menu-options)
   - [Import URI payments](#import-uri-payments)
   - [Backup wallet data](#backup-wallet-data)
+  - [Backup Wallet](#backup-wallet)
   - [Paper Wallet Menu](#paper-wallet-menu)
     - [Print a paper wallet](#print-a-paper-wallet)
+  - [Print Paper Wallet Menu Warning](#print-paper-wallet-menu-warning)
     - [Import a Paper Wallet address](#import-a-paper-wallet-address)
   - [Encrypt your wallet](#encrypt-your-wallet)
   - [Receive Addresses Menu Option](#receive-addresses-menu-option)
     - [Receive currency and Manage Addresses](#receive-currency-and-manage-addresses)
   - [Send Addresses Menu Option](#send-addresses-menu-option)
     - [Stealth Addresses](#stealth-addresses)
+  - [What are Stealth Addresses?](#what-are-stealth-addresses)
+  - [How are Stealth Addresses implemented?](#how-are-stealth-addresses-implemented)
+  - [How to Create a Feathercoin Stealth Address](#how-to-create-a-feathercoin-stealth-address)
+  - [How secure are Stealth Addresses?](#how-secure-are-stealth-addresses)
   - [Exit](#exit)
-- [Settings Menu Options](#settings-menu-options)
+- [Feathercoin wallet Settings Menu Options](#feathercoin-wallet-settings-menu-options)
+  - [Settings drop down Menu](#settings-drop-down-menu)
   - [Coin Control](#coin-control)
   - [Options Tabs](#options-tabs)
     - [Network Tab](#network-tab)
     - [Windows Tab](#windows-tab)
     - [Display Tab](#display-tab)
   - [Sign or Verify a Feathercoin Address](#sign-or-verify-a-feathercoin-address)
+    - [Sign a message](#sign-a-message)
+    - [Verify a message](#verify-a-message)
   - [Debug console](#debug-console)
-- [Advanced Options Menu](#advanced-options-menu)
-  - [Report and MultiSig Switch Main Veiw](#report-and-multisig-switch-main-veiw)
+- [Feathercoin wallet Advanced Options Menu](#feathercoin-wallet-advanced-options-menu)
+  - [Report and MultiSig Switch Main View](#report-and-multisig-switch-main-view)
   - [Comments in the Feathercoin Blockchain](#comments-in-the-feathercoin-blockchain)
     - [Write comments into the Feathercoin Blockchain](#write-comments-into-the-feathercoin-blockchain)
     - [Read comments from the Feathercoin Blockhain](#read-comments-from-the-feathercoin-blockhain)
-- [Plugins Menu](#plugins-menu)
-  - [Bitmessage](#bitmessage)
+- [Feathercoin wallet Plugins Menu](#feathercoin-wallet-plugins-menu)
+  - [BitMessage encrypter peer to peer private messaging](#bitmessage-encrypter-peer-to-peer-private-messaging)
+  - [Installing BitMessage plugin under Linux](#installing-bitmessage-plugin-under-linux)
   - [Opennames DNS Service](#opennames-dns-service)
   - [Shapeshift service](#shapeshift-service)
   - [Coinnector service](#coinnector-service)
   - [Multiple Signature Addresses](#multiple-signature-addresses)
-- [Help Menu](#help-menu)
+    - [Creating a Multiple Signature Address](#creating-a-multiple-signature-address)
+    - [Spending from a Multiple Signature Address](#spending-from-a-multiple-signature-address)
+- [Feathercoin Help Menu](#feathercoin-help-menu)
   - [Command line options](#command-line-options)
   - [Stealth transaction Search - SX Tool](#stealth-transaction-search---sx-tool)
 - [Feathercoin Back-end Features & Specification](#feathercoin-back-end-features-&-specification)
@@ -89,6 +104,8 @@ The information contained is based on Feathercoin wallet version 0.9.6. The guid
   - [Mining Pools](#mining-pools)
     - [Feathercoin P2Pool](#feathercoin-p2pool)
   - [Advanced Checkpointing (ACP)](#advanced-checkpointing-acp)
+  - [What is Checkpointing?](#what-is-checkpointing)
+  - [What is Advanced Checkpointing?](#what-is-advanced-checkpointing)
 - [Links, External features and further information](#links-external-features-and-further-information)
   - [Feathercoin forum : find support wallet issues](#feathercoin-forum--find-support-wallet-issues)
   - [Feathercoin forum : find support mining issues](#feathercoin-forum--find-support-mining-issues)
@@ -98,18 +115,25 @@ The information contained is based on Feathercoin wallet version 0.9.6. The guid
   - [pchMessageStart :  Using Feathercoin on a server with other Cryptographic currencies](#pchmessagestart---using-feathercoin-on-a-server-with-other-cryptographic-currencies)
   - [Feathercoin Graphics and Logos](#feathercoin-graphics-and-logos)
   - [Feathercoin Merchant tools](#feathercoin-merchant-tools)
+  - [Feathercoin Open Merchant Map](#feathercoin-open-merchant-map)
   - [FeatherPay - Feathercoin Point of Sales (POS)](#featherpay---feathercoin-point-of-sales-pos)
   - [Broadcast Transaction Service](#broadcast-transaction-service)
-  - [Set up an online payment system with Feathercoin (FTC)](#set-up-an-online-payment-system-with-feathercoin-ftc)
+  - [Feathercoin Shopping Cart](#feathercoin-shopping-cart)
   - [Feathercoin (FTC) Opensource ATM](#feathercoin-ftc-opensource-atm)
+  - [Feather Address - Client-Side Feathercoin Wallet Generator](#feather-address---client-side-feathercoin-wallet-generator)
+  - [Web based Paper wallet 7 Vanity address generators](#web-based-paper-wallet-7-vanity-address-generators)
+  - [Self Notary process using the Feathercoin blockchain](#self-notary-process-using-the-feathercoin-blockchain)
+  - [Feathercoin Local](#feathercoin-local)
   - [Feathercoin Technical settings](#feathercoin-technical-settings)
 - [References / Further reading :](#references--further-reading-)
-  - [Post Scrypt](#post-scrypt)
+- [Post Scrypt](#post-scrypt)
+  - [HullCoin](#hullcoin)
+  - [Etherium](#etherium)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
-## Feathercoin (FTC) Core Wallet Features
+## Feathercoin (FTC) Core Wallet Features Overview
 
 Main Features   
 -------------

@@ -1,10 +1,18 @@
-# Feathercoin Wallet Guide  
+# Feathercoin
 
-Feathercoin Wallet guide aims to show how to use the features of the Feathercoin Wallet. The information contained is based on Feathercoin wallet version 0.9.6. 
+Feathercoin is a cryptographic based currency using the bitcoin core protocols and it's own settings. It runs as a blockchain on a peer to peer network. The software to control and access the blockchain is developed by a group of open source contributors communicating through the Feathercoin forum. 
 
-The Feathercoin wallet operates by using the security of the Bitcoin base code with the addition of custom Feathercoin settings and wallet features.  
+Community involvement has been part of the Feathercoin philosophy from day one, in particular to produce guides and support new users and miners. The Feathercoin forum is already well established with answers to common questions and if you can't find in the answer in the guide then community support is available there.  
 
-The Feathercoin forum is already well established with answers to common questions and if you can't find in the answer in the guide then community support is available there.  
+If you wish to help or support, that can be as easy as becoming a member and up voting a good post, up to becoming a moderator or helping develop or test new enhancements. The forum also contains members experience, guides and details on developing external projects like starting a pool or developing a new app or web site.
+
+
+## Feathercoin Wallet Guide Aims and Restrictions
+
+Feathercoin Wallet guide aims to show how to use the features of the Feathercoin Wallet and other relevant technology. 
+
+The information contained is based on Feathercoin wallet version 0.9.6. The guide is applicable to other Feathercoin-qt versions and other alternative currency wallets, such as Bitcoin or Litecoin, which have similar features and operations.
+
 
 <!-- [Ref 5] -->
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -91,16 +99,18 @@ The Feathercoin forum is already well established with answers to common questio
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
-## Feathercoin (FTC) Core Wallet : 
+## Feathercoin (FTC) Core Wallet Features
 
-### Main Features -  
+Main Features   
+-------------
 * Send and Receive Feathercoins to an Address, a Stealth Address, URI text document or graphical QRCode.  
 * View and filter the historical Transactions.    
 * Connect to a the FTC Peer to  Peer network and update the Blockchain information.  
 * Sign and Verify a message given to prove ownership.  
   
 
-### Advanced Features -  
+Advanced Features   
+-----------------
 * Multiple Signature Transactions  
 * Add a text comment to the transaction  
 * Add Openname DNS addresses to the Blockchain   
@@ -109,28 +119,31 @@ The Feathercoin forum is already well established with answers to common questio
 * Coin Control 
 * Print a Paper Wallet
 
-### Plugins -  
+
+Plugins   
+-------
 * Bitmessage  
 * Shapeshift  
 * Coinnector  
 
-### Operational Features -
+
+Operational Features 
+--------------------
 * Neoscrypt mining algorithm
 * Automatic check pointing (ACP)
 * enhanced Hash Rate Compensation (eHRC)
 
 
-Welcome to Feathercoin core wallet   
-----------------------------------
+# Welcome to Feathercoin core wallet   
 ![Wallet Main Screen](/images/ftc-0.9.3.2-splashscreen01.png) 
 
 
-### Introduction to Feathercoin Core   
+## Introduction to Feathercoin Core   
 
-#### What is the Feathercoin core wallet?  
+What is the Feathercoin core wallet?  
+------------------------------------
 
-
-One use of money is to facilitate trade. Trade is recorded in bookkeeping, this information is traditionally closed to the public and requires third parties or middlemen to approve the transactions.
+One use of currency / money is to facilitate trade. Trade is recorded in bookkeeping, this information is traditionally closed to the public and requires third parties or middlemen to approve the transactions.
 
 Cryptocurrency is digital form of currency that is being used increasingly all over the world because it has been designed to be used on the internet. Currencies like Feathercoin are based on open source code and a distributed security model; which means anyone can mine or produce the coins or contribute to the code and development. [Ref 1] 
 
@@ -148,7 +161,8 @@ Feathercoin is a long established blockchain [Ref 2] with a reputable open devel
 **Official Wallet Downloads :** [Feathercoin Wallet Download](https://www.feathercoin.com/#dls)
 
 
-#### Where is the Feathercoins currency stored?  
+Where is the Feathercoins currency stored?  
+------------------------------------------
 
 Transactions are stored on the blockchain, think of each address a safety deposit box which anyone can see in but you have the key.
 
@@ -159,7 +173,8 @@ Once the wallet is installed you can generate a Feathercoin address. The address
 The sender returns the funds to the "receive" address. That transfer of receive address can be done by email or encrypted by Bitmessage or Tor, to prevent the "man in the middle" identification of the address.  
 
 
-#### What is mining and how is it controlled?  
+What is mining and how is it controlled?  
+----------------------------------------
 
 Mining is done by 3rd parties using feathercoind (server daemon), additional software and hard ware.  
 
@@ -181,11 +196,12 @@ The GPUs (Graphics Processors) do the mathematical cryptographic calculations. A
 It is the feathercoind (or daemon software) that confirms that a block is valid and spreads that block of transactions round the Peer to Pear network to all the other wallets and miners. A block becomes the next on the blockchain when it is accepted by more than 50% of the network as part of a correct and valid chain of blocks.  
 
 
-#### What is the difference between wallet versions?      
+What is the difference between Feathercoin wallet versions?      
+-----------------------------------------------------------
 
 What is the difference between version 0.8 series and version 0.9 series Feathercoin (FTC) wallets? 
 
-Feathercoin core wallets 0.9.3.x has re based moved to the Bitcoin framework. Previously FTC use / was based on the Litecoin framework. Lizhi has spent the last year re-writing the Feathercoin code, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.  
+Feathercoin core wallets 0.9.3.x has re based moved to the Bitcoin framework. Previously FTC use / was based on the Litecoin framework. the Hulk has spent the last year re-writing the Feathercoin code, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.  
 
 All the Feathercoin specific features have been inherited including, ACP, eHRC , QRCodes, QRsnap. 
 
@@ -198,9 +214,9 @@ Advantages of the 0.9.3.x series include, move to Qt5 development environment, s
 Official Windows builds and Linux PPAs are available from [Feathercoin.com](https://feathercoin.com). The Feathercoin forum is the place to go for further information and support. [forum.feathercoin.com](https://forum.feathercoin.com)  
 
 
-## Feathercoin Wallet Main Screen and Buttons   
+# Feathercoin Wallet Main Screen and Buttons   
 
-***How do I use the Feathercoin wallet? 
+## How do I use the Feathercoin wallet? 
 
 The main screen contains three parts, the menus, the buttons and the wallet overview.  
 
@@ -223,7 +239,7 @@ The triangle to the left of the tick, shows the "strength" of the peer to peer s
 ![Wallet overview page](/images/ftc-0.9.3.2-Wallet.overview.sync.01.png) 
 
 
-### Feathercoin Wallet Buttons Bar  
+## Feathercoin Wallet Buttons Bar  
 
 ***How do I send and receive transactions? :***  
 
@@ -231,7 +247,7 @@ The triangle to the left of the tick, shows the "strength" of the peer to peer s
 * Right click with your mouse on the button menu on the buttons menu to show the Tabs Toolbar check-box to close the button toolbar.  
 
 
-#### Receive Button   
+### Receive Button   
 
 In order to receive funds you need to create a receive address, The label, message and request amount are optional, press request payment and the address is created.
 
@@ -253,7 +269,7 @@ A pop up is shown with the newly created receive address address and QRCode imag
 **Stealth Addresses :**  *To create a stealth address you need to use the **Wallet -> Receive Menu option**, which includes additional features such as setting Stealth Address.* 
 
 
-#### Send Button   
+### Send Button   
 
 In order to send funds you need to input the receivers address. You can label the transaction with a description and input the amount.  
 
@@ -268,7 +284,7 @@ To use the QR scan feature, click "Send to QR". Then, position the scan box over
 ![QRCode image](/images/ftc-0.9.3.2-button.menu.sendto.QRCode.03.png)  
 
 
-#### Transaction Button
+### Transaction Button
 
 The transaction button shows the transactions that have taken place. You will need to receive some coins to start with but after that reviewing transactions will be the most common place to go.  
 
@@ -284,21 +300,21 @@ Right click on the transactions to show the transaction drop down. In this case 
 
 ![Transactions drop down menu](/images/ftc-0.9.3.2-button.menu.Transactions.drop.down.01.png) 
 
-#### Report Button  
+### Report Button  
 
 This image shows the grid shown when the report button is pressed. In the example the grid is filtered on "all the transactions that happened today" and calculates the number and total. That can then be exported to a csv file the "Export" button at the bottom right of the window.   
 
 ![Report Button](/images/ftc-0.9.3.2-button.menu.Report.01.png)  
 
 
-#### MultiSig Button  
+### MultiSig Button  
 
 MultiSig stands for multiple signature addresses.  Signature addresses can be made with up to three signatures with the current wallet implementation. Further details and an example of how to set up and use a MultiSig address is included later in the guide,  under menu options.
 
 ![MultiSig Button](/images/ftc-0.9.3.2-button.menu.MultiSig.01.png)  
 
 
-## Feathercoin Wallet Main Menu Options      
+# Feathercoin Wallet Main Menu Options      
 
 **Wallet drop down menu**   
 
@@ -306,7 +322,8 @@ The drop down menu allows access to URI dialog, wallet backup, Printing Paper Wa
  
 ![Walletdrop down](/images/ftc-0.9.3.2-Wallet.dropdown.01.png)   
 
-### Import URI payments
+## Import URI payments
+
 **Open URI menu**
 
 In information technology, a Uniform Resource Identifier (URI) is a string of characters used to identify a resource. Such identification enables interaction with representations of the resource over a network, typically the World Wide Web, using specific protocols. 
@@ -337,9 +354,10 @@ Use the send menu to "Request a payment". The URI can be copied via and pasted i
 
 ![Send URI Menu](/images/ftc-0.9.3.2-Wallet.URI.02.png)  
   
-### Backup wallet data
+## Backup wallet data
   
-**Backup Wallet**  
+Backup Wallet  
+-------------
 
 It is important to back up your wallet regularly. Especially if you have created new addresses or spent some cash, the old backups will be out of date. 
 
@@ -348,8 +366,8 @@ If you are just receiving FTC, that is handled on the blockchain and you wallet 
 The menu option eases backup strategy.  
 
 
-### Paper Wallet Menu    
-#### Print a paper wallet 
+## Paper Wallet Menu    
+### Print a paper wallet 
 
 By printing out your own Feathercoin wallets and generating your own addresses, you can minimise your exposure to hackers as well as untrustworthy people in your home or office. Just transfer your Feathercoins to your new wallets, and use common sense to keep your wallets safe the way you would ordinary cash.  
 
@@ -362,7 +380,8 @@ It is important to understand that, if anyone else obtains the private key of yo
 ![Paper Wallet](/images/ftc-0.9.3.2-paper.wallet.01.png)
 
 
-**Print Paper Wallet Menu Warning**   
+Print Paper Wallet Menu Warning   
+-------------------------------
 
 When you are printing out your private keys they have no password and are open for anyone to read or copy. It is important have care and a warning message is given to remind of the recommended security procedure. 
 
@@ -371,7 +390,7 @@ The printed wallet will contain all the keys from the local wallet. If the local
 ![Paper Wallet Warning](/images/ftc-0.9.3.2-paper.wallet.warning.01.png)  
 
  
-####  Import a Paper Wallet address  
+###  Import a Paper Wallet address  
 
 **How to import your public / private keys back into a an online wallet :**
 
@@ -394,14 +413,14 @@ Check that you have the address by closing the Debug window and going back to yo
 Back-up your updated wallet.dat file  
 
 
-### Encrypt your wallet  
+## Encrypt your wallet  
 
 Until you encrypt your wallet it is like a safe without a key anyone can open it. Use the encryption menu option to set a long super secret key to your wallet. You can also increase your security by keeping separate wallets, with savings stored on offline media like USBs or paper wallets.
 
 
-### Receive Addresses Menu Option  
+## Receive Addresses Menu Option  
 
-#### Receive currency and Manage Addresses
+### Receive currency and Manage Addresses
 
 The receive addresses menu option show a grid with label and address. There are various buttons such as add a new address, copy, show QRCodes, import QRCode,  Sign a message or verify a message.  
 
@@ -444,22 +463,25 @@ The Right mouse click options are :
 ![Actions Menu](/images/ftc-0.9.3.2-Wallet.ReceivePayments.02.png)  
 
 
-### Send Addresses Menu Option  
+## Send Addresses Menu Option  
 
 Contains similar information about send addresses as for receive addresses.   You can automate the filling in of information in various ways, by taking a screen shot of a QR code, or importing a URI from the "seller" and sending them that amount. 
 
 ![Send Addresses](/images/ftc-0.9.3.2-Wallet.SendPayments.01.png)
 
 
-#### Stealth Addresses  
+### Stealth Addresses  
 
 Stealth addresses were developed for Feathercoin out of the discussion of producing Private Blockchain Addresses or Dark Blockchains [Ref 3]. Feathercoin, like Bitcoin has an open Blockchain or public register, in order to prove that the technology works and the correct transfers took place. Now the technology is accepted, there is then no need to make the amounts being transferred visible to other than the sender and receiver, which can be achieved using Stealth Addresses.  
 
-**What are Stealth Addresses?**  
+
+What are Stealth Addresses?  
+---------------------------
 
 Stealth addresses are a way for a payer and a payee to have a private exchange of funds. Vertcoin was the first cryptocurrency to develop the Stealth Address, also referred to as the SX address.  
 
-**How are Stealth Addresses implemented?**  
+How are Stealth Addresses implemented?  
+--------------------------------------
 
 A Stealth Address functions differently than a standard Feathercoin address.  
 
@@ -467,7 +489,8 @@ The address is first generated using your Feathercoin wallet. Next you make it p
 
 Finally, the payers conduct the transactions using their individually generated addresses, and you import them in your wallet with the corresponding stealth address. This way each such Feathercoin address and transaction is only identifiable by you and the payer who generated that exact address. The outsiders are left outside.  
 
-**Where are Stealth Addresses useful?**  
+Where are Stealth Addresses useful?  
+-----------------------------------  
 
 Stealth addresses can be useful for businesses. If one normal address is used on a website link it means it allows tracking of transactions and spending by anyone viewing the blockchain.
 
@@ -476,7 +499,8 @@ Whereas one common stealth address can be used on the website, it acts like an e
 One common usage might be donations, where some organisations anonymity for their patrons.
 
 
-**How to Create a Feathercoin Stealth Address**  
+How to Create a Feathercoin Stealth Address  
+-------------------------------------------
 
 Click ion the Wallet menus item "New Address". Add the Label description, the address is then auto generated. 
 
@@ -485,22 +509,23 @@ Use the check-box to generate the Stealth Address.
 ![Stealth Address](/images/ftc-0.9.3.2-stealth.SX.create.01.png)  
 
 
-**How secure are Stealth Addresses?**  
+How secure are Stealth Addresses?  
+---------------------------------
 
 The main drawback with stealth addresses is, like mixers and Tor, if too few people use the service they me be easier to connect stealth transactions with a normal address.  
 
 
-
-### Exit
+## Exit
 
 Exit menu option or the Ctrl-Q keys close down the wallet and offer the reminder to save your wallet.  
 
 If you do not wish to back up your data, you can exit by the "window close button" and you will not  be asked to back up.
 
 
-## Settings Menu Options
+# Feathercoin wallet Settings Menu Options
 
-**Settings drop down Menu**
+Settings drop down Menu
+-----------------------
 
 The setting menu allows setting global options, signing and verifying messages and access to the debug window.
 
@@ -523,7 +548,7 @@ It also gives an indication if command line parameters over ride  those settings
 
 The wallet tab allows setting the global transaction fee to apply to sent transactions, enable Coin Control Features and set wither to spend unconfirmed change.
 
-### Coin Control
+## Coin Control
 
 **What are Coin Control Features?**
 
@@ -536,9 +561,9 @@ Selecting spend unconfirmed change, otherwise change must wait for confirmation 
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.wallet.01.png)   
 
 
-### Options Tabs
+## Options Tabs
 
-####  Network Tab
+###  Network Tab
 
 **Options menu :  Network Tab**
 
@@ -547,7 +572,7 @@ Choose to use UPnP or define a socks proxy for network connections through a rou
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.network.01.png)  
 
 
-#### Windows Tab
+### Windows Tab
 
 **Options menu :  Windows Tab**
 
@@ -556,7 +581,7 @@ Choose how the wallet minimises on the desktop.
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.window.01.png)  
 
 
-#### Display Tab
+### Display Tab
 
 **Options menu :  Display Tab**
 
@@ -569,7 +594,7 @@ Feathercoin Core includes the option to add third party transaction URLs to the 
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.options.display.01.png)  
 
 
-### Sign or Verify a Feathercoin Address  
+## Sign or Verify a Feathercoin Address  
 
 An important function of the Bitcoin and Feathercoin Blockchain is the ability to sign and verify messages have come from an address.
 
@@ -577,12 +602,12 @@ One example of how signed messages can be used is the example of a dispute with 
 
 In the case of a dispute, go to Receive coins and click on the "Sign Message" option. Write you message and hit sign. The signature generated is unique to the address and to the message. Send your address, the message and the signature to the vendor. They'll take your info and enter it into the "Verify Message" function of Bitcoin, usually located somewhere near the "Sign Message" button.
 
-**Sign a message**
+### Sign a message
 
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.message.sign.01.png)  
 
 
-**Verify a message**
+### Verify a message
 
 ![Settings Wallet verifying](/images/ftc-0.9.3.2-Settings.menu.message.verify.01.png)  
 
@@ -592,7 +617,7 @@ Here we can see the message given if the signature is not verified :
 ![Settings Wallet can't verify](/images/ftc-0.9.3.2-Settings.menu.message.verify.02.png) 
 
 
-### Debug console  
+## Debug console  
 
 View some basic system information about your wallet. Feathercoin records a system information log called debug.log in the .feathercoin or home directory. Clicking on the debug Open button allows viewing of the log for additional diagnostic information if required.
 
@@ -615,16 +640,16 @@ The network tab shows further information on the network traffic including a gra
 ![Settings Wallet Options](/images/ftc-0.9.3.2-Settings.menu.debug.network.01.png) 
 
 
-## Advanced Options Menu
+# Feathercoin wallet Advanced Options Menu
 
-### Report and MultiSig Switch Main Veiw 
+## Report and MultiSig Switch Main View 
 
 Menu option to choose the screen to display on the main panel.
 
 
-### Comments in the Feathercoin Blockchain  
+## Comments in the Feathercoin Blockchain  
 
-#### Write comments into the Feathercoin Blockchain 
+### Write comments into the Feathercoin Blockchain 
 
 **Feathercoin Wallet allows the inclusion of encrypted comments into the Blockchain**
 
@@ -651,7 +676,7 @@ If the comment is too long, or that address already has a comment then you will 
 ![Comment too large Warning](/images/ftc-0.9.3.2-comments.screen.05.png)  
 
 
-#### Read comments from the Feathercoin Blockhain  
+### Read comments from the Feathercoin Blockhain  
 
 **Read comments from the wallet**  
 
@@ -719,24 +744,37 @@ Using : http://block.ftc-c.com/
 First : find the transaction with the comment, the copy address or transaction ID. Search for it on ftc-c.com, The message is decoded on the page.
 
 
-## Plugins Menu
+# Feathercoin wallet Plugins Menu
 
-### Bitmessage
+## BitMessage encrypter peer to peer private messaging
 
 Bitmessage is an open source fully encrypted peer to peer messaging system. Because it does not pass through a central server it is also harder to collect meta data.
 
-In order to pass invoices or addresses privately, a version can be set up to integrate with Feathercoin. Currently Bitmessage acts as a plugin with MS Windows, invoice information can be passed straight through to an encrypted message.
+In order to pass invoices or addresses privately, a version of BitMessage can be set up to integrate with Feathercoin. 
+
+Currently Bitmessage acts as a plugin with MS Windows, invoice information can be passed straight through to an encrypted message. Install BitMessage for windows and copy the executable to the Feathercoin install directory.
 
 It is still worth considering using Bitmessage to send your public address keys, although that is mostly about privacy not extra security.
 
 https://github.com/cqtenq/PyBitmessage  
 
 
-### Opennames DNS Service
+Installing BitMessage plugin under Linux
+----------------------------------------
+
+In Debian based systems you can create a script to copy to /usr/bin, make the script executable to activate BitMessage plugin.
+
+#!/bin/sh
+cd /usr/share/pybitmessage
+exec /usr/bin/python2 bitmessagemain.py
+
+
+
+## Opennames DNS Service
 
 **Feathercoin Wallet use the Opennames DNS service in the blockchain**  
 
-The Opennames service is based on the system developed by Namecoin to imbeded DNS in the Blockchain. Namecoin is a decentralized open source information registration and transfer system based on the Bitcoin cryptocurrency.
+The Opennames service is based on the system developed by Namecoin to embed DNS in the Blockchain. Namecoin is a decentralized open source information registration and transfer system based on the Bitcoin cryptocurrency.
 
 The system was derived from a discussion in September 2010, a discussion was started in the Bitcointalk forum about a hypothetical system called BitDNS and generalizing bitcoin, based on a talk at IRC at 14 November 2010. Gavin Andresen and Satoshi Nakamoto joined the discussion in the Bitcointalk forum and supported the idea of BitDNS.
 
@@ -765,7 +803,7 @@ Openname is included in the Feathercoin (FTC) blockchain. Internally it is calle
 More information on Openname domains : https://wiki.namecoin.info/index.php?title=Register_and_Configure_.bit_Domains  
 
 
-### Shapeshift service
+## Shapeshift service
     
 **Feathercoin Wallet use the Shapeshift service**  
 
@@ -798,7 +836,7 @@ Send 3 FTC to Shapeshift, and receive Bitcoin in return.
 
 
 
-### Coinnector service
+## Coinnector service
 
 **Feathercoin Wallet use the Coinnector service**
 
@@ -819,11 +857,16 @@ To access the stealth address search, click on the Help menu option, then select
 ![Stealth Address](/images/ftc-0.9.3.2-stealth.SX.search.01.png)  
 
 
-### Multiple Signature Addresses
+## Multiple Signature Addresses
 
 Multisignature (often called MultiSig) is a form of technology used to add additional security for crypto-currencies transactions. Multisignature addresses require another user or multiple users to sign a transaction before it can be broadcast onto the block chain.  
 
-This can be used to facilitate escrow holdings, using 2 out of 3 an arbiter can be employed to hold the deciding vote. Or in the case of one of two, where 2 people can allocate expences and either one is empowered to validate a transaction happens.
+This can be used to facilitate escrow holdings, using 2 out of 3 an arbiter can be employed to hold the deciding vote. 
+
+
+### Creating a Multiple Signature Address
+
+In this example we create acces to a multiple signature account or address that is "one of two". It could be used where 2 people can allocate expenses and either one is empowered to validate a transaction or payment happens.
 
 
 To create a "MultiSig" address in Feathercoin, click on wallet and select Send addresses : then select "New MultiSig".  
@@ -881,36 +924,35 @@ Access an online explore such as explorer.ftc-c.com or explorer.feathercoin.com.
 ![Copy the Transaction ID](/images/ftc-0.9.3.2-blockchain.explorer.01.png) 
 
 
+### Spending from a Multiple Signature Address
+
+This shows the more complex example where "two out of three" signatures are required to access the funds.
+
+Here we'll describe how two partners can spend / transfer coins from their 2-of-3 MultiSig address. This transaction needs to be signed with two private keys, one is hold by Superman, the other by Batman or the Hulk.  
 
 
-**STEP TWO : Spending from a Multi Signature Address**  
+1. And now Superman and Batman can review their balance of their MultiSig addresses.  
 
-
-Here we'll describe how two partners can spend / transfer coins from their 2-of-3 MultiSig address. This transaction needs to be signed with two private keys, one is hold by Mirrax, the other by Calem or Lizhi.  
-
-
-1. And now Mirrax and Calem can review their balance of their MultiSig addresses.  
-
-Mirrax's wallet, He clicks on the "Sign" button.  
+Superman's wallet, He clicks on the "Sign" button.  
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen05.jpg)  
 
 
-Mirrax want to spend his Feathercoin (FTC) to me in his MultiSig addresses.  Send 0.05 FTC to Lizhi's normal address.  
+Superman wants to send some Feathercoin (FTC) to the Hulk in his MultiSig addresses.  Send 0.05 FTC to the Hulk's normal address.  
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen06.jpg)  
 
 
-2. Mirrax starts creating transaction from the 2-of-3 MultiSig address.They each has a private key of that address in their wallet. Mirrax signs the transaction with his private key, and export the raw transaction. Mirrax then needs to send this raw transaction to Calem  (by Email, BitMessage, SMS ..).  
+2. Superman starts creating transaction from the 2-of-3 MultiSig address.They each has a private key of that address in their wallet. Superman signs the transaction with his private key, and export the raw transaction. Superman then needs to send this raw transaction to Batman  (by Email, BitMessage, SMS ..).  
 
-Mirrax  export the raw transaction.  
+Superman  export the raw transaction.  
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen07.jpg)  
 
 
-3. Calem imports this raw transaction, he can see the transaction is already signed by a private key. Mirrax reviews the transactions and sign with his private key.  
+3. Batman imports this raw transaction, he can see the transaction is already signed by a private key. Superman reviews the transactions and sign with his private key.  
 
-If Calem agrees to send Mirrax  0.05 FTC, He clicks the "Sign" button as well.  
+If Batman agrees to send Superman  0.05 FTC, He clicks the "Sign" button as well.  
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen08.jpg)
 
@@ -919,12 +961,12 @@ If Calem agrees to send Mirrax  0.05 FTC, He clicks the "Sign" button as well.
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen09.jpg)  
  
 
-4. Now the transaction is signed by two private keys. Calem can simply click "Send" to broadcast the transaction.  
+4. Now the transaction is signed by two private keys. Batman can simply click "Send" to broadcast the transaction.  
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen10.jpg)  
 
 
-**OK**   Mirrax has received their 0.05 FTC. and he very happy :)  
+**OK**   Superman has received their 0.05 FTC. and he is very happy :)  
 
 ![MultiSig Dialog](/images/ftc-0.9.3.2-multi.signature.screen11.jpg)  
 
@@ -944,14 +986,14 @@ In the Receiving addresses page, Choose your address and click "Copy Public Key"
 [1]: http://block.ftc-c.com/tx/6e8dca7038dd97f4811163da91c047b70c4775dc6cc57f5de5b0200f1de1770b
 
 
-## Help Menu
+# Feathercoin Help Menu
 
 The help menu contains information on the version or Feathercoin and the Qt framework it was developed on in the about section and a list of the available command line options.  
 
 The help menu also includes the Stealth address search facility.  
 
 
-### Command line options  
+## Command line options  
 
 Usage:   feathercoin-qt [command-line options] 
 Server:  feathercoind [command-line options]
@@ -970,7 +1012,7 @@ or the command :
     
 Add a node to connect to and attempt to keep the connection open  : can be used to add more peers (like from your local network) to speed up synchronisation of the blockchain.  
 
-### Stealth transaction Search - SX Tool 
+## Stealth transaction Search - SX Tool 
 
 Usually the wallet will automatically detect a stealth transaction for your address, if not you can let it scan from one block height to another. 
 
@@ -985,15 +1027,15 @@ Return to the menu  Help > SX Tool, paste the latest block into "End Height:" fi
 Feathercoin processes One block per minute on average. If you wish to scan back one hour = 60 FTC blocks. One day will be (60 * 60 * 24) = 3600 blocks.  
 
 
-## Feathercoin Back-end Features & Specification
+# Feathercoin Back-end Features & Specification
 
-### enhanced Hash Rate Compensation (eHRC) 
+## enhanced Hash Rate Compensation (eHRC) 
 
 eHRC stands for enhanced Hash Rate Compensation, it was designed and implemented by Feathercoin developers and is open source.  
 
 eHRC uses the standard Bitcoin protocol to calculate the the next block difficulty, but adds 2 extra historical block look ups, or block average times to calculate the new difficulty more accurately. 
 
-In addition the introduction of eHRC included re-calculation of the difficulty, called ReTarget, after every block. 
+In addition the introduction of eHRC included re-calculation of the difficulty, called Re-Target, after every block. 
 
 It was specifically designed to be as effective as "Kimoto Gravity well" at compensating for variations on the proof of work (POW) hash rate but use the minimum of extra table look ups and calculations. This was important when block times had to work for transactions every minute, the change over  to which was included in the same hard fork.. 
 
@@ -1019,8 +1061,7 @@ https://github.com/wrapperband/FTCBlockTimeAnalysis
 [eHRC in Action](https://github.com/wrapperband/FTCBlockTimeAnalysis/raw/master/2016-05-31%20FTCTransactionAnalysis/2016-05-31-FTCBlockDifficulty2Day.MediumTerm.jpg)
 
 
-
-### Neoscrypt 
+## Neoscrypt 
 
 Neoscrypt is an ASIC resistant Proof of work (POW) algorithm used by Feathercoin miners. Designed and developed by Ghostlander specifically for the Feathercoin and Pheonixcoin project. [Ref 7]
 
@@ -1031,24 +1072,25 @@ Currently miners such as NSGminer for AMD mining. You can run your own or connec
 You can see what others have done or start a thread to get support in the Feathercoin forum : http://forum.feathercoin.com/category/17/mining
 
 
-#### NSGminer
+### NSGminer
 
 https://github.com/ghostlander/nsgminer
 
-#### SGminer 
+### SGminer 
 
 https://github.com/wrapperband/sgminer
 
-### Mining Pools
+## Mining Pools
 
-#### Feathercoin P2Pool
+### Feathercoin P2Pool
 
 https://github.com/wellenreiter01/p2pool-neoscrypt
 
 
-### Advanced Checkpointing (ACP)
+## Advanced Checkpointing (ACP)
 
-**What is Checkpointing?**
+What is Checkpointing?
+----------------------
 
 Checkpointing was originally built in to Bitcoin in order to prevent dishonest people reversing transactions and taking back the money they had sent. Commonly called "double spending".
 
@@ -1059,35 +1101,36 @@ The blockchain has all the transactions of the coin written into it. Every block
 Clients will only accept the blockchain that has the corresponding block number and hash defined in the code. Checkpointing offers some protection against attackers but only up to the last checkpoint. So malicious users could try to orphan blocks after the last checkpoint and reverse transactions with 51% attacks.
 
 
-**What is Advanced Checkpointing?**
+What is Advanced Checkpointing?
+-------------------------------
 
 Advanced Checkpointing allows Feathercoin to send out checkpoints without having to release a new version Feathercoin software. This works by having ‘master nodes’ which checkpoints each block it sees on the network protecting it from specifically from being double spent. Committed on the 6th November 2013 in it has been successful in both aims to automate "Developer" approved checkpoints and prevent "double spends".
 
 The ACP system checkpoints the Feathercoin blockchain every 5 blocks. ACP does not dictate the blockchain, it provides checkpoints and helps prevent double spends, if the checkpoint is on a short branch it will be rejected. 
 
 
-## Links, External features and further information   
+# Links, External features and further information   
 
-### Feathercoin forum : find support wallet issues 
+## Feathercoin forum : find support wallet issues 
 
 http://forum.feathercoin.com/category/18/support 
 
-### Feathercoin forum : find support mining issues 
+## Feathercoin forum : find support mining issues 
 
 http://forum.feathercoin.com/category/17/mining 
 
-### Feathercoin : Online Block Explorers  
+## Feathercoin : Online Block Explorers  
 
 http://explorer.feathercoin.com/chain/Feathercoin  
 
 http://block.ftc-c.com
 
-### ftc-abe - Run your own Feathercoin Block Explorer
+## ftc-abe - Run your own Feathercoin Block Explorer
 
 https://github.com/wellenreiter01/ftc-abe
 
 
-### Feathercoin API  
+## Feathercoin API  
 
 The Feathercoin API (Application Program interface) is a set of function calls you can make to the Feathercoin server to return the status of various parameters, such as difficult, block height. 
 
@@ -1096,7 +1139,7 @@ https://www.feathercoin.com/feathercoin-api/
 http://api.ftc-c.com/
 
 
-###  pchMessageStart :  Using Feathercoin on a server with other Cryptographic currencies
+##  pchMessageStart :  Using Feathercoin on a server with other Cryptographic currencies
 
 In most circumstance, alternative currencies coexist on a system by their name and the port they communicate on. When exchanges or pools deal with multiple currencies on a server they can use **pchMessageStart** to distinguish between them. 
 
@@ -1108,12 +1151,12 @@ Feathercoin was originally forked from the Litecoin project and shared the same 
 0xfe 0x46 0x54 0x43  
 
 
-### Feathercoin Graphics and Logos
+## Feathercoin Graphics and Logos
 
 https://www.feathercoin.com/feathercoin-graphic-resources/
 
 
-### Feathercoin Merchant tools
+## Feathercoin Merchant tools
 
 **Website Button generator.**
 
@@ -1121,7 +1164,7 @@ https://www.feathercoin.com/feathercoin-graphic-resources/
 
 https://www.feathercoin.com/feathercoin-button-generator/
 
-### Feathercoin Open Merchant Map
+## Feathercoin Open Merchant Map
 
 The Feathercoin Open Map project is a fork of the popular CoinMap.org designed to show merchants accepting FTC as a payment. Pools or other servers can run their own instance of the map.
 
@@ -1132,7 +1175,7 @@ https://github.com/voingiappone/feathercoinmap
 ![Feathercoin Open Merchant Map](images/ftc-open.merchant.map.01.png) 
 
 
-### FeatherPay - Feathercoin Point of Sales (POS) 
+## FeatherPay - Feathercoin Point of Sales (POS) 
 
 **Set up a Feathercoin Point of Sale Device (POS)with featherPay **
 
@@ -1143,7 +1186,7 @@ https://forum.feathercoin.com/topic/6980/dev-introducing-featherpay-point-of-sal
 ![Feathercoin POS (Point of Sale) Device](images/ftc-POS.01.png) 
 
 
-### Broadcast Transaction Service
+## Broadcast Transaction Service
 
 **Feathercoin Broadcast Transaction Service :** 
 
@@ -1169,7 +1212,7 @@ Second Step :  Broadcast it :
 
 Wait for confirmation, until  a mining pool makes a block.  The stealth transaction broadcast is complete.
 
-### Feathercoin Shopping Cart
+## Feathercoin Shopping Cart
 
 Set up an online payment system with Feathercoin (FTC) shopping Cart payment system.
 
@@ -1178,7 +1221,7 @@ Set up an online payment system with Feathercoin (FTC) shopping Cart payment sys
 https://forum.feathercoin.com/topic/4327/guide-wordpress-cart-and-full-ftc-payment-solution
 
 
-### Feathercoin (FTC) Opensource ATM
+## Feathercoin (FTC) Opensource ATM
 
 Open Feathercoin ATM is an open-source automated seller machine for education and experimentation. 
 
@@ -1186,7 +1229,7 @@ Based on John Mayo Smith’s OpenBitcoinATM. A “voucher” is printed containi
 
 For full details about hardware assembly and software here: http://forum.feathercoin.com/topic/6679/dev-openfeathercoinatm  
 
-### Feather Address - Client-Side Feathercoin Wallet Generator  
+## Feather Address - Client-Side Feathercoin Wallet Generator  
 
 Featheraddress:  JavaScript Client-Side Feathercoin Wallet Generator
 
@@ -1194,7 +1237,7 @@ Featheraddress is a fork of the original bitaddress.org project https://github.c
 
 Download or inspect the source code :  https://github.com/Mark-Leck/Featheraddress
 
-### Web based Paper wallet 7 Vanity address generators  
+## Web based Paper wallet 7 Vanity address generators  
 
 A paper wallet generator allows you create addresses and store them without installing the coin software or wallet to a computer or downloading. Now Feathercoin addresses and their corresponding private key can be conveniently generated in a web browser.
 
@@ -1206,7 +1249,7 @@ https://walletgenerator.net/?currency=Feathercoin
 
 *[Caution] : Unless you trust the site, care should be taken as private and public key pairs are generated. It is safer to download and run a generator off line.*
 
-### Self Notary process using the Feathercoin blockchain
+## Self Notary process using the Feathercoin blockchain
 
 **selfnotary**
 
@@ -1220,12 +1263,17 @@ All you need to have is document ( to find transaction via address ) and wallet 
 
 https://github.com/Slavco/selfnotary
 
-### Feathercoin Local
+## Feathercoin Local
 
-https://local.feathercoin.com/
+This page is a tool to find merchants or indeed if you are a merchant be featured on the map yourself.
+
+![Local Map](images/ftc-localFTC.map.01.png)
 
 
-### Feathercoin Technical settings
+Feathercoin Local map](https://local.feathercoin.com)
+
+
+## Feathercoin Technical settings
 
     NeoScrypt Algorithm 
     Resistant to Scrypt and SH-256 ASICS
@@ -1240,7 +1288,7 @@ https://local.feathercoin.com/
     ACP (Advanced Checkpointing)
 
 
-## References / Further reading :
+# References / Further reading :
 
 [Ref 1]: [Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto] "https://bitcoin.org/bitcoin.pdf" 
 [Ref 2]: [Book] [The future of Digital Business Innovation : Trends & Practices by Vincenzo Morabito  Pub: Springer]  
@@ -1250,10 +1298,10 @@ https://local.feathercoin.com/
 [Ref 6]: [Neoscrypt Press release] "http://www.feathercoin.com/neo-scrypt-press-release.pdf"  
 [Ref 7]: [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf" 
 
-### Post Scrypt
+# Post Scrypt
 
-**HullCoin** 
-
+HullCoin 
+--------
 Hull City Council announced in March 2014 the UK's first local government operated cryptocurrency, dubbed HullCoin. It was created by  Hull City Council's Financial Inclusion Support as a project to the alleviate the suffering in the Hull area.
 
 HullCoin was initially perceived as a token that "the needy" could spend locally on essential items. It was also envisaged for use in reward schemes, such as  encouraging  voluntary activities. In this case it might be used against council tax bills.
@@ -1263,7 +1311,8 @@ Hull coin was created with the advise of Feathercoin members and staff as well a
 http://www.coindesk.com/hullcoin-worlds-first-local-government-cryptocurrency/
 
 
-**Etherium**
+Etherium
+--------
 
 Etherium is a coin, similar to Feathercoin, where the miners also close smart contracts.
 

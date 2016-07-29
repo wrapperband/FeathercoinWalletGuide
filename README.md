@@ -26,16 +26,46 @@ Origin of the Screen shots
 The information contained is based on Feathercoin wallet version 0.9.6. The guide is applicable to other Feathercoin-qt versions and other alternative currency wallets, such as Bitcoin or Litecoin, which have similar features and operations.
 
 
+## Feathercoin (FTC) Core Wallet Features Overview
+
+Main Features   
+-------------
+* Send and Receive Feathercoins to an Address, a Stealth Address, URI text document or graphical QRCode.  
+* View and filter the historical Transactions.    
+* Connect to a the FTC Peer to  Peer network and update the Blockchain information.  
+* Sign and Verify a message given to prove ownership.  
+  
+
+Advanced Features   
+-----------------
+* Multiple Signature Transactions  
+* Add a text comment to the transaction  
+* Add Openname DNS addresses to the Blockchain   
+* Create and manage Stealth Addresses   
+* Transaction reports  
+* Coin Control 
+* Print a Paper Wallet
+
+
+Plugins   
+-------
+* Bitmessage  
+* Shapeshift  
+* Coinnector  
+
+
+Operational Features 
+--------------------
+* Neoscrypt mining algorithm
+* Automatic check pointing (ACP)
+* enhanced Hash Rate Compensation (eHRC)
+
+
 <!-- [Ref 5] -->
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  
 
-  - [Feathercoin (FTC) Core Wallet Features Overview](#feathercoin-ftc-core-wallet-features-overview)
-  - [Main Features](#main-features)
-  - [Advanced Features](#advanced-features)
-  - [Plugins](#plugins)
-  - [Operational Features](#operational-features)
 - [Welcome to Feathercoin core wallet](#welcome-to-feathercoin-core-wallet)
   - [Introduction to Feathercoin Core](#introduction-to-feathercoin-core)
   - [What is the Feathercoin core wallet?](#what-is-the-feathercoin-core-wallet)
@@ -132,43 +162,8 @@ The information contained is based on Feathercoin wallet version 0.9.6. The guid
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-
-## Feathercoin (FTC) Core Wallet Features Overview
-
-Main Features   
--------------
-* Send and Receive Feathercoins to an Address, a Stealth Address, URI text document or graphical QRCode.  
-* View and filter the historical Transactions.    
-* Connect to a the FTC Peer to  Peer network and update the Blockchain information.  
-* Sign and Verify a message given to prove ownership.  
-  
-
-Advanced Features   
------------------
-* Multiple Signature Transactions  
-* Add a text comment to the transaction  
-* Add Openname DNS addresses to the Blockchain   
-* Create and manage Stealth Addresses   
-* Transaction reports  
-* Coin Control 
-* Print a Paper Wallet
-
-
-Plugins   
--------
-* Bitmessage  
-* Shapeshift  
-* Coinnector  
-
-
-Operational Features 
---------------------
-* Neoscrypt mining algorithm
-* Automatic check pointing (ACP)
-* enhanced Hash Rate Compensation (eHRC)
-
-
 # Welcome to Feathercoin core wallet   
+
 ![Wallet Main Screen](/images/ftc-0.9.3.2-splashscreen01.png) 
 
 

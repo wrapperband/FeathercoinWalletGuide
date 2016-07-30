@@ -73,7 +73,7 @@ The information contained is based on Feathercoin wallet version 0.9.6. The guid
       - [What is mining and how is it controlled?](#what-is-mining-and-how-is-it-controlled)
       - [What is the difference between Feathercoin wallet versions?](#what-is-the-difference-between-feathercoin-wallet-versions)
 - [Feathercoin Wallet Main Screen and Buttons](#feathercoin-wallet-main-screen-and-buttons)
-    - [How do I use the Feathercoin wallet?](#how-do-i-use-the-feathercoin-wallet)
+      - [How do I use the Feathercoin wallet?](#how-do-i-use-the-feathercoin-wallet)
 - [Feathercoin Wallet Buttons Bar](#feathercoin-wallet-buttons-bar)
   - [Receive Button](#receive-button)
   - [Send Button](#send-button)
@@ -281,13 +281,13 @@ In this case :
 
 Amount: 0.35 FTC
 Label: Expenses for buying the replacement jug
-Message: I'll bill you seperatly for the other things I got for you
+Message: I'll bill you separately for the other things I got for you
 
 
 ![Receive Button](/images/ftc-0.9.3.2-button.menu.Receive.01.png)  
 
 
-A pop up is shown with the newly created receive address address and QRCode image.  
+A pop up is shown with the newly created receive address address and QRCode image.  The amount is shown, the Label (retained in wallet) and message. You can save and display the QR image, which can be scanned in on a phone wallet or using the in built wallet QR scanner. The URI text can also be saved to include the full information in a file. 
 
 ![QRCode image](/images/ftc-0.9.3.2-button.menu.Receive.QRCode.02.png)  
 

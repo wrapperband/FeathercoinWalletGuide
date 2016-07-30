@@ -2,47 +2,45 @@
 
 ## What is Feathercoin?
 
-Who owns Feathercoin?
----------------------------------
+#### Who owns Feathercoin?
+
 Feathercoin is a cryptographic based currency using the Bitcoin core protocols and it's own settings. Feathercoin runs as a blockchain on a peer to peer network. The software to validate and access the Feathercoin blockchain is developed by a group of open source contributors communicating through the Feathercoin forum. 
 
-Community development
----------------------
+#### Community development
+
 Community involvement has been part of the Feathercoin philosophy from it's initiation by Peter Bushnell in creating the forum. In particular to produce guides and support for new users and developers in the forum. [Ref 2]
 
 The Feathercoin forum is already well established with answers to common questions and if you can't find in the answer in the guide then community support is available there. 
 
 
-Help or Support
----------------
+#### Help or Support
+
 If you wish to help or give support which can be as easy as becoming a forum  member and up voting a good post to becoming a moderator or helping develop or test new enhancements. 
 
 The forum also contains threads of members experience, guides and details on developing external projects like starting a pool or developing a new app, exchange, web site or other novel use case.
 
 
-## Feathercoin Wallet Guide Aims and Restrictions
+#### Feathercoin Wallet Guide Aims and Restrictions
 
 The aims of the Guide
----------------------
+
 Feathercoin Wallet guide aims to show how to use the features of the Feathercoin Wallet and other relevant technology. 
 
-Origin of the Screen shots
---------------------------
+#### Origin of the Screen shots
+
 The information contained is based on Feathercoin wallet version 0.9.6. The guide is applicable to other Feathercoin-qt versions and other alternative currency wallets, such as Bitcoin or Litecoin, which have similar features and operations.
 
 
 ## Feathercoin (FTC) Core Wallet Features Overview
 
-Main Features   
--------------
+### Main Features   
 * Send and Receive Feathercoins to an Address, a Stealth Address, URI text document or graphical QRCode.  
 * View and filter the historical Transactions.    
 * Connect to a the FTC Peer to  Peer network and update the Blockchain information.  
 * Sign and Verify a message given to prove ownership.  
   
 
-Advanced Features   
------------------
+### Advanced Features   
 * Multiple Signature Transactions  
 * Add a text comment to the transaction  
 * Add Openname DNS addresses to the Blockchain   
@@ -52,15 +50,13 @@ Advanced Features
 * Print a Paper Wallet
 
 
-Plugins   
--------
+### Plugins   
 * Bitmessage  
 * Shapeshift  
 * Coinnector  
 
 
-Operational Features 
---------------------
+### Operational Features 
 * Neoscrypt mining algorithm
 * Automatic check pointing (ACP)
 * enhanced Hash Rate Compensation (eHRC)

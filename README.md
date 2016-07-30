@@ -267,21 +267,22 @@ The triangle to the left of the tick, shows the "strength" of the peer to peer s
 
 # Feathercoin Wallet Buttons Bar  
 
-***How do I send and receive transactions? :***  
+## Hiding the Button Bar
 
-**Tip :** *The button menu can be closed to make more room : If you need to activate the buttons or close the button menu :*  
-* Right click with your mouse on the button menu on the buttons menu to show the Tabs Toolbar check-box to close the button toolbar.  
+The button menu can be closed to make more room. If you need to activate the buttons or close the button menu then :  
+
+Right click with your mouse on the button menu on the buttons menu to show the Tabs Toolbar check-box to close the button toolbar.  
 
 
 ## Receive Button   
 
 In order to receive funds you need to create a receive address, The label, message and request amount are optional, press request payment and the address is created.
 
-In this case :
+In this case the invoice is for :  
 
-Amount: 0.35 FTC
-Label: Expenses for buying the replacement jug
-Message: I'll bill you separately for the other things I got for you
+Amount: 22.00 FTC  
+Label: This is an invoice for the payment
+Message: There's no hurry the end of the month will be fine.
 
 
 ![Receive Button](/images/ftc-0.9.3.2-button.menu.Receive.01.png)  
@@ -319,7 +320,9 @@ The transaction button shows the transactions that have taken place. You will ne
 
 When you have a lot of transactions you can use the filters bellow the buttons to restrict which ones are shown, by time period,  search for recipients / senders or a specific address.  
 
-Right click on the transactions to show the transaction drop down. In this case copy address to clipboard is highlighted so you simply paste that into a document for someone to send funds to that address without having to remember a large address.  
+Right click on the transactions to show the transaction drop down. In this case copy address to clipboard is highlighted so you simply paste that into a document for someone to send funds to that address without having to remember a large address.
+
+Press the export button at the bottom right and export the transaction details to comma delimited file.
 
 **Tip :** The filter conditions in place are shown at the bottom left of the window.  It is useful to know the filter conditions, e.g. If you've filtered out all your FTC and wondered where it all went ..  
 

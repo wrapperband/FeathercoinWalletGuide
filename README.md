@@ -1094,7 +1094,7 @@ https://github.com/wrapperband/FTCBlockTimeAnalysis
 
 ## Neoscrypt 
 
-Neoscrypt is an ASIC resistant Proof of work (POW) algorithm used by Feathercoin miners. Designed and developed by Ghostlander specifically for the Feathercoin and Pheonixcoin project. [Ref 7]
+Neoscrypt is an ASIC resistant Proof of work (POW) algorithm used by Feathercoin miners. Designed and developed by Ghostlander specifically for the Feathercoin and Phoenixcoin project. [Ref 7]
 
 Most Feathercoin members were for ASICs, they have definate advantages of efficiency when mining. However, what was seen in the Bitcoin and Litcoin implementation was, 
 

@@ -75,6 +75,7 @@ The information contained is based on Feathercoin wallet version 0.9.6. The guid
 - [Feathercoin Wallet Main Screen and Buttons](#feathercoin-wallet-main-screen-and-buttons)
       - [How do I use the Feathercoin wallet?](#how-do-i-use-the-feathercoin-wallet)
 - [Feathercoin Wallet Buttons Bar](#feathercoin-wallet-buttons-bar)
+  - [Hiding the Button Bar](#hiding-the-button-bar)
   - [Receive Button](#receive-button)
   - [Send Button](#send-button)
   - [Transaction Button](#transaction-button)
@@ -795,10 +796,9 @@ In Debian based systems you can create a script to copy to /usr/bin, make the sc
 
 /usr/bin/pybitmessage
 
-#!/bin/sh
-cd /usr/share/pybitmessage
-exec /usr/bin/python2 bitmessagemain.py
-
+    #!/bin/sh
+    cd /usr/share/pybitmessage
+    exec /usr/bin/python2 bitmessagemain.py
 
 
 ## Opennames DNS Service

@@ -193,10 +193,9 @@ Feathercoin is a long established blockchain [Ref 2] with a reputable open devel
 
 #### Where is the Feathercoins currency stored?  
 
+Transactions from addresses are stored on the blockchain. Think of each address a safety deposit box which anyone can see in, but only you have the key.
 
-Transactions are stored on the blockchain, think of each address a safety deposit box which anyone can see in but you have the key.
-
-The wallet contains your "keys" or addresses to those transactions in the deposit boxes. This means the transactions are public, it is the fact that who owns the address is unknown, which provides the privacy. 
+The wallet is where your "keys" or addresses are held to those transactions, in the deposit boxes. This means the transactions are public, it is the fact that *who owns the address is unknown*, which provides the privacy. 
 
 Once the wallet is installed you can generate a Feathercoin address. The addresses are then passed between the users, usually the "receiver" communicates an address to send the funds to. The address is sometime called the public key.
 
@@ -204,7 +203,6 @@ The sender returns the funds to the "receive" address. That transfer of receive 
 
 
 #### What is mining and how is it controlled?  
-
 
 Mining is done by 3rd parties using feathercoind (server daemon), additional software and hard ware.  
 
@@ -231,22 +229,24 @@ It is the feathercoind (or daemon software) that confirms that a block is valid 
 
 What is the difference between version 0.8 series and version 0.9 series Feathercoin (FTC) wallets? 
 
-Feathercoin core wallets 0.9.3.x has re based moved to the Bitcoin framework. Previously FTC use / was based on the Litecoin framework. the Hulk has spent the last year re-writing the Feathercoin code, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.  
+Feathercoin core wallets are similar in operation. The newer 0.9.3.x basic code has been moved "upstream" to be closer to the Bitcoin core framework. 
+
+Previously FTC use / was based on the Litecoin framework, which was one step away. Lizhi has spent the last year re-writing the Feathercoin code, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.  
 
 All the Feathercoin specific features have been inherited including, ACP, eHRC , QRCodes, QRsnap. 
 
-By moving upstream Feathercoin can now offer new features the core system offers. In particular by using the plugins FTC has included Shapeshift, Coinnector and Bitmessage facilities.  
+By moving upstream Feathercoin can integrate some new features which require the latest tools
 
 Feathercoin development is already moving on to including FTC facilities in 0.11 core series, whilst maintaining and refining the 0.9.x as a bridge. The aim currently is to include more difficult major changes in the 0.1x.x series that will require a hard fork and all users upgrade.  
 
-Advantages of the 0.9.3.x series include, move to Qt5 development environment, speed increase, DNS seeds and improved database synchronising.  
+Other advantages gained with the 0.9.3.x series include, Qt5 development environment, speed increase, DNS seeds and improved database synchronising.  
 
 Official Windows builds and Linux PPAs are available from [Feathercoin.com](https://feathercoin.com). The Feathercoin forum is the place to go for further information and support. [forum.feathercoin.com](https://forum.feathercoin.com)  
 
 
 # Feathercoin Wallet Main Screen and Buttons   
 
-### How do I use the Feathercoin wallet? 
+#### How do I use the Feathercoin wallet? 
 
 The main screen contains three parts, the menus, the buttons and the wallet overview.  
 

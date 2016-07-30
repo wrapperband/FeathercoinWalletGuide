@@ -73,18 +73,17 @@ Operational Features
 
 - [Welcome to Feathercoin core wallet](#welcome-to-feathercoin-core-wallet)
   - [Introduction to Feathercoin Core](#introduction-to-feathercoin-core)
-  - [What is the Feathercoin core wallet?](#what-is-the-feathercoin-core-wallet)
-  - [Where is the Feathercoins currency stored?](#where-is-the-feathercoins-currency-stored)
-  - [What is mining and how is it controlled?](#what-is-mining-and-how-is-it-controlled)
-  - [What is the difference between Feathercoin wallet versions?](#what-is-the-difference-between-feathercoin-wallet-versions)
+      - [Where is the Feathercoins currency stored?](#where-is-the-feathercoins-currency-stored)
+      - [What is mining and how is it controlled?](#what-is-mining-and-how-is-it-controlled)
+      - [What is the difference between Feathercoin wallet versions?](#what-is-the-difference-between-feathercoin-wallet-versions)
 - [Feathercoin Wallet Main Screen and Buttons](#feathercoin-wallet-main-screen-and-buttons)
-  - [How do I use the Feathercoin wallet?](#how-do-i-use-the-feathercoin-wallet)
-  - [Feathercoin Wallet Buttons Bar](#feathercoin-wallet-buttons-bar)
-    - [Receive Button](#receive-button)
-    - [Send Button](#send-button)
-    - [Transaction Button](#transaction-button)
-    - [Report Button](#report-button)
-    - [MultiSig Button](#multisig-button)
+    - [How do I use the Feathercoin wallet?](#how-do-i-use-the-feathercoin-wallet)
+- [Feathercoin Wallet Buttons Bar](#feathercoin-wallet-buttons-bar)
+  - [Receive Button](#receive-button)
+  - [Send Button](#send-button)
+  - [Transaction Button](#transaction-button)
+  - [Report Button](#report-button)
+  - [MultiSig Button](#multisig-button)
 - [Feathercoin Wallet Main Menu Options](#feathercoin-wallet-main-menu-options)
   - [Import URI payments](#import-uri-payments)
   - [Backup wallet data](#backup-wallet-data)
@@ -120,7 +119,7 @@ Operational Features
     - [Write comments into the Feathercoin Blockchain](#write-comments-into-the-feathercoin-blockchain)
     - [Read comments from the Feathercoin Blockhain](#read-comments-from-the-feathercoin-blockhain)
 - [Feathercoin wallet Plugins Menu](#feathercoin-wallet-plugins-menu)
-  - [BitMessage encrypter peer to peer private messaging](#bitmessage-encrypter-peer-to-peer-private-messaging)
+  - [BitMessage encrypted peer to peer private messaging](#bitmessage-encrypted-peer-to-peer-private-messaging)
   - [Installing BitMessage plugin under Linux](#installing-bitmessage-plugin-under-linux)
   - [Opennames DNS Service](#opennames-dns-service)
   - [Shapeshift service](#shapeshift-service)
@@ -156,7 +155,7 @@ Operational Features
   - [Feathercoin Shopping Cart](#feathercoin-shopping-cart)
   - [Feathercoin (FTC) Opensource ATM](#feathercoin-ftc-opensource-atm)
   - [Feather Address - Client-Side Feathercoin Wallet Generator](#feather-address---client-side-feathercoin-wallet-generator)
-  - [Web based Paper wallet 7 Vanity address generators](#web-based-paper-wallet-7-vanity-address-generators)
+  - [Web based Paper wallet Vanity address generators](#web-based-paper-wallet-vanity-address-generators)
   - [Self Notary process using the Feathercoin blockchain](#self-notary-process-using-the-feathercoin-blockchain)
   - [Feathercoin Local](#feathercoin-local)
   - [Feathercoin Technical settings](#feathercoin-technical-settings)
@@ -247,7 +246,7 @@ Official Windows builds and Linux PPAs are available from [Feathercoin.com](http
 
 # Feathercoin Wallet Main Screen and Buttons   
 
-## How do I use the Feathercoin wallet? 
+### How do I use the Feathercoin wallet? 
 
 The main screen contains three parts, the menus, the buttons and the wallet overview.  
 
@@ -270,7 +269,7 @@ The triangle to the left of the tick, shows the "strength" of the peer to peer s
 ![Wallet overview page](/images/ftc-0.9.3.2-Wallet.overview.sync.01.png) 
 
 
-## Feathercoin Wallet Buttons Bar  
+# Feathercoin Wallet Buttons Bar  
 
 ***How do I send and receive transactions? :***  
 
@@ -278,7 +277,7 @@ The triangle to the left of the tick, shows the "strength" of the peer to peer s
 * Right click with your mouse on the button menu on the buttons menu to show the Tabs Toolbar check-box to close the button toolbar.  
 
 
-### Receive Button   
+## Receive Button   
 
 In order to receive funds you need to create a receive address, The label, message and request amount are optional, press request payment and the address is created.
 
@@ -300,7 +299,7 @@ A pop up is shown with the newly created receive address address and QRCode imag
 **Stealth Addresses :**  *To create a stealth address you need to use the **Wallet -> Receive Menu option**, which includes additional features such as setting Stealth Address.* 
 
 
-### Send Button   
+## Send Button   
 
 In order to send funds you need to input the receivers address. You can label the transaction with a description and input the amount.  
 
@@ -315,7 +314,7 @@ To use the QR scan feature, click "Send to QR". Then, position the scan box over
 ![QRCode image](/images/ftc-0.9.3.2-button.menu.sendto.QRCode.03.png)  
 
 
-### Transaction Button
+## Transaction Button
 
 The transaction button shows the transactions that have taken place. You will need to receive some coins to start with but after that reviewing transactions will be the most common place to go.  
 
@@ -328,17 +327,17 @@ Right click on the transactions to show the transaction drop down. In this case 
 
 **Tip :** The filter conditions in place are shown at the bottom left of the window.  It is useful to know the filter conditions, e.g. If you've filtered out all your FTC and wondered where it all went ..  
 
-
 ![Transactions drop down menu](/images/ftc-0.9.3.2-button.menu.Transactions.drop.down.01.png) 
 
-### Report Button  
+
+## Report Button  
 
 This image shows the grid shown when the report button is pressed. In the example the grid is filtered on "all the transactions that happened today" and calculates the number and total. That can then be exported to a csv file the "Export" button at the bottom right of the window.   
 
 ![Report Button](/images/ftc-0.9.3.2-button.menu.Report.01.png)  
 
 
-### MultiSig Button  
+## MultiSig Button  
 
 MultiSig stands for multiple signature addresses.  Signature addresses can be made with up to three signatures with the current wallet implementation. Further details and an example of how to set up and use a MultiSig address is included later in the guide,  under menu options.
 
@@ -1098,16 +1097,26 @@ https://github.com/wrapperband/FTCBlockTimeAnalysis
 
 Neoscrypt is an ASIC resistant Proof of work (POW) algorithm used by Feathercoin miners. Designed and developed by Ghostlander specifically for the Feathercoin and Pheonixcoin project. [Ref 7]
 
-Mining is not in the scope of the guide, but FTC has done a lot of work to make it easier and aide in the development of GPU miner software and open pools.  
+Most Feathercoin members were for ASICs, they have definate advantages of efficiency when mining. However, what was seen in the Bitcoin and Litcoin implementation was, 
+
+* Scams involving pre ordering hardware arriving late or never
+* Promisses of high hash rates negated by changes in difficulty
+* Consentation of mining power with a few who had access to ASICs
+
+Because Neoscrypt would require more memory, it would mean GPU mining would only be 100 times CPU mining where as it had been a 1000 with Scrypt and 10,000 Bitcoin hashes. 
+
+This can be seen in the difficulty reduction when Feathercoin changed over to Neoscrypt, firstly the same ming power produces a lower difficulty and secondly, a lot of scrypt ASICs went back to mining Litecoin.
+
+Mining is not in the scope of the guide, but FTC has done a lot of work to make it easier and aide in the development of GPU miner software and open pools. 
 
 Currently miners such as NSGminer for AMD mining. You can run your own or connect to a peer to peer node of the  P2Pool distributed mining system. Of course other pools and miners are available. 
 
-You can see what others have done or start a thread to get support in the Feathercoin forum : http://forum.feathercoin.com/category/17/mining
+You can see what others have done or start a thread to get support in the Feathercoin forum : [Feathercoin Forum Mining Thread](http://forum.feathercoin.com/category/17/mining)
 
 
 ### NSGminer
 
-https://github.com/ghostlander/nsgminer
+[https://github.com/ghostlander/nsgminer](https://github.com/ghostlander/nsgminer)
 
 ### SGminer 
 
@@ -1116,6 +1125,8 @@ https://github.com/wrapperband/sgminer
 ## Mining Pools
 
 ### Feathercoin P2Pool
+
+Feathercoin developers have ensured P2Pool has a compatible version for Neoscrypt, that has extensive instructions on how to run your own private pool or an online P2Pool node.
 
 https://github.com/wellenreiter01/p2pool-neoscrypt
 

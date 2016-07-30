@@ -1090,7 +1090,7 @@ FTC recently completed a review of effectiveness of eHRC against the increase in
 **Feathercoin Block Time Analysis 2016**
 https://github.com/wrapperband/FTCBlockTimeAnalysis  
 
-[eHRC in Action](/images/2016-05-31-FTCBlockDifficulty2Day.MediumTerm.jpg)
+![eHRC in Action](/images/2016-05-31-FTCBlockDifficulty2Day.MediumTerm.jpg)
 
 
 ## Neoscrypt 

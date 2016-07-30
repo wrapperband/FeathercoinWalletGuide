@@ -2,17 +2,22 @@
 
 ## What is Feathercoin?
 
-Who owns or develops Feathercoin?
+Who owns Feathercoin?
 ---------------------------------
-Feathercoin is a cryptographic based currency using the bitcoin core protocols and it's own settings. It runs as a blockchain on a peer to peer network. The software to control and access the Feathercoin blockchain is developed by a group of open source contributors communicating through the Feathercoin forum. 
+Feathercoin is a cryptographic based currency using the Bitcoin core protocols and it's own settings. Feathercoin runs as a blockchain on a peer to peer network. The software to validate and access the Feathercoin blockchain is developed by a group of open source contributors communicating through the Feathercoin forum. 
 
 Community development
 ---------------------
-Community involvement has been part of the Feathercoin philosophy from day one, in particular to produce guides and support for new users and miners. The Feathercoin forum is already well established with answers to common questions and if you can't find in the answer in the guide then community support is available there.  
+Community involvement has been part of the Feathercoin philosophy from it's initiation by Peter Bushnell in creating the forum. In particular to produce guides and support for new users and developers in the forum. [Ref 2]
+
+The Feathercoin forum is already well established with answers to common questions and if you can't find in the answer in the guide then community support is available there. 
+
 
 Help or Support
 ---------------
-If you wish to help or give support which can be as easy as becoming a forum  member and up voting a good post to becoming a moderator or helping develop or test new enhancements. The forum also contains threads of members experience, guides and details on developing external projects like starting a pool or developing a new app, exchange, web site or other novel use case.
+If you wish to help or give support which can be as easy as becoming a forum  member and up voting a good post to becoming a moderator or helping develop or test new enhancements. 
+
+The forum also contains threads of members experience, guides and details on developing external projects like starting a pool or developing a new app, exchange, web site or other novel use case.
 
 
 ## Feathercoin Wallet Guide Aims and Restrictions
@@ -169,9 +174,6 @@ Operational Features
 
 ## Introduction to Feathercoin Core   
 
-What is the Feathercoin core wallet?  
-------------------------------------
-
 One use of currency / money is to facilitate trade. Trade is recorded in bookkeeping, this information is traditionally closed to the public and requires third parties or middlemen to approve the transactions.
 
 Cryptocurrency is digital form of currency that is being used increasingly all over the world because it has been designed to be used on the internet. Currencies like Feathercoin are based on open source code and a distributed security model; which means anyone can mine or produce the coins or contribute to the code and development. [Ref 1] 
@@ -190,8 +192,8 @@ Feathercoin is a long established blockchain [Ref 2] with a reputable open devel
 **Official Wallet Downloads :** [Feathercoin Wallet Download](https://www.feathercoin.com/#dls)
 
 
-Where is the Feathercoins currency stored?  
-------------------------------------------
+#### Where is the Feathercoins currency stored?  
+
 
 Transactions are stored on the blockchain, think of each address a safety deposit box which anyone can see in but you have the key.
 
@@ -202,8 +204,8 @@ Once the wallet is installed you can generate a Feathercoin address. The address
 The sender returns the funds to the "receive" address. That transfer of receive address can be done by email or encrypted by Bitmessage or Tor, to prevent the "man in the middle" identification of the address.  
 
 
-What is mining and how is it controlled?  
-----------------------------------------
+#### What is mining and how is it controlled?  
+
 
 Mining is done by 3rd parties using feathercoind (server daemon), additional software and hard ware.  
 
@@ -225,8 +227,8 @@ The GPUs (Graphics Processors) do the mathematical cryptographic calculations. A
 It is the feathercoind (or daemon software) that confirms that a block is valid and spreads that block of transactions round the Peer to Pear network to all the other wallets and miners. A block becomes the next on the blockchain when it is accepted by more than 50% of the network as part of a correct and valid chain of blocks.  
 
 
-What is the difference between Feathercoin wallet versions?      
------------------------------------------------------------
+#### What is the difference between Feathercoin wallet versions?      
+
 
 What is the difference between version 0.8 series and version 0.9 series Feathercoin (FTC) wallets? 
 
@@ -775,7 +777,7 @@ First : find the transaction with the comment, the copy address or transaction I
 
 # Feathercoin wallet Plugins Menu
 
-## BitMessage encrypter peer to peer private messaging
+## BitMessage encrypted peer to peer private messaging
 
 Bitmessage is an open source fully encrypted peer to peer messaging system. Because it does not pass through a central server it is also harder to collect meta data.
 
@@ -1089,7 +1091,7 @@ FTC recently completed a review of effectiveness of eHRC against the increase in
 **Feathercoin Block Time Analysis 2016**
 https://github.com/wrapperband/FTCBlockTimeAnalysis  
 
-[eHRC in Action](https://github.com/wrapperband/FTCBlockTimeAnalysis/raw/master/2016-05-31%20FTCTransactionAnalysis/2016-05-31-FTCBlockDifficulty2Day.MediumTerm.jpg)
+[eHRC in Action](/images/2016-05-31-FTCBlockDifficulty2Day.MediumTerm.jpg)
 
 
 ## Neoscrypt 
@@ -1268,11 +1270,11 @@ Featheraddress is a fork of the original bitaddress.org project https://github.c
 
 Download or inspect the source code :  https://github.com/Mark-Leck/Featheraddress
 
-## Web based Paper wallet 7 Vanity address generators  
+## Web based Paper wallet Vanity address generators  
 
 A paper wallet generator allows you create addresses and store them without installing the coin software or wallet to a computer or downloading. Now Feathercoin addresses and their corresponding private key can be conveniently generated in a web browser.
 
-The online address generators use the Crypto currency rules inside the daemon to generate valid address. The online wallet generators sometime add extra entropy to the random number generator by including mouse movements or key presses.
+The online address generators use the crypto-currency rules inside the daemon to generate valid address. The online wallet generators sometime add extra entropy to the random number generator by including mouse movements or key presses.
 
 Some of the Address generators can also look for Vanity addresses that are valid but include certain strings, like a name.
 
@@ -1296,12 +1298,9 @@ https://github.com/Slavco/selfnotary
 
 ## Feathercoin Local
 
-This page is a tool to find merchants or indeed if you are a merchant be featured on the map yourself.
+This page is a tool to find merchants or other Feathercoin enthusiast. Indeed if you wish you can include yourself on the map yourself. [Feathercoin Local map](https://local.feathercoin.com)
 
 ![Local Map](images/ftc-localFTC.map.01.png)
-
-
-Feathercoin Local map](https://local.feathercoin.com)
 
 
 ## Feathercoin Technical settings

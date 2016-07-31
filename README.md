@@ -20,11 +20,10 @@ If you wish to help or give support which can be as easy as becoming a forum  me
 The forum also contains threads of members experience, guides and details on developing external projects like starting a pool or developing a new app, exchange, web site or other novel use case.
 
 
-#### Feathercoin Wallet Guide Aims and Restrictions
-
-The aims of the Guide
+#### The aims of the Feathercoin Wallet Guide
 
 Feathercoin Wallet guide aims to show how to use the features of the Feathercoin Wallet and other relevant technology. 
+
 
 #### Origin of the Screen shots
 

@@ -183,7 +183,7 @@ The wallet acts as like a book keeper does, storing all incoming and out going e
 
 When you download a wallet it includes the two parts, a ledger or blockchain containing information on transactions going to and from an address. It also contains software to initiate and check transactions on the system are within the validation rules, i.e. do the bookkeeping. 
 
-Feathercoin is a long established blockchain [Ref 2] with a reputable open development and Bitcoin / Satoshi community ideal. The most extreme of which is successfully hard forking the Feathercoin blockchain to an ASIC resistant hashing algorithm (Neoscrypt). 
+Feathercoin is a long established blockchain [Ref 2] with a reputable open development and Bitcoin / Satoshi community ideal. The most extreme example of which is successfully hard forking the Feathercoin blockchain to an ASIC resistant hashing algorithm (Neoscrypt). 
 
 **Official Wallet Downloads :** [Feathercoin Wallet Download](https://www.feathercoin.com/#dls)
 

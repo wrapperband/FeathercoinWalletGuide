@@ -74,7 +74,7 @@ The information contained is based on Feathercoin wallet version 0.9.6. The guid
 - [Feathercoin Wallet Main Screen and Buttons](#feathercoin-wallet-main-screen-and-buttons)
       - [How do I use the Feathercoin wallet?](#how-do-i-use-the-feathercoin-wallet)
 - [Feathercoin Wallet Buttons Bar](#feathercoin-wallet-buttons-bar)
-  - [Hiding the Button Bar](#hiding-the-button-bar)
+    - [Hiding the Button Bar](#hiding-the-button-bar)
   - [Receive Button](#receive-button)
   - [Send Button](#send-button)
   - [Transaction Button](#transaction-button)
@@ -267,9 +267,9 @@ The triangle to the left of the tick, shows the "strength" of the peer to peer s
 
 # Feathercoin Wallet Buttons Bar  
 
-## Hiding the Button Bar
+### Hiding the Button Bar
 
-The button menu can be closed to make more room. If you need to activate the buttons or close the button menu then :  
+The button bar menu can be closed to make more room. If you need to activate the buttons or close the button menu then :  
 
 Right click with your mouse on the button menu on the buttons menu to show the Tabs Toolbar check-box to close the button toolbar.  
 

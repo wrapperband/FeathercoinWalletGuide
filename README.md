@@ -17,7 +17,7 @@ The Feathercoin forum is already well established with answers to common questio
 
 If you wish to help or give support which can be as easy as becoming a forum  member and up voting a good post to becoming a moderator or helping develop or test new enhancements. 
 
-The forum also contains threads of members experience, guides and details on developing external projects like starting a pool or developing a new app, exchange, web site or other novel use case.
+The forum also contains threads of members experience, guides and details on developing external projects like starting a pool or developing a new app, exchange, web site or other novel use case. Once you post a "hello" message in New Users, you can post on the forum.
 
 
 #### The aims of the Feathercoin Wallet Guide
@@ -34,16 +34,17 @@ The information contained is based on Feathercoin wallet version 0.9.6. The guid
 
 ### Main Features   
 * Send and Receive Feathercoins to an Address, a Stealth Address, URI text document or graphical QRCode.  
-* View and filter the historical Transactions.    
-* Connect to a the FTC Peer to  Peer network and update the Blockchain information.  
-* Sign and Verify a message given to prove ownership.  
+* View and filter historical Feathercoin Transactions.    
+* Connect to a the Feathercoin Peer to  Peer network and update the Blockchain information.  
+* Sign and Verify a message given, so as to prove ownership.
+* Back-up your wallet data.
   
 
 ### Advanced Features   
 * Multiple Signature Transactions  
 * Add a text comment to the transaction  
-* Add Openname DNS addresses to the Blockchain   
-* Create and manage Stealth Addresses   
+* Include a Openname DNS (Dynamic Name server) addresses to the Blockchain   
+* Create, manage and search for Stealth Addresses   
 * Transaction reports  
 * Coin Control 
 * Print a Paper Wallet
@@ -775,6 +776,13 @@ First : find the transaction with the comment, the copy address or transaction I
 
 # Feathercoin wallet Plugins Menu
 
+Plugins were requested by members of the Feathercoin forum that it would be advantageous to link to some online services or message service. Whilst Bitmessage is open source the other services are proprietary. 
+
+Status of Plugin developments :
+
+The long term aim would be to make the plugins, at least, to have options check boxes to include on the menu. 
+
+
 ## BitMessage encrypted peer to peer private messaging
 
 Bitmessage is an open source fully encrypted peer to peer messaging system. Because it does not pass through a central server it is also harder to collect meta data.
@@ -1329,13 +1337,13 @@ This page is a tool to find merchants or other Feathercoin enthusiast. Indeed if
 
 # References / Further reading :
 
-[Ref 1]: [Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto] "https://bitcoin.org/bitcoin.pdf" 
+[Ref 1]: [Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto] "https://bitcoin.org/bitcoin.pdf"   
 [Ref 2]: [Book] [The future of Digital Business Innovation : Trends & Practices by Vincenzo Morabito  Pub: Springer]  
-[Ref 3]: [Developing Private Blockchain Addresses] "https://github.com/wrapperband/PrivateBlockchainAddress"  
+[Ref 3]: [Developing Private Blockchain Addresses] "https://github.com/wrapperband/PrivateBlockchainAddress"   
 [Ref 4]: [Op_Return] "http://bitcoin.stackexchange.com/questions/29554/explanation-of-what-an-op-return-transaction-looks-like"  
 [Ref 5]: [doctoc] "https://github.com/thlorenz/doctoc"  
 [Ref 6]: [Neoscrypt Press release] "http://www.feathercoin.com/neo-scrypt-press-release.pdf"  
-[Ref 7]: [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf" 
+[Ref 7]: [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf"  
 
 # Post Scrypt
 

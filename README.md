@@ -69,13 +69,10 @@ The information contained is based on Feathercoin wallet version 0.9.6. The guid
 
 - [Welcome to Feathercoin core wallet](#welcome-to-feathercoin-core-wallet)
   - [Introduction to Feathercoin Core](#introduction-to-feathercoin-core)
-      - [Where is the Feathercoins currency stored?](#where-is-the-feathercoins-currency-stored)
-      - [What is mining and how is it controlled?](#what-is-mining-and-how-is-it-controlled)
-      - [What is the difference between Feathercoin wallet versions?](#what-is-the-difference-between-feathercoin-wallet-versions)
 - [Feathercoin Wallet Main Screen and Buttons](#feathercoin-wallet-main-screen-and-buttons)
-      - [How do I use the Feathercoin wallet?](#how-do-i-use-the-feathercoin-wallet)
 - [Feathercoin Wallet Buttons Bar](#feathercoin-wallet-buttons-bar)
-    - [Hiding the Button Bar](#hiding-the-button-bar)
+  - [Hiding the Button Bar](#hiding-the-button-bar)
+  - [Overview Button](#overview-button)
   - [Receive Button](#receive-button)
   - [Send Button](#send-button)
   - [Transaction Button](#transaction-button)
@@ -117,7 +114,6 @@ The information contained is based on Feathercoin wallet version 0.9.6. The guid
     - [Read comments from the Feathercoin Blockhain](#read-comments-from-the-feathercoin-blockhain)
 - [Feathercoin wallet Plugins Menu](#feathercoin-wallet-plugins-menu)
   - [BitMessage encrypted peer to peer private messaging](#bitmessage-encrypted-peer-to-peer-private-messaging)
-  - [Installing BitMessage plugin under Linux](#installing-bitmessage-plugin-under-linux)
   - [Opennames DNS Service](#opennames-dns-service)
   - [Shapeshift service](#shapeshift-service)
   - [Coinnector service](#coinnector-service)
@@ -138,6 +134,7 @@ The information contained is based on Feathercoin wallet version 0.9.6. The guid
   - [What is Checkpointing?](#what-is-checkpointing)
   - [What is Advanced Checkpointing?](#what-is-advanced-checkpointing)
 - [Links, External features and further information](#links-external-features-and-further-information)
+  - [Feathercoin Android / Mobile wallet](#feathercoin-android--mobile-wallet)
   - [Feathercoin forum : find support wallet issues](#feathercoin-forum--find-support-wallet-issues)
   - [Feathercoin forum : find support mining issues](#feathercoin-forum--find-support-mining-issues)
   - [Feathercoin : Online Block Explorers](#feathercoin--online-block-explorers)
@@ -722,9 +719,9 @@ Open receive addresses on the Wallet menu and right click on the address with th
 
 **How are comments recorded in the Blockchain?** 
  
-The comment message can be extracted from scriptPubKey by using Hex to Ascii on OP_RETURN [Ref 4] to return the comment contents. 
+The comment message can be extracted from scriptPubKey by using Hex to Ascii conversion on OP_RETURN [Ref 4] to return the comment contents. 
 
-OP_RETURN opcode works at the byte level in a bitcoin transaction. To prevent over flooding the transaction database with text messages the core-developers made the opcode OP_RETURN a valid opcode to be used in a bitcoin / feathercoin transaction, which allows 80 arbitrary bytes to be used in an unspendable transaction. In 2014 that was educed to 40.
+OP_RETURN opcode works at the byte level in a bitcoin transaction. To prevent over flooding the transaction database with text messages the core-developers made the opcode OP_RETURN a valid opcode to be used in a bitcoin / feathercoin transaction, which allows 80 arbitrary bytes to be used in an unspendable transaction. In 2014 that was reduced to 40.
 
 First find the transaction ID from the transaction menu right click option of the Address with a message. 
 
@@ -1365,8 +1362,9 @@ This page is a tool to find merchants or other Feathercoin enthusiast. Indeed if
 [Ref 4]: [Op_Return] "http://bitcoin.stackexchange.com/questions/29554/explanation-of-what-an-op-return-transaction-looks-like"  
 [Ref 5]: [doctoc] "https://github.com/thlorenz/doctoc"  
 [Ref 6]: [Neoscrypt Press release] "http://www.feathercoin.com/neo-scrypt-press-release.pdf"  
-[Ref 7]: [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf" 
-[Ref 8]: [Feathercoin forum : Code of Conduct] "http://forum.feathercoin.com/topic/3021/feathercoin-forum-code-of-conduct"
+[Ref 7]: [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf"  
+[Ref 8]: [Feathercoin forum : Code of Conduct] "http://forum.feathercoin.com/topic/3021/feathercoin-forum-code-of-conduct"   
+
 
 # Post Scrypt
 

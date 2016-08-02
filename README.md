@@ -223,8 +223,9 @@ It is the feathercoind (or daemon software) that confirms that a block is valid 
 
 #### What is the difference between Feathercoin wallet versions?      
 
+Why have and support different wallets?
 
-What is the difference between version 0.8 series and version 0.9 series Feathercoin (FTC) wallets? 
+There are different versions available for the Feathercoin Wallet currently version 0.8 series and version 0.9 series Feathercoin (FTC) wallets are supported on the network. 0.8 series daemons are recommended for mining.  
 
 Feathercoin core wallets are similar in operation. The newer 0.9.3.x basic code has been moved "upstream" to be closer to the Bitcoin core framework. 
 
@@ -235,6 +236,10 @@ All the Feathercoin specific features have been inherited including, ACP, eHRC ,
 By moving upstream Feathercoin can integrate some new features which require the latest tools
 
 Feathercoin development is already moving on to including FTC facilities in 0.11 core series, whilst maintaining and refining the 0.9.x as a bridge. The aim currently is to include more difficult major changes in the 0.1x.x series that will require a hard fork and all users upgrade.  
+
+Care needs to be taken when a cryptocurrency development team move up to some new versions as they can cause splits in the blockchain, called Forks. Sometimes a version has new features that force a Fork, in that case it is important to follow that procedure on the forum, if you are mining or run a pool or exchange. 
+
+The next major fork is being planned for Feathercoin version 0.11, it is currently envisaged, and being worked on, that version 0.11 will change over to the new blockchain when 50% of the network are compatible. Version 0.8 will be deprecated once the automatic 0.11 fork is completed.
 
 Other advantages gained with the 0.9.3.x series include, Qt5 development environment, speed increase, DNS seeds and improved database synchronising.  
 
@@ -257,11 +262,11 @@ The first time the wallet is run it will need to synchronise or get up to date w
 
 The blockchain is stored in the hidden .feathercoin directory or %Applications% in Windows. Because space can be limited, especially with SSDs, it is now possible to designate another disk to store the blockchain. 
 
-Remember your wallet is also stored with the Blockchain, so don't use USBs or other removable drives for large transaction, live, because the chance of it failing before a backup is made after sending a transaction is greater. If the USB / wallet is lost with no "immediate" backup after a send, the currency is on the USB is lost. 
+Remember your wallet is also stored with the Blockchain, so don't use USB flash memory drives or other removable drives for large transaction, live, because the chance of it failing before a backup is made after sending a transaction is greater. If the USB Flash drive / wallet is lost with no "immediate" backup after a send, the currency is on the Flash drive is lost. 
 
-At the bottom right corner the circular animation shows the speed blocks are arriving. If you mouse over it will tell you how many blocks it has got to go and how long ago the last transaction was it has got to. When the sync is completed, you will see  tick. 
+At the bottom right corner the circular animation shows the speed blocks are arriving. If you mouse over it will tell you how many blocks it has got to go and how long ago the last transaction was it has got to. When the sync is completed, you will see a tick. 
 
-The triangle to the left of the tick, shows the "strength" of the peer to peer signal. It gradually fills till you get over 10 connections.
+The triangle to the left of the tick, shows the "strength" of the peer to peer signal. It gradually fills "bars" till you get over 10 connections.
 
 ![Wallet overview page](/images/ftc-0.9.3.2-Wallet.overview.sync.01.png) 
 
@@ -776,11 +781,7 @@ First : find the transaction with the comment, the copy address or transaction I
 
 # Feathercoin wallet Plugins Menu
 
-Plugins were requested by members of the Feathercoin forum that it would be advantageous to link to some online services or message service. Whilst Bitmessage is open source the other services are proprietary. 
-
-Status of Plugin developments :
-
-The long term aim would be to make the plugins, at least, to have options check boxes to include on the menu. 
+Plugins were requested by members of the Feathercoin forum that it would be advantageous to link to some online services or message service. Whilst Bitmessage is open source, the other services are proprietary. 
 
 
 ## BitMessage encrypted peer to peer private messaging
@@ -796,17 +797,27 @@ It is still worth considering using Bitmessage to send your public address keys,
 https://github.com/cqtenq/PyBitmessage  
 
 
-Installing BitMessage plugin under Linux
-----------------------------------------
+**Installing BitMessage plugin under Linux**
 
-In Debian based systems you can create a script to copy to /usr/bin, make the script executable to activate BitMessage plugin.
+In Debian based systems you can create a script (pybitmessage) to copy to /usr/bin    
 
-/usr/bin/pybitmessage
+make the script executable to activate BitMessage plugin.
+
+    sudo nano /usr/bin/pybitmessage
 
     #!/bin/sh
     cd /usr/share/pybitmessage
     exec /usr/bin/python2 bitmessagemain.py
 
+To run directly from BitMessage's directory  /home/USER/programs/PyBitmessage/src  i.e. the directory  bitmessagemain.py and the other .py files are in.
+    
+    sudo nano /usr/bin/pybitmessage
+     
+    #!/bin/sh
+    cd   /home/USER/programs/PyBitmessage/src
+    exec python bitmessagemain.py
+
+    
 
 ## Opennames DNS Service
 

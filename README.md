@@ -8,9 +8,9 @@ Feathercoin is a cryptographic based currency using the Bitcoin core protocols a
 
 #### Community development
 
-Community involvement has been part of the Feathercoin philosophy from it's initiation by Peter Bushnell in creating the forum. In particular to produce guides and support for new users and developers in the forum. [Ref 2]
+Community involvement has been part of the Feathercoin philosophy from it's initiation by Peter Bushnell when he created the Feathercoin forum. In particular to produce guides and support for new users and developers in the forum. [Ref 2]
 
-The Feathercoin forum is already well established with answers to common questions and if you can't find in the answer in the guide then community support is available there. 
+The Feathercoin forum is already well established with answers to common questions and if you can't find in the answer in the guide then community support is available there. The Feathercoin forum is moderated and has guidelines to keep it respectful. [Ref 8]
 
 
 #### Help or Support
@@ -1354,7 +1354,8 @@ This page is a tool to find merchants or other Feathercoin enthusiast. Indeed if
 [Ref 4]: [Op_Return] "http://bitcoin.stackexchange.com/questions/29554/explanation-of-what-an-op-return-transaction-looks-like"  
 [Ref 5]: [doctoc] "https://github.com/thlorenz/doctoc"  
 [Ref 6]: [Neoscrypt Press release] "http://www.feathercoin.com/neo-scrypt-press-release.pdf"  
-[Ref 7]: [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf"  
+[Ref 7]: [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf" 
+[Ref 8]: [Feathercoin forum : Code of Conduct] "http://forum.feathercoin.com/topic/3021/feathercoin-forum-code-of-conduct"
 
 # Post Scrypt
 

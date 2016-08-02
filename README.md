@@ -248,36 +248,39 @@ Official Windows builds and Linux PPAs are available from [Feathercoin.com](http
 
 # Feathercoin Wallet Main Screen and Buttons   
 
+
 #### How do I use the Feathercoin wallet? 
 
-The main screen contains three parts, the menus, the buttons and the wallet overview.  
+The wallet main screen contains three parts, the menus, the buttons and the wallet overview.  
 
-The menus contain a large number of features whereas the buttons have been chosen to represent the basic operation of the wallet that most people will need to perform.  
+The menus contain a large number of features whereas the buttons have been chosen to represent the basic operation of the wallet that most people will need to perform.  Each screen is specialised for a task and is activated by pressing the appropriate button.
 
-![Wallet overview page](/images/ftc-0.9.3.2-main.screen.01.png) 
+# Feathercoin Wallet Buttons Bar  
+
+## Hiding the Button Bar
+
+The button bar menu can be closed to make more room. If you need to activate the buttons or close the button menu then :  
+
+Right click with your mouse on the button menu on the buttons menu to show the Tabs Toolbar check-box to close the button toolbar.  
+
+
+## Overview Button
 
 The overview page is self explanatory, the left side showing the current overall balance and on the right the most recent transactions that have occurred.  
 
-The first time the wallet is run it will need to synchronise or get up to date with the latest blockchain. As the wallet finds other wallets or peers on the feathercoin network, it will ask them for previous blocks and gradually build up a copy of the block chain.
+The first time the wallet is run, or if it has been offline for a while, it will need to synchronise or get up to date with the latest blockchain. As the wallet finds other wallets or peers on the feathercoin network, it will ask them for previous blocks and gradually build up a copy of the block chain.
+
+![Wallet overview page](/images/ftc-0.9.3.2-main.screen.01.png) 
 
 The blockchain is stored in the hidden .feathercoin directory or %Applications% in Windows. Because space can be limited, especially with SSDs, it is now possible to designate another disk to store the blockchain. 
 
-Remember your wallet is also stored with the Blockchain, so don't use USB flash memory drives or other removable drives for large transaction, live, because the chance of it failing before a backup is made after sending a transaction is greater. If the USB Flash drive / wallet is lost with no "immediate" backup after a send, the currency is on the Flash drive is lost. 
+Remember your wallet (wallet.dat) file is also stored with the Blockchain, so don't use USB flash memory drives or other removable drives for large transaction, live, because the chance of it failing before a backup is made after sending a transaction is greater. If the USB Flash drive / wallet is lost with no "immediate" backup after a send, the currency is on the Flash drive is lost. 
 
 At the bottom right corner the circular animation shows the speed blocks are arriving. If you mouse over it will tell you how many blocks it has got to go and how long ago the last transaction was it has got to. When the sync is completed, you will see a tick. 
 
 The triangle to the left of the tick, shows the "strength" of the peer to peer signal. It gradually fills "bars" till you get over 10 connections.
 
 ![Wallet overview page](/images/ftc-0.9.3.2-Wallet.overview.sync.01.png) 
-
-
-# Feathercoin Wallet Buttons Bar  
-
-### Hiding the Button Bar
-
-The button bar menu can be closed to make more room. If you need to activate the buttons or close the button menu then :  
-
-Right click with your mouse on the button menu on the buttons menu to show the Tabs Toolbar check-box to close the button toolbar.  
 
 
 ## Receive Button   
@@ -1170,34 +1173,42 @@ Advanced Checkpointing allows Feathercoin to send out checkpoints without having
 The ACP system checkpoints the Feathercoin blockchain every 5 blocks. ACP does not dictate the blockchain, it provides checkpoints and helps prevent double spends, if the checkpoint is on a short branch it will be rejected. 
 
 
-# Links, External features and further information   
+# Links, External features and further information 
+
+## Feathercoin Android / Mobile wallet
+
+"https://play.google.com/store/apps/details?id=com.feathercoin.wallet&hl=en_GB"
+
 
 ## Feathercoin forum : find support wallet issues 
 
-http://forum.feathercoin.com/category/18/support 
+"http://forum.feathercoin.com/category/18/support" 
+
 
 ## Feathercoin forum : find support mining issues 
 
-http://forum.feathercoin.com/category/17/mining 
+"http://forum.feathercoin.com/category/17/mining" 
+
 
 ## Feathercoin : Online Block Explorers  
 
-http://explorer.feathercoin.com/chain/Feathercoin  
+"http://explorer.feathercoin.com/chain/Feathercoin"  
 
-http://block.ftc-c.com
+"http://block.ftc-c.com"
+
 
 ## ftc-abe - Run your own Feathercoin Block Explorer
 
-https://github.com/wellenreiter01/ftc-abe
+"https://github.com/wellenreiter01/ftc-abe"
 
 
 ## Feathercoin API  
 
 The Feathercoin API (Application Program interface) is a set of function calls you can make to the Feathercoin server to return the status of various parameters, such as difficult, block height. 
 
-https://www.feathercoin.com/feathercoin-api/  
+"https://www.feathercoin.com/feathercoin-api/"  
 
-http://api.ftc-c.com/
+"http://api.ftc-c.com/"
 
 
 ##  pchMessageStart :  Using Feathercoin on a server with other Cryptographic currencies

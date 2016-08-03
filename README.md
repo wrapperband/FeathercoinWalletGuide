@@ -17,7 +17,7 @@ The Feathercoin forum is already well established with answers to common questio
 
 If you wish to help or give support which can be as easy as becoming a forum  member and up voting a good post to becoming a moderator or helping develop or test new enhancements. 
 
-The forum also contains threads of members experience, guides and details on developing external projects like starting a pool or developing a new app, exchange, web site or other novel use case. Once you post a "hello" message in New Users, you can post on the forum.
+The forum also contains threads of members experience, guides and details on developing external projects like starting a pool or developing a new app, exchange, web site or other novel use case. Once you post a "hello" message in New Users, you can post on the forum.   
 
 
 #### The aims of the Feathercoin Wallet Guide
@@ -1177,9 +1177,15 @@ The ACP system checkpoints the Feathercoin blockchain every 5 blocks. ACP does n
 "https://play.google.com/store/apps/details?id=com.feathercoin.wallet&hl=en_GB"
 
 
-## Feathercoin forum : find support wallet issues 
+## Feathercoin forum : find support for wallet issues 
 
-"http://forum.feathercoin.com/category/18/support" 
+[Support - Mode of Failure Analysis. Part 1 - Faults, Causes and Solutions](http://forum.feathercoin.com/topic/4606/support-mode-of-failure-analysis-part-1-faults-causes-and-solutions)   "http://forum.feathercoin.com/topic/4606/support-mode-of-failure-analysis-part-1-faults-causes-and-solutions"
+
+[Support - Mode of Failure Analysis. Part 2 - Faults, Causes and Solutions](http://forum.feathercoin.com/topic/4694/support-mode-of-failure-analysis-part-2-faults-causes-and-solutions)   "http://forum.feathercoin.com/topic/4694/support-mode-of-failure-analysis-part-2-faults-causes-and-solutions"
+
+[Support - Mode of Failure Analysis. Part 3 - Faults, Causes and Solutions](http://forum.feathercoin.com/topic/4946/support-mode-of-failure-analysis-part-3-faults-causes-and-solutions)   "http://forum.feathercoin.com/topic/4946/support-mode-of-failure-analysis-part-3-faults-causes-and-solutions"
+
+[Support - Feathercoin Core](http://forum.feathercoin.com/category/18/support)  "http://forum.feathercoin.com/category/18/support"  
 
 
 ## Feathercoin forum : find support mining issues 

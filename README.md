@@ -1239,6 +1239,12 @@ https://www.feathercoin.com/feathercoin-graphic-resources/
 
 https://www.feathercoin.com/feathercoin-button-generator/
 
+
+## Feathercoin Online QR Code Generator
+
+[QR Code Generator](https://www.feathercoin.com/qr-code-generator)  "https://www.feathercoin.com/qr-code-generator"
+
+
 ## Feathercoin Open Merchant Map
 
 The Feathercoin Open Map project is a fork of the popular CoinMap.org designed to show merchants accepting FTC as a payment. Pools or other servers can run their own instance of the map.

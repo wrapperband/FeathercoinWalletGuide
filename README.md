@@ -209,22 +209,29 @@ Once the wallet is installed you can generate a Feathercoin address. The address
 The sender returns the funds to the "receive" address. That transfer of receive address can be done by email or encrypted by Bitmessage or Tor, to prevent the "man in the middle" identification of the address.  
 
 
-#### What is mining and how is it controlled?  
+#### How is the transaction processing distributed?  
 
-Mining is done by 3rd parties using feathercoind (server daemon), additional software and hard ware.  
+Transactions can be processed by miners. Mining is done by 3rd parties using feathercoind (server daemon software), additional mining software, Graphics card drivers and hard ware (GPU for mining Feathercoin).  
 
 The miners are distributed, so in order to prove they are doing work they continuously try to find the next block. They do this by producing block chain answers then testing them, and others being broadcast, against the "Feathercoin successful block criteria". Some of those criteria include adding a certain amount of transactions information if available, information from the previous blocks and an encoding difficulty above a predefined level.
 
+#### How are network conflicts handled?
+
 If two blocks are broadcast on the network with equal value otherwise, it is the block on the longest chain that will eventually convince all clients that it is the valid block. If a payment has been made on the shorter blockchain and there is a conflict, eventually it will be orphaned and become available to add to main or correct chain. This process happens all the time with POW blockchains and is intrinsic in its operation.
+
+#### How is the transaction block validated?
 
 The feathercoind program (daemon) includes the wallet transaction verification algorithms and functions, but without the Graphical user interface (GUI).  
 
 Feathercoin has had it's Proof of work (POW) algorithm enhanced to make it more compatible with distributed mining on widely available commercial graphics cards. To achieve this a new hardened version of scrypt was introduced called Neoscrypt [Ref 6].
 
+#### What encryption algorithms are used?
+
 Neoscrypt is a strong memory intensive key derivation function developed by John Doering, aka "Ghostlander", a developer for Feathercoin and Phoenixcoin. 
 
 Comparing algorithms, this means that it is now "harder" to mine each block with Neoscrypt, so difficulty of 100 KHash/s of Feathercoin mining is equivalent to 1 MHash/s of scrypt mining.
 
+#### How are the the Graphics cards / GPUs used?
 
 The GPUs (Graphics Processors) do the mathematical cryptographic calculations. A compatible mining software, such as NSGminer for AMD,   use those calculation results returned from the GPU to test if a block has been found and process the transactions. 
 
@@ -233,13 +240,16 @@ It is the feathercoind (or daemon software) that confirms that a block is valid 
 
 #### What is the difference between Feathercoin wallet versions?      
 
-Why have and support different wallets?
+#### Why does Feathercoin have and support different wallets versions?
 
 There are different versions available for the Feathercoin Wallet currently version 0.8 series and version 0.9 series Feathercoin (FTC) wallets are supported on the network. 0.8 series daemons are recommended for mining.  
 
 Feathercoin core wallets are similar in operation. The newer 0.9.3.x basic code has been moved "upstream" to be closer to the Bitcoin core framework. 
 
-Previously FTC use / was based on the Litecoin framework, which was one step away. Lizhi has spent the last year re-writing the Feathercoin code, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.  
+Previously FTC use / was based on the Litecoin framework, which was one step away. Lizhi has spent the last year re-writing the Feathercoin code, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.   
+
+
+#### What Feathercoin specific feature does each wallet support?
 
 All the Feathercoin specific features have been inherited including, ACP, eHRC , QRCodes, QRsnap. 
 
@@ -247,7 +257,9 @@ By moving upstream Feathercoin can integrate some new features which require the
 
 Feathercoin development is already moving on to including FTC facilities in 0.11 core series, whilst maintaining and refining the 0.9.x as a bridge. The aim currently is to include more difficult major changes in the 0.1x.x series that will require a hard fork and all users upgrade.  
 
-Care needs to be taken when a cryptocurrency development team move up to some new versions as they can cause splits in the blockchain, called Forks. Sometimes a version has new features that force a Fork, in that case it is important to follow that procedure on the forum, if you are mining or run a pool or exchange. 
+#### Issues developers face when upgrading a cryptocurrency
+
+Care needs to be taken when a cryptocurrency development team move up to some new versions as they can cause splits in the blockchain, called Forks. Sometimes a version has new features that force a Fork, in that case it is important to follow that procedure on the forum, if you are mining or run a pool or exchange.  
 
 The next major fork is being planned for Feathercoin version 0.11, it is currently envisaged, and being worked on, that version 0.11 will change over to the new blockchain when 50% of the network are compatible. Version 0.8 will be deprecated once the automatic 0.11 fork is completed.
 
@@ -278,13 +290,19 @@ Right click with your mouse on the button menu on the buttons menu to show the T
 
 The overview page is self explanatory, the left side showing the current overall balance and on the right the most recent transactions that have occurred.  
 
+#### Blockchain synchronisation
+
 The first time the wallet is run, or if it has been offline for a while, it will need to synchronise or get up to date with the latest blockchain. As the wallet finds other wallets or peers on the feathercoin network, it will ask them for previous blocks and gradually build up a copy of the block chain.
 
 ![Wallet overview page](/images/ftc-0.9.3.2-main.screen.01.png) 
 
+#### Blockchain & Wallet storage
+
 The blockchain is stored in the hidden .feathercoin directory or %Applications% in Windows. Because space can be limited, especially with SSDs, it is now possible to designate another disk to store the blockchain. 
 
 Remember your wallet (wallet.dat) file is also stored with the Blockchain, so don't use USB flash memory drives or other removable drives for large transaction, live, because the chance of it failing before a backup is made after sending a transaction is greater. If the USB Flash drive / wallet is lost with no "immediate" backup after a send, the currency is on the Flash drive is lost. 
+
+#### Wallet Signal & Synchronising icons
 
 At the bottom right corner the circular animation shows the speed blocks are arriving. If you mouse over it will tell you how many blocks it has got to go and how long ago the last transaction was it has got to. When the sync is completed, you will see a tick. 
 
@@ -303,9 +321,10 @@ Amount: 22.00 FTC
 Label: This is an invoice for the payment
 Message: There's no hurry the end of the month will be fine.
 
-
 ![Receive Button](/images/ftc-0.9.3.2-button.menu.Receive.01.png)  
 
+
+#### Displaying the QRCode & Receive address details
 
 A pop up is shown with the newly created receive address address and QRCode image.  The amount is shown, the Label (retained in wallet) and message. You can save and display the QR image, which can be scanned in on a phone wallet or using the in built wallet QR scanner. The URI text can also be saved to include the full information in a file. 
 
@@ -317,6 +336,8 @@ A pop up is shown with the newly created receive address address and QRCode imag
 
 ## Send Button   
 
+#### Getting the Receive address
+
 In order to send funds you need to input the receivers address. You can label the transaction with a description and input the amount.  
 
 Once you are happy you can press the send button and that transaction is sent to the blockchain. If you have the QR code of the Send address press send to QR code button will activate a camera snapshot and import of the QRCode.   
@@ -324,6 +345,8 @@ Once you are happy you can press the send button and that transaction is sent to
 Press on the Add recipient button to send payments to more than one recipients.  
 
 ![Add recipient](/images/ftc-0.9.3.2-button.menu.Send.01.png)  
+
+#### Scanning a QRCode off a web site or screen image
 
 To use the QR scan feature, click "Send to QR". Then, position the scan box over the image. Press snap button to decode the QRCode or cancel to exit.  
 
@@ -336,6 +359,7 @@ The transaction button shows the transactions that have taken place. You will ne
 
 ![Transaction Button](/images/ftc-0.9.3.2-button.menu.Transactions.01.png)  
 
+#### Filtering Transactions
 
 When you have a lot of transactions you can use the filters bellow the buttons to restrict which ones are shown, by time period,  search for recipients / senders or a specific address.  
 
@@ -350,7 +374,11 @@ Press the export button at the bottom right and export the transaction details t
 
 ## Report Button  
 
-This image shows the grid shown when the report button is pressed. In the example the grid is filtered on "all the transactions that happened today" and calculates the number and total. That can then be exported to a csv file the "Export" button at the bottom right of the window.   
+This image shows the grid shown when the report button is pressed. In the example the grid is filtered on "all the transactions that happened today" and calculates the number and total. 
+
+#### Exporting to csv file
+
+The filtered list can then be exported to a csv file the "Export" button at the bottom right of the window.   
 
 ![Report Button](/images/ftc-0.9.3.2-button.menu.Report.01.png)  
 
@@ -364,15 +392,15 @@ MultiSig stands for multiple signature addresses.  Signature addresses can be ma
 
 # Feathercoin Wallet Main Menu Options      
 
-**Wallet drop down menu**   
+## Wallet drop down menu**   
 
 The drop down menu allows access to URI dialog, wallet backup, Printing Paper Wallets, Putting a password on the wallet and editing it, locking the wallet, Addresses transactions are to be sent from and addresses transactions are in to. The final option is exit (with backup reminder).
  
 ![Walletdrop down](/images/ftc-0.9.3.2-Wallet.dropdown.01.png)   
 
-## Import URI payments
+### Import URI payments
 
-**Open URI menu**
+#### Open URI menu
 
 In information technology, a Uniform Resource Identifier (URI) is a string of characters used to identify a resource. Such identification enables interaction with representations of the resource over a network, typically the World Wide Web, using specific protocols. 
 

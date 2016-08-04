@@ -768,11 +768,11 @@ If the comment is too long, or that address already has a comment then you will 
 
 ### Read comments from the Feathercoin Blockhain  
 
-**Read comments from the wallet**  
+#### Read comments from the wallet  
 
 Open receive addresses on the Wallet menu and right click on the address with the comment. Copy the Public Hash160 to the clipboard.
 
-**How are comments recorded in the Blockchain?** 
+#### How are comments recorded in the Blockchain? 
  
 The comment message can be extracted from scriptPubKey by using Hex to Ascii conversion on OP_RETURN [Ref 4] to return the comment contents. 
 
@@ -783,32 +783,26 @@ First find the transaction ID from the transaction menu right click option of th
     Transaction ID. 3ddc1aa067548a398557386037f83b2e09fb5878d0c1ed886c0c20e3227f6311-000  
 
 
-**How are comments recorded in the Blockchain?**
+#### Obtaining the raw transaction details
 
-OP_RETURN opcode works at the byte level in a bitcoin transaction. To prevent over flooding the transaction database with text messages the core-developers made the opcode OP_RETURN a valid opcode to be used in a bitcoin / feathercoin transaction, which allows 80 arbitrary bytes to be used in an un-spendable transaction. In 2014 that was educed to 40.
-
-**Find the comment**
-First find the "Transaction ID" of the Address with a message, from the transaction menu right click option  in the Feathercoin-qt wallet. 
-
-    Transaction ID     3ddc1aa067548a398557386037f83b2e09fb5878d0c1ed886c0c20e3227f6311-000  
-
-**Obtaining the raw transaction details**
 Open a Console Tab window from the Settings > Debug menu options in the wallet: 
 
 Delete the -000 from the end and of thhe transaction ID and replace it with 1
 
     getrawtransaction   3ddc1aa067548a398557386037f83b2e09fb5878d0c1ed886c0c20e3227f6311 1
     
-**Extract the Hex code of the message**
+#### Extract the Hex code of the message
+
 From the output text of the getrawtransaction command, copy the Hex part of OP_RETURN in scriptPubKey.
 
     "scriptPubKey" : {
     "asm" : "OP_RETURN 5468697320636f6d6d656e74206973206d61646520746f6461792053617475726461792032337264",
     "hex" : "6a285468697320636f6d6d656e74206973206d61646520746f6461792053617475726461792032337264",
 
-**Converting the Hex to ASCII**
+#### Converting the Hex to ASCII
 
-**xxd**
+#### xxd 
+
 Vim is another tool set that can be installed or is already on some Unix systems. It includes the command **xxd**.
 Using the Terminal in Debian based systems : 
 
@@ -817,14 +811,15 @@ Using the Terminal in Debian based systems :
     j(This comment is made today Saturday 23rd
 
 
-**uni2ascii**
+#### uni2ascii
+
 Using an Hex to ASCI converter such as uni2ascii, copy the Hex text and save it to a file comments.txt   
 
     sudo apt-get install uni2ascii
     uni2ascii comments.txt
        
 
-**Find Comments online**
+#### Find Comments online
 
 Once you have made a comment you can find it in the Feathercoin Blockchain explorer online. 
 
@@ -852,7 +847,7 @@ It is still worth considering using Bitmessage to send your public address keys,
 https://github.com/cqtenq/PyBitmessage  
 
 
-**Installing BitMessage plugin under Linux**
+#### Installing BitMessage plugin under Linux
 
 In Debian based systems you can create a script (pybitmessage) to copy to /usr/bin    
 
@@ -891,12 +886,13 @@ Openname is included in the Feathercoin (FTC) blockchain. Internally it is calle
 
 ![Openames Dialog](/images/ftc-0.9.3.2-opennames.screen.01.png)  
 
-**What does Opennames do?**
+
+#### What does Opennames do?
 
     Securely record and transfer arbitrary names (keys).
     Attach a value (data) to the names.
 
-**What Opennames be used for?**  
+#### What Opennames be used for?  
 
     Protect free-speech rights online by making the web more resistant to censorship.
     Access websites using the .bit domain (with TLS/SSL).
@@ -909,7 +905,7 @@ More information on Openname domains : https://wiki.namecoin.info/index.php?titl
 
 ## Shapeshift service
     
-**Feathercoin Wallet use the Shapeshift service**  
+#### Feathercoin Wallet use the Shapeshift service    
 
 Use of the Shapeshift APIs has been integrated into the wallet as an Advanced feature, if your require it. You can find more information at https://shapeshift.io .
 
@@ -942,19 +938,19 @@ Send 3 FTC to Shapeshift, and receive Bitcoin in return.
 
 ## Coinnector service
 
-**Feathercoin Wallet use the Coinnector service**
+#### Feathercoin Wallet use the Coinnector service   
 
 Coinnector.com is a real-time Alternate coin exchange that lists Feathercoin (FTC). Coinnector is now available as an advanced option via a plugin.
 
 Click on the text to open a Coinnector window in your browser. Set up your private channel using the latest Coinnector help. 
 
 
-**Plugins Menu “Coinnector”**  
+#### Plugins Menu “Coinnector”     
 
 ![Coinnector Dialog](/images/ftc-0.9.3.2-coinnector.01.png)  
 
 
-**Feathercoin Wallet Search for your Stealth Addresses**  
+#### Feathercoin Wallet Search for your Stealth Addresses  
 
 To access the stealth address search, click on the Help menu option, then select SX Tool to access the search box. Input the height of Transaction Block numbers through which to search for your transactions.  
 

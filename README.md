@@ -167,16 +167,23 @@ The information contained is based on Feathercoin wallet version 0.9.6. The guid
 
 ## Introduction to Feathercoin Core   
 
+#### Currency & Transactions
+
 One use of currency / money is to facilitate trade. Trade is recorded in bookkeeping, this information is traditionally closed to the public and requires third parties or middlemen to approve the transactions.
 
 Cryptocurrency is digital form of currency that is being used increasingly all over the world because it has been designed to be used on the internet. Currencies like Feathercoin are based on open source code and a distributed security model; which means anyone can mine or produce the coins or contribute to the code and development. [Ref 1] 
 
+#### Who runs the servers?
+
 Cryptocurrency tries to take the validation out of the hands of centralised middlemen and allows anyone to participate. Agreeing on the software that controls the system being the consensus that is agreed prior to transactions taking place. Cryptocurrencies and the blockchain they are based on, is a groundbreaking internet technology of which "currency" is merely one of the possible applications.
 
+#### Wallet
 
 Cryptographic currency wallets are like a normal wallet but for "internet money" or "internet cash". The wallets have a complex job to do validating that your currency isn't counterfeit. They have been also designed to be intuitive to use and allow new users to get started without having to understands the technical details of how it operates "under the hood". 
 
 The wallet acts as like a book keeper does, storing all incoming and out going expenses in a ledger. 
+
+#### What makes up a cryptocurrency wallet?
 
 When you download a wallet it includes the two parts, a ledger or blockchain containing information on transactions going to and from an address. It also contains software to initiate and check transactions on the system are within the validation rules, i.e. do the bookkeeping. 
 
@@ -189,9 +196,15 @@ Feathercoin is a long established blockchain [Ref 2] with a reputable open devel
 
 Transactions from addresses are stored on the blockchain. Think of each address a safety deposit box which anyone can see in, but only you have the key.
 
+#### Boxes & Keys
+
 The wallet is where your "keys" or addresses are held to those transactions, in the deposit boxes. This means the transactions are public, it is the fact that *who owns the address is unknown*, which provides the privacy. 
 
+#### Address & Wallet
+
 Once the wallet is installed you can generate a Feathercoin address. The addresses are then passed between the users, usually the "receiver" communicates an address to send the funds to. The address is sometime called the public key.
+
+#### Receive & Send
 
 The sender returns the funds to the "receive" address. That transfer of receive address can be done by email or encrypted by Bitmessage or Tor, to prevent the "man in the middle" identification of the address.  
 

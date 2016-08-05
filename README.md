@@ -8,7 +8,7 @@ Feathercoin is a cryptographic based currency using the Bitcoin core protocols a
 
 #### Community development
 
-Community involvement has been part of the Feathercoin philosophy from it's initiation by Peter Bushnell when he created the Feathercoin forum. In particular to produce guides and support for new users and developers in the forum. [Ref 2]
+Community involvement has been part of the Feathercoin philosophy from it's initiation by Peter Bushnell when he created the Feathercoin forum. In particular to produce guides and support for new users and developers in the forum. [Ref 2]  
 
 The Feathercoin forum is already well established with answers to common questions and if you can't find in the answer in the guide then community support is available there. The Feathercoin forum is moderated and has guidelines to keep it respectful. [Ref 8]
 
@@ -62,7 +62,7 @@ The information contained is based on Feathercoin wallet version 0.9.6. The guid
 * enhanced Hash Rate Compensation (eHRC)
 
 
-<!-- [Ref 5] -->
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  
@@ -1415,8 +1415,8 @@ This page is a tool to find merchants or other Feathercoin enthusiast. Indeed if
 
 # References / Further reading :
 
-[Ref 1]:  [Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto] "https://bitcoin.org/bitcoin.pdf"   
-[Ref 2]:  [Book] "The future of Digital Business Innovation : Trends & Practices by Vincenzo Morabito  Pub: Springer"  
+[Ref 1]:  [Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto] "https://bitcoin.org/bitcoin.pdf"    
+[Ref 2]:  [The future of Digital Business Innovation : Trends & Practices by Vincenzo Morabito  Pub: Springer]   
 [Ref 3]:  [Developing Private Blockchain Addresses] "https://github.com/wrapperband/PrivateBlockchainAddress"   
 [Ref 4]:  [OP_RETURN] 'http://bitcoin.stackexchange.com/questions/29554/explanation-of-what-an-op-return-transaction-looks-like'    
 [Ref 5]:    

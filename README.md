@@ -1071,7 +1071,7 @@ If Batman agrees to send Superman  0.05 FTC, He clicks the "Sign" button as well
 The transfer information is recorded in the blockchain : [http://block.ftc-c.com/tx/6e8dca7038dd97f4811163da91c047b70c4775dc6cc57f5de5b0200f1de1770b][1]
 
 
-**How do you copy your public key ?**
+#### *How do you copy your public key?  
 
 In the Receiving addresses page, Choose your address and click "Copy Public Key".
 
@@ -1165,7 +1165,7 @@ Most Feathercoin members were for ASICs, they have definate advantages of effici
 
 * Scams involving pre ordering hardware arriving late or never
 * Promisses of high hash rates negated by changes in difficulty
-* Consentation of mining power with a few who had access to ASICs
+* Consentration of mining power with a few who had access to ASICs
 
 Because Neoscrypt would require more memory, it would mean GPU mining would only be 100 times CPU mining where as it had been a 1000 with Scrypt and 10,000 Bitcoin hashes. 
 
@@ -1197,8 +1197,7 @@ https://github.com/wellenreiter01/p2pool-neoscrypt
 
 ## Advanced Checkpointing (ACP)
 
-What is Checkpointing?
-----------------------
+#### What is Checkpointing?
 
 Checkpointing was originally built in to Bitcoin in order to prevent dishonest people reversing transactions and taking back the money they had sent. Commonly called "double spending".
 
@@ -1209,8 +1208,7 @@ The blockchain has all the transactions of the coin written into it. Every block
 Clients will only accept the blockchain that has the corresponding block number and hash defined in the code. Checkpointing offers some protection against attackers but only up to the last checkpoint. So malicious users could try to orphan blocks after the last checkpoint and reverse transactions with 51% attacks.
 
 
-What is Advanced Checkpointing?
--------------------------------
+#### What is Advanced Checkpointing?
 
 Advanced Checkpointing allows Feathercoin to send out checkpoints without having to release a new version Feathercoin software. This works by having ‘master nodes’ which checkpoints each block it sees on the network protecting it from specifically from being double spent. Committed on the 6th November 2013 in it has been successful in both aims to automate "Developer" approved checkpoints and prevent "double spends".
 
@@ -1221,18 +1219,18 @@ The ACP system checkpoints the Feathercoin blockchain every 5 blocks. ACP does n
 
 ## Feathercoin Android / Mobile wallet
 
-"https://play.google.com/store/apps/details?id=com.feathercoin.wallet&hl=en_GB"
+[Feathercoin Mobile] https://play.google.com/store/apps/details?id=com.feathercoin.wallet&hl=en_GB
 
 
 ## Feathercoin forum : find support for wallet issues 
 
-[Support - Mode of Failure Analysis. Part 1 - Faults, Causes and Solutions](http://forum.feathercoin.com/topic/4606/support-mode-of-failure-analysis-part-1-faults-causes-and-solutions)   "http://forum.feathercoin.com/topic/4606/support-mode-of-failure-analysis-part-1-faults-causes-and-solutions"
+[Support - Mode of Failure Analysis. Part 1 - Faults, Causes and Solutions] http://forum.feathercoin.com/topic/4606/support-mode-of-failure-analysis-part-1-faults-causes-and-solutions
 
-[Support - Mode of Failure Analysis. Part 2 - Faults, Causes and Solutions](http://forum.feathercoin.com/topic/4694/support-mode-of-failure-analysis-part-2-faults-causes-and-solutions)   "http://forum.feathercoin.com/topic/4694/support-mode-of-failure-analysis-part-2-faults-causes-and-solutions"
+[Support - Mode of Failure Analysis. Part 2 - Faults, Causes and Solutions] http://forum.feathercoin.com/topic/4694/support-mode-of-failure-analysis-part-2-faults-causes-and-solutions
 
-[Support - Mode of Failure Analysis. Part 3 - Faults, Causes and Solutions](http://forum.feathercoin.com/topic/4946/support-mode-of-failure-analysis-part-3-faults-causes-and-solutions)   "http://forum.feathercoin.com/topic/4946/support-mode-of-failure-analysis-part-3-faults-causes-and-solutions"
+[Support - Mode of Failure Analysis. Part 3 - Faults, Causes and Solutions] http://forum.feathercoin.com/topic/4946/support-mode-of-failure-analysis-part-3-faults-causes-and-solutions
 
-[Support - Feathercoin Core](http://forum.feathercoin.com/category/18/support)  "http://forum.feathercoin.com/category/18/support"  
+[Support - Feathercoin Core](http://forum.feathercoin.com/category/18/support)  http://forum.feathercoin.com/category/18/support  
 
 
 ## Feathercoin forum : find support mining issues 

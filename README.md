@@ -128,8 +128,6 @@ The information contained is based on Feathercoin wallet version 0.9.6. The guid
   - [Mining Pools](#mining-pools)
     - [Feathercoin P2Pool](#feathercoin-p2pool)
   - [Advanced Checkpointing (ACP)](#advanced-checkpointing-acp)
-  - [What is Checkpointing?](#what-is-checkpointing)
-  - [What is Advanced Checkpointing?](#what-is-advanced-checkpointing)
 - [Links, External features and further information](#links-external-features-and-further-information)
   - [Feathercoin Android / Mobile wallet](#feathercoin-android--mobile-wallet)
   - [Feathercoin forum : find support for wallet issues](#feathercoin-forum--find-support-for-wallet-issues)
@@ -1230,19 +1228,19 @@ The ACP system checkpoints the Feathercoin blockchain every 5 blocks. ACP does n
 
 [Support - Mode of Failure Analysis. Part 3 - Faults, Causes and Solutions] http://forum.feathercoin.com/topic/4946/support-mode-of-failure-analysis-part-3-faults-causes-and-solutions
 
-[Support - Feathercoin Core](http://forum.feathercoin.com/category/18/support)  http://forum.feathercoin.com/category/18/support  
+[Support - Feathercoin Core]  http://forum.feathercoin.com/category/18/support  
 
 
 ## Feathercoin forum : find support mining issues 
 
-"http://forum.feathercoin.com/category/17/mining" 
+[Feathercoin Mining] http://forum.feathercoin.com/category/17/mining 
 
 
 ## Feathercoin : Online Block Explorers  
 
-"http://explorer.feathercoin.com/chain/Feathercoin"  
+[Featherccoin Blockchain explorer] http://explorer.feathercoin.com/chain/Feathercoin  
 
-"http://block.ftc-c.com"
+[Feathercoin China] http://block.ftc-c.com
 
 
 ## ftc-abe - Run your own Feathercoin Block Explorer
@@ -1254,9 +1252,9 @@ The ACP system checkpoints the Feathercoin blockchain every 5 blocks. ACP does n
 
 The Feathercoin API (Application Program interface) is a set of function calls you can make to the Feathercoin server to return the status of various parameters, such as difficult, block height. 
 
-"https://www.feathercoin.com/feathercoin-api/"  
+[Feathercoin API] https://www.feathercoin.com/feathercoin-api/  
 
-"http://api.ftc-c.com/"
+[Feathercoin API China] http://api.ftc-c.com/
 
 
 ##  pchMessageStart :  Using Feathercoin on a server with other Cryptographic currencies
@@ -1273,12 +1271,12 @@ Feathercoin was originally forked from the Litecoin project and shared the same 
 
 ## Feathercoin Graphics and Logos
 
-https://www.feathercoin.com/feathercoin-graphic-resources/
+[FTC Graphics resources and Logos] https://www.feathercoin.com/feathercoin-graphic-resources/
 
 
 ## Feathercoin Merchant tools
 
-**Website Button generator.**
+#### Website Button generator.
 
  Pay by Feathercoin Button generator.
 
@@ -1287,7 +1285,7 @@ https://www.feathercoin.com/feathercoin-button-generator/
 
 ## Feathercoin Online QR Code Generator
 
-[QR Code Generator](https://www.feathercoin.com/qr-code-generator)  "https://www.feathercoin.com/qr-code-generator"
+[QR Code Generator]  https://www.feathercoin.com/qr-code-generator
 
 
 ## Feathercoin Open Merchant Map
@@ -1342,9 +1340,9 @@ Wait for confirmation, until  a mining pool makes a block.  The stealth transact
 
 Set up an online payment system with Feathercoin (FTC) shopping Cart payment system.
 
-**How to set up a Wordpress Cart and Full FTC Payment Solution**
+#### How to set up a Wordpress Cart and Full FTC Payment Solution  
 
-https://forum.feathercoin.com/topic/4327/guide-wordpress-cart-and-full-ftc-payment-solution
+[Shopping Cart] https://forum.feathercoin.com/topic/4327/guide-wordpress-cart-and-full-ftc-payment-solution
 
 
 ## Feathercoin (FTC) Opensource ATM
@@ -1391,12 +1389,14 @@ https://github.com/Slavco/selfnotary
 
 ## Feathercoin Local
 
-This page is a tool to find merchants or other Feathercoin enthusiast. Indeed if you wish you can include yourself on the map yourself. [Feathercoin Local map](https://local.feathercoin.com)
+This page is a tool to find merchants or other Feathercoin enthusiast. Indeed if you wish you can include yourself on the map yourself. 
+
+[Feathercoin Local map] https://local.feathercoin.com   
 
 ![Local Map](images/ftc-localFTC.map.01.png)
 
 
-## Feathercoin Technical settings
+## Feathercoin Technical settings  
 
     NeoScrypt Algorithm 
     Resistant to Scrypt and SH-256 ASICS
@@ -1411,7 +1411,7 @@ This page is a tool to find merchants or other Feathercoin enthusiast. Indeed if
     ACP (Advanced Checkpointing)
 
 
-# References / Further reading :
+# References / Further reading :  
 
 [Ref 1]:  [Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto] "https://bitcoin.org/bitcoin.pdf"    
 [Ref 2]:  [The future of Digital Business Innovation : Trends & Practices by Vincenzo Morabito  Pub: Springer]   
@@ -1421,9 +1421,9 @@ This page is a tool to find merchants or other Feathercoin enthusiast. Indeed if
 [Ref 6]:  [Feathercoin forum : Code of Conduct] "http://forum.feathercoin.com/topic/3021/feathercoin-forum-code-of-conduct"   
 
 
-# Post Scrypt
+# Post Scrypt  
 
-#### HullCoin 
+#### HullCoin  
 
 Hull City Council announced in March 2014 the UK's first local government operated cryptocurrency, dubbed HullCoin. It was created by  Hull City Council's Financial Inclusion Support as a project to the alleviate the suffering in the Hull area.
 
@@ -1434,7 +1434,7 @@ Hull coin was created with the advise of Feathercoin members and staff as well a
 "http://www.coindesk.com/hullcoin-worlds-first-local-government-cryptocurrency/"
 
 
-#### Etherium
+#### Etherium  
 
 Etherium is a coin similar to Feathercoin, but where the miners also close smart contracts.
 
@@ -1442,9 +1442,9 @@ Why can I only mine Etherium or Feathercoin with a GPU? It’s a question being 
 
 Etherium uses the "ethash" algorithm which, like Neoscrypt, requires a large amount of memory (currently over 1 GB and growing). That is not cheap to parallelise because each additional processor also needs it's own memory.
 
-#### doctoc
+#### doctoc  
 
-doctoc was used to automate the Table of Contents creation of the Feathercoin Wallet Guide MarkDown document. "https://github.com/thlorenz/doctoc" 
+doctoc was used to automate the Table of Contents creation of the Feathercoin Wallet Guide "Mark Down" document. [doctoc] https://github.com/thlorenz/doctoc 
 
 
 Copyright © 2002–2016 Feathercoin Developers & Wrapper

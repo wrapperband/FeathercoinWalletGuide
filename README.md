@@ -10,7 +10,7 @@ Feathercoin is a cryptographic based currency using the Bitcoin core protocols a
 
 Community involvement has been part of the Feathercoin philosophy from it's initiation by Peter Bushnell when he created the Feathercoin forum. In particular to produce guides and support for new users and developers in the forum. [Ref 2]  
 
-The Feathercoin forum is already well established with answers to common questions and if you can't find in the answer in the guide then community support is available there. The Feathercoin forum is moderated and has guidelines to keep it respectful. [Ref 8]
+The Feathercoin forum is already well established with answers to common questions and if you can't find in the answer in the guide then community support is available there. The Feathercoin forum is moderated and has guidelines to keep it respectful. [Ref 6]
 
 
 #### Help or Support
@@ -219,7 +219,7 @@ If two blocks are broadcast on the network with equal value otherwise, it is the
 
 The feathercoind program (daemon) includes the wallet transaction verification algorithms and functions, but without the Graphical user interface (GUI).  
 
-Feathercoin has had it's Proof of work (POW) algorithm enhanced to make it more compatible with distributed mining on widely available commercial graphics cards. To achieve this a new hardened version of scrypt was introduced called Neoscrypt [Ref 6].
+Feathercoin has had it's Proof of work (POW) algorithm enhanced to make it more compatible with distributed mining on widely available commercial graphics cards. To achieve this a new hardened version of scrypt was introduced called Neoscrypt [Ref 4].
 
 #### What encryption algorithms are used?
 
@@ -770,7 +770,7 @@ Open receive addresses on the Wallet menu and right click on the address with th
 
 #### How are comments recorded in the Blockchain? 
  
-The comment message can be extracted from scriptPubKey by using Hex to Ascii conversion on OP_RETURN [Ref 4] to return the comment contents. 
+The comment message can be extracted from scriptPubKey by using Hex to Ascii conversion on OP_RETURN to return the comment contents. 
 
 OP_RETURN opcode works at the byte level in a bitcoin transaction. To prevent over flooding the transaction database with text messages the core-developers made the opcode OP_RETURN a valid opcode to be used in a bitcoin / feathercoin transaction, which allows 80 arbitrary bytes to be used in an unspendable transaction. In 2014 that was reduced to 40.
 
@@ -1159,7 +1159,7 @@ https://github.com/wrapperband/FTCBlockTimeAnalysis
 
 ## Neoscrypt 
 
-Neoscrypt is an ASIC resistant Proof of work (POW) algorithm used by Feathercoin miners. Designed and developed by Ghostlander specifically for the Feathercoin and Phoenixcoin project. [Ref 7]
+Neoscrypt is an ASIC resistant Proof of work (POW) algorithm used by Feathercoin miners. Designed and developed by Ghostlander specifically for the Feathercoin and Phoenixcoin project. [Ref 5]
 
 Most Feathercoin members were for ASICs, they have definate advantages of efficiency when mining. However, what was seen in the Bitcoin and Litcoin implementation was, 
 
@@ -1418,11 +1418,9 @@ This page is a tool to find merchants or other Feathercoin enthusiast. Indeed if
 [Ref 1]:  [Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto] "https://bitcoin.org/bitcoin.pdf"    
 [Ref 2]:  [The future of Digital Business Innovation : Trends & Practices by Vincenzo Morabito  Pub: Springer]   
 [Ref 3]:  [Developing Private Blockchain Addresses] "https://github.com/wrapperband/PrivateBlockchainAddress"   
-[Ref 4]:  [OP_RETURN] 'http://bitcoin.stackexchange.com/questions/29554/explanation-of-what-an-op-return-transaction-looks-like'    
-[Ref 5]:    
-[Ref 6]:  [Neoscrypt Press release] "http://www.feathercoin.com/neo-scrypt-press-release.pdf"  
-[Ref 7]:  [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf"  
-[Ref 8]:  [Feathercoin forum : Code of Conduct] "http://forum.feathercoin.com/topic/3021/feathercoin-forum-code-of-conduct"   
+[Ref 4]:  [Neoscrypt Press release] "http://www.feathercoin.com/neo-scrypt-press-release.pdf"  
+[Ref 5]:  [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf"  
+[Ref 6]:  [Feathercoin forum : Code of Conduct] "http://forum.feathercoin.com/topic/3021/feathercoin-forum-code-of-conduct"   
 
 
 # Post Scrypt

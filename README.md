@@ -766,7 +766,7 @@ If the comment is too long, or that address already has a comment then you will 
 ![Comment too large Warning](/images/ftc-0.9.3.2-comments.screen.05.png)  
 
 
-### Read comments from the Feathercoin Blockhain  
+### Read comments from the Feathercoin Blockchain  
 
 #### Read comments from the wallet  
 
@@ -1422,8 +1422,8 @@ This page is a tool to find merchants or other Feathercoin enthusiast. Indeed if
 [Ref 1]: [Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto] "https://bitcoin.org/bitcoin.pdf"   
 [Ref 2]: [Book] [The future of Digital Business Innovation : Trends & Practices by Vincenzo Morabito  Pub: Springer]  
 [Ref 3]: [Developing Private Blockchain Addresses] "https://github.com/wrapperband/PrivateBlockchainAddress"   
-[Ref 4]: [Op_Return] "http://bitcoin.stackexchange.com/questions/29554/explanation-of-what-an-op-return-transaction-looks-like"  
-[Ref 5]: [doctoc] "https://github.com/thlorenz/doctoc"  
+[Ref 4]: [OP_RETURN] "http://bitcoin.stackexchange.com/questions/29554/explanation-of-what-an-op-return-transaction-looks-like"  
+[Ref 5]: 
 [Ref 6]: [Neoscrypt Press release] "http://www.feathercoin.com/neo-scrypt-press-release.pdf"  
 [Ref 7]: [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf"  
 [Ref 8]: [Feathercoin forum : Code of Conduct] "http://forum.feathercoin.com/topic/3021/feathercoin-forum-code-of-conduct"   
@@ -1431,26 +1431,28 @@ This page is a tool to find merchants or other Feathercoin enthusiast. Indeed if
 
 # Post Scrypt
 
-HullCoin 
---------
+#### HullCoin 
+
 Hull City Council announced in March 2014 the UK's first local government operated cryptocurrency, dubbed HullCoin. It was created by  Hull City Council's Financial Inclusion Support as a project to the alleviate the suffering in the Hull area.
 
 HullCoin was initially perceived as a token that "the needy" could spend locally on essential items. It was also envisaged for use in reward schemes, such as  encouraging  voluntary activities. In this case it might be used against council tax bills.
 
 Hull coin was created with the advise of Feathercoin members and staff as well as software forked from Feathercoin source code.
 
-http://www.coindesk.com/hullcoin-worlds-first-local-government-cryptocurrency/
+"http://www.coindesk.com/hullcoin-worlds-first-local-government-cryptocurrency/"
 
 
-Etherium
---------
+#### Etherium
 
-Etherium is a coin, similar to Feathercoin, where the miners also close smart contracts.
+Etherium is a coin similar to Feathercoin, but where the miners also close smart contracts.
 
 Why can I only mine Etherium or Feathercoin with a GPU? It’s a question being asked a lot. In a similar move to Feathercoin, Etherium have followed Feathercoins lead and have also chosen a memory intensive mining algorithm in order to be ASIC resistant and redistributed.
 
-Etherium uses the "ethash" algorithm which, like Neoscrypt, requires a large amount of memory (currently over 1 GB and growing). That is not cheap to parallelise because each additional processor also needs its own memory.
+Etherium uses the "ethash" algorithm which, like Neoscrypt, requires a large amount of memory (currently over 1 GB and growing). That is not cheap to parallelise because each additional processor also needs it's own memory.
 
+#### doctoc
+
+doctoc was used to automate the Table of Contents creation of the Feathercoin Wallet Guide MarkDown document. "https://github.com/thlorenz/doctoc" 
 
 
 Copyright © 2002–2016 Feathercoin Developers & Wrapper

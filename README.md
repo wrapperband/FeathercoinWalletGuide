@@ -1419,14 +1419,14 @@ This page is a tool to find merchants or other Feathercoin enthusiast. Indeed if
 
 # References / Further reading :
 
-[Ref 1]: [Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto] "https://bitcoin.org/bitcoin.pdf"   
-[Ref 2]: [Book] [The future of Digital Business Innovation : Trends & Practices by Vincenzo Morabito  Pub: Springer]  
-[Ref 3]: [Developing Private Blockchain Addresses] "https://github.com/wrapperband/PrivateBlockchainAddress"   
-[Ref 4]: [OP_RETURN] "http://bitcoin.stackexchange.com/questions/29554/explanation-of-what-an-op-return-transaction-looks-like"  
-[Ref 5]: 
-[Ref 6]: [Neoscrypt Press release] "http://www.feathercoin.com/neo-scrypt-press-release.pdf"  
-[Ref 7]: [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf"  
-[Ref 8]: [Feathercoin forum : Code of Conduct] "http://forum.feathercoin.com/topic/3021/feathercoin-forum-code-of-conduct"   
+[Ref 1]:  [Bitcoin: A Peer-to-Peer Electronic Cash System by Satoshi Nakamoto] "https://bitcoin.org/bitcoin.pdf"   
+[Ref 2]:  [Book] "The future of Digital Business Innovation : Trends & Practices by Vincenzo Morabito  Pub: Springer"  
+[Ref 3]:  [Developing Private Blockchain Addresses] "https://github.com/wrapperband/PrivateBlockchainAddress"   
+[Ref 4]:  [OP_RETURN] 'http://bitcoin.stackexchange.com/questions/29554/explanation-of-what-an-op-return-transaction-looks-like'    
+[Ref 5]:    
+[Ref 6]:  [Neoscrypt Press release] "http://www.feathercoin.com/neo-scrypt-press-release.pdf"  
+[Ref 7]:  [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf"  
+[Ref 8]:  [Feathercoin forum : Code of Conduct] "http://forum.feathercoin.com/topic/3021/feathercoin-forum-code-of-conduct"   
 
 
 # Post Scrypt

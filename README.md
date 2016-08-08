@@ -1,4 +1,4 @@
-# Feathercoin Wallet - Prolog  & Meta data
+# Feathercoin Wallet - Meta data
 
 ## What is Feathercoin?
 
@@ -120,6 +120,7 @@ The information contained is based on Feathercoin wallet version 0.9.6. The guid
 - [Feathercoin Help Menu](#feathercoin-help-menu)
   - [Command line options](#command-line-options)
   - [Stealth transaction Search - SX Tool](#stealth-transaction-search---sx-tool)
+- [Feathercoin Introduction to the Blockchain](#feathercoin-introduction-to-the-blockchain)
 - [Feathercoin Back-end Features & Specification](#feathercoin-back-end-features-&-specification)
   - [enhanced Hash Rate Compensation (eHRC)](#enhanced-hash-rate-compensation-ehrc)
   - [Neoscrypt](#neoscrypt)
@@ -184,84 +185,6 @@ When you download a wallet it includes the two parts, a ledger or blockchain con
 Feathercoin is a long established blockchain [Ref 2] with a reputable open development and Bitcoin / Satoshi community ideal. The most extreme example of which is successfully hard forking the Feathercoin blockchain to an ASIC resistant hashing algorithm (Neoscrypt). 
 
 **Official Wallet Downloads :** [Feathercoin Wallet Download](https://www.feathercoin.com/#dls)
-
-
-#### Where is the Feathercoins currency stored?  
-
-Transactions from addresses are stored on the blockchain. Think of each address a safety deposit box which anyone can see in, but only you have the key.
-
-#### Boxes & Keys
-
-The wallet is where your "keys" or addresses are held to those transactions, in the deposit boxes. This means the transactions are public, it is the fact that *who owns the address is unknown*, which provides the privacy. 
-
-#### Address & Wallet
-
-Once the wallet is installed you can generate a Feathercoin address. The addresses are then passed between the users, usually the "receiver" communicates an address to send the funds to. The address is sometime called the public key.
-
-#### Receive & Send
-
-The sender returns the funds to the "receive" address. That transfer of receive address can be done by email or encrypted by Bitmessage or Tor, to prevent the "man in the middle" identification of the address.  
-
-
-#### How is the transaction processing distributed?  
-
-Transactions can be processed by miners. Mining is done by 3rd parties using feathercoind (server daemon software), additional mining software, Graphics card drivers and hard ware (GPU for mining Feathercoin).  
-
-The miners are distributed, so in order to prove they are doing work they continuously try to find the next block. They do this by producing block chain answers then testing them, and others being broadcast, against the "Feathercoin successful block criteria". Some of those criteria include adding a certain amount of transactions information if available, information from the previous blocks and an encoding difficulty above a predefined level.
-
-#### How are network conflicts handled?
-
-If two blocks are broadcast on the network with equal value otherwise, it is the block on the longest chain that will eventually convince all clients that it is the valid block. If a payment has been made on the shorter blockchain and there is a conflict, eventually it will be orphaned and become available to add to main or correct chain. This process happens all the time with POW blockchains and is intrinsic in its operation.
-
-#### How is the transaction block validated?
-
-The feathercoind program (daemon) includes the wallet transaction verification algorithms and functions, but without the Graphical user interface (GUI).  
-
-Feathercoin has had it's Proof of work (POW) algorithm enhanced to make it more compatible with distributed mining on widely available commercial graphics cards. To achieve this a new hardened version of scrypt was introduced called Neoscrypt [Ref 4].
-
-#### What encryption algorithms are used?
-
-Neoscrypt is a strong memory intensive key derivation function developed by John Doering, aka "Ghostlander", a developer for Feathercoin and Phoenixcoin. 
-
-Comparing algorithms, this means that it is now "harder" to mine each block with Neoscrypt, so difficulty of 100 KHash/s of Feathercoin mining is equivalent to 1 MHash/s of scrypt mining.
-
-#### How are the the Graphics cards / GPUs used?
-
-The GPUs (Graphics Processors) do the mathematical cryptographic calculations. A compatible mining software, such as NSGminer for AMD,   use those calculation results returned from the GPU to test if a block has been found and process the transactions. 
-
-It is the feathercoind (or daemon software) that confirms that a block is valid and spreads that block of transactions round the Peer to Pear network to all the other wallets and miners. A block becomes the next on the blockchain when it is accepted by more than 50% of the network as part of a correct and valid chain of blocks.  
-
-
-#### What is the difference between Feathercoin wallet versions?      
-
-#### Why does Feathercoin have and support different wallets versions?
-
-There are different versions available for the Feathercoin Wallet currently version 0.8 series and version 0.9 series Feathercoin (FTC) wallets are supported on the network. 0.8 series daemons are recommended for mining.  
-
-Feathercoin core wallets are similar in operation. The newer 0.9.3.x basic code has been moved "upstream" to be closer to the Bitcoin core framework. 
-
-Previously FTC use / was based on the Litecoin framework, which was one step away. Lizhi has spent the last year re-writing the Feathercoin code, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.   
-
-
-#### What Feathercoin specific feature does each wallet support?
-
-All the Feathercoin specific features have been inherited including, ACP, eHRC , QRCodes, QRsnap. 
-
-By moving upstream Feathercoin can integrate some new features which require the latest tools
-
-Feathercoin development is already moving on to including FTC facilities in 0.11 core series, whilst maintaining and refining the 0.9.x as a bridge. The aim currently is to include more difficult major changes in the 0.1x.x series that will require a hard fork and all users upgrade.  
-
-#### Issues developers face when upgrading a cryptocurrency blockchain
-
-Care needs to be taken when a cryptocurrency development team move up to some new versions as they can cause splits in the blockchain, called Forks. Sometimes a version has new features that force a Fork, in that case it is important to follow that procedure on the forum, if you are mining or run a pool or exchange.  
-
-The next major fork is being planned for Feathercoin version 0.11, it is currently envisaged, and being worked on, that version 0.11 will change over to the new blockchain when 50% of the network are compatible. Version 0.8 will be deprecated once the automatic 0.11 fork is completed.
-
-#### What are the features of the 0.9.6 Feathercoin wallet?
-
-Other advantages gained with the 0.9.3.x series include, Qt5 development environment, speed increase, DNS seeds and improved database synchronising.  
-
-Official Windows builds and Linux PPAs are available from [Feathercoin.com](https://feathercoin.com). The Feathercoin forum is the place to go for further information and support. [forum.feathercoin.com](https://forum.feathercoin.com)  
 
 
 # Feathercoin Wallet Main Screen and Buttons   
@@ -1119,6 +1042,94 @@ Copy out the latest block height value.
 Return to the menu  Help > SX Tool, paste the latest block into "End Height:" field. fill in the Height from with the maximum time since the stealth transaction was sent.   
  
 Feathercoin processes One block per minute on average. If you wish to scan back one hour = 60 FTC blocks. One day will be (60 * 60 * 24) = 3600 blocks.  
+
+
+# Feathercoin Introduction to the Blockchain
+
+#### Where is the Feathercoin currency stored?  
+
+Transactions from addresses are stored on the blockchain. Think of each address a safety deposit box which anyone can see in, but only you have the key.
+
+
+#### Boxes & Keys
+
+The wallet is where your "keys" or addresses are held to those transactions, in the deposit boxes. This means the transactions are public, it is the fact that *who owns the address is unknown*, which provides the privacy. 
+
+
+#### Address & Wallet
+
+Once the wallet is installed you can generate a Feathercoin address. The addresses are then passed between the users, usually the "receiver" communicates an address to send the funds to. The address is sometime called the public key.
+
+
+#### Receive & Send
+
+The sender returns the funds to the "receive" address. That transfer of receive address can be done by email or encrypted by Bitmessage or Tor, to prevent the "man in the middle" identification of the address.  
+
+
+#### How is the transaction processing distributed?  
+
+Transactions can be processed by miners. Mining is done by 3rd parties using feathercoind (server daemon software), additional mining software, Graphics card drivers and hard ware (GPU for mining Feathercoin).  
+
+The miners are distributed, so in order to prove they are doing work they continuously try to find the next block. They do this by producing block chain answers then testing them, and others being broadcast, against the "Feathercoin successful block criteria". Some of those criteria include adding a certain amount of transactions information if available, information from the previous blocks and an encoding difficulty above a predefined level.
+
+
+#### How are network conflicts handled?
+
+If two blocks are broadcast on the network with equal value otherwise, it is the block on the longest chain that will eventually convince all clients that it is the valid block. If a payment has been made on the shorter blockchain and there is a conflict, eventually it will be orphaned and become available to add to main or correct chain. This process happens all the time with POW blockchains and is intrinsic in its operation.
+
+
+#### How is the transaction block validated?
+
+The feathercoind program (daemon) includes the wallet transaction verification algorithms and functions, but without the Graphical user interface (GUI).  
+
+Feathercoin has had it's Proof of work (POW) algorithm enhanced to make it more compatible with distributed mining on widely available commercial graphics cards. To achieve this a new hardened version of scrypt was introduced called Neoscrypt [Ref 4].
+
+
+#### What encryption algorithms are used?
+
+Neoscrypt is a strong memory intensive key derivation function developed by John Doering, aka "Ghostlander", a developer for Feathercoin and Phoenixcoin. 
+
+Comparing algorithms, this means that it is now "harder" to mine each block with Neoscrypt, so difficulty of 100 KHash/s of Feathercoin mining is equivalent to 1 MHash/s of scrypt mining.
+
+
+#### How are the the Graphics cards / GPUs used?
+
+The GPUs (Graphics Processors) do the mathematical cryptographic calculations. A compatible mining software, such as NSGminer for AMD,   use those calculation results returned from the GPU to test if a block has been found and process the transactions. 
+
+It is the feathercoind (or daemon software) that confirms that a block is valid and spreads that block of transactions round the Peer to Pear network to all the other wallets and miners. A block becomes the next on the blockchain when it is accepted by more than 50% of the network as part of a correct and valid chain of blocks.  
+
+
+#### What is the difference between Feathercoin wallet versions?      
+
+#### Why does Feathercoin have and support different wallets versions?
+
+There are different versions available for the Feathercoin Wallet currently version 0.8 series and version 0.9 series Feathercoin (FTC) wallets are supported on the network. 0.8 series daemons are recommended for mining.  
+
+Feathercoin core wallets are similar in operation. The newer 0.9.3.x basic code has been moved "upstream" to be closer to the Bitcoin core framework. 
+
+Previously FTC use / was based on the Litecoin framework, which was one step away. Lizhi has spent the last year re-writing the Feathercoin code, adding new features, developing and testing the core series. including maintaining backward compatibility so it is possible to stay on the 0.8.7.x series.   
+
+
+#### What Feathercoin specific feature does each wallet support?
+
+All the Feathercoin specific features have been inherited including, ACP, eHRC , QRCodes, QRsnap. 
+
+By moving upstream Feathercoin can integrate some new features which require the latest tools
+
+Feathercoin development is already moving on to including FTC facilities in 0.11 core series, whilst maintaining and refining the 0.9.x as a bridge. The aim currently is to include more difficult major changes in the 0.1x.x series that will require a hard fork and all users upgrade.  
+
+
+#### Issues developers face when upgrading a cryptocurrency blockchain
+
+Care needs to be taken when a cryptocurrency development team move up to some new versions as they can cause splits in the blockchain, called Forks. Sometimes a version has new features that force a Fork, in that case it is important to follow that procedure on the forum, if you are mining or run a pool or exchange.  
+
+The next major fork is being planned for Feathercoin version 0.11, it is currently envisaged, and being worked on, that version 0.11 will change over to the new blockchain when 50% of the network are compatible. Version 0.8 will be deprecated once the automatic 0.11 fork is completed.
+
+#### What are the features of the 0.9.6 Feathercoin wallet?
+
+Other advantages gained with the 0.9.3.x series include, Qt5 development environment, speed increase, DNS seeds and improved database synchronising.  
+
+Official Windows builds and Linux PPAs are available from [Feathercoin.com](https://feathercoin.com). The Feathercoin forum is the place to go for further information and support. [forum.feathercoin.com](https://forum.feathercoin.com)  
 
 
 # Feathercoin Back-end Features & Specification

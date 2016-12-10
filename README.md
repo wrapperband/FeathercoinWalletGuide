@@ -1444,6 +1444,7 @@ Hull coin was created with the advise of Feathercoin members and staff as well a
 
 "http://www.coindesk.com/hullcoin-worlds-first-local-government-cryptocurrency/"
 
+http://www.hull-coin.org/
 
 #### Etherium  
 

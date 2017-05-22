@@ -12,18 +12,23 @@ Community involvement has been part of the Feathercoin philosophy from it's init
 
 The Feathercoin forum is already well established with answers to common questions and if you can't find in the answer in the guide then community support is available there. The Feathercoin forum is moderated and has guidelines to keep it respectful. [Ref 6]
 
-
 #### Help or Support
 
 If you wish to help or give support which can be as easy as becoming a forum  member and up voting a good post to becoming a moderator or helping develop or test new enhancements. 
 
 The forum also contains threads of members experience, guides and details on developing external projects like starting a pool or developing a new app, exchange, web site or other novel use case. Once you post a "hello" message in New Users, you can post on the forum.   
 
+Once you are a forum member, You can increases your reputation by giving and receiving kudos,  by clicking the arrows on the bottom right of the posts. [Ref 7]
+
+#### Privacy
+
+Privacy is a core feature of the Bitcoin Blockchain Feathercoin is forked from and complies by. [Ref 8]
+
+
 
 #### The aims of the Feathercoin Wallet Guide
 
 Feathercoin Wallet guide aims to show how to use the features of the Feathercoin Wallet and other relevant technology. 
-
 
 #### Origin of the Screen shots
 
@@ -1430,6 +1435,8 @@ This page is a tool to find merchants or other Feathercoin enthusiast. Indeed if
 [Ref 4]:  [Neoscrypt Press release] "http://www.feathercoin.com/neo-scrypt-press-release.pdf"  
 [Ref 5]:  [Neoscrypt White Paper] "http://phoenixcoin.org/archive/neoscrypt_v1.pdf"  
 [Ref 6]:  [Feathercoin forum : Code of Conduct] "http://forum.feathercoin.com/topic/3021/feathercoin-forum-code-of-conduct"   
+[Ref 7]:  [Feathercoin forum : Member Reputation] "http://forum.feathercoin.com/users?section=sort-reputation"   
+[Ref 8]:  [Bitcoin Technology example  : Privacy Statement] "https://www.blockchain.com/privacy/"   
 
 
 # Post Scrypt  

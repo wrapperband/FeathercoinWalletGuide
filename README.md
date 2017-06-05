@@ -221,7 +221,7 @@ The first time the wallet is run, or if it has been offline for a while, it will
 
 #### Blockchain & Wallet storage
 
-The blockchain is stored in the hidden .feathercoin directory or %Applications% in Windows. Because space can be limited, especially with SSDs, it is now possible to designate another disk to store the blockchain. 
+The blockchain is stored in the hidden .feathercoin directory or %Applications% in Windows. Because disk space can be limited, especially now with space tight on digital media like SSDs, it is now possible to designate another disk to store the blockchain. 
 
 Remember your wallet (wallet.dat) file is also stored with the Blockchain, so don't use USB flash memory drives or other removable drives for large transaction, live, because the chance of it failing before a backup is made after sending a transaction is greater. If the USB Flash drive / wallet is lost with no "immediate" backup after a send, the currency is on the Flash drive is lost. 
 

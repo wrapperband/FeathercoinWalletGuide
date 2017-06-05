@@ -84,7 +84,7 @@ The information contained is based on Feathercoin wallet version 0.9.6. The guid
   - [Report Button](#report-button)
   - [MultiSig Button](#multisig-button)
 - [Feathercoin Wallet Main Menu Options](#feathercoin-wallet-main-menu-options)
-  - [Wallet drop down menu**](#wallet-drop-down-menu)
+  - [Wallet drop down menu](#wallet-drop-down-menu)
     - [Import URI payments](#import-uri-payments)
   - [Backup wallet data](#backup-wallet-data)
   - [Paper Wallet Menu](#paper-wallet-menu)
@@ -325,7 +325,7 @@ MultiSig stands for multiple signature addresses.  Signature addresses can be ma
 
 # Feathercoin Wallet Main Menu Options      
 
-## Wallet drop down menu**   
+## Wallet drop down menu    
 
 The drop down menu allows access to URI dialog, wallet backup, Printing Paper Wallets, Putting a password on the wallet and editing it, locking the wallet, Addresses transactions are to be sent from and addresses transactions are in to. The final option is exit (with backup reminder).
  

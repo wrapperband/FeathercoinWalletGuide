@@ -1,0 +1,345 @@
+<h1 id="section"></h1>
+<h1 id="section-1"></h1>
+<h1 id="section-2"></h1>
+<p><span id="anchor"></span>NeoScrypt Mining Guide for Linux Systems</p>
+<p></p>
+<p></p>
+<h1 id="section-3"></h1>
+<h1 id="section-4"></h1>
+<h1 id="prerequisites"><span id="anchor-1"></span>1. Prerequisites</h1>
+<p>First of all, know which distribution you are using. This howto is designed to provide information for the following Linux distributions:</p>
+<p>Ubuntu and its derivatives including Xubuntu, Kubuntu, Lubuntu and Linux Mint</p>
+<p>Debian and its derivatives</p>
+<p>Gentoo and its derivatives</p>
+<p>OpenSuse and its derivatives [in progress]</p>
+<p>Fedora and its derivatives [in progress]</p>
+<p>Arch and its derivatives [in progress]</p>
+<p>In this howto you will have to execute some commands. The commands are written in blue and always start with a # to indicate that they are codes. While issuing commands, write the commands without the “#”. You can copy and paste almost all of the commands (without the “#”) using right click context menu as they are here. Some commands that refer to a location (a path to a folder), of course, need to be modified before entering. Also, you can highlight the code and paste it anywhere using middle click.</p>
+<p>The second step is to update your system. To achieve this, login as root. Logging in as root, you will be able to install system-wide programs and drivers. To login as root, open a terminal (for example a program like Konsole in KDE or Gnome-terminal in Gnome):</p>
+<p>and type the following command (without the #, of course) and press Enter:</p>
+<p># su - </p>
+<p>It will ask you for the root password. Type it and press Enter. If you do not know the root password, you can simply change it by executing the following command:</p>
+<p># sudo passwd root</p>
+<p>It will ask you to first enter <em>your own password</em> and after that you can set your desired password for root.</p>
+<p>Another way to access a terminal is that you could just press Ctrl+Alt+F1. It will bring a console in which you can login as root and do all of commands. Remember that you can come back to your desktop by pressing Ctrl+Alt+F7.</p>
+<p>Now, execute the following commands to update your system:</p>
+<p>For Debian-based and Ubuntu-based distributions:</p>
+<p><em># apt-get update &amp;&amp; apt-get upgrade </em></p>
+<p><em>For Gentoo and its derivatives</em></p>
+<p><em># emerge -uDNa --with-bdeps y --keep-going y @world @system</em></p>
+<p>Now, decide whether you want to go CPU mining or GPU mining or both. NeoScrypt supports both types. </p>
+<h1 id="gpu-mining"><span id="anchor-2"></span>2. GPU mining</h1>
+<p><em><em>You will use you graphics card to mine </em><em>NeoScrypt based coins such as</em><em> Feathercoin.</em></em></p>
+<h2 id="using-an-amd-card"><span id="anchor-3"></span>2.1. Using an AMD card</h2>
+<p>If you own an AMD GPU, First, you must have the correct drivers for your card. Install proprietary AMD drivers for your distribution:</p>
+<p>Ubuntu</p>
+<p># apt-get update</p>
+<p># apt-get install linux-headers-generic fglrx fglrx-amdcccle</p>
+<p>Debian</p>
+<p># deb http://http.debian.net/debian/ wheezy main contrib non-free</p>
+<p># aptitude update</p>
+<p># aptitude -r install linux-headers-$(uname -r|sed 's,[^-]*-[^-]*-,,') fglrx-driver</p>
+<p>Gentoo</p>
+<p># emerge -na ati-drivers</p>
+<p># eselect opengl set ati</p>
+<p># <em>gpasswd -a YourUserAccount video</em></p>
+<p>After you install the driver and before you reboot, execute the following command. This is independent of distribution. It will set up <em>all</em> of the GPUs installed in your system.</p>
+<p># aticonfig -f --adapter=all --initial</p>
+<p>Then, reboot and check if it is correctly installed by issuing the following command as a normal user (i.e. not as root):</p>
+<p><span id="anchor-4"></span># fglrxinfo</p>
+<p>It should display correct information about your graphics card, for example for an R9 290:</p>
+<h2 id="using-an-nvidia-card"><span id="anchor-5"></span>2.2. Using an NVIDIA card</h2>
+<p>Install the proprietary driver by doing the following as root:</p>
+<p>Ubuntu</p>
+<p>First, run these commands:</p>
+<p># apt-get --purge remove xserver-xorg-video-nouveau</p>
+<p># ubuntu-drivers devices</p>
+<p>And then from the list, choose the one that is marked “recommended”. Most of the time, for a modern GPU this would lead to:</p>
+<p># apt-get install nvidia-331</p>
+<p>Debian</p>
+<p># apt-get --purge remove xserver-xorg-video-nouveau</p>
+<p># deb http://http.debian.net/debian/ wheezy-backports main contrib non-free</p>
+<p><span id="anchor-6"></span># aptitude install linux-headers-$(uname -r|sed 's,[^-]*-[^-]*-,,') </p>
+<p># aptitude -t wheezy-backports -r install nvidia-kernel-dkms</p>
+<p>Gentoo</p>
+<p># emerge -na nvidia-drivers</p>
+<p># <em>gpasswd -a YourUserAccount video</em></p>
+<p># <em>eselect opengl set nvidia</em></p>
+<p><em># eselect opencl set nvidia</em></p>
+<p>Do not miss anything. Then, do the following which is independent of the distribution:</p>
+<p># nvidia-xconfig −a −−force-generate</p>
+<p>Once finished, restart the system. To check the installation, you should find a program in the menu named “nvidia-settings”. As a normal user run it and check it. It should report correct information about your graphics card.</p>
+<h2 id="installing-necessary-tools-for-compiling-the-miner"><span id="anchor-7"></span>2.3. Installing necessary tools for compiling the miner</h2>
+<p>Debian and Ubuntu:</p>
+<p># apt-get install build-essential checkinstall libssl-dev \</p>
+<p>  libdb5.1-dev libdb5.1++-dev libboost-all-dev libncurses-dev \</p>
+<p>  libcurl4-openssl-dev libjansson-dev git</p>
+<p>Gentoo</p>
+<p># emerge -na dev-libs/openssl sys-libs/db dev-util/boost-build dev-libs/boost \</p>
+<p>sys-libs/ncurses dev-libs/jansson dev-vcs/git</p>
+<p>Note that the backslashes make lines written above be interpreted in the terminal as a one-line code. There should be no white spaces after the backslashes.</p>
+<h2 id="compiling-the-latest-neo-gpuminer-from-source"><span id="anchor-8"></span>2.4. Compiling the latest Neo-gpuminer from source</h2>
+<p>Neo-scrypt is developing rapidly, so the best option is to build it from the latest available source code. You do not have to continue doing the following as root. Log out of root:</p>
+<p># exit</p>
+<p>Or from the root terminal log into the system using your normal user account:</p>
+<p># su – youraccountname</p>
+<p></p>
+<p>Of course, replace youraccountname with your real account name, e.g. john, etc. Then, get the latest code by executing the following command:</p>
+<p></p>
+<p># git clone <a href="https://github.com/vehre/neo-gpuminer/" class="uri">https://github.com/vehre/neo-gpuminer/</a></p>
+<p>Change to the downloaded directory, i.e. to neo-gpuminer</p>
+<p># cd neo-gpuminer</p>
+<p>run</p>
+<p># CFLAGS=&quot;-O2 -march=native -pipe&quot; ./autogen.sh</p>
+<p>It will set up the package for good optimization. It should provide results like this:</p>
+<p>As you can see in the picture, the output indicates that it has not found ADL/NVML. This is not good because the miner will not be able to monitor some GPU parameters like its temperature. If you own an Nvidia card and you have correctly installed its driver, the support for NVML should already be found. However, for an AMD card you need to do another step. Go to the following URL and download the latest package:</p>
+<p><a href="http://developer.amd.com/tools-and-sdks/graphics-development/display-library-adl-sdk/" class="uri">http://developer.amd.com/tools-and-sdks/graphics-development/display-library-adl-sdk/</a></p>
+<p>Extract the zip file. You can right-click on it and using the context menu unpack the package. Or you can use the following commands in a terminal cd'ed to the folder where you downloaded the file:</p>
+<p># cd /the/path/totheADLpackage</p>
+<p># unzip -d adlpackage ADL_*</p>
+<p>Then, look into the extracted package and copy the three files inside the folder “include” to the folder “ADL_SDK” inside neo-gpuminer folder. You can do this in a terminal too:</p>
+<p># cp /the/path/to/adlpackage/include/* /the/path/to/neo-gpuminer/ADL_SDK/</p>
+<p>If you do not know where you are and what the path is, you can find yourself by:</p>
+<p># pwd</p>
+<p>Next, rerun the autogen.sh command above and this should be the result:</p>
+<p>Pay attention to the other options that should be enabled. Then, issue:</p>
+<p># make -jN</p>
+<p>Replace N with the total number of your CPU cores plus 1. For example, for a Core i7 CPU, N would be 9. This is not very important but it will speed up the compilation process. Once finished, there should be no error at the end of the building process:</p>
+<p>Congratulations! You have just built the Neo-scrypt GPU miner for your system. If you want it to be system-wide available, login as root, change to that directory and run “make install”:</p>
+<p># su -</p>
+<p># cd /path/of/neo-gpuminer</p>
+<p># make install</p>
+<p>If you did not do this step, to run the program you would always have to change to this directory and run the program like this:</p>
+<p># ./cgminer --neoscrypt &lt;and the rest of the options&gt;</p>
+<p>But when you install it system-wide, the command “cgminer” would be recognizable from everywhere and without “./”.</p>
+<h2 id="compiling-and-building-a-feathercoin-wallet"><span id="anchor-9"></span>2.5. Compiling and building a Feathercoin wallet</h2>
+<p>Before you start mining, you must have a wallet for your coins. We are going to download and build the wallet from source again. You could also find a pre-compiled, binary package but that might not available for your distribution yet.</p>
+<p>Open a terminal and login as root (by su -). Then, install the needed packages using the following command:</p>
+<p>Ubuntu and Debian:</p>
+<p># apt-get install libqtgui4 libminiupnpc-dev qrencode libqrencode-dev \</p>
+<p>                  qt4-qmake libqt4-dev build-essential checkinstall libssl-dev \</p>
+<p>    libdb5.1-dev libdb5.1++-dev libboost-all-dev libncurses-dev \</p>
+<p>    libcurl4-openssl-dev libjansson-dev git</p>
+<p>Gentoo</p>
+<p># USE=”threads -bindist” emerge -na dev-libs/boost dev-libs/openssl:0 \</p>
+<p>media-gfx/qrencode \</p>
+<p>net-libs/miniupnpc sys-libs/db dev-qt/qtgui:4 dev-qt/qtdbus:4 \</p>
+<p> dev-util/boost-build sys-libs/ncurses dev-libs/jansson dev-vcs/git</p>
+<p>Open a terminal and as a normal user (i.e. not as root) execute the following:</p>
+<p># git clone <a href="https://github.com/FeatherCoin/Feathercoin" class="uri">https://github.com/FeatherCoin/Feathercoin</a></p>
+<p>Change to Feathercoin directory:</p>
+<p># cd Feathercoin</p>
+<p>Then, execute the following command:</p>
+<p># qmake &amp;&amp; make -jN</p>
+<p>Where N refers to the number of CPU cores plus 1.</p>
+<p>When it successfully finishes, it will make a binary file named feathercoin-qt. You do not need to execute this program in a terminal. Just double click on it to open your Feathercoin wallet!</p>
+<h2 id="using-neo-gpuminer"><span id="anchor-10"></span>2.6. Using Neo-gpuminer</h2>
+<p>First, you need to create an address in your wallet. Open feathercoin-qt (which was built in the last stage) and let it sync itself. Then, click on “New Address” to create a valid Feathercoin address. You do not have to write it or memorize it; you can right click on the newly created address and choose “copy”. You can give this address to the others so that they can send you coins. Note that not only for receiving coins a wallet address can be used, but also it can be your user name while doing GPU mining in some pools (mainly p2pool types). For example, suppose that your FTC address is “9sJng4tMOUaKvs8nWoeo1b8soaivmhL6fh”, you open a terminal and execute the following commands as a normal user to do mining:</p>
+<p># export GPU_MAX_ALLOC_PERCENT=100</p>
+<p># export GPU_USE_SYNC_OBJECTS=1</p>
+<p># cgminer --neoscrypt -o <a href="http://p2pool.neoscrypt.de:19327/"><strong><strong>http://p2pool.neoscrypt.de:19327</strong></strong></a> -O \</p>
+<p>9sJng4tMOUaKvs8nWoeo1b8soaivmhL6fh:x</p>
+<p>The first two commands are necessary. About the last command above, you can see that there is an “:x” after the FTC address which is a password to be sent to the pool <a href="http://p2pool.neoscrypt.de:19327/"><strong><em><strong>http://p2pool.neoscrypt.de:19327</strong></em></strong></a><strong><strong>. </strong><strong>The pool simply is a group of miners who are collaborating and sharing work to </strong><strong>effectively</strong><strong> find </strong><strong>more</strong><strong> coins sooner than the others who are solo mining. In the command, t</strong><strong>he password “x” is not important and can be replaced with any strings. </strong><strong>Please note that uppercase and lowercase letters would make a difference so be careful while entering the command. </strong><strong>The line written above demonstrates the most basic code to start mining and usually users include other options to </strong><strong>tweak the </strong><strong>performance. For now, just replace the FTC address with your own and see what the result </strong><strong>is</strong><strong>. The system would start mining and the output would be similar to </strong><strong>picture 8. </strong><strong>Once you cherished it enough, press “q” or Ctrl+c to stop the program for now.</strong></strong></p>
+<p><strong><strong>Although you can go solo mining, for getting the best result, you had better stay with a pool. The pool stated above inside the command can be used and, of course, you can find other FTC pools, for example </strong></strong><a href="http://give-me-coins.com/"><strong>http://give-me-coins.com</strong></a><strong><strong> , </strong></strong><a href="http://wemineftc.com/"><strong>http://wemineftc.com</strong></a><strong><strong> and </strong></strong><a href="http://ftc.nut2pools.com/"><strong>http://ftc.nut2pools.com</strong></a><strong><strong> . </strong><strong>If you want to connect to these pools, first you have to create an account </strong><strong>on their website</strong><strong>. After you have created an account, in the account setting you should change the payout address to your FTC address. Furthermore, you have to create a worker. Creating a worker is easy. </strong><strong>Please refer to picture 9.</strong></strong></p>
+<p>As you can see above, a worker and its password have been created. This password does not need to be very secure, although the password for your main account should be. Suppose that you have created a worker named “john.1” in <a href="http://www.wemineftc.com/">www.wemineftc.com</a> and its password is “x”, the command for Neo-gpuminer would be like this: </p>
+<p># export GPU_MAX_ALLOC_PERCENT=100</p>
+<p># export GPU_USE_SYNC_OBJECTS=1</p>
+<p># cgminer --neoscrypt -o stratum+tcp://stratum.wemineftc.com:4444 -O john.1:x</p>
+<p>As you can see, the address of the pool mining server is different than the address of the pool website. You can easily find the address of the pool server itself for each pool on their website. For convenience, for the three mentioned pools you might refer to the table below.</p>
+<table>
+<tbody>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
+</tbody>
+</table>
+<p>Table : Three FTC pools with their server addresses</p>
+<p></p>
+<h2 id="tuning-neo-gpuminer"><span id="anchor-11"></span>2.7. Tuning Neo-gpuminer</h2>
+<p><strong><strong>In this section</strong><strong>, we </strong><strong>are going to</strong><strong> speak about some parameters that can be passed to cgminer for better performance </strong><strong>and better management</strong><strong>. </strong><strong>Your ultimate goal is to get the highest hashrate possible with minimum hardware error. The</strong><strong>se two </strong><strong>quantities</strong><strong> are marked in picture </strong><strong>8</strong><strong>.</strong></strong></p>
+<h3 id="parameters-related-to-gpu-health"><span id="anchor-12"></span>2.7.1. Parameters related to GPU health</h3>
+<p><strong><strong>The first parameters that should be discussed are related to GPU health. Since mining produces a lot of heat in the GPU, you had better take the necessary precautions to avoid damage to </strong><strong>your probably expensive</strong><strong> GPU.</strong></strong></p>
+<p><strong><strong>The </strong><strong>recommended</strong><strong> parameters </strong><strong>with examples</strong><strong> are:</strong></strong></p>
+<p><strong><strong>--auto-gpu         : </strong><strong>Bring the GPU to auto mode (always include this)</strong></strong></p>
+<p>--temp-target 88   : The miner will try to keep the GPU temperature at this value</p>
+<p>--temp-overheat 91 : The miner will throttle down the GPU at this temperature</p>
+<p><strong><strong>--temp-hysteresis 1 : </strong><strong>The sensitivity of the miner program to temperature changes </strong><strong>is 1 degree of Celsius</strong></strong></p>
+<p><strong><strong>--temp-cutoff 93   : </strong><strong>The miner will shut down mining at this </strong><strong>temperature</strong></strong></p>
+<p><strong><strong>--auto-fan: It will manipulate the GPU fan to maintain the target temperature</strong></strong></p>
+<p><strong><strong>--gpu-fan </strong><strong>30-85: The program will manipulate the GPU fan in the range of 30% to 85%</strong></strong></p>
+<p>Please note that for a multi-gpu setup (e.g. for a GPU like AMD 5970) you can specify different values for each card. For example, in a system with 3 cards installed:</p>
+<p><strong><em><strong>--temp-target 75,80,86 : Try to keep the first card at 75 degrees, the second at 80 and the third at 86 degrees of Celsius.</strong></em></strong></p>
+<p><strong><em><strong>--gpu-fan 30-85,30-100,30-100 : Try to manipulate the first GPU fan in the range of 30%   to 85%, but for the second and the third GPUs it is<br />
+allowed to crank up the fan </strong></em><em><strong>from 30%</strong></em><em><strong> to 100%.</strong></em></strong></p>
+<p>To get the number associated with each GPU in an AMD system, run the following command. It will display the cards' numbers with the first one marked as “adapter 0”, the second as “adapter 1” and so forth:</p>
+<p># aticonfig --adapter=all --od-getclocks</p>
+<h3 id="parameters-related-to-performance"><span id="anchor-13"></span><strong>2.7.2. Parameters related to performance</strong></h3>
+<p>The recommended parameters for a 3-card setup with examples are:</p>
+<p><strong><em><strong>--auto-gpu: </strong></em><em><strong>Set</strong></em><em><strong> the GPUs to automatic mode </strong></em><em><strong>(always include this)</strong></em></strong></p>
+<p><strong><em><strong>--gpu-engine 750-950,945,700-930:For the first card try to manipulate the GPU's<br />
+</strong></em><em><strong>core clock within the range of 750 MHz to 950 MHz. For<br />
+            the second card always try to keep the core clock<br />
+                           exactly at 945 MHz and for the third card the allowed core clock range is 700 to 930 MHz</strong></em></strong></p>
+<p><strong><em><strong>--gpu-memclock 900-1250,1250,900-1150 : Like above but for the memory clock</strong></em></strong></p>
+<p>The following options are dependent on the GPU. You should manipulate them in order to find the optimum point. Sometimes with some values the miner program will refuse to start, or will start with errors so you have to experiment and test different values.</p>
+<p><strong><em><strong>-w 32: Set the work size to 32; can be 64, 112, 128, 256, </strong></em><em><strong>etc.</strong></em></strong></p>
+<p><strong><em><strong>-I 14: Set the intensity to 14; can be 1 to 17 or 20</strong></em></strong></p>
+<p><strong><em><strong>-g 2: Start 2 threads; </strong></em><em><strong>usually it is 1 to 4</strong></em></strong></p>
+<h3 id="a-complete-concrete-neo-gpuminer-example"><span id="anchor-14"></span>2.7.3. A complete, concrete Neo-gpuminer example</h3>
+<p>There are other non-performance related parameters that can be passed to the program. For example, to completely hide the output you can add <strong><em><strong>--real-quiet</strong></em></strong>. Another parameter called <strong><em><strong>--no-restart</strong></em></strong> will be used which is a workaround for a known bug for some hardware. Furthermore, to lower the rejected shares, pass <strong><em><strong>--no-submit-stale</strong></em></strong> to the program. For more information you can run the following command to get the complete list of options:</p>
+<p># cgminer --help</p>
+<p><strong><strong>Now we want to put</strong><strong> it all together. </strong><strong>To achieve this, instead of executing the commands singly, </strong><strong>we want to create an executable file named “miner” in the path /usr/local/bin </strong><strong>so we will be able to execute this single file including all the necessary commands</strong><strong>. You can use any text editors or </strong><strong>use </strong><strong>nano </strong><strong>to create the file</strong><strong>. </strong><strong>Install nano:</strong></strong></p>
+<p>Debian and Ubuntu:</p>
+<p># apt-get install nano</p>
+<p>Gentoo</p>
+<p><strong><strong># emerge -</strong><strong>na</strong><strong> </strong><strong>nano</strong></strong></p>
+<p><strong><strong>T</strong><strong>hen</strong><strong>, as root, </strong><strong>c</strong><strong>reate</strong><strong> the file “miner” in /usr/local/bin/</strong></strong></p>
+<p><strong><strong># nano /usr/local/bin/miner</strong></strong></p>
+<p><strong><strong>And paste the following commands into the file:</strong></strong></p>
+<p>#!/usr/bin/env bash</p>
+<p>export TERM=xterm</p>
+<p>export DISPLAY=:0</p>
+<p>export GPU_MAX_ALLOC_PERCENT=100</p>
+<p>export GPU_USE_SYNC_OBJECTS=1</p>
+<p>load=`aticonfig --adapter=0 --od-getclocks | grep GPU | awk '{print $4}'|cut -f1 -d&quot;%&quot;`</p>
+<p>if (( $load &gt; 95 )); then</p>
+<p>echo &quot;cgminer was running on `date`&quot; </p>
+<p>else</p>
+<p>echo &quot;cgminer was not running well on `date`&quot;</p>
+<p>killall -9 cgminer</p>
+<p>cgminer --neoscrypt --no-restart --temp-target 88 --temp-overheat 91 \</p>
+<p>   --temp-hysteresis 1 --temp-cutoff 93 --auto-gpu \</p>
+<p>   --gpu-engine 700-940 --<strong><strong>auto-fan --gpu-fan </strong><strong>30-85</strong></strong> --no-submit-stale \</p>
+<p>                 -o <a href="http://p2pool.neoscrypt.de:19327/"><strong><strong>http://p2pool.neoscrypt.de:19327</strong></strong></a> -O \</p>
+<p>       9sJng4tMOUaKvs8nWoeo1b8soaivmhL6fh:x -I 14 -w 32 -g 1 </p>
+<p>fi</p>
+<p><strong><strong>Please note that this time the “#” </strong><strong>on the first line </strong><strong>should be included in the file. For the other commands the “#” has already been removed for convenience. </strong><strong>For a multi-gpu setup, as you learned before, you can set different values or use a single value for all of them.</strong><strong> </strong><strong>Make the file </strong><strong>executable:</strong></strong></p>
+<p><strong><strong># chmod +x /usr/local/bin/miner</strong></strong></p>
+<p><strong><strong>Please note that</strong><strong> </strong><strong>this </strong><strong>file</strong><strong> is for AMD cards </strong><strong>and</strong><strong>, furthermore,</strong><strong> you need to edit the pool address, the FTC address and the other parameters that were </strong><strong>already </strong><strong>discussed. </strong><strong>As you can see </strong><strong>in the script,</strong><strong> the parameter </strong><em><strong>--gpu-memclock</strong></em><strong> has not been used since we did not want to change the </strong><strong>default</strong><strong> memory clock of the GPU </strong><strong>in this example</strong><strong>. </strong><strong>To experiment, c</strong><strong>hange the parameters and rerun the program. </strong><strong>Pay attention to the hashrate it produces and find the optimum parameters.</strong><strong> Before rerunning </strong><strong>the program</strong><strong>, </strong><strong>you should</strong><strong> stop</strong><strong> </strong><strong>the one that is already running</strong><strong> by pressing “q” or Ctrl+</strong><strong>c</strong><strong>. </strong></strong></p>
+<h2 id="sgminer-an-alternative-mining-program-for-amd-systems"><span id="anchor-15"></span><strong><strong>2.8. </strong><strong>s</strong><strong>gminer: an alternative mining program for AMD systems</strong></strong></h2>
+<p><strong><strong>Another program which supports NeoScrypt is sgminer. Sgminer and Neo-gpuminer have common origins but are developed separately. Sgminer can sometimes produce better hashrate than Neo-gpuminer so it is worth building this program and testing it as well. Unfortunately, it does not work for Nvidia systems so Nvidia users have to stay with Neo-gpuminer for now. </strong><strong>Another current limitation is that </strong><strong>the</strong><strong> program will work only with AMD display drivers up to version 14.6_beta2. However, this situation and the mentioned limitation for Nvidia users might </strong><strong>change</strong><strong> in the futur</strong><strong>e and</strong><strong> there is a good chance that these issues have already been resolved by the time you are reading this howto.</strong></strong></p>
+<p><strong><strong>To build the program, first install the necessary packages explained in part 2.3 and then download the software:</strong></strong></p>
+<p><strong><strong># </strong><strong>git clone </strong></strong><a href="https://github.com/sgminer-dev/sgminer"><strong><strong>https://github.com/sgminer-dev/sgminer</strong></strong></a></p>
+<p><strong><strong>At this time you should copy </strong><strong>the header files</strong><strong> </strong><strong>from ADL_SDK.zip package</strong><strong> int</strong><strong>o</strong><strong> sub-folder </strong><strong>ADL_SDK inside sgminer, as you did in part 2.4 for Neo-gpuminer. </strong><strong>Then</strong><strong>:</strong></strong></p>
+<p><strong><strong># cd sgminer</strong></strong></p>
+<p><strong><strong># git submodule init</strong></strong></p>
+<p><strong><strong># git submodule update</strong></strong></p>
+<p><strong><strong># autoreconf -i</strong></strong></p>
+<p><strong><strong># CFLAGS=&quot;-O2 -pipe -march=native&quot; ./configure</strong></strong></p>
+<p><strong><strong># make -j</strong><strong>5</strong></strong></p>
+<p><strong><strong>And replace 5 in make command with the appropriate number. </strong><strong>You can install the program system-wide using “make install” as root:</strong></strong></p>
+<p><strong><strong># make install</strong></strong></p>
+<p><strong><strong>You can use sgminer exactly as you do for Neo-gpuminer, however, there are some minor differences. The first difference is the name of the program, of course, and how you invo</strong><strong>k</strong><strong>e the NeoScrypt algorithm:</strong></strong></p>
+<p><strong><strong># </strong><strong>sgminer -k neoscrypt &lt;and the rest of the options&gt;</strong></strong></p>
+<p><strong><strong>Second, </strong><strong>for </strong><strong>this program some extra performance-related parameters should be passed, </strong><strong>t</strong><strong>he </strong><strong>most important of which can </strong><strong>be</strong><strong>:</strong></strong></p>
+<p><strong><em><strong>--thread-concurrency 8192 : </strong></em><em><strong>A </strong></em><em><strong>typical</strong></em><em><strong> value f</strong></em><em><strong>or an R9 280 GPU</strong></em></strong></p>
+<p><strong><strong>Other parameters worth mentioning:</strong></strong></p>
+<p><strong><em><strong>--rawintensity 6144: </strong></em><em><strong>to tune the intensity alternatively</strong></em><em><strong> f</strong></em><em><strong>or an R9 280 GPU</strong></em></strong></p>
+<p><strong><em><strong>--lookup-gap 2: Sets GPU lookup gap for mining; can be 1 or 2</strong></em></strong></p>
+<p><strong><strong>Again you have to play with these parameters for finding the optimum performance. </strong></strong></p>
+<h1 id="cpu-mining"><span id="anchor-16"></span><strong>3. CPU mining</strong></h1>
+<p><strong><strong>There is a miner designed for CPU mining of NeoScrypt-based coins and it is called cpuminer-neoscrypt.</strong></strong></p>
+<h2 id="installing-required-packages-to-build-cpuminer-neoscrypt"><span id="anchor-17"></span><strong>3.1. Installing required packages to build cpuminer-neoscrypt</strong></h2>
+<p>Debian and Ubuntu:</p>
+<p># apt-get install build-essential checkinstall libssl-dev libncurses-dev \</p>
+<p>    libcurl4-openssl-dev libjansson-dev git</p>
+<p>Gentoo</p>
+<p># emerge -na sys-libs/ncurses dev-libs/jansson dev-vcs/git </p>
+<h2 id="compiling-and-installing-the-latest-cpuminer-neoscrypt"><span id="anchor-18"></span>3.2. Compiling and installing the latest cpuminer-neoscrypt</h2>
+<p>As your normal user, open a terminal and issue the following: </p>
+<p><strong><strong># </strong><strong>git clone </strong></strong><a href="https://github.com/ghostlander/cpuminer-neoscrypt"><strong><strong>https://github.com/ghostlander/cpuminer-neoscrypt</strong></strong></a></p>
+<p># cd cpuminer-neoscrypt</p>
+<p># ./configure CFLAGS=&quot;-O3 -march=native -pipe&quot;</p>
+<p>It will setup the package. Then:</p>
+<p><strong><strong># make -jN</strong></strong></p>
+<p><strong><strong>Where N should be replaced with the number of the CPU cores plus 1. </strong><strong>There should be no error in the compilation process and w</strong><strong>hen the building finishe</strong><strong>s</strong><strong>, a binary called “minerd” </strong><strong>would</strong><strong> be present inside the folder. If you would like to install it system-wide, issue:</strong></strong></p>
+<p><strong><strong># make install</strong></strong></p>
+<h2 id="using-cpuminer-neoscrypt"><span id="anchor-19"></span><strong>3.3. Using cpuminer-neoscrypt</strong></h2>
+<p><strong><strong>You can utilize this miner in the same way you do for neo-gpuminer. </strong><strong>This is the typical command when you use the program</strong><strong>:</strong></strong></p>
+<p><strong><strong># </strong><strong>minerd -</strong><strong>a neoscrypt </strong><strong>-o http://p2pool.neoscrypt.de:19327 -O </strong><strong>\</strong><strong>6sJng4tMEUaKvs8nWoeo1b8soaivmhL1hy:x</strong></strong></p>
+<p><strong><strong>You can see that you will use a pool address and your Feathercoin address. </strong><strong>P</strong><strong>icture </strong><strong>10</strong><strong> shows the program in action.</strong></strong></p>
+<h1 id="monitoring"><span id="anchor-20"></span><strong>4. Monitoring</strong></h1>
+<p><strong><strong>In this section, </strong><strong>we will learn some simple tricks to manage our miner system better. If you are an avid miner (or you are going to be), you might intend to use your Linux system for mining purposes most of the time. Mining (either CPU or GPU) exerts pressure on the system especially when you want to mine in higher intensities. </strong><strong>And u</strong><strong>sually in higher intensities the system itself becomes so graphically unresponsive that using mouse and working with the desktop become a headache. Furthermore, sometimes due to high level of the noise the system produces (high speed </strong><strong>of the GPU fan), the system is put in an isolated </strong><strong>room or </strong><strong>place for convenience. </strong><strong>Provided that</strong><strong> you have another PC or laptop connected to the same network, you </strong><strong>can</strong><strong> monitor the mining process remotely </strong><strong>without touching the mining machine directly</strong><strong>.</strong></strong></p>
+<p><span id="anchor-21"></span><strong></strong></p>
+<p><strong><strong>A valuable piece of software that can help is ssh. Install it on your mining system by </strong><strong>executing the following as root</strong><strong>:</strong></strong></p>
+<p><strong><strong>Debian </strong><strong>and Ubuntu</strong></strong></p>
+<p><strong><strong># apt-get install </strong></strong>openssh-server</p>
+<p># /etc/init.d/ssh start</p>
+<p># update-rc.d ssh enable</p>
+<p>Gentoo</p>
+<p># emerge -na net-misc/openssh</p>
+<p># /etc/init.d/ssh start</p>
+<p># rc-update add sshd default</p>
+<p>If you have Windows on your other PC or laptop, you can download a program called putty:</p>
+<p><a href="http://the.earth.li/~sgtatham/putty/latest/x86/putty.zip" class="uri">http://the.earth.li/~sgtatham/putty/latest/x86/putty.zip</a></p>
+<p>In Windows command prompt you can connect to your Linux machine by:</p>
+<p># putty.exe <a href="mailto:youraccountname@ip-address-of-linux-machine">youraccountname@ip-address-of-linux-machine</a></p>
+<p>To get the internal IP address of you Linux machine, in the Linux box execute the following as root:</p>
+<p># ifconfig | grep inet </p>
+<p>The output would be like this:</p>
+<p>          inet addr:127.0.0.1 Mask:255.0.0.0</p>
+<p>          inet addr:192.168.1.5 Bcast:192.168.1.255 Mask:255.255.255.0</p>
+<p>Then, in this example, the IP address of the machine is 192.168.1.5. If your account in the Linux box is, for example, john, you can connect to your mining machine:</p>
+<p># putty.exe <a href="mailto:john@192.168.1.5">john@192.168.1.5</a></p>
+<p>It would ask for your account password. Once you logged in, it would be a Linux terminal for you. So everything you execute there, would be executed on the Linux machine. </p>
+<p>So far we have learned how to connect to a Linux box remotely. However, typing commands is boring and sometimes tedious, so we want to wrap useful monitoring commands in shortcuts. Get back to the Linux machine (either directly or remotely) and <strong><strong>as a normal user do the following:</strong></strong></p>
+<p><strong><strong># </strong><strong>cd</strong></strong></p>
+<p># echo &quot;[[ -f ~/.bashrc ]] &amp;&amp; . ~/.bashrc&quot; &gt;&gt; .bash_profile</p>
+<p># chmod +x .bash_profile</p>
+<p>Now we want to create some useful shortcuts for monitoring an AMD GPU. If you want to get the temperature of the GPU you can execute:</p>
+<p># aticonfig --adapter=all --od-gettemperature</p>
+<p>And if you want to see the GPU load:</p>
+<p># aticonfig --adapter=all --od-getclocks</p>
+<p>Now we want to create shortcuts named “gettemp” and “getload” for these two useful commands:</p>
+<p># echo “export DISPLAY=:0” &gt;&gt; .bashrc</p>
+<p># chmod +x .bashrc</p>
+<p># echo &quot;alias gettemp='`which aticonfig` --adapter=all --od-gettemperature'&quot; &gt;&gt; .bashrc</p>
+<p># echo &quot;alias getload='`which aticonfig` --adapter=all --od-getclocks'&quot; &gt;&gt; .bashrc</p>
+<p># source .bashrc</p>
+<p>Well done. Now instead of typing the whole line of the original commands, to get the temperature and the load of the GPU, you can simply type:</p>
+<p># gettemp</p>
+<p># getload</p>
+<p>If you want other names, change “gettemp” and “getload” to whatever you would like in the echo commands. If you did something wrong, or later you want to change the names, you can edit the file .bashrc as your normal user using any text editors or using nano in the terminal:</p>
+<p># nano ~/.bashrc</p>
+<p>Edit the file and once you have done editing, press Ctrl+x to save the file and quit the program. Another useful and fun shortcut can be:</p>
+<p># echo &quot;alias killit='killall -9 cgminer'&quot; &gt;&gt; .bashrc</p>
+<p>So whenever you need you Linux box urgently and it is unresponsive due to high load, get into the box through ssh and execute killit to relieve it!</p>
+<p># killit</p>
+<h1 id="task-management"><span id="anchor-22"></span>5. Task management</h1>
+<p>Sometimes you want to mine only during specific times of the day. Or you want to mine continuously, but some unexpected problems occur that interfere with the mining process. For example, the pool becomes unavailable or the Internet gets disconnected. In such situations if you do not pay attention to the miner, it might become idle. We are going to manage this through task scheduling. As root, install the following packages:</p>
+<p><strong><strong>Debian </strong><strong>and Ubuntu</strong></strong></p>
+<p><strong><strong># apt-get install </strong><strong>cron </strong><strong>nano</strong></strong></p>
+<p># /etc/init.d/cron start</p>
+<p><strong><strong># </strong><strong>update-rc.d </strong><strong>cron</strong><strong> enable</strong></strong></p>
+<p><strong><strong>Gentoo</strong></strong></p>
+<p><strong><strong># emerge -n</strong><strong>a</strong><strong> </strong><strong>nano sys-process/vixie-cron</strong></strong></p>
+<p><strong><strong># </strong></strong><em>rc-update add vixie-cron default</em></p>
+<p><em># /etc/init.d/vixie-cron start</em></p>
+<p><em># gpasswd -a yourusername cron</em></p>
+<p><strong><strong>Then, as your normal user </strong><strong>run</strong><strong>:</strong></strong></p>
+<p># export EDITOR=nano</p>
+<p><strong><strong># crontab -e</strong></strong></p>
+<p><strong><strong>The nano text editor will come up, waiting for editing. Now you can enter specific commands here. </strong><strong>The general structure of the file is as </strong><strong>depicted in the diagram below.</strong></strong></p>
+<p></p>
+<p>*    *    *    *    * Command to be executed</p>
+<p></p>
+<p>-    -    -    -    -</p>
+<p>|    |    |    |    |</p>
+<p>|    |    |    |    +----- Day of week (0-7)</p>
+<p>|    |    |    +------- Month (1 - 12)</p>
+<p>|    |    +--------- Day of month (1 - 31)</p>
+<p>|    +----------- Hour (0 - 23)</p>
+<p><strong><strong>+------------- Min (0 - 59)</strong></strong></p>
+<p><strong><strong>Now we want to make examples. In the first example, you want to mine 24 hours a day, 7 days a week nonstop. So you</strong><strong>r</strong><strong> mining system should never be idle. </strong><strong>Fortunately, </strong><strong>in section 2.7.</strong><strong>3</strong><strong> </strong><strong>we already created an executable file named “miner” </strong><strong>which</strong><strong> is ready to be utilized here, too. </strong><strong>Just edit that file and append the option </strong><em><strong>--real-quiet</strong></em><strong> to cgminer command. </strong><strong>Now, b</strong><strong>ecause we want to make sure that cgminer is always running, the contents of the crontab would be like this:</strong></strong></p>
+<p><strong><strong>*/</strong><strong>3</strong><strong>****/usr/local/bin/miner</strong></strong></p>
+<p><strong><strong>Copy and paste the piece of text above into the crontab. Press Ctrl+x, say “y” and press Enter. </strong><strong>As you might guess from the command,</strong><strong> </strong><strong>t</strong><strong>he cron scheduler will execute the program “miner” every 3 seconds. </strong><strong>The contents of the file “miner” includes a conditional, so it </strong><strong>will</strong><strong> work out the situation by itself. </strong><strong>This way, it would resist any problems </strong><strong>and would try endlessly</strong><strong> unless some serious OS failure happe</strong><strong>n</strong><strong>s</strong><strong> which </strong><strong>is </strong><strong>really rare</strong><strong> in Linux </strong><strong>due to its robustness and stability</strong><strong>. So y</strong><strong>our system </strong><strong>can mine years continuously and </strong><strong>will never rest </strong><strong>until it literally dies</strong><strong>!</strong></strong></p>
+<p><strong><strong>In another example, suppose we would like to start mining when we </strong><strong>leave the house and </strong><strong>go to work at 7 a.m. and we want it to automatically stop mining when we come back home at 4 </strong><strong>p</strong><strong>.m. The contents would be like this:</strong></strong></p>
+<p><strong><strong>*/</strong><strong>3</strong><strong></strong><strong>7-1</strong><strong>5</strong><strong>***/usr/local/bin/miner</strong></strong></p>
+<p><strong><strong>116***</strong><strong>`which </strong><strong>killall</strong><strong>`</strong><strong> -9 cgminer</strong></strong></p>
+<p><strong><strong>You can see that cron will start the job at 7 and would kill it at </strong><strong>16</strong><strong>:01. </strong></strong></p>
+<p><strong><strong>You can simply create your own scheduler that fits your specific </strong><strong>goals</strong><strong>.</strong></strong></p>

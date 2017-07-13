@@ -48,7 +48,7 @@ The information contained is based on Feathercoin wallet version 0.9.6. The guid
 ### Advanced Features   
 * Multiple Signature Transactions  
 * Add a text comment to the transaction  
-* Include a Openname DNS (Dynamic Name server) addresses to the Blockchain   
+* Include Nameview an openname DNS (Dynamic Name server) addresses to the Blockchain   
 * Create, manage and search for Stealth Addresses   
 * Transaction reports  
 * Coin Control 
@@ -807,6 +807,12 @@ Openname is included in the Feathercoin (FTC) blockchain. Internally it is calle
 2. After your transaction is confirmed , nameview will all registered names.
 
 ![Openames Dialog](/images/ftc-0.9.3.2-opennames.screen.01.png)  
+
+Namecoin's flagship use case is the censorship-resistant top level domain .bit, which is functionally similar to .com or .net domains but is independent of ICANN, the main governing body for domain names. 
+
+Each Nameview record consists of a key and a value which can be up to 520 bytes in size. Each key is actually a path, with the namespace preceding the name of the record. The key d/example signifies a record stored in the DNS namespace d with the name example and corresponds to the record for the example.bit website. The content of d/example is expected to conform to the DNS namespace specification.
+
+The current fee for a record is 0.01 FTC and records expire after 36000 blocks (~200 days) unless updated or renewed. Via Nameview, FTC is used to purchase records are marked as used and destroyed, as giving the fee to miners would enable larger miners to register names at a significant discount.
 
 
 #### What does Opennames do?
